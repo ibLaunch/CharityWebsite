@@ -2,9 +2,11 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { Link, useLocation } from "wouter";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +18,12 @@ export default function Navigation() {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    if (location !== "/") {
+      // If not on home page, navigate to home first
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       const offsetTop = element.offsetTop - 80;
@@ -27,10 +35,10 @@ export default function Navigation() {
   };
 
   const navItems = [
-    { id: "home", label: "Home" },
-    { id: "impact-circle", label: "Impact Circle" },
-    { id: "yoga", label: "Yoga Sessions" },
-    { id: "contact", label: "Contact" },
+    { id: "home", label: "Home", isSection: true },
+    { id: "impact-circle", label: "Impact Circle", isSection: true },
+    { id: "yoga", label: "Yoga Sessions", isSection: true },
+    { id: "contact", label: "Contact", isSection: false, href: "/contact" },
   ];
 
   return (
@@ -40,20 +48,32 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <h1 className="text-xl font-bold brand-navy">Bundele Foundation</h1>
+            <Link href="/">
+              <h1 className="text-xl font-bold brand-navy cursor-pointer hover:opacity-80 transition-opacity">
+                Bundele Foundation
+              </h1>
+            </Link>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium"
-                >
-                  {item.label}
-                </button>
+                item.isSection ? (
+                  <button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium"
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <Link key={item.id} href={item.href || "#"}>
+                    <button className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium">
+                      {item.label}
+                    </button>
+                  </Link>
+                )
               ))}
             </div>
           </div>
@@ -69,13 +89,21 @@ export default function Navigation() {
               <SheetContent>
                 <div className="flex flex-col space-y-4 mt-8">
                   {navItems.map((item) => (
-                    <button
-                      key={item.id}
-                      onClick={() => scrollToSection(item.id)}
-                      className="text-left text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-lg font-medium"
-                    >
-                      {item.label}
-                    </button>
+                    item.isSection ? (
+                      <button
+                        key={item.id}
+                        onClick={() => scrollToSection(item.id)}
+                        className="text-left text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-lg font-medium"
+                      >
+                        {item.label}
+                      </button>
+                    ) : (
+                      <Link key={item.id} href={item.href || "#"}>
+                        <button className="text-left text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-lg font-medium">
+                          {item.label}
+                        </button>
+                      </Link>
+                    )
                   ))}
                 </div>
               </SheetContent>
