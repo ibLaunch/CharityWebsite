@@ -1,0 +1,34 @@
+I need you to create a fully functional website for a charity organization called Bundele Foundation. I want the homepage to have this information: Your donations are not only tax-deductible but also matched by Bundele Foundation for up to $2000, doubling your impact. Together, we are creating a significant positive change! How you can help: Join exclusive yoga classes (button that redirects you to the Bundele foundation webpage), Donate (button that alllows people to make monthly payments or an onetime payment. this is the paypal: client ID: AazE_F8D4BCrhzN8exAyLxGlSeKZeX14nwwtGwEYuXz0sJ23pGd5r3KFCPywq0HPCkBjjCnnBawDrwIn
+secret: EIc-Zn9Surp35MmCTXTSeknYV9-LMpzI6Jkg1Y6udQAySwFZ_nu_Dnbh-en995WANw-oLq-RnE7qWWuZ
+, Join the impact circle (button that links to the impact circle page). 
+
+Learn about what we do: Supporting education in underserved communities: Bridge the gap between generations through community programs that foster mutual learning and support. By creating mentorship opportunities, where the adults can share their wealth of knowledge and life experiences with young minds, we can cultivate a culture of respect and appreciation. Help seniors enhance their quality of life in their golden years: Additionally, integrating technology workshops can empower seniors to stay connected and engaged, while offering students the chance to teach and learn valuable digital skills. Together, we can build a stronger, more inclusive society where everyone has the opportunity to thrive and contribute meaningfully. 
+
+OUR IMPACT SINCE 2022
+2022- Donated 12 pieces of furniture to Madhyamik Vidyalaya: Madhyamik Vidyalaya in Pune is a government-aided rural school. Until recently, students sat on the floor due to a lack of furniture, leading to discomfort and health issues. The donation has helped create a safer, cleaner, and more focused learning environment.
+2022- Donated 10 dinning table chairs to Mahalunge Vidyalaya: Helped improve the school’s mealtime setting by providing students with a more comfortable and hygienic space to eat.
+2023- The Painting Project at Nutan Balvikas Mandir, Pune: The classrooms hadn’t been painted in over 30 years. The Bundele Foundation donated ₹2 lakhs to help, along with Rotary Clubs and a CSR partner for Paints. The project focused on painting the classrooms first, then the outside walls.
+
+
+The challenges I want to have mentioned on the homepage: 1 in 5 children globally lack access to basic education
+42% children are engaged in child labor, instead of learning
+36% of children are out of school, and 67% of girls (ages 15+) struggle to read and write
+Over 60% of seniors report feeling isolated or lonely
+Only 17% of seniors aged 65+ are digitally literate
+Nearly 25% of seniors live below the poverty line in developing regions
+The impact circle webpage: About the impact circle: Join our mission to amplify social impact by contributing a minimum of $5 on your birthday, your loved ones' birthdays, anniversaries, or any day that holds special meaning to you.
+For every dollar you donate, Bundele Foundation pledges to match it, doubling the power of your generosity. 100% of your donation is directly channeled to support most pressing project in the world, guaranteeing that your generosity translates into palpable aid.
+Together, we're turning celebrations into acts of kindness! than a contact us button, and join our whatsapp group button link (https://chat.whatsapp.com/HTv3KIMTlJlCtBGruoYDTg) and a google form button that helps figure out what dates people want to donate and how much. Google form: https://docs.google.com/forms/d/e/1FAIpQLSf8taKXNdCtSBjq5iOiAJC6-FmG26razCM1qoG6BoCV75r7Mw/viewform?usp=header
+
+before you start, I need to provide you with information about Bundele Yoga webpage: The bundele yoga page (the information that you can use to create the webpage: Bhartiya Yog Sansthan (BYS) offers a holistic yoga practice rooted in traditional Indian philosophy, aiming to promote physical, mental, and spiritual well-being. If you're considering private classes to raise funds for charity, understanding the nature of their yoga practice can help you tailor your offerings.
+🧘‍♂️ What Kind of Yoga Does Bhartiya Yog Sansthan Teach?
+BYS follows the Ashtanga Yoga path as outlined by Maharishi Patanjali, encompassing eight limbs: Yama (ethical restraints), Niyama (personal observances), Asana (postures), Pranayama (breath control), Pratyahara (withdrawal of senses), Dharana (concentration), Dhyana (meditation), and Samadhi (absorption).  (picture showcasing the 8 limbs) 
+Tagline: Wellness Within, Change Around!
+Each yoga class will be &65. we will have class packs. 3-class pack for 10% off, 5-class pack for 10% off, and 10-class pack for 10% off. We should have a google form that will help us know what they are signing up for and are interested in.  This is the google form you need to link: https://docs.google.com/forms/d/e/1FAIpQLSdAyE2hC6OAAEKo2Abu477TbnFHcLJCTEAuSuNBChwhJAt14A/viewform?usp=header
+Keep this website modern with solid colors.“I want to create a modern, clean, and minimal website with a light color palette (white, soft gray, mint, black accents). The layout should have large sections, bold typography, and plenty of whitespace for a calm, professional feel. Maybe geometric shapes or like cool website. 
+Include high-quality visuals and clean icons. Use cards or boxes to neatly organize content like testimonials, updates, and images.
+The site should feel like a digital landing page or portfolio with call-to-action buttons like 'Join WhatsApp Group', 'Donate Now', and 'Contact Us'. It should be scroll-based, with section dividers, smooth transitions, and easy navigation.
+
+ I have attached some pictures that you can use. I have also added my past draft when I was creating the website. you can use my past template for inspiration of layout and information. You can edit the pictures so they look professional.
+
+Please try to use the information provided. You don't need to make the website to long.
