@@ -4,8 +4,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
-import furnitureImage from "@assets/Screen Shot 2025-05-19 at 6.42.57 PM.png";
-import cabinetImage from "@assets/Screen Shot 2025-05-19 at 6.43.18 PM.png";
+import furnitureImage from "@assets/Screen Shot 2025-05-19 at 2.01.54 PM.png";
+import cabinetImage from "@assets/Screen Shot 2025-05-19 at 2.03.57 PM.png";
 import schoolHallImage from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM.png";
 
 export default function Home() {
@@ -62,13 +62,13 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-32 bg-white">
+      <section className="pt-24 pb-32 bg-brand-light-gray relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h1 className="text-5xl md:text-7xl font-bold text-black mb-8 leading-tight">
-                Bundele
-                <span className="brand-mint block">Foundation</span>
+                Welcome to
+                <span className="brand-navy block">Bundele Foundation</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Your donations are not only tax-deductible but also matched by Bundele Foundation for up to $2,000, doubling your impact. Together, we are creating a significant positive change!
@@ -76,7 +76,7 @@ export default function Home() {
               
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Link href="/yoga">
-                  <Button className="bg-brand-mint text-white px-8 py-4 text-lg hover:bg-emerald-600 transition-colors">
+                  <Button className="bg-brand-navy text-white px-8 py-4 text-lg hover:opacity-90 transition-opacity">
                     Join Yoga Classes
                   </Button>
                 </Link>
@@ -85,30 +85,35 @@ export default function Home() {
                   onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf8taKXNdCtSBjq5iOiAJC6-FmG26razCM1qoG6BoCV75r7Mw/viewform", "_blank")}
                   className="bg-black text-white px-8 py-4 text-lg hover:bg-gray-800 transition-colors"
                 >
-                  Donate
+                  Donate Now
                 </Button>
-                
-                <Link href="/impact-circle">
-                  <Button variant="outline" className="border-2 border-black text-black px-8 py-4 text-lg hover:bg-black hover:text-white transition-colors">
-                    Join Impact Circle
-                  </Button>
-                </Link>
               </div>
             </div>
             
-            <div>
+            <div className="relative">
               <img 
                 src={schoolImage}
                 alt="Students and educators in classroom"
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-full h-auto rounded-lg shadow-xl"
               />
+              <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-lg shadow-xl border">
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-brand-navy rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold">3</span>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-gray-600">SCHOOLS SUPPORTED</p>
+                    <p className="text-lg font-bold text-black">Since 2022</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Learn About What We Do */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-brand-beige">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">Learn about what we do</h2>
@@ -162,7 +167,7 @@ export default function Home() {
       </section>
 
       {/* Challenges */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-brand-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">The challenges</h2>

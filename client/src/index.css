@@ -24,9 +24,10 @@
   --ring: 0 0% 0%;
   --radius: 0.25rem;
   
-  /* Brand colors - simplified */
-  --brand-mint: 158 64% 52%;
-  --brand-gray: 210 20% 95%;
+  /* Brand colors - navy, beige, white theme */
+  --brand-navy: 220 39% 11%; /* #1E293B */
+  --brand-beige: 39 77% 94%; /* #FAF7F0 */
+  --brand-light-gray: 210 20% 98%; /* #F8FAFC */
 }
 
 .dark {
@@ -66,15 +67,19 @@
 }
 
 @layer utilities {
-  .brand-mint {
-    color: hsl(var(--brand-mint));
+  .brand-navy {
+    color: hsl(var(--brand-navy));
   }
   
-  .bg-brand-mint {
-    background-color: hsl(var(--brand-mint));
+  .bg-brand-navy {
+    background-color: hsl(var(--brand-navy));
   }
   
-  .bg-brand-gray {
-    background-color: hsl(var(--brand-gray));
+  .bg-brand-beige {
+    background-color: hsl(var(--brand-beige));
+  }
+  
+  .bg-brand-light-gray {
+    background-color: hsl(var(--brand-light-gray));
   }
 }
