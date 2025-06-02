@@ -56,31 +56,25 @@ export default function YogaPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-20 geometric-bg">
+      <section className="pt-24 pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative">
-            {/* Geometric shapes */}
-            <div className="geometric-shape w-40 h-40 top-0 right-0 opacity-40"></div>
-            <div className="geometric-shape w-24 h-24 top-32 left-10 opacity-30"></div>
+          <div className="text-center">
+            <Link href="/">
+              <Button variant="ghost" className="text-gray-600 hover:text-black mb-8">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Home
+              </Button>
+            </Link>
             
-            <div className="text-center relative z-10">
-              <Link href="/">
-                <Button variant="ghost" className="text-gray-600 hover:text-black mb-8">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back to Home
-                </Button>
-              </Link>
-              
-              <h1 className="text-5xl md:text-7xl font-bold text-black mb-6 tracking-tight">
-                Bundele Yoga
-              </h1>
-              <p className="text-2xl brand-mint font-semibold mb-8">
-                Wellness Within, Change Around!
-              </p>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Traditional yoga practice rooted in ancient Indian philosophy, promoting physical, mental, and spiritual well-being.
-              </p>
-            </div>
+            <h1 className="text-5xl md:text-7xl font-bold text-black mb-6 tracking-tight">
+              Bundele Yoga
+            </h1>
+            <p className="text-2xl brand-mint font-semibold mb-8">
+              Wellness Within, Change Around!
+            </p>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Traditional yoga practice rooted in ancient Indian philosophy, promoting physical, mental, and spiritual well-being.
+            </p>
           </div>
         </div>
       </section>
@@ -179,9 +173,6 @@ export default function YogaPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="bg-white border border-gray-200 shadow-lg text-center">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl">🧘‍♀️</span>
-                </div>
                 <h3 className="text-xl font-bold text-black mb-4">Traditional Practice</h3>
                 <p className="text-gray-600">
                   Authentic yoga following the classical Ashtanga path as outlined by Maharishi Patanjali.
@@ -191,9 +182,6 @@ export default function YogaPage() {
             
             <Card className="bg-white border border-gray-200 shadow-lg text-center">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl">💚</span>
-                </div>
                 <h3 className="text-xl font-bold text-black mb-4">Holistic Wellness</h3>
                 <p className="text-gray-600">
                   Promote physical, mental, and spiritual well-being through comprehensive yoga practice.
@@ -203,9 +191,6 @@ export default function YogaPage() {
             
             <Card className="bg-white border border-gray-200 shadow-lg text-center">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl">🌱</span>
-                </div>
                 <h3 className="text-xl font-bold text-black mb-4">Supporting Charity</h3>
                 <p className="text-gray-600">
                   Your participation helps fund community education and support programs worldwide.
