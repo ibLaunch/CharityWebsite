@@ -35,9 +35,9 @@ export default function Navigation() {
   };
 
   const navItems = [
-    { id: "home", label: "Home", isSection: true },
-    { id: "impact-circle", label: "Impact Circle", isSection: true },
-    { id: "yoga", label: "Yoga Sessions", isSection: true },
+    { id: "home", label: "Home", isSection: false, href: "/" },
+    { id: "impact-circle", label: "Impact Circle", isSection: false, href: "/impact-circle" },
+    { id: "yoga", label: "Yoga Sessions", isSection: false, href: "/yoga" },
     { id: "contact", label: "Contact", isSection: false, href: "/contact" },
   ];
 
@@ -49,7 +49,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/">
-              <h1 className="text-xl font-bold brand-navy cursor-pointer hover:opacity-80 transition-opacity">
+              <h1 className="text-xl font-bold text-black cursor-pointer hover:opacity-80 transition-opacity">
                 Bundele Foundation
               </h1>
             </Link>
@@ -59,21 +59,11 @@ export default function Navigation() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                item.isSection ? (
-                  <button
-                    key={item.id}
-                    onClick={() => scrollToSection(item.id)}
-                    className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium"
-                  >
+                <Link key={item.id} href={item.href || "#"}>
+                  <button className="text-gray-700 hover:text-black transition-colors px-3 py-2 text-sm font-medium">
                     {item.label}
                   </button>
-                ) : (
-                  <Link key={item.id} href={item.href || "#"}>
-                    <button className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium">
-                      {item.label}
-                    </button>
-                  </Link>
-                )
+                </Link>
               ))}
             </div>
           </div>
@@ -89,21 +79,11 @@ export default function Navigation() {
               <SheetContent>
                 <div className="flex flex-col space-y-4 mt-8">
                   {navItems.map((item) => (
-                    item.isSection ? (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className="text-left text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-lg font-medium"
-                      >
+                    <Link key={item.id} href={item.href || "#"}>
+                      <button className="text-left text-gray-700 hover:text-black transition-colors px-3 py-2 text-lg font-medium">
                         {item.label}
                       </button>
-                    ) : (
-                      <Link key={item.id} href={item.href || "#"}>
-                        <button className="text-left text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-lg font-medium">
-                          {item.label}
-                        </button>
-                      </Link>
-                    )
+                    </Link>
                   ))}
                 </div>
               </SheetContent>

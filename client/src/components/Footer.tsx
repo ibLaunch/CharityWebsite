@@ -1,22 +1,12 @@
 import { MessageCircle, Mail, Phone } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Footer() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offsetTop = element.offsetTop - 80;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
   const quickLinks = [
-    { id: "home", label: "Home" },
-    { id: "impact-circle", label: "Impact Circle" },
-    { id: "yoga", label: "Yoga Sessions" },
-    { id: "contact", label: "Contact" }
+    { href: "/", label: "Home" },
+    { href: "/impact-circle", label: "Impact Circle" },
+    { href: "/yoga", label: "Yoga Sessions" },
+    { href: "/contact", label: "Contact" }
   ];
 
   const socialLinks = [
