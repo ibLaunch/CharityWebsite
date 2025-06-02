@@ -44,14 +44,13 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-400">
-              {quickLinks.map((link) => (
-                <li key={link.id}>
-                  <button
-                    onClick={() => scrollToSection(link.id)}
-                    className="hover:text-white transition-colors text-left"
-                  >
-                    {link.label}
-                  </button>
+              {quickLinks.map((link, index) => (
+                <li key={index}>
+                  <Link href={link.href}>
+                    <button className="hover:text-white transition-colors text-left">
+                      {link.label}
+                    </button>
+                  </Link>
                 </li>
               ))}
             </ul>
