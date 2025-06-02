@@ -40,13 +40,13 @@ export default function Home() {
     {
       year: "2022",
       title: "Donated 12 pieces of furniture to Madhyamik Vidyalaya",
-      image: furnitureImage,
+      image: "https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=400&h=300&fit=crop&auto=format",
       description: "Madhyamik Vidyalaya in Pune is a government-aided rural school. Until recently, students sat on the floor due to a lack of furniture, leading to discomfort and health issues. The donation has helped create a safer, cleaner, and more focused learning environment."
     },
     {
       year: "2022", 
       title: "Donated 10 dining table chairs to Mahalunge Vidyalaya",
-      image: cabinetImage,
+      image: "https://images.unsplash.com/photo-1549497538-303791108f95?w=400&h=300&fit=crop&auto=format",
       description: "Helped improve the school's mealtime setting by providing students with a more comfortable and hygienic space to eat."
     },
     {
@@ -62,58 +62,74 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-32 bg-brand-light-gray relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-white pt-24 pb-32 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h1 className="text-5xl md:text-7xl font-bold text-black mb-8 leading-tight">
-                Welcome to
-                <span className="brand-navy block">Bundele Foundation</span>
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Your donations are not only tax-deductible but also matched by Bundele Foundation for up to $2,000, doubling your impact. Together, we are creating a significant positive change!
-              </p>
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
+                  <span className="text-black">Bundele</span>
+                  <br />
+                  <span className="text-slate-800">Foundation</span>
+                </h1>
+                <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
+                  Your donations are not only tax-deductible but also matched by Bundele Foundation for up to $2,000, doubling your impact.
+                </p>
+              </div>
               
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Link href="/yoga">
-                  <Button className="bg-brand-navy text-white px-8 py-4 text-lg hover:opacity-90 transition-opacity">
-                    Join Yoga Classes
-                  </Button>
-                </Link>
-                
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Button
-                  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf8taKXNdCtSBjq5iOiAJC6-FmG26razCM1qoG6BoCV75r7Mw/viewform", "_blank")}
-                  className="bg-black text-white px-8 py-4 text-lg hover:bg-gray-800 transition-colors"
+                  onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=YOUR_PAYPAL_BUTTON_ID", "_blank")}
+                  className="bg-slate-900 text-white px-8 py-4 text-lg hover:bg-slate-800 transition-colors"
                 >
                   Donate Now
                 </Button>
+                
+                <Link href="/impact-circle">
+                  <Button variant="outline" className="border-2 border-slate-900 text-slate-900 px-8 py-4 text-lg hover:bg-slate-900 hover:text-white transition-colors">
+                    Join Impact Circle
+                  </Button>
+                </Link>
               </div>
             </div>
             
             <div className="relative">
-              <img 
-                src={schoolImage}
-                alt="Students and educators in classroom"
-                className="w-full h-auto rounded-lg shadow-xl"
-              />
-              <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-lg shadow-xl border">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={schoolImage}
+                  alt="Students learning in classroom"
+                  className="w-full h-[500px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+              
+              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-brand-navy rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">3</span>
+                  <div className="w-16 h-16 bg-slate-900 rounded-xl flex items-center justify-center">
+                    <span className="text-white text-2xl font-bold">3</span>
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-gray-600">SCHOOLS SUPPORTED</p>
-                    <p className="text-lg font-bold text-black">Since 2022</p>
+                    <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Schools Supported</p>
+                    <p className="text-xl font-bold text-slate-900">Since 2022</p>
                   </div>
                 </div>
+              </div>
+              
+              <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg">
+                <p className="text-sm font-semibold text-slate-900">100% Direct Impact</p>
               </div>
             </div>
           </div>
         </div>
+        
+        <div className="absolute top-1/4 left-8 w-32 h-32 bg-slate-100 rounded-full opacity-60"></div>
+        <div className="absolute bottom-1/4 right-8 w-24 h-24 bg-slate-200 rounded-lg opacity-40"></div>
       </section>
 
       {/* Learn About What We Do */}
-      <section className="py-20 bg-brand-beige">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">Learn about what we do</h2>
@@ -167,7 +183,7 @@ export default function Home() {
       </section>
 
       {/* Challenges */}
-      <section className="py-20 bg-brand-light-gray">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">The challenges</h2>

@@ -11,27 +11,59 @@ export default function ImpactCirclePage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-20 bg-brand-light-gray relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+      <section className="relative bg-white pt-24 pb-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-white"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center space-y-8">
             <Link href="/">
-              <Button variant="ghost" className="text-gray-600 hover:text-black mb-8">
+              <Button variant="ghost" className="text-slate-600 hover:text-slate-900 mb-8">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Home
               </Button>
             </Link>
             
-            <h1 className="text-5xl md:text-7xl font-bold text-black mb-8 tracking-tight">
-              <span className="brand-navy">Impact</span> Circle
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Join our mission to amplify social impact by contributing a minimum of $5 on your birthday, your loved ones' birthdays, anniversaries, or any day that holds special meaning to you.
-            </p>
+            <div className="space-y-6">
+              <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
+                <span className="text-slate-900">Impact</span>
+                <br />
+                <span className="text-slate-700">Circle</span>
+              </h1>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Join our mission to amplify social impact by contributing a minimum of $5 on meaningful dates in your life.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-16">
+              <div className="bg-white p-6 rounded-xl shadow-lg border">
+                <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white font-bold">$5</span>
+                </div>
+                <h3 className="font-semibold text-slate-900 mb-2">Minimum Contribution</h3>
+                <p className="text-sm text-gray-600">Start with just $5 on special dates</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-xl shadow-lg border">
+                <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white font-bold">2x</span>
+                </div>
+                <h3 className="font-semibold text-slate-900 mb-2">Donation Matching</h3>
+                <p className="text-sm text-gray-600">We double every contribution you make</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-xl shadow-lg border">
+                <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white font-bold">100%</span>
+                </div>
+                <h3 className="font-semibold text-slate-900 mb-2">Direct Impact</h3>
+                <p className="text-sm text-gray-600">All funds go directly to projects</p>
+              </div>
+            </div>
           </div>
         </div>
         
-        <div className="absolute top-1/2 left-8 w-32 h-32 bg-brand-beige rounded-full opacity-60"></div>
-        <div className="absolute bottom-8 right-12 w-24 h-24 bg-white rounded-lg shadow-lg opacity-80"></div>
+        <div className="absolute top-1/4 left-8 w-32 h-32 bg-slate-100 rounded-full opacity-60"></div>
+        <div className="absolute bottom-8 right-12 w-24 h-24 bg-slate-200 rounded-lg opacity-40"></div>
       </section>
 
       {/* About Section */}
@@ -64,7 +96,7 @@ export default function ImpactCirclePage() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto">
             <Button
               onClick={() => window.open("https://chat.whatsapp.com/HTv3KIMTlJlCtBGruoYDTg", "_blank")}
-              className="bg-brand-navy text-white py-4 px-8 text-lg hover:opacity-90 transition-opacity"
+              className="bg-slate-900 text-white py-4 px-8 text-lg hover:bg-slate-800 transition-colors"
             >
               Join WhatsApp Group
             </Button>
@@ -77,7 +109,7 @@ export default function ImpactCirclePage() {
             </Button>
             
             <Link href="/contact">
-              <Button variant="outline" className="border-2 border-brand-navy brand-navy py-4 px-8 text-lg hover:bg-brand-navy hover:text-white transition-colors">
+              <Button variant="outline" className="border-2 border-slate-900 text-slate-900 py-4 px-8 text-lg hover:bg-slate-900 hover:text-white transition-colors">
                 Contact Us
               </Button>
             </Link>

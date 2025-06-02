@@ -24,10 +24,11 @@
   --ring: 0 0% 0%;
   --radius: 0.25rem;
   
-  /* Brand colors - navy, beige, white theme */
+  /* Brand colors - sophisticated neutral theme */
   --brand-navy: 220 39% 11%; /* #1E293B */
-  --brand-beige: 39 77% 94%; /* #FAF7F0 */
+  --brand-warm-gray: 0 0% 97%; /* #F7F7F7 */
   --brand-light-gray: 210 20% 98%; /* #F8FAFC */
+  --brand-accent: 220 39% 11%; /* #1E293B - same as navy for consistency */
 }
 
 .dark {
@@ -75,8 +76,8 @@
     background-color: hsl(var(--brand-navy));
   }
   
-  .bg-brand-beige {
-    background-color: hsl(var(--brand-beige));
+  .bg-brand-warm-gray {
+    background-color: hsl(var(--brand-warm-gray));
   }
   
   .bg-brand-light-gray {
