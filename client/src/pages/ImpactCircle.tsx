@@ -11,7 +11,7 @@ export default function ImpactCirclePage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-20 bg-white">
+      <section className="pt-24 pb-20 bg-brand-light-gray relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Link href="/">
@@ -22,13 +22,16 @@ export default function ImpactCirclePage() {
             </Link>
             
             <h1 className="text-5xl md:text-7xl font-bold text-black mb-8 tracking-tight">
-              Impact Circle
+              <span className="brand-navy">Impact</span> Circle
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Join our mission to amplify social impact by contributing a minimum of $5 on your birthday, your loved ones' birthdays, anniversaries, or any day that holds special meaning to you.
             </p>
           </div>
         </div>
+        
+        <div className="absolute top-1/2 left-8 w-32 h-32 bg-brand-beige rounded-full opacity-60"></div>
+        <div className="absolute bottom-8 right-12 w-24 h-24 bg-white rounded-lg shadow-lg opacity-80"></div>
       </section>
 
       {/* About Section */}
@@ -61,7 +64,7 @@ export default function ImpactCirclePage() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto">
             <Button
               onClick={() => window.open("https://chat.whatsapp.com/HTv3KIMTlJlCtBGruoYDTg", "_blank")}
-              className="bg-brand-mint text-white py-4 px-8 text-lg hover:bg-emerald-600 transition-colors"
+              className="bg-brand-navy text-white py-4 px-8 text-lg hover:opacity-90 transition-opacity"
             >
               Join WhatsApp Group
             </Button>
@@ -74,7 +77,7 @@ export default function ImpactCirclePage() {
             </Button>
             
             <Link href="/contact">
-              <Button variant="outline" className="border-2 border-black text-black py-4 px-8 text-lg hover:bg-black hover:text-white transition-colors">
+              <Button variant="outline" className="border-2 border-brand-navy brand-navy py-4 px-8 text-lg hover:bg-brand-navy hover:text-white transition-colors">
                 Contact Us
               </Button>
             </Link>

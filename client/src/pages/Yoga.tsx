@@ -56,7 +56,7 @@ export default function YogaPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-20 bg-white">
+      <section className="pt-24 pb-20 bg-brand-beige relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Link href="/">
@@ -67,9 +67,9 @@ export default function YogaPage() {
             </Link>
             
             <h1 className="text-5xl md:text-7xl font-bold text-black mb-6 tracking-tight">
-              Bundele Yoga
+              Bundele <span className="brand-navy">Yoga</span>
             </h1>
-            <p className="text-2xl brand-mint font-semibold mb-8">
+            <p className="text-2xl brand-navy font-semibold mb-8">
               Wellness Within, Change Around!
             </p>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -77,6 +77,9 @@ export default function YogaPage() {
             </p>
           </div>
         </div>
+        
+        <div className="absolute top-1/4 right-8 w-20 h-20 bg-white rounded-full opacity-70"></div>
+        <div className="absolute bottom-1/4 left-12 w-16 h-16 bg-brand-navy rounded-lg opacity-20"></div>
       </section>
 
       {/* About BYS Section */}
@@ -98,7 +101,7 @@ export default function YogaPage() {
               </div>
             </div>
             
-            <Card className="bg-brand-gray border-0 shadow-lg">
+            <Card className="bg-brand-light-gray border-0 shadow-lg">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-black mb-8 text-center">Eight Limbs of Yoga</h3>
                 <div className="grid grid-cols-2 gap-4">
@@ -119,7 +122,7 @@ export default function YogaPage() {
       </section>
 
       {/* Class Packages */}
-      <section className="py-20 bg-brand-gray">
+      <section className="py-20 bg-brand-light-gray">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-black mb-6">Class Packages</h2>
