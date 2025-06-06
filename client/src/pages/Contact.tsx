@@ -149,14 +149,14 @@ export default function ContactPage() {
                   
                   <Button
                     onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf8taKXNdCtSBjq5iOiAJC6-FmG26razCM1qoG6BoCV75r7Mw/viewform?usp=header", "_blank")}
-                    className="w-full bg-brand-navy text-white py-4 px-6 h-auto hover:bg-blue-800 transition-colors"
+                    className="w-full bg-slate-900 text-white py-4 px-6 h-auto hover:bg-slate-800 transition-colors"
                   >
                     Set Up Impact Circle Donations
                   </Button>
                   
                   <Button
                     onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdAyE2hC6OAAEKo2Abu477TbnFHcLJCTEAuSuNBChwhJAt14A/viewform?usp=header", "_blank")}
-                    className="w-full bg-brand-mint text-white py-4 px-6 h-auto hover:bg-emerald-600 transition-colors"
+                    className="w-full bg-slate-900 text-white py-4 px-6 h-auto hover:bg-slate-800 transition-colors"
                   >
                     Sign Up for Yoga Classes
                   </Button>
