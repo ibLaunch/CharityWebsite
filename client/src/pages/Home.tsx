@@ -4,9 +4,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
-import furnitureImage from "@assets/Screen Shot 2025-05-19 at 2.01.54 PM.png";
-import cabinetImage from "@assets/Screen Shot 2025-05-19 at 2.03.57 PM.png";
-import schoolHallImage from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM.png";
+import furnitureImage from "@assets/image_1749228397347.png";
+import cabinetImage from "@assets/image_1749228404698.png";
+import schoolHallImage from "@assets/image_1749228409980.png";
 
 export default function Home() {
   const challenges = [
