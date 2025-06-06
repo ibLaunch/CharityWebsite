@@ -40,13 +40,13 @@ export default function Home() {
     {
       year: "2022",
       title: "Donated 12 pieces of furniture to Madhyamik Vidyalaya",
-      image: "https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=400&h=300&fit=crop&auto=format",
+      image: furnitureImage,
       description: "Madhyamik Vidyalaya in Pune is a government-aided rural school. Until recently, students sat on the floor due to a lack of furniture, leading to discomfort and health issues. The donation has helped create a safer, cleaner, and more focused learning environment."
     },
     {
       year: "2022", 
       title: "Donated 10 dining table chairs to Mahalunge Vidyalaya",
-      image: "https://images.unsplash.com/photo-1549497538-303791108f95?w=400&h=300&fit=crop&auto=format",
+      image: cabinetImage,
       description: "Helped improve the school's mealtime setting by providing students with a more comfortable and hygienic space to eat."
     },
     {
