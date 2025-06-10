@@ -26,28 +26,28 @@ export default function Impact() {
   ];
 
   return (
-    <section className="py-20 bg-brand-navy">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Impact Since 2022</h2>
-          <div className="w-24 h-1 bg-brand-mint mx-auto"></div>
+    <section className="section-padding bg-white">
+      <div className="container-luxury">
+        <div className="text-center mb-20">
+          <h2 className="text-serif text-4xl md:text-5xl font-normal text-black mb-8 tracking-tight">Our Impact Since 2022</h2>
+          <div className="w-16 h-px bg-black mx-auto"></div>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-12">
           {impactStories.map((story, index) => (
-            <Card key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-8">
+            <div key={index} className="luxury-card hover-lift">
+              <div className="p-8">
                 <img 
                   src={story.image}
                   alt={story.title}
-                  className="rounded-lg w-full h-48 object-cover mb-6"
+                  className="rounded-lg w-full h-56 object-cover mb-8"
                 />
-                <h3 className="text-xl font-bold brand-navy mb-4">{story.year} - {story.title}</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <h3 className="text-serif text-xl font-medium text-black mb-4 tracking-tight">{story.year} - {story.title}</h3>
+                <p className="text-sans text-gray-700 leading-relaxed">
                   {story.description}
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>

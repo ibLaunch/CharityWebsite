@@ -43,13 +43,13 @@ export default function Navigation() {
 
   return (
     <nav className={`fixed top-0 w-full bg-white z-50 transition-all duration-300 ${
-      isScrolled ? "shadow-lg" : "shadow-sm"
+      isScrolled ? "shadow-sm border-b border-gray-100" : ""
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+      <div className="container-luxury">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <Link href="/">
-              <h1 className="text-xl font-bold text-black cursor-pointer hover:opacity-80 transition-opacity">
+              <h1 className="text-serif text-2xl font-normal text-black cursor-pointer hover:opacity-70 transition-opacity tracking-tight">
                 Bundele Foundation
               </h1>
             </Link>
@@ -57,10 +57,10 @@ export default function Navigation() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="flex items-center space-x-12">
               {navItems.map((item) => (
                 <Link key={item.id} href={item.href || "#"}>
-                  <button className="text-gray-700 hover:text-black transition-colors px-3 py-2 text-sm font-medium">
+                  <button className="text-sans text-sm font-medium text-gray-600 hover:text-black transition-colors tracking-wide uppercase">
                     {item.label}
                   </button>
                 </Link>
@@ -72,15 +72,15 @@ export default function Navigation() {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
+                <Button variant="ghost" size="icon" className="border-none">
+                  <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent>
-                <div className="flex flex-col space-y-4 mt-8">
+              <SheetContent className="bg-white">
+                <div className="flex flex-col space-y-8 mt-12">
                   {navItems.map((item) => (
                     <Link key={item.id} href={item.href || "#"}>
-                      <button className="text-left text-gray-700 hover:text-black transition-colors px-3 py-2 text-lg font-medium">
+                      <button className="text-left text-sans text-lg font-medium text-gray-600 hover:text-black transition-colors tracking-wide uppercase">
                         {item.label}
                       </button>
                     </Link>
