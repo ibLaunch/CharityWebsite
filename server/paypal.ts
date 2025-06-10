@@ -51,18 +51,24 @@ const oAuthAuthorizationController = new OAuthAuthorizationController(client);
 /* Token generation helpers */
 
 export async function getClientToken() {
-  const auth = Buffer.from(
-    `${PAYPAL_CLIENT_ID}:${PAYPAL_CLIENT_SECRET}`,
-  ).toString("base64");
+  try {
+    const auth = Buffer.from(
+      `${PAYPAL_CLIENT_ID}:${PAYPAL_CLIENT_SECRET}`,
+    ).toString("base64");
 
-  const { result } = await oAuthAuthorizationController.requestToken(
-    {
-      authorization: `Basic ${auth}`,
-    },
-    { intent: "sdk_init", response_type: "client_token" },
-  );
+    const { result } = await oAuthAuthorizationController.requestToken(
+      {
+        authorization: `Basic ${auth}`,
+      },
+      { intent: "sdk_init", response_type: "client_token" },
+    );
 
-  return result.accessToken;
+    return result.accessToken;
+  } catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
+    console.error("PayPal authentication failed:", errorMessage);
+    throw new Error("PayPal authentication failed. Please check your credentials.");
+  }
 }
 
 /*  Process transactions */
@@ -141,9 +147,18 @@ export async function capturePaypalOrder(req: Request, res: Response) {
 }
 
 export async function loadPaypalDefault(req: Request, res: Response) {
-  const clientToken = await getClientToken();
-  res.json({
-    clientToken,
-  });
+  try {
+    const clientToken = await getClientToken();
+    res.json({
+      clientToken,
+    });
+  } catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
+    console.error("Failed to get PayPal client token:", errorMessage);
+    res.status(401).json({ 
+      error: "PayPal authentication failed. Please check your PayPal credentials.",
+      details: errorMessage 
+    });
+  }
 }
 // <END_EXACT_CODE>
