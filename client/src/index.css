@@ -3,32 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%; /* Pure white */
-  --foreground: 0 0% 0%; /* Pure black */
-  --muted: 210 20% 95%; /* Soft gray */
-  --muted-foreground: 0 0% 45%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 0%;
-  --card: 0 0% 100%;
-  --card-foreground: 0 0% 0%;
-  --border: 210 20% 90%;
-  --input: 210 20% 95%;
-  --primary: 0 0% 0%; /* Black */
+  --background: 32 20% 95%; /* Warm cream background #F4F1ED */
+  --foreground: 20 14% 20%; /* Dark charcoal text #2D2622 */
+  --muted: 30 15% 88%; /* Soft beige #E5E0D8 */
+  --muted-foreground: 20 8% 46%; /* Medium gray #716B64 */
+  --popover: 32 20% 95%;
+  --popover-foreground: 20 14% 20%;
+  --card: 0 0% 100%; /* Pure white for cards */
+  --card-foreground: 20 14% 20%;
+  --border: 30 12% 85%; /* Subtle border #D8D3CC */
+  --input: 30 15% 88%;
+  --primary: 20 14% 20%; /* Dark charcoal */
   --primary-foreground: 0 0% 100%;
-  --secondary: 210 20% 95%;
-  --secondary-foreground: 0 0% 0%;
-  --accent: 158 64% 52%; /* Mint */
+  --secondary: 30 15% 88%;
+  --secondary-foreground: 20 14% 20%;
+  --accent: 25 25% 65%; /* Warm neutral accent #B5A592 */
   --accent-foreground: 0 0% 100%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 60 9.1% 97.8%;
-  --ring: 0 0% 0%;
-  --radius: 0.25rem;
+  --ring: 20 14% 20%;
+  --radius: 0.375rem;
   
-  /* Brand colors - sophisticated neutral theme */
-  --brand-navy: 220 39% 11%; /* #1E293B */
-  --brand-warm-gray: 0 0% 97%; /* #F7F7F7 */
-  --brand-light-gray: 210 20% 98%; /* #F8FAFC */
-  --brand-accent: 220 39% 11%; /* #1E293B - same as navy for consistency */
+  /* Brand colors - sophisticated warm neutral theme */
+  --brand-charcoal: 20 14% 20%; /* #2D2622 - main dark color */
+  --brand-cream: 32 20% 95%; /* #F4F1ED - main background */
+  --brand-beige: 30 15% 88%; /* #E5E0D8 - section backgrounds */
+  --brand-warm-white: 40 25% 97%; /* #F8F7F5 - card backgrounds */
+  --brand-accent: 25 25% 65%; /* #B5A592 - accent color */
+  --brand-dark-section: 15 8% 15%; /* #252220 - dark sections */
 }
 
 .dark {
@@ -68,19 +70,35 @@
 }
 
 @layer utilities {
-  .brand-navy {
-    color: hsl(var(--brand-navy));
+  .brand-charcoal {
+    color: hsl(var(--brand-charcoal));
   }
   
-  .bg-brand-navy {
-    background-color: hsl(var(--brand-navy));
+  .bg-brand-charcoal {
+    background-color: hsl(var(--brand-charcoal));
   }
   
-  .bg-brand-warm-gray {
-    background-color: hsl(var(--brand-warm-gray));
+  .bg-brand-cream {
+    background-color: hsl(var(--brand-cream));
   }
   
-  .bg-brand-light-gray {
-    background-color: hsl(var(--brand-light-gray));
+  .bg-brand-beige {
+    background-color: hsl(var(--brand-beige));
+  }
+  
+  .bg-brand-warm-white {
+    background-color: hsl(var(--brand-warm-white));
+  }
+  
+  .bg-brand-dark-section {
+    background-color: hsl(var(--brand-dark-section));
+  }
+  
+  .text-brand-charcoal {
+    color: hsl(var(--brand-charcoal));
+  }
+  
+  .text-brand-accent {
+    color: hsl(var(--brand-accent));
   }
 }

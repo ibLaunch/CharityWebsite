@@ -59,34 +59,34 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-brand-cream">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative bg-white pt-24 pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
+      <section className="relative bg-brand-cream pt-24 pb-32 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-warm-white to-brand-cream"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
-                  <span className="text-black">Bundele</span>
+                <h1 className="text-5xl md:text-7xl font-light tracking-wide leading-tight">
+                  <span className="text-brand-charcoal font-extralight">Bundele</span>
                   <br />
-                  <span className="text-slate-800">Foundation</span>
+                  <span className="text-brand-charcoal font-light">Foundation</span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
+                <p className="text-lg text-brand-charcoal/70 leading-relaxed max-w-lg font-light">
                   Your donations are not only tax-deductible but also matched by Bundele Foundation for up to $2,000, doubling your impact.
                 </p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <div className="bg-slate-900 text-white px-8 py-4 text-lg hover:bg-slate-800 transition-colors rounded-md">
+                <div className="bg-brand-charcoal text-white px-8 py-4 text-lg hover:bg-brand-charcoal/90 transition-colors rounded-sm">
                   <PayPalButton amount="50.00" currency="USD" intent="CAPTURE" />
                 </div>
                 
                 <Link href="/impact-circle">
-                  <Button variant="outline" className="border-2 border-slate-900 text-slate-900 px-8 py-4 text-lg hover:bg-slate-900 hover:text-white transition-colors">
+                  <Button variant="outline" className="border border-brand-charcoal text-brand-charcoal px-8 py-4 text-lg hover:bg-brand-charcoal hover:text-white transition-colors rounded-sm font-light">
                     Join Impact Circle
                   </Button>
                 </Link>
@@ -94,56 +94,56 @@ export default function Home() {
             </div>
             
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-sm overflow-hidden shadow-lg">
                 <img 
                   src={schoolImage}
                   alt="Students learning in classroom"
                   className="w-full h-[500px] object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
               </div>
               
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border">
+              <div className="absolute -bottom-6 -left-6 bg-brand-warm-white p-6 rounded-sm shadow-lg border border-brand-beige">
                 <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-slate-900 rounded-xl flex items-center justify-center">
-                    <span className="text-white text-2xl font-bold">3</span>
+                  <div className="w-16 h-16 bg-brand-charcoal rounded-sm flex items-center justify-center">
+                    <span className="text-white text-2xl font-light">3</span>
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Schools Supported</p>
-                    <p className="text-xl font-bold text-slate-900">Since 2022</p>
+                    <p className="text-sm font-light text-brand-charcoal/60 uppercase tracking-wider">Schools Supported</p>
+                    <p className="text-xl font-light text-brand-charcoal">Since 2022</p>
                   </div>
                 </div>
               </div>
               
-              <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg">
-                <p className="text-sm font-semibold text-slate-900">100% Direct Impact</p>
+              <div className="absolute top-8 right-8 bg-brand-warm-white/95 backdrop-blur-sm p-4 rounded-sm shadow-sm border border-brand-beige/50">
+                <p className="text-sm font-light text-brand-charcoal">100% Direct Impact</p>
               </div>
             </div>
           </div>
         </div>
         
-        <div className="absolute top-1/4 left-8 w-32 h-32 bg-slate-100 rounded-full opacity-60"></div>
-        <div className="absolute bottom-1/4 right-8 w-24 h-24 bg-slate-200 rounded-lg opacity-40"></div>
+        <div className="absolute top-1/4 left-8 w-32 h-32 bg-brand-beige/40 rounded-full opacity-60"></div>
+        <div className="absolute bottom-1/4 right-8 w-24 h-24 bg-brand-accent/30 rounded-sm opacity-40"></div>
       </section>
 
       {/* Learn About What We Do */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-brand-beige">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">Learn about what we do</h2>
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-light text-brand-charcoal mb-6 tracking-wide">Learn about what we do</h2>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div className="grid lg:grid-cols-2 gap-20 items-start">
             <div>
-              <h3 className="text-3xl font-bold text-black mb-6">Supporting education in underserved communities</h3>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              <h3 className="text-2xl font-light text-brand-charcoal mb-8 leading-relaxed">Supporting education in underserved communities</h3>
+              <p className="text-base text-brand-charcoal/70 leading-relaxed mb-8 font-light">
                 Bridge the gap between generations through community programs that foster mutual learning and support. By creating mentorship opportunities, where the adults can share their wealth of knowledge and life experiences with young minds, we can cultivate a culture of respect and appreciation.
               </p>
             </div>
             
             <div>
-              <h3 className="text-3xl font-bold text-black mb-6">Help seniors enhance their quality of life in their golden years</h3>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <h3 className="text-2xl font-light text-brand-charcoal mb-8 leading-relaxed">Help seniors enhance their quality of life in their golden years</h3>
+              <p className="text-base text-brand-charcoal/70 leading-relaxed font-light">
                 Additionally, integrating technology workshops can empower older adults to stay connected with the digital world, reducing isolation and opening new avenues for learning and engagement.
               </p>
             </div>
@@ -152,24 +152,24 @@ export default function Home() {
       </section>
 
       {/* Our Impact Since 2022 */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-brand-warm-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">OUR IMPACT SINCE 2022</h2>
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-light text-brand-charcoal mb-6 tracking-wide">OUR IMPACT SINCE 2022</h2>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-10">
             {impactStories.map((story, index) => (
-              <Card key={index} className="bg-white border border-gray-200 shadow-lg">
+              <Card key={index} className="bg-white border border-brand-beige/30 shadow-sm rounded-sm overflow-hidden">
                 <CardContent className="p-0">
                   <img 
                     src={story.image}
                     alt={story.title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-56 object-cover"
                   />
-                  <div className="p-6">
-                    <h3 className="text-lg font-bold text-black mb-3">{story.year}- {story.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                  <div className="p-8">
+                    <h3 className="text-lg font-light text-brand-charcoal mb-4 leading-relaxed">{story.year} - {story.title}</h3>
+                    <p className="text-brand-charcoal/70 text-sm leading-relaxed font-light">
                       {story.description}
                     </p>
                   </div>
@@ -181,18 +181,18 @@ export default function Home() {
       </section>
 
       {/* Challenges */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-brand-dark-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">The challenges</h2>
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">The challenges</h2>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {challenges.map((challenge, index) => (
-              <Card key={index} className="bg-white border border-gray-200 shadow-lg text-center">
-                <CardContent className="p-8">
-                  <h3 className="text-4xl font-bold text-black mb-4">{challenge.stat}</h3>
-                  <p className="text-gray-600 leading-relaxed">{challenge.description}</p>
+              <Card key={index} className="bg-brand-charcoal border border-brand-accent/20 shadow-sm text-center rounded-sm">
+                <CardContent className="p-10">
+                  <h3 className="text-3xl font-light text-white mb-6">{challenge.stat}</h3>
+                  <p className="text-white/70 leading-relaxed font-light">{challenge.description}</p>
                 </CardContent>
               </Card>
             ))}
