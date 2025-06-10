@@ -31,23 +31,23 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-brand-charcoal text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">Bundele Foundation</h3>
-            <p className="text-gray-400 leading-relaxed">
+            <h3 className="text-xl font-light mb-6 tracking-wide">Bundele Foundation</h3>
+            <p className="text-white/70 leading-relaxed font-light">
               Creating positive change through education support, senior care, and community building. Together, we're making a difference.
             </p>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-gray-400">
+            <h4 className="text-lg font-light mb-6 tracking-wide">Quick Links</h4>
+            <ul className="space-y-3 text-white/70">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link href={link.href}>
-                    <button className="hover:text-white transition-colors text-left">
+                    <button className="hover:text-white transition-colors text-left font-light">
                       {link.label}
                     </button>
                   </Link>
@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
+            <h4 className="text-lg font-light mb-6 tracking-wide">Connect With Us</h4>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => {
                 const IconComponent = social.icon;
@@ -67,7 +67,7 @@ export default function Footer() {
                     href={social.href}
                     target={social.href.startsWith("http") ? "_blank" : undefined}
                     rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors ${social.bgColor}`}
+                    className="w-12 h-12 rounded-sm bg-brand-accent/20 hover:bg-brand-accent/30 flex items-center justify-center transition-colors"
                     aria-label={social.label}
                   >
                     <IconComponent className="h-5 w-5" />
@@ -78,8 +78,8 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Bundele Foundation. All rights reserved. | Creating positive change together.</p>
+        <div className="border-t border-brand-accent/20 mt-12 pt-8 text-center text-white/70">
+          <p className="font-light">&copy; 2024 Bundele Foundation. All rights reserved. | Creating positive change together.</p>
         </div>
       </div>
     </footer>
