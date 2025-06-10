@@ -56,65 +56,49 @@ export default function YogaPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative bg-white pt-24 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-white"></div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
+      <section className="bg-white minimal-section pt-32">
+        <div className="container-minimal">
+          <div className="grid lg:grid-cols-2 gap-24 items-center">
+            <div className="space-y-12">
               <Link href="/">
-                <Button variant="ghost" className="text-slate-600 hover:text-slate-900 mb-8">
+                <button className="luxury-button-outline mb-16">
                   <ArrowLeft className="mr-2 h-4 w-4" />
                   Back to Home
-                </Button>
+                </button>
               </Link>
               
-              <div className="space-y-6">
-                <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
-                  <span className="text-black">Bundele</span>
-                  <br />
-                  <span className="text-slate-800">Yoga</span>
+              <div className="space-y-8">
+                <div className="elegant-small">Wellness & Spirituality</div>
+                <h1 className="hero-title text-black">
+                  Bundele<br />
+                  <span className="italic">Yoga</span>
                 </h1>
-                <p className="text-2xl text-slate-700 font-semibold">
+                <p className="text-2xl font-light text-gray-800 italic">
                   Wellness Within, Change Around
                 </p>
-                <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
+                <p className="text-lg text-gray-600 leading-relaxed font-light max-w-lg">
                   Traditional yoga practice rooted in ancient Indian philosophy, promoting physical, mental, and spiritual well-being.
                 </p>
               </div>
             </div>
             
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&h=400&fit=crop&auto=format"
-                  alt="Peaceful yoga practice"
-                  className="w-full h-[400px] object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&h=400&fit=crop&auto=format"
+                alt="Peaceful yoga practice"
+                className="luxury-image w-full h-[500px] object-cover"
+              />
               
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border">
-                <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-slate-900 rounded-xl flex items-center justify-center">
-                    <span className="text-white text-xl font-bold">8</span>
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Limbs of Yoga</p>
-                    <p className="text-lg font-bold text-slate-900">Ashtanga Path</p>
-                  </div>
+              <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm p-6 min-w-[200px]">
+                <div className="space-y-2">
+                  <div className="elegant-small">Starting From</div>
+                  <div className="text-3xl font-light text-black">$65</div>
+                  <div className="text-sm text-gray-600 font-light">per class</div>
                 </div>
-              </div>
-              
-              <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg">
-                <p className="text-sm font-semibold text-slate-900">$65 per class</p>
               </div>
             </div>
           </div>
         </div>
-        
-        <div className="absolute top-1/4 left-8 w-32 h-32 bg-slate-100 rounded-full opacity-60"></div>
-        <div className="absolute bottom-1/4 right-8 w-24 h-24 bg-slate-200 rounded-lg opacity-40"></div>
       </section>
 
       {/* About BYS Section */}
