@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,31 +7,31 @@
 :root {
   --background: 0 0% 100%; /* Pure white */
   --foreground: 0 0% 0%; /* Pure black */
-  --muted: 35 15% 92%; /* Soft beige */
+  --muted: 30 8% 95%; /* Very light warm gray */
   --muted-foreground: 0 0% 45%;
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 0%;
   --card: 0 0% 100%;
   --card-foreground: 0 0% 0%;
-  --border: 35 15% 88%;
-  --input: 35 15% 95%;
+  --border: 30 8% 92%;
+  --input: 30 8% 96%;
   --primary: 0 0% 0%; /* Black */
   --primary-foreground: 0 0% 100%;
-  --secondary: 35 15% 92%;
+  --secondary: 30 8% 95%;
   --secondary-foreground: 0 0% 0%;
   --accent: 0 0% 0%; /* Black accent */
   --accent-foreground: 0 0% 100%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 60 9.1% 97.8%;
   --ring: 0 0% 0%;
-  --radius: 0.5rem;
+  --radius: 0rem;
   
-  /* Luxury brand colors */
-  --brand-beige: 35 15% 92%; /* #F4F1ED */
-  --brand-warm-beige: 30 20% 88%; /* #E8E1D8 */
-  --brand-light-gray: 0 0% 98%; /* #FAFAFA */
+  /* Luxury brand colors - matching reference */
+  --brand-cream: 30 8% 95%; /* #F8F6F3 - very light cream */
+  --brand-warm-gray: 30 5% 88%; /* #E5E2DE - warm light gray */
+  --brand-light: 0 0% 99%; /* #FCFCFC - almost white */
   --brand-charcoal: 0 0% 15%; /* #262626 */
-  --brand-soft-black: 0 0% 8%; /* #141414 */
+  --brand-black: 0 0% 0%; /* Pure black */
 }
 
 .dark {
@@ -62,110 +62,140 @@
   }
 
   body {
-    @apply antialiased bg-background text-foreground;
+    @apply antialiased bg-white text-black;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-    letter-spacing: -0.01em;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
   }
 
   html {
     scroll-behavior: smooth;
   }
 
-  /* Serif headings for luxury aesthetic */
+  /* Luxury serif headings matching reference */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: #000;
   }
 
   h1 {
-    font-size: 3.5rem;
-    font-weight: 400;
+    font-size: 4rem;
+    font-weight: 300;
   }
 
   h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 300;
   }
 
   h3 {
-    font-size: 1.875rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 400;
   }
 
-  /* Refined paragraph spacing */
+  /* Refined paragraph styling */
   p {
     margin-bottom: 1.5rem;
-    color: hsl(0 0% 25%);
+    color: #333;
+    font-weight: 300;
+    line-height: 1.7;
   }
 
-  /* Elegant buttons */
+  /* Minimal elegant buttons */
   .luxury-button {
-    @apply px-8 py-3 bg-black text-white rounded-none border border-black;
+    @apply px-10 py-4 bg-black text-white border border-black;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 0.875rem;
-    letter-spacing: 0.05em;
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    border-radius: 0;
   }
 
   .luxury-button:hover {
-    @apply bg-white text-black;
+    @apply bg-transparent text-black;
   }
 
   .luxury-button-outline {
-    @apply px-8 py-3 bg-transparent text-black border border-black rounded-none;
+    @apply px-10 py-4 bg-transparent text-black border border-black;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 0.875rem;
-    letter-spacing: 0.05em;
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    border-radius: 0;
   }
 
   .luxury-button-outline:hover {
     @apply bg-black text-white;
   }
+
+  /* Minimal section styling */
+  .minimal-section {
+    @apply py-32;
+  }
+
+  /* Large hero text */
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+  }
+
+  /* Small elegant text */
+  .elegant-small {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #666;
+  }
 }
 
 @layer utilities {
-  .bg-brand-beige {
-    background-color: hsl(var(--brand-beige));
+  .bg-brand-cream {
+    background-color: hsl(var(--brand-cream));
   }
   
-  .bg-brand-warm-beige {
-    background-color: hsl(var(--brand-warm-beige));
+  .bg-brand-warm-gray {
+    background-color: hsl(var(--brand-warm-gray));
   }
   
-  .bg-brand-light-gray {
-    background-color: hsl(var(--brand-light-gray));
+  .bg-brand-light {
+    background-color: hsl(var(--brand-light));
   }
   
   .text-brand-charcoal {
     color: hsl(var(--brand-charcoal));
   }
   
-  .text-brand-soft-black {
-    color: hsl(var(--brand-soft-black));
+  .text-brand-black {
+    color: hsl(var(--brand-black));
   }
 
-  /* Luxury spacing utilities */
+  /* Minimal spacing utilities */
   .section-padding {
-    @apply py-24 px-6;
+    @apply py-40 px-8;
   }
   
-  .container-luxury {
-    @apply max-w-6xl mx-auto;
+  .container-minimal {
+    @apply max-w-7xl mx-auto;
   }
 
-  /* Elegant card styling */
-  .luxury-card {
-    @apply bg-white border-0 shadow-none rounded-lg overflow-hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  /* Clean minimal cards */
+  .minimal-card {
+    @apply bg-white border-0 shadow-none overflow-hidden;
+    border-radius: 0;
   }
 
   /* Typography utilities */
@@ -177,13 +207,24 @@
     font-family: 'Inter', sans-serif;
   }
 
-  /* Hover effects */
-  .hover-lift {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Subtle hover effects */
+  .hover-minimal {
+    transition: all 0.4s ease;
   }
   
-  .hover-lift:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  .hover-minimal:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Large layout grids */
+  .grid-minimal {
+    display: grid;
+    gap: 4rem;
+  }
+
+  /* Image styling for luxury look */
+  .luxury-image {
+    border-radius: 0;
+    filter: contrast(1.1) brightness(0.95);
   }
 }

@@ -28,23 +28,23 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-black text-white py-20">
-      <div className="container-luxury">
-        <div className="grid md:grid-cols-3 gap-12">
+    <footer className="bg-black text-white minimal-section">
+      <div className="container-minimal">
+        <div className="grid md:grid-cols-3 gap-24">
           <div>
-            <h3 className="text-serif text-2xl font-normal mb-6 tracking-tight">Bundele Foundation</h3>
-            <p className="text-sans text-gray-400 leading-relaxed">
+            <h3 className="text-serif text-3xl font-light mb-8 tracking-tight">bundele</h3>
+            <p className="text-gray-400 leading-relaxed font-light">
               Creating positive change through education support, senior care, and community building. Together, we're making a difference.
             </p>
           </div>
           
           <div>
-            <h4 className="text-sans text-sm font-medium mb-6 tracking-wide uppercase text-gray-300">Quick Links</h4>
-            <ul className="space-y-3 text-gray-400">
+            <div className="elegant-small text-gray-500 mb-8">Navigation</div>
+            <ul className="space-y-4 text-gray-400">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link href={link.href}>
-                    <button className="text-sans hover:text-white transition-colors text-left tracking-wide">
+                    <button className="hover:text-white transition-colors text-left font-light">
                       {link.label}
                     </button>
                   </Link>
@@ -54,8 +54,8 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-sans text-sm font-medium mb-6 tracking-wide uppercase text-gray-300">Connect With Us</h4>
-            <div className="flex space-x-4">
+            <div className="elegant-small text-gray-500 mb-8">Connect</div>
+            <div className="flex space-x-6">
               {socialLinks.map((social, index) => {
                 const IconComponent = social.icon;
                 return (
@@ -64,10 +64,10 @@ export default function Footer() {
                     href={social.href}
                     target={social.href.startsWith("http") ? "_blank" : undefined}
                     rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="w-12 h-12 border border-gray-700 rounded-full flex items-center justify-center transition-all hover:border-white hover:bg-white hover:text-black"
+                    className="w-10 h-10 border border-gray-700 flex items-center justify-center transition-all hover:border-white hover:bg-white hover:text-black"
                     aria-label={social.label}
                   >
-                    <IconComponent className="h-5 w-5" />
+                    <IconComponent className="h-4 w-4" />
                   </a>
                 );
               })}
@@ -75,8 +75,8 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p className="text-sans text-gray-500 text-sm tracking-wide">&copy; 2024 Bundele Foundation. All rights reserved. | Creating positive change together.</p>
+        <div className="border-t border-gray-800 mt-24 pt-12 text-center">
+          <p className="elegant-small text-gray-600">&copy; 2024 Bundele Foundation. All rights reserved.</p>
         </div>
       </div>
     </footer>

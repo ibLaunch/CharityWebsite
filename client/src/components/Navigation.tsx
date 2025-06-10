@@ -42,25 +42,25 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className={`fixed top-0 w-full bg-white z-50 transition-all duration-300 ${
-      isScrolled ? "shadow-sm border-b border-gray-100" : ""
+    <nav className={`fixed top-0 w-full bg-white z-50 transition-all duration-500 ${
+      isScrolled ? "border-b border-gray-200" : ""
     }`}>
-      <div className="container-luxury">
-        <div className="flex justify-between items-center h-20">
+      <div className="container-minimal">
+        <div className="flex justify-between items-center h-24">
           <div className="flex items-center">
             <Link href="/">
-              <h1 className="text-serif text-2xl font-normal text-black cursor-pointer hover:opacity-70 transition-opacity tracking-tight">
-                Bundele Foundation
+              <h1 className="text-serif text-3xl font-light text-black cursor-pointer hover:opacity-60 transition-opacity tracking-tight">
+                bundele
               </h1>
             </Link>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="flex items-center space-x-12">
+            <div className="flex items-center space-x-16">
               {navItems.map((item) => (
                 <Link key={item.id} href={item.href || "#"}>
-                  <button className="text-sans text-sm font-medium text-gray-600 hover:text-black transition-colors tracking-wide uppercase">
+                  <button className="elegant-small text-gray-700 hover:text-black transition-colors">
                     {item.label}
                   </button>
                 </Link>
@@ -73,14 +73,14 @@ export default function Navigation() {
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="border-none">
-                  <Menu className="h-5 w-5" />
+                  <Menu className="h-4 w-4" />
                 </Button>
               </SheetTrigger>
               <SheetContent className="bg-white">
-                <div className="flex flex-col space-y-8 mt-12">
+                <div className="flex flex-col space-y-12 mt-24">
                   {navItems.map((item) => (
                     <Link key={item.id} href={item.href || "#"}>
-                      <button className="text-left text-sans text-lg font-medium text-gray-600 hover:text-black transition-colors tracking-wide uppercase">
+                      <button className="text-left elegant-small text-gray-700 hover:text-black transition-colors">
                         {item.label}
                       </button>
                     </Link>
