@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import PayPalButton from "@/components/PayPalButton";
 import { Link } from "wouter";
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
 import furnitureImage from "@assets/image_1749228397347.png";
@@ -80,12 +81,9 @@ export default function Home() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=YOUR_PAYPAL_BUTTON_ID", "_blank")}
-                  className="bg-slate-900 text-white px-8 py-4 text-lg hover:bg-slate-800 transition-colors"
-                >
-                  Donate Now
-                </Button>
+                <div className="bg-slate-900 text-white px-8 py-4 text-lg hover:bg-slate-800 transition-colors rounded-md">
+                  <PayPalButton amount="50.00" currency="USD" intent="CAPTURE" />
+                </div>
                 
                 <Link href="/impact-circle">
                   <Button variant="outline" className="border-2 border-slate-900 text-slate-900 px-8 py-4 text-lg hover:bg-slate-900 hover:text-white transition-colors">
