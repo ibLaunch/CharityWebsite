@@ -80,7 +80,7 @@ export default function ContactPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-brand-beige">
+      <section className="relative pt-32 pb-20 bg-brand-beige overflow-hidden">
         <div className="container-luxury">
           <div className="text-center">
             <Link href="/">
@@ -95,10 +95,15 @@ export default function ContactPage() {
             </p>
           </div>
         </div>
+        
+        {/* Background circles for this section */}
+        <div className="absolute top-16 left-8 w-28 h-28 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-12 right-12 w-36 h-36 bg-gray-300 rounded-full opacity-30"></div>
+        <div className="absolute top-1/2 right-6 w-20 h-20 bg-gray-100 rounded-full opacity-35"></div>
       </section>
 
       {/* Contact Content */}
-      <section className="section-padding bg-white">
+      <section className="relative section-padding bg-white overflow-hidden">
         <div className="container-luxury">
           <div className="grid lg:grid-cols-2 gap-20">
             {/* Contact Information */}
@@ -242,11 +247,12 @@ export default function ContactPage() {
           </div>
         </div>
         
-        {/* Subtle background circles */}
-        <div className="absolute top-10 right-8 w-32 h-32 bg-gray-200 rounded-full opacity-30"></div>
-        <div className="absolute bottom-16 left-8 w-36 h-36 bg-gray-300 rounded-full opacity-25"></div>
+        {/* Background circles for this section */}
+        <div className="absolute top-20 left-8 w-32 h-32 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-20 right-12 w-40 h-40 bg-gray-300 rounded-full opacity-30"></div>
         <div className="absolute top-1/2 right-4 w-24 h-24 bg-gray-100 rounded-full opacity-35"></div>
-        <div className="absolute top-1/3 left-4 w-28 h-28 bg-gray-200 rounded-full opacity-30"></div>
+        <div className="absolute top-1/3 left-4 w-28 h-28 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-1/3 left-12 w-20 h-20 bg-gray-100 rounded-full opacity-30"></div>
       </section>
 
       <Footer />
