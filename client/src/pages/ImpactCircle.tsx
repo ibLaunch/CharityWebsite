@@ -110,9 +110,9 @@ export default function ImpactCirclePage() {
         </div>
         
         {/* Subtle background circles */}
-        <div className="absolute top-12 right-8 w-36 h-36 bg-gray-200 rounded-full opacity-15"></div>
-        <div className="absolute bottom-16 left-8 w-28 h-28 bg-gray-300 rounded-full opacity-20"></div>
-        <div className="absolute top-1/2 right-4 w-20 h-20 bg-gray-100 rounded-full opacity-25"></div>
+        <div className="absolute top-12 right-8 w-36 h-36 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-16 left-8 w-28 h-28 bg-gray-300 rounded-full opacity-30"></div>
+        <div className="absolute top-1/2 right-4 w-20 h-20 bg-gray-100 rounded-full opacity-35"></div>
       </section>
 
       <Footer />

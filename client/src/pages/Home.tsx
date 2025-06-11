@@ -122,14 +122,14 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="absolute top-8 right-4 w-32 h-32 bg-gray-200 rounded-full opacity-20"></div>
-        <div className="absolute bottom-8 left-4 w-40 h-40 bg-gray-300 rounded-full opacity-15"></div>
-        <div className="absolute top-2/3 right-2 w-24 h-24 bg-gray-200 rounded-full opacity-25"></div>
-        <div className="absolute bottom-1/3 left-2 w-28 h-28 bg-gray-100 rounded-full opacity-20"></div>
+        <div className="absolute top-8 right-4 w-32 h-32 bg-gray-200 rounded-full opacity-30"></div>
+        <div className="absolute bottom-8 left-4 w-40 h-40 bg-gray-300 rounded-full opacity-25"></div>
+        <div className="absolute top-2/3 right-2 w-24 h-24 bg-gray-200 rounded-full opacity-35"></div>
+        <div className="absolute bottom-1/3 left-2 w-28 h-28 bg-gray-100 rounded-full opacity-30"></div>
       </section>
 
       {/* Learn About What We Do */}
-      <section className="py-20 bg-gray-50">
+      <section className="relative py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">Learn about what we do</h2>
@@ -151,10 +151,15 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
+        {/* Background circles for this section */}
+        <div className="absolute top-16 left-8 w-20 h-20 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-12 right-12 w-36 h-36 bg-gray-300 rounded-full opacity-20"></div>
+        <div className="absolute top-1/2 left-4 w-24 h-24 bg-gray-100 rounded-full opacity-30"></div>
       </section>
 
       {/* Our Impact Since 2022 */}
-      <section className="py-20 bg-white">
+      <section className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">OUR IMPACT SINCE 2022</h2>
@@ -180,10 +185,15 @@ export default function Home() {
             ))}
           </div>
         </div>
+        
+        {/* Background circles for this section */}
+        <div className="absolute top-20 right-8 w-28 h-28 bg-gray-100 rounded-full opacity-25"></div>
+        <div className="absolute bottom-16 left-12 w-32 h-32 bg-gray-200 rounded-full opacity-20"></div>
+        <div className="absolute top-1/3 left-6 w-20 h-20 bg-gray-300 rounded-full opacity-30"></div>
       </section>
 
       {/* Challenges */}
-      <section className="py-20 bg-gray-50">
+      <section className="relative py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">The challenges</h2>
@@ -200,6 +210,12 @@ export default function Home() {
             ))}
           </div>
         </div>
+        
+        {/* Background circles for this section */}
+        <div className="absolute top-12 left-8 w-24 h-24 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-20 right-8 w-40 h-40 bg-gray-300 rounded-full opacity-20"></div>
+        <div className="absolute top-2/3 right-4 w-28 h-28 bg-gray-100 rounded-full opacity-30"></div>
+        <div className="absolute bottom-1/4 left-4 w-20 h-20 bg-gray-200 rounded-full opacity-25"></div>
       </section>
 
       <Footer />
