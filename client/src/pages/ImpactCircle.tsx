@@ -56,7 +56,7 @@ export default function ImpactCirclePage() {
       </section>
 
       {/* About Section */}
-      <section className="bg-brand-cream minimal-section">
+      <section className="relative bg-brand-cream minimal-section overflow-hidden">
         <div className="container-minimal">
           <div className="max-w-4xl mx-auto text-center space-y-12">
             <h2 className="text-6xl font-light text-black tracking-tight">About the Circle</h2>
@@ -74,10 +74,15 @@ export default function ImpactCirclePage() {
             </div>
           </div>
         </div>
+        
+        {/* Background circles for this section */}
+        <div className="absolute top-20 left-8 w-32 h-32 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-16 right-12 w-28 h-28 bg-gray-300 rounded-full opacity-30"></div>
+        <div className="absolute top-1/2 right-6 w-24 h-24 bg-gray-100 rounded-full opacity-35"></div>
       </section>
 
       {/* Join Section */}
-      <section className="bg-white minimal-section">
+      <section className="relative bg-white minimal-section overflow-hidden">
         <div className="container-minimal text-center">
           <div className="space-y-12">
             <h2 className="text-6xl font-light text-black tracking-tight">Get Started</h2>
@@ -109,10 +114,11 @@ export default function ImpactCirclePage() {
           </div>
         </div>
         
-        {/* Subtle background circles */}
-        <div className="absolute top-12 right-8 w-36 h-36 bg-gray-200 rounded-full opacity-25"></div>
-        <div className="absolute bottom-16 left-8 w-28 h-28 bg-gray-300 rounded-full opacity-30"></div>
-        <div className="absolute top-1/2 right-4 w-20 h-20 bg-gray-100 rounded-full opacity-35"></div>
+        {/* Background circles for this section */}
+        <div className="absolute top-16 right-8 w-40 h-40 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-20 left-8 w-24 h-24 bg-gray-300 rounded-full opacity-30"></div>
+        <div className="absolute top-1/3 left-6 w-32 h-32 bg-gray-100 rounded-full opacity-35"></div>
+        <div className="absolute bottom-1/3 right-4 w-28 h-28 bg-gray-200 rounded-full opacity-25"></div>
       </section>
 
       <Footer />

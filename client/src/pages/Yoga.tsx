@@ -102,7 +102,7 @@ export default function YogaPage() {
       </section>
 
       {/* About BYS Section */}
-      <section className="py-20 bg-white">
+      <section className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -138,10 +138,15 @@ export default function YogaPage() {
             </Card>
           </div>
         </div>
+        
+        {/* Background circles for this section */}
+        <div className="absolute top-16 left-8 w-28 h-28 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-20 right-12 w-36 h-36 bg-gray-300 rounded-full opacity-30"></div>
+        <div className="absolute top-1/2 left-4 w-20 h-20 bg-gray-100 rounded-full opacity-35"></div>
       </section>
 
       {/* Class Packages */}
-      <section className="py-20 bg-gray-50">
+      <section className="relative py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-black mb-6">Class Packages</h2>
@@ -185,10 +190,15 @@ export default function YogaPage() {
             </Button>
           </div>
         </div>
+        
+        {/* Background circles for this section */}
+        <div className="absolute top-20 right-8 w-32 h-32 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-16 left-8 w-40 h-40 bg-gray-300 rounded-full opacity-30"></div>
+        <div className="absolute top-1/2 left-4 w-24 h-24 bg-gray-100 rounded-full opacity-35"></div>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-white">
+      <section className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-black text-center mb-16">Why Choose Our Yoga Practice?</h2>
           
