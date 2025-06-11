@@ -110,6 +110,14 @@ export default function ImpactCirclePage() {
         </div>
       </section>
 
+      {/* Decorative background elements */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <div className="absolute top-32 left-8 w-20 h-20 bg-slate-100 rounded-full opacity-15"></div>
+        <div className="absolute top-1/3 right-16 w-28 h-28 bg-gray-200 rounded-full opacity-12"></div>
+        <div className="absolute bottom-40 left-20 w-24 h-24 bg-slate-200 rounded-full opacity-18"></div>
+        <div className="absolute bottom-1/4 right-8 w-16 h-16 bg-gray-100 rounded-full opacity-10"></div>
+      </div>
+
       <Footer />
     </div>
   );

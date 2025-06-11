@@ -243,6 +243,15 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Decorative background elements */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <div className="absolute top-20 left-10 w-24 h-24 bg-slate-100 rounded-full opacity-15"></div>
+        <div className="absolute top-1/3 right-12 w-32 h-32 bg-gray-200 rounded-full opacity-12"></div>
+        <div className="absolute bottom-40 left-24 w-20 h-20 bg-slate-200 rounded-full opacity-15"></div>
+        <div className="absolute bottom-1/4 right-10 w-16 h-16 bg-gray-100 rounded-full opacity-10"></div>
+        <div className="absolute top-2/3 left-8 w-20 h-20 bg-slate-100 rounded-full opacity-12"></div>
+      </div>
+
       <Footer />
     </div>
   );
