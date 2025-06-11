@@ -243,10 +243,10 @@ export default function ContactPage() {
         </div>
         
         {/* Subtle background circles */}
-        <div className="absolute top-10 right-8 w-32 h-32 bg-gray-100 rounded-full opacity-[0.04]"></div>
-        <div className="absolute bottom-16 left-8 w-36 h-36 bg-gray-200 rounded-full opacity-[0.03]"></div>
-        <div className="absolute top-1/2 right-4 w-24 h-24 bg-gray-100 rounded-full opacity-[0.05]"></div>
-        <div className="absolute top-1/3 left-4 w-28 h-28 bg-gray-200 rounded-full opacity-[0.04]"></div>
+        <div className="absolute top-10 right-8 w-32 h-32 bg-gray-200 rounded-full opacity-20"></div>
+        <div className="absolute bottom-16 left-8 w-36 h-36 bg-gray-300 rounded-full opacity-15"></div>
+        <div className="absolute top-1/2 right-4 w-24 h-24 bg-gray-100 rounded-full opacity-25"></div>
+        <div className="absolute top-1/3 left-4 w-28 h-28 bg-gray-200 rounded-full opacity-20"></div>
       </section>
 
       <Footer />

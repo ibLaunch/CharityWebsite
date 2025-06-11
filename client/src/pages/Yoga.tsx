@@ -223,9 +223,9 @@ export default function YogaPage() {
         </div>
         
         {/* Subtle background circles */}
-        <div className="absolute top-8 right-6 w-32 h-32 bg-gray-100 rounded-full opacity-[0.04]"></div>
-        <div className="absolute bottom-12 left-6 w-40 h-40 bg-gray-200 rounded-full opacity-[0.03]"></div>
-        <div className="absolute top-1/3 right-2 w-24 h-24 bg-gray-100 rounded-full opacity-[0.05]"></div>
+        <div className="absolute top-8 right-6 w-32 h-32 bg-gray-200 rounded-full opacity-20"></div>
+        <div className="absolute bottom-12 left-6 w-40 h-40 bg-gray-300 rounded-full opacity-15"></div>
+        <div className="absolute top-1/3 right-2 w-24 h-24 bg-gray-100 rounded-full opacity-25"></div>
       </section>
 
       <Footer />

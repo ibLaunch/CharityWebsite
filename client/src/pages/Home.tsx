@@ -122,10 +122,10 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="absolute top-8 right-4 w-32 h-32 bg-gray-100 rounded-full opacity-[0.04]"></div>
-        <div className="absolute bottom-8 left-4 w-40 h-40 bg-gray-200 rounded-full opacity-[0.03]"></div>
-        <div className="absolute top-2/3 right-2 w-24 h-24 bg-gray-200 rounded-full opacity-[0.05]"></div>
-        <div className="absolute bottom-1/3 left-2 w-28 h-28 bg-gray-100 rounded-full opacity-[0.04]"></div>
+        <div className="absolute top-8 right-4 w-32 h-32 bg-gray-200 rounded-full opacity-20"></div>
+        <div className="absolute bottom-8 left-4 w-40 h-40 bg-gray-300 rounded-full opacity-15"></div>
+        <div className="absolute top-2/3 right-2 w-24 h-24 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-1/3 left-2 w-28 h-28 bg-gray-100 rounded-full opacity-20"></div>
       </section>
 
       {/* Learn About What We Do */}
