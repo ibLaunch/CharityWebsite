@@ -122,8 +122,8 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="absolute top-1/4 left-8 w-32 h-32 bg-slate-100 rounded-full opacity-60"></div>
-        <div className="absolute bottom-1/4 right-8 w-24 h-24 bg-slate-200 rounded-lg opacity-40"></div>
+        <div className="absolute top-8 right-1/4 w-20 h-20 bg-slate-100 rounded-full opacity-30"></div>
+        <div className="absolute bottom-8 left-1/3 w-16 h-16 bg-slate-200 rounded-full opacity-25"></div>
       </section>
 
       {/* Learn About What We Do */}
