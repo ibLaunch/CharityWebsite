@@ -11,7 +11,7 @@ export default function ImpactCirclePage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-white minimal-section pt-32">
+      <section className="relative bg-white minimal-section pt-32 overflow-hidden">
         <div className="container-minimal">
           <div className="text-center space-y-12">
             <Link href="/">
@@ -53,6 +53,13 @@ export default function ImpactCirclePage() {
             </div>
           </div>
         </div>
+        
+        {/* Background circles for hero section */}
+        <div className="absolute top-16 right-12 w-32 h-32 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-20 left-8 w-40 h-40 bg-gray-300 rounded-full opacity-20"></div>
+        <div className="absolute top-1/3 left-6 w-24 h-24 bg-gray-100 rounded-full opacity-30"></div>
+        <div className="absolute top-2/3 right-6 w-28 h-28 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-1/3 right-16 w-20 h-20 bg-gray-100 rounded-full opacity-30"></div>
       </section>
 
       {/* About Section */}
