@@ -50,7 +50,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/">
               <h1 className="text-serif text-3xl font-light text-black cursor-pointer hover:opacity-60 transition-opacity tracking-tight">
-                bundele
+                Bundele Foundation
               </h1>
             </Link>
           </div>
