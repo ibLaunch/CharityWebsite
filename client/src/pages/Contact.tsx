@@ -15,10 +15,12 @@ import { Mail, Phone, MapPin, Send, ArrowLeft } from "lucide-react";
 import type { InsertContactMessage } from "@shared/schema";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import PayPalButton from "@/components/PayPalButton";
 import { Link } from "wouter";
 
 export default function ContactPage() {
   const { toast } = useToast();
+  const [showDonateForm, setShowDonateForm] = useState(false);
   
   const form = useForm<InsertContactMessage>({
     resolver: zodResolver(insertContactMessageSchema),
@@ -161,6 +163,39 @@ export default function ContactPage() {
                   >
                     Sign Up for Yoga Classes
                   </button>
+                  
+                  <div className="w-full">
+                    {!showDonateForm ? (
+                      <button
+                        onClick={() => setShowDonateForm(true)}
+                        className="luxury-button w-full"
+                      >
+                        Donate
+                      </button>
+                    ) : (
+                      <div className="space-y-4">
+                        <div className="flex justify-between items-center">
+                          <h4 className="text-serif text-lg font-medium text-black">Make a Donation</h4>
+                          <button
+                            onClick={() => setShowDonateForm(false)}
+                            className="text-gray-500 hover:text-black text-sm"
+                          >
+                            ✕
+                          </button>
+                        </div>
+                        <div className="bg-gray-50 p-4 rounded-lg">
+                          <p className="text-sm text-gray-600 mb-4">
+                            Your donation helps us continue our mission of creating positive community impact.
+                          </p>
+                          <PayPalButton 
+                            amount="25.00" 
+                            currency="USD" 
+                            intent="CAPTURE" 
+                          />
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
