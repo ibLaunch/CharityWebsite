@@ -56,7 +56,7 @@ export default function YogaPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-white minimal-section pt-32">
+      <section className="relative bg-white minimal-section pt-32 overflow-hidden">
         <div className="container-minimal">
           <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div className="space-y-12">
@@ -99,6 +99,13 @@ export default function YogaPage() {
             </div>
           </div>
         </div>
+        
+        {/* Background circles for hero section */}
+        <div className="absolute top-20 left-8 w-28 h-28 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-16 right-12 w-36 h-36 bg-gray-300 rounded-full opacity-20"></div>
+        <div className="absolute top-1/2 right-6 w-24 h-24 bg-gray-100 rounded-full opacity-30"></div>
+        <div className="absolute top-1/3 left-12 w-32 h-32 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-1/3 left-4 w-20 h-20 bg-gray-100 rounded-full opacity-30"></div>
       </section>
 
       {/* About BYS Section */}
