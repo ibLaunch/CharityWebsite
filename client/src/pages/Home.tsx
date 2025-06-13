@@ -190,6 +190,9 @@ export default function Home() {
         <div className="absolute top-20 right-8 w-28 h-28 bg-gray-100 rounded-full opacity-25"></div>
         <div className="absolute bottom-16 left-12 w-32 h-32 bg-gray-200 rounded-full opacity-20"></div>
         <div className="absolute top-1/3 left-6 w-20 h-20 bg-gray-300 rounded-full opacity-30"></div>
+        <div className="absolute top-12 left-20 w-24 h-24 bg-gray-200 rounded-full opacity-25"></div>
+        <div className="absolute bottom-20 right-16 w-36 h-36 bg-gray-100 rounded-full opacity-20"></div>
+        <div className="absolute top-2/3 right-4 w-20 h-20 bg-gray-300 rounded-full opacity-25"></div>
       </section>
 
       {/* Challenges */}
