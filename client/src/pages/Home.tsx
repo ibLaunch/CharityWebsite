@@ -82,13 +82,13 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={() => window.open("https://www.paypal.com/donate?token=3YTUiqnxfZkKOFOY5e4yNt1SOHznNl3P69LriUCXLtwG1IdOTgXJOv663YWrk1z3kmPTcafV0IFZL9EH", "_blank")}
-                  className="border-2 border-slate-900 bg-slate-900 text-white px-8 py-4 text-lg hover:bg-white hover:text-slate-900 transition-colors rounded-md"
+                  className="border-2 border-slate-900 bg-slate-900 text-white px-8 py-4 text-lg hover:bg-white hover:text-slate-900 transition-colors rounded-md w-52 text-center"
                 >
                   Donate
                 </button>
                 
                 <Link href="/impact-circle">
-                  <Button variant="outline" className="border-2 border-slate-900 text-slate-900 px-8 py-4 text-lg hover:bg-slate-900 hover:text-white transition-colors">
+                  <Button variant="outline" className="border-2 border-slate-900 text-slate-900 px-8 py-4 text-lg hover:bg-slate-900 hover:text-white transition-colors w-52 text-center">
                     Join Impact Circle
                   </Button>
                 </Link>
