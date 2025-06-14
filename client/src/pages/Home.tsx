@@ -165,7 +165,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-navy-dark mb-6 tracking-tight leading-tight">
               <span className="text-5xl">OUR IMPACT SINCE </span>
-              <span className="text-5xl">2022</span>
+              <span className="text-6xl">2022</span>
             </h2>
           </div>
           
