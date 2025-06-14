@@ -29,24 +29,24 @@ export default function Impact() {
     <section className="bg-white minimal-section">
       <div className="container-minimal">
         <div className="text-center mb-32">
-          <div className="elegant-small mb-8">Our Impact</div>
-          <h2 className="text-6xl font-light text-black mb-12 tracking-tight">
+          <div className="elegant-small mb-8 text-navy-medium">Our Impact</div>
+          <h2 className="text-6xl font-light text-navy-dark mb-12 tracking-tight">
             Since 2022
           </h2>
         </div>
         
         <div className="grid md:grid-cols-3 gap-16">
           {impactStories.map((story, index) => (
-            <div key={index} className="minimal-card hover-minimal">
+            <div key={index} className="bg-white border border-navy-light rounded-lg shadow-sm hover:shadow-lg transition-shadow p-8">
               <img 
                 src={story.image}
                 alt={story.title}
-                className="luxury-image w-full h-72 object-cover mb-8"
+                className="w-full h-72 object-cover mb-8 rounded-lg"
               />
               <div className="space-y-4">
-                <div className="elegant-small">{story.year}</div>
-                <h3 className="text-xl font-light text-black leading-tight">{story.title}</h3>
-                <p className="text-gray-600 leading-relaxed font-light text-sm">
+                <div className="elegant-small text-navy-medium">{story.year}</div>
+                <h3 className="text-xl font-light text-navy-dark leading-tight">{story.title}</h3>
+                <p className="text-navy-dark leading-relaxed font-light text-sm">
                   {story.description}
                 </p>
               </div>

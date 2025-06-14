@@ -39,8 +39,8 @@ export default function Footer() {
           </div>
           
           <div>
-            <div className="elegant-small text-gray-500 mb-8">Navigation</div>
-            <ul className="space-y-4 text-gray-400">
+            <div className="elegant-small text-navy-light mb-8">Navigation</div>
+            <ul className="space-y-4 text-navy-light">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link href={link.href}>
@@ -54,7 +54,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <div className="elegant-small text-gray-500 mb-8">Connect</div>
+            <div className="elegant-small text-navy-light mb-8">Connect</div>
             <div className="flex space-x-6">
               {socialLinks.map((social, index) => {
                 const IconComponent = social.icon;
@@ -64,7 +64,7 @@ export default function Footer() {
                     href={social.href}
                     target={social.href.startsWith("http") ? "_blank" : undefined}
                     rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="w-10 h-10 border border-gray-700 flex items-center justify-center transition-all hover:border-white hover:bg-white hover:text-black"
+                    className="w-10 h-10 border border-navy-light flex items-center justify-center transition-all hover:border-white hover:bg-white hover:text-navy-dark"
                     aria-label={social.label}
                   >
                     <IconComponent className="h-4 w-4" />
@@ -75,8 +75,8 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-24 pt-12 text-center">
-          <p className="elegant-small text-gray-600">&copy; 2024 Bundele Foundation. All rights reserved.</p>
+        <div className="border-t border-navy-medium mt-24 pt-12 text-center">
+          <p className="elegant-small text-navy-light">&copy; 2024 Bundele Foundation. All rights reserved.</p>
         </div>
       </div>
     </footer>
