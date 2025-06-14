@@ -69,10 +69,9 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
-                  <span className="text-black">Bundele</span>
-                  <br />
-                  <span className="text-slate-800">Foundation</span>
+                <h1 className="hero-title text-navy-dark">
+                  Bundele<br />
+                  Foundation
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
                   Your donations are not only tax-deductible but also matched by Bundele Foundation for up to $2,000, doubling your impact.
