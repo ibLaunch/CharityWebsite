@@ -60,7 +60,7 @@ export default function Navigation() {
             <div className="flex items-center space-x-16">
               {navItems.map((item) => (
                 <Link key={item.id} href={item.href || "#"}>
-                  <button className="elegant-small text-gray-700 hover:text-black transition-colors">
+                  <button className="elegant-small text-navy-medium hover:text-navy-dark transition-colors">
                     {item.label}
                   </button>
                 </Link>
@@ -80,7 +80,7 @@ export default function Navigation() {
                 <div className="flex flex-col space-y-12 mt-24">
                   {navItems.map((item) => (
                     <Link key={item.id} href={item.href || "#"}>
-                      <button className="text-left elegant-small text-gray-700 hover:text-black transition-colors">
+                      <button className="text-left elegant-small text-navy-medium hover:text-navy-dark transition-colors">
                         {item.label}
                       </button>
                     </Link>

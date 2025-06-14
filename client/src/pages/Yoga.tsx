@@ -68,15 +68,15 @@ export default function YogaPage() {
               </Link>
               
               <div className="space-y-8">
-                <div className="elegant-small">Wellness & Spirituality</div>
-                <h1 className="hero-title text-black">
+                <div className="elegant-small text-navy-medium">Wellness & Spirituality</div>
+                <h1 className="hero-title text-navy-dark">
                   Bundele<br />
                   <span className="italic">Yoga</span>
                 </h1>
-                <p className="text-2xl font-light text-gray-800 italic">
+                <p className="text-2xl font-light text-navy-medium italic">
                   Wellness Within, Change Around
                 </p>
-                <p className="text-lg text-gray-600 leading-relaxed font-light max-w-lg">
+                <p className="text-lg text-navy-dark leading-relaxed font-light max-w-lg">
                   Traditional yoga practice rooted in ancient Indian philosophy, promoting physical, mental, and spiritual well-being.
                 </p>
               </div>
@@ -89,11 +89,11 @@ export default function YogaPage() {
                 className="luxury-image w-full h-[500px] object-cover"
               />
               
-              <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm p-6 min-w-[200px]">
+              <div className="absolute bottom-8 left-8 bg-navy-very-light/95 backdrop-blur-sm p-6 min-w-[200px] border border-navy-light">
                 <div className="space-y-2">
-                  <div className="elegant-small">Starting From</div>
-                  <div className="text-3xl font-light text-black">$65</div>
-                  <div className="text-sm text-gray-600 font-light">per class</div>
+                  <div className="elegant-small text-navy-medium">Starting From</div>
+                  <div className="text-3xl font-light text-navy-dark">$65</div>
+                  <div className="text-sm text-navy-dark font-light">per class</div>
                 </div>
               </div>
             </div>

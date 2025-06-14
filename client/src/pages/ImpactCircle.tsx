@@ -22,33 +22,33 @@ export default function ImpactCirclePage() {
             </Link>
             
             <div className="space-y-8">
-              <div className="elegant-small">Community Giving</div>
-              <h1 className="hero-title text-black">
+              <div className="elegant-small text-navy-medium">Community Giving</div>
+              <h1 className="hero-title text-navy-dark">
                 Impact<br />
                 <span className="italic">Circle</span>
               </h1>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed font-light">
+              <p className="text-lg text-navy-dark max-w-2xl mx-auto leading-relaxed font-light">
                 Join our mission to amplify social impact by contributing a minimum of $5 on meaningful dates in your life.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-16 max-w-4xl mx-auto mt-24">
-              <div className="text-center space-y-4">
-                <div className="text-4xl font-light text-black">$5</div>
-                <div className="elegant-small">Minimum Contribution</div>
-                <p className="text-gray-600 font-light">Start with just $5 on special dates</p>
+              <div className="text-center space-y-4 bg-navy-very-light p-8 rounded-lg border border-navy-light">
+                <div className="text-4xl font-light text-navy-medium">$5</div>
+                <div className="elegant-small text-navy-medium">Minimum Contribution</div>
+                <p className="text-navy-dark font-light">Start with just $5 on special dates</p>
               </div>
               
-              <div className="text-center space-y-4">
-                <div className="text-4xl font-light text-black">2x</div>
-                <div className="elegant-small">Donation Matching</div>
-                <p className="text-gray-600 font-light">We double every contribution you make</p>
+              <div className="text-center space-y-4 bg-navy-very-light p-8 rounded-lg border border-navy-light">
+                <div className="text-4xl font-light text-navy-medium">2x</div>
+                <div className="elegant-small text-navy-medium">Donation Matching</div>
+                <p className="text-navy-dark font-light">We double every contribution you make</p>
               </div>
               
-              <div className="text-center space-y-4">
-                <div className="text-4xl font-light text-black">100%</div>
-                <div className="elegant-small">Direct Impact</div>
-                <p className="text-gray-600 font-light">All funds go directly to projects</p>
+              <div className="text-center space-y-4 bg-navy-very-light p-8 rounded-lg border border-navy-light">
+                <div className="text-4xl font-light text-navy-medium">100%</div>
+                <div className="elegant-small text-navy-medium">Direct Impact</div>
+                <p className="text-navy-dark font-light">All funds go directly to projects</p>
               </div>
             </div>
           </div>
