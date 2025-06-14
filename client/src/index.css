@@ -32,6 +32,12 @@
   --brand-light: 0 0% 99%; /* #FCFCFC - almost white */
   --brand-charcoal: 0 0% 15%; /* #262626 */
   --brand-black: 0 0% 0%; /* Pure black */
+  
+  /* Accent colors for enhanced visual hierarchy */
+  --accent-gold: 44 24% 62%; /* #C5A572 - muted gold */
+  --accent-gold-light: 44 24% 72%; /* Lighter shade for hover */
+  --accent-gold-dark: 44 24% 52%; /* Darker shade for active states */
+  --accent-background: 44 24% 97%; /* Very light gold for section backgrounds */
 }
 
 .dark {
@@ -181,6 +187,31 @@
   
   .text-brand-black {
     color: hsl(var(--brand-black));
+  }
+  
+  /* Accent color utilities */
+  .bg-accent-gold {
+    background-color: hsl(var(--accent-gold));
+  }
+  
+  .bg-accent-gold-light {
+    background-color: hsl(var(--accent-gold-light));
+  }
+  
+  .bg-accent-gold-dark {
+    background-color: hsl(var(--accent-gold-dark));
+  }
+  
+  .bg-accent-background {
+    background-color: hsl(var(--accent-background));
+  }
+  
+  .text-accent-gold {
+    color: hsl(var(--accent-gold));
+  }
+  
+  .border-accent-gold {
+    border-color: hsl(var(--accent-gold));
   }
 
   /* Minimal spacing utilities */

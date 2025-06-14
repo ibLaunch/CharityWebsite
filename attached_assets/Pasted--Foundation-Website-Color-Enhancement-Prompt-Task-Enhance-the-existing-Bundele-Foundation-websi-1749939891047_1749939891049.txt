@@ -1,0 +1,44 @@
+# Foundation Website Color Enhancement Prompt
+
+## Task
+Enhance the existing Bundele Foundation website by improving the color scheme while maintaining its professional, trustworthy appearance.
+
+## Current State
+The website currently uses a conservative monochromatic color scheme with navy blue headers, white backgrounds, and gray text.
+
+## Requested Changes
+
+### 1. Add Accent Color
+•⁠  ⁠Choose a warm, professional accent color (suggestions: muted gold #C5A572, sage green #9CAF88, or soft coral #E8A598)
+•⁠  ⁠Apply this accent color to:
+  - Call-to-action buttons ("Donate" and "Join Impact Circle")
+  - Key statistics numbers in the challenges section
+  - Hover states for interactive elements
+
+### 2. Enhance Visual Hierarchy
+•⁠  ⁠Add subtle background tints to different sections for better visual separation
+•⁠  ⁠Use the accent color for section dividers or decorative elements
+•⁠  ⁠Consider adding a very light tint (5-10% opacity of accent color) as section backgrounds
+
+### 3. Improve Button Styling
+•⁠  ⁠Make primary buttons (Donate, Join Impact Circle) stand out with the accent color
+•⁠  ⁠Add hover effects with slightly darker shade of accent color
+•⁠  ⁠Ensure good contrast ratios for accessibility (minimum 4.5:1)
+
+### 4. Statistics Section Enhancement
+•⁠  ⁠Make the large numbers (1 in 5, 42%, 36%, etc.) more prominent using the accent color
+•⁠  ⁠Consider adding subtle background shapes or borders around each statistic
+
+### 5. Maintain Professional Feel
+•⁠  ⁠Keep the overall clean, minimalist design
+•⁠  ⁠Ensure all color choices support readability
+•⁠  ⁠Maintain the trustworthy, credible appearance
+
+## Technical Requirements
+•⁠  ⁠Ensure all colors meet WCAG accessibility standards
+•⁠  ⁠Test on both light and dark backgrounds
+•⁠  ⁠Maintain responsive design principles
+•⁠  ⁠Use CSS custom properties for easy color theme management
+
+## Deliverable
+A refined version of the website that feels more engaging and visually interesting while preserving its professional foundation aesthetic.

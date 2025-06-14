@@ -164,7 +164,7 @@ export default function ContactPage() {
                   
                   <button
                     onClick={() => window.open("https://www.paypal.com/donate?token=3YTUiqnxfZkKOFOY5e4yNt1SOHznNl3P69LriUCXLtwG1IdOTgXJOv663YWrk1z3kmPTcafV0IFZL9EH", "_blank")}
-                    className="luxury-button w-full"
+                    className="bg-accent-gold text-white px-8 py-4 text-lg hover:bg-accent-gold-dark transition-colors w-full font-medium"
                   >
                     Donate
                   </button>
