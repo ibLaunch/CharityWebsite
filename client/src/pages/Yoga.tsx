@@ -113,8 +113,8 @@ export default function YogaPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-black mb-8">Bhartiya Yog Sansthan (BYS)</h2>
-              <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
+              <h2 className="text-4xl font-bold text-navy-dark mb-8">Bhartiya Yog Sansthan (BYS)</h2>
+              <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
                 <p>
                   BYS offers a holistic yoga practice rooted in traditional Indian philosophy, aiming to promote physical, mental, and spiritual well-being.
                 </p>
@@ -207,31 +207,31 @@ export default function YogaPage() {
       {/* Benefits Section */}
       <section className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-black text-center mb-16">Why Choose Our Yoga Practice?</h2>
+          <h2 className="text-4xl font-bold text-navy-dark text-center mb-16">Why Choose Our Yoga Practice?</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-white border border-gray-200 shadow-lg text-center">
+            <Card className="bg-white border border-navy-light shadow-lg text-center">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-black mb-4">Traditional Practice</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-bold text-navy-dark mb-4">Traditional Practice</h3>
+                <p className="text-navy-dark">
                   Authentic yoga following the classical Ashtanga path as outlined by Maharishi Patanjali.
                 </p>
               </CardContent>
             </Card>
             
-            <Card className="bg-white border border-gray-200 shadow-lg text-center">
+            <Card className="bg-white border border-navy-light shadow-lg text-center">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-black mb-4">Holistic Wellness</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-bold text-navy-dark mb-4">Holistic Wellness</h3>
+                <p className="text-navy-dark">
                   Promote physical, mental, and spiritual well-being through comprehensive yoga practice.
                 </p>
               </CardContent>
             </Card>
             
-            <Card className="bg-white border border-gray-200 shadow-lg text-center">
+            <Card className="bg-white border border-navy-light shadow-lg text-center">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-black mb-4">Supporting Charity</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-bold text-navy-dark mb-4">Supporting Charity</h3>
+                <p className="text-navy-dark">
                   Your participation helps fund community education and support programs worldwide.
                 </p>
               </CardContent>
