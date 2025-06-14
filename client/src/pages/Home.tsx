@@ -82,13 +82,13 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={() => window.open("https://www.paypal.com/donate?token=3YTUiqnxfZkKOFOY5e4yNt1SOHznNl3P69LriUCXLtwG1IdOTgXJOv663YWrk1z3kmPTcafV0IFZL9EH", "_blank")}
-                  className="border-2 border-accent-gold bg-accent-gold text-white text-lg hover:bg-accent-gold-dark transition-colors rounded-md w-52 h-14 flex items-center justify-center"
+                  className="border-2 border-slate-900 bg-slate-900 text-white text-lg hover:bg-white hover:text-slate-900 transition-colors rounded-md w-52 h-14 flex items-center justify-center"
                 >
                   Donate
                 </button>
                 
                 <Link href="/impact-circle" className="w-52 h-14">
-                  <Button variant="outline" className="border-2 border-accent-gold text-accent-gold text-lg hover:bg-accent-gold hover:text-white transition-colors w-full h-full flex items-center justify-center">
+                  <Button variant="outline" className="border-2 border-slate-900 text-slate-900 text-lg hover:bg-slate-900 hover:text-white transition-colors w-full h-full flex items-center justify-center">
                     Join Impact Circle
                   </Button>
                 </Link>
@@ -131,7 +131,7 @@ export default function Home() {
       </section>
 
       {/* Learn About What We Do */}
-      <section className="relative py-20 bg-accent-background overflow-hidden">
+      <section className="relative py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">Learn about what we do</h2>

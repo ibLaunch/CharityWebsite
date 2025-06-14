@@ -92,7 +92,7 @@ export default function YogaPage() {
               <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm p-6 min-w-[200px]">
                 <div className="space-y-2">
                   <div className="elegant-small">Starting From</div>
-                  <div className="text-3xl font-light text-accent-gold">$65</div>
+                  <div className="text-3xl font-light text-black">$65</div>
                   <div className="text-sm text-gray-600 font-light">per class</div>
                 </div>
               </div>
