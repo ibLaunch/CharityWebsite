@@ -136,17 +136,17 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold text-navy-dark mb-6">Learn about what we do</h2>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            <div className="bg-navy-very-light p-8 rounded-lg border border-navy-light">
+          <div className="grid lg:grid-cols-2 gap-16 items-stretch">
+            <div className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
               <h3 className="text-3xl font-bold text-navy-dark mb-6">Supporting education in underserved communities</h3>
-              <p className="text-lg text-navy-dark leading-relaxed mb-8">
+              <p className="text-lg text-navy-dark leading-relaxed mb-8 flex-grow">
                 Bridge the gap between generations through community programs that foster mutual learning and support. By creating mentorship opportunities, where the adults can share their wealth of knowledge and life experiences with young minds, we can cultivate a culture of respect and appreciation.
               </p>
             </div>
             
-            <div className="bg-navy-very-light p-8 rounded-lg border border-navy-light">
+            <div className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
               <h3 className="text-3xl font-bold text-navy-dark mb-6">Help seniors enhance their quality of life in their golden years</h3>
-              <p className="text-lg text-navy-dark leading-relaxed">
+              <p className="text-lg text-navy-dark leading-relaxed flex-grow">
                 Additionally, integrating technology workshops can empower older adults to stay connected with the digital world, reducing isolation and opening new avenues for learning and engagement.
               </p>
             </div>
