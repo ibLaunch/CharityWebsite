@@ -201,15 +201,15 @@ export default function Home() {
       <section className="relative py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">The challenges</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-navy-dark mb-6">The challenges</h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {challenges.map((challenge, index) => (
-              <Card key={index} className="bg-white border border-gray-200 shadow-lg text-center">
+              <Card key={index} className="bg-white border border-navy-light shadow-lg text-center">
                 <CardContent className="p-8">
-                  <h3 className="text-4xl font-bold text-black mb-4">{challenge.stat}</h3>
-                  <p className="text-gray-600 leading-relaxed">{challenge.description}</p>
+                  <h3 className="text-4xl font-bold text-navy-medium mb-4">{challenge.stat}</h3>
+                  <p className="text-navy-dark leading-relaxed">{challenge.description}</p>
                 </CardContent>
               </Card>
             ))}

@@ -92,7 +92,7 @@ export default function ImpactCirclePage() {
       <section className="relative bg-white minimal-section overflow-hidden">
         <div className="container-minimal text-center">
           <div className="space-y-12">
-            <h2 className="text-6xl font-light text-black tracking-tight">Get Started</h2>
+            <h2 className="text-6xl font-light text-navy-dark tracking-tight">Get Started</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed font-light">
               Start making a difference today by joining our Impact Circle community and setting up your meaningful giving dates.
             </p>
@@ -100,20 +100,20 @@ export default function ImpactCirclePage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-3xl mx-auto">
               <button
                 onClick={() => window.open("https://chat.whatsapp.com/HTv3KIMTlJlCtBGruoYDTg", "_blank")}
-                className="luxury-button-outline"
+                className="navy-button-secondary px-10 py-4 rounded-none font-normal text-sm tracking-wider uppercase"
               >
                 Join WhatsApp Group
               </button>
               
               <button
                 onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf8taKXNdCtSBjq5iOiAJC6-FmG26razCM1qoG6BoCV75r7Mw/viewform?usp=header", "_blank")}
-                className="luxury-button"
+                className="navy-button-primary px-10 py-4 rounded-none font-normal text-sm tracking-wider uppercase"
               >
                 Set Donation Dates
               </button>
               
               <Link href="/contact">
-                <button className="luxury-button-outline">
+                <button className="navy-button-secondary px-10 py-4 rounded-none font-normal text-sm tracking-wider uppercase">
                   Contact Us
                 </button>
               </Link>

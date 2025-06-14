@@ -129,7 +129,7 @@ export default function YogaPage() {
             
             <Card className="bg-gray-50 border-0 shadow-lg">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-black mb-8 text-center">Eight Limbs of Yoga</h3>
+                <h3 className="text-2xl font-bold text-navy-dark mb-8 text-center">Eight Limbs of Yoga</h3>
                 <div className="grid grid-cols-2 gap-4">
                   {principles.map((principle, index) => (
                     <div key={index} className="bg-white p-4 rounded-lg text-center">
@@ -156,8 +156,8 @@ export default function YogaPage() {
       <section className="relative py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-black mb-6">Class Packages</h2>
-            <p className="text-xl text-gray-600">Choose the package that fits your practice</p>
+            <h2 className="text-4xl font-bold text-navy-dark mb-6">Class Packages</h2>
+            <p className="text-xl text-navy-dark">Choose the package that fits your practice</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -188,13 +188,13 @@ export default function YogaPage() {
           </div>
           
           <div className="text-center mt-12">
-            <Button
+            <button
               onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdAyE2hC6OAAEKo2Abu477TbnFHcLJCTEAuSuNBChwhJAt14A/viewform?usp=header", "_blank")}
-              className="bg-black text-white px-12 py-6 text-lg h-auto hover:bg-gray-800 transition-colors rounded-lg"
+              className="navy-button-primary px-12 py-6 text-lg rounded-none font-normal tracking-wider uppercase"
             >
               <CalendarPlus className="mr-3 h-5 w-5" />
               Sign Up for Classes
-            </Button>
+            </button>
           </div>
         </div>
         

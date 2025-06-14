@@ -35,26 +35,26 @@ export default function ImpactCircle() {
           
           <Card className="bg-white rounded-xl shadow-lg">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold brand-navy mb-6 text-center">Get Started Today</h3>
+              <h3 className="text-2xl font-bold text-navy-dark mb-6 text-center">Get Started Today</h3>
               
               <div className="space-y-4">
-                <Button
+                <button
                   onClick={() => window.open("https://chat.whatsapp.com/HTv3KIMTlJlCtBGruoYDTg", "_blank")}
-                  className="w-full bg-green-500 text-white py-4 px-6 h-auto hover:bg-green-600 transition-colors"
+                  className="navy-button-secondary w-full py-4 px-6 rounded-none font-normal text-sm tracking-wider uppercase"
                 >
                   <MessageCircle className="mr-3 h-5 w-5" />
                   Join WhatsApp Group
-                </Button>
+                </button>
                 
-                <Button
+                <button
                   onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf8taKXNdCtSBjq5iOiAJC6-FmG26razCM1qoG6BoCV75r7Mw/viewform?usp=header", "_blank")}
-                  className="w-full bg-brand-navy text-white py-4 px-6 h-auto hover:bg-blue-800 transition-colors"
+                  className="navy-button-primary w-full py-4 px-6 rounded-none font-normal text-sm tracking-wider uppercase"
                 >
                   <Calendar className="mr-3 h-5 w-5" />
                   Set Donation Dates
-                </Button>
+                </button>
                 
-                <Button
+                <button
                   onClick={() => {
                     const element = document.getElementById("contact");
                     if (element) {
@@ -62,12 +62,11 @@ export default function ImpactCircle() {
                       window.scrollTo({ top: offsetTop, behavior: "smooth" });
                     }
                   }}
-                  variant="outline"
-                  className="w-full py-4 px-6 h-auto hover:bg-gray-50 transition-colors"
+                  className="navy-button-secondary w-full py-4 px-6 rounded-none font-normal text-sm tracking-wider uppercase"
                 >
                   <Mail className="mr-3 h-5 w-5" />
                   Contact Us
-                </Button>
+                </button>
               </div>
             </CardContent>
           </Card>
