@@ -49,7 +49,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-24">
           <div className="flex items-center">
             <Link href="/">
-              <h1 className="text-sans text-2xl font-normal text-navy-dark cursor-pointer hover:text-navy-medium transition-colors tracking-tight">
+              <h1 className="elegant-small text-navy-dark cursor-pointer hover:text-navy-medium transition-colors text-lg">
                 Bundele Foundation
               </h1>
             </Link>
