@@ -84,7 +84,7 @@ export default function ContactPage() {
         <div className="container-luxury">
           <div className="text-center">
             <Link href="/">
-              <button className="navy-button-secondary mb-12 px-10 py-4 rounded-none font-normal text-sm tracking-wider uppercase">
+              <button className="luxury-button-outline mb-12">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Home
               </button>
