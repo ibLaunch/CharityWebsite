@@ -32,7 +32,7 @@ export default function Footer() {
       <div className="container-minimal">
         <div className="grid md:grid-cols-3 gap-24">
           <div>
-            <h3 className="text-serif text-3xl font-light mb-8 tracking-tight">Bundele Foundation</h3>
+            <h3 className="text-serif text-3xl font-light mb-8 tracking-tight text-navy-light">Bundele Foundation</h3>
             <p className="text-navy-light leading-relaxed font-light">
               Creating positive change through education support, senior care, and community building. Together, we're making a difference.
             </p>
