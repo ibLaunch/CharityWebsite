@@ -133,11 +133,11 @@ export default function YogaPage() {
                 <div className="grid grid-cols-2 gap-4">
                   {principles.map((principle, index) => (
                     <div key={index} className="bg-white p-4 rounded-lg text-center">
-                      <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                        <span className="text-sm font-bold text-emerald-600">{index + 1}</span>
+                      <div className="w-10 h-10 bg-navy-very-light rounded-full flex items-center justify-center mx-auto mb-2">
+                        <span className="text-sm font-bold text-navy-dark">{index + 1}</span>
                       </div>
-                      <h4 className="font-semibold text-black text-sm">{principle.name}</h4>
-                      <p className="text-xs text-gray-600 mt-1">{principle.description}</p>
+                      <h4 className="font-semibold text-navy-dark text-sm">{principle.name}</h4>
+                      <p className="text-xs text-navy-dark mt-1">{principle.description}</p>
                     </div>
                   ))}
                 </div>
@@ -163,11 +163,11 @@ export default function YogaPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {packages.map((pkg, index) => (
               <Card key={index} className={`relative text-center shadow-lg bg-white border-0 ${
-                pkg.isPopular ? "ring-2 ring-emerald-500" : ""
+                pkg.isPopular ? "ring-2 ring-navy-dark" : ""
               }`}>
                 <CardContent className="p-8">
                   {pkg.isPopular && (
-                    <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-emerald-500 text-white">
+                    <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-navy-dark text-white">
                       <Star className="mr-1 h-3 w-3" />
                       POPULAR
                     </Badge>
@@ -179,7 +179,7 @@ export default function YogaPage() {
                     <div className="text-sm text-gray-500 line-through mb-1">{pkg.originalPrice}</div>
                   )}
                   {pkg.savings && (
-                    <div className="text-sm text-emerald-600 font-semibold mb-4">{pkg.savings}</div>
+                    <div className="text-sm text-navy-dark font-semibold mb-4">{pkg.savings}</div>
                   )}
                   <p className="text-navy-dark mb-6">{pkg.description}</p>
                 </CardContent>
