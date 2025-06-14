@@ -26,7 +26,14 @@
   --ring: 0 0% 0%;
   --radius: 0rem;
   
-  /* Luxury brand colors - matching reference */
+  /* Navy color palette for enhanced design */
+  --navy-dark: 210 31% 31%; /* #2C3E50 - existing header color */
+  --navy-medium: 210 28% 46%; /* #5B7C99 - primary accent */
+  --navy-light: 210 25% 73%; /* #B8C8D4 - subtle backgrounds and borders */
+  --navy-very-light: 210 33% 96%; /* #F0F4F7 - section background tints */
+  --navy-hover: 210 29% 40%; /* #4A6B85 - hover state */
+  
+  /* Legacy luxury brand colors - kept for compatibility */
   --brand-cream: 30 8% 95%; /* #F8F6F3 - very light cream */
   --brand-warm-gray: 30 5% 88%; /* #E5E2DE - warm light gray */
   --brand-light: 0 0% 99%; /* #FCFCFC - almost white */
@@ -163,6 +170,74 @@
 }
 
 @layer utilities {
+  /* Navy color utilities */
+  .bg-navy-dark {
+    background-color: hsl(var(--navy-dark));
+  }
+  
+  .bg-navy-medium {
+    background-color: hsl(var(--navy-medium));
+  }
+  
+  .bg-navy-light {
+    background-color: hsl(var(--navy-light));
+  }
+  
+  .bg-navy-very-light {
+    background-color: hsl(var(--navy-very-light));
+  }
+  
+  .text-navy-dark {
+    color: hsl(var(--navy-dark));
+  }
+  
+  .text-navy-medium {
+    color: hsl(var(--navy-medium));
+  }
+  
+  .text-navy-light {
+    color: hsl(var(--navy-light));
+  }
+  
+  .border-navy-light {
+    border-color: hsl(var(--navy-light));
+  }
+  
+  .border-navy-medium {
+    border-color: hsl(var(--navy-medium));
+  }
+  
+  .hover\:bg-navy-hover:hover {
+    background-color: hsl(var(--navy-hover));
+  }
+  
+  /* Enhanced button styles */
+  .navy-button-primary {
+    background-color: hsl(var(--navy-medium));
+    color: white;
+    border: 2px solid hsl(var(--navy-medium));
+    transition: all 0.3s ease;
+  }
+  
+  .navy-button-primary:hover {
+    background-color: hsl(var(--navy-hover));
+    border-color: hsl(var(--navy-hover));
+  }
+  
+  .navy-button-secondary {
+    background-color: hsl(var(--navy-light));
+    color: hsl(var(--navy-dark));
+    border: 2px solid hsl(var(--navy-light));
+    transition: all 0.3s ease;
+  }
+  
+  .navy-button-secondary:hover {
+    background-color: hsl(var(--navy-medium));
+    color: white;
+    border-color: hsl(var(--navy-medium));
+  }
+  
+  /* Legacy brand colors */
   .bg-brand-cream {
     background-color: hsl(var(--brand-cream));
   }

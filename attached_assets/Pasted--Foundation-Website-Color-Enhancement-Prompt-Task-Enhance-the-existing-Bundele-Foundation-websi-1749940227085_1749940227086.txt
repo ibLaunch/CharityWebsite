@@ -1,0 +1,54 @@
+# Foundation Website Color Enhancement Prompt
+
+## Task
+Enhance the existing Bundele Foundation website by improving the color scheme while maintaining its professional, trustworthy appearance.
+
+## Current State
+The website currently uses a conservative monochromatic color scheme with navy blue headers, white backgrounds, and gray text.
+
+## Color Palette
+Use varying shades of navy/blue for visual hierarchy:
+•⁠  ⁠*Dark navy*: #2C3E50 (existing header color)
+•⁠  ⁠*Medium navy*: #5B7C99 (primary accent)
+•⁠  ⁠*Light navy*: #B8C8D4 (subtle backgrounds and borders)
+•⁠  ⁠*Very light navy*: #F0F4F7 (section background tints)
+
+## Requested Changes
+
+### 1. Button Styling Enhancement
+•⁠  ⁠Make primary buttons ("Donate" and "Join Impact Circle") stand out with medium navy (#5B7C99)
+•⁠  ⁠Add hover effects with darker navy shade (#4A6B85)
+•⁠  ⁠Use light navy (#B8C8D4) for secondary buttons or less prominent actions
+•⁠  ⁠Ensure good contrast ratios for accessibility (minimum 4.5:1)
+
+### 2. Visual Hierarchy Improvements
+•⁠  ⁠Add subtle light navy background tints (#F0F4F7) to alternate sections
+•⁠  ⁠Use medium navy (#5B7C99) for section dividers or decorative elements
+•⁠  ⁠Apply light navy (#B8C8D4) for card borders and subtle accents
+•⁠  ⁠Use medium navy for section headers and important text highlights
+
+### 3. Statistics Section Enhancement
+•⁠  ⁠Make the large numbers (1 in 5, 42%, 36%, etc.) prominent using medium navy (#5B7C99)
+•⁠  ⁠Add very light navy (#F0F4F7) background to statistic cards
+•⁠  ⁠Use light navy borders (#B8C8D4) around each statistic for definition
+•⁠  ⁠Consider adding subtle background shapes or icons in the accent colors
+
+### 4. Interactive Elements
+•⁠  ⁠Apply medium navy (#5B7C99) to hover states for all interactive elements
+•⁠  ⁠Use light navy (#B8C8D4) for form field borders and focus states
+•⁠  ⁠Ensure all interactive elements have clear visual feedback
+
+## Design Principles to Maintain
+•⁠  ⁠Keep the overall clean, minimalist design
+•⁠  ⁠Ensure all color choices support readability
+•⁠  ⁠Maintain the trustworthy, credible appearance
+•⁠  ⁠Preserve the professional foundation aesthetic
+
+## Technical Requirements
+•⁠  ⁠Ensure all colors meet WCAG accessibility standards
+•⁠  ⁠Test contrast ratios on both light and dark backgrounds
+•⁠  ⁠Maintain responsive design principles
+•⁠  ⁠Use CSS custom properties for easy color theme management
+
+## Deliverable
+A refined version of the website that feels more engaging and visually interesting while preserving its professional foundation aesthetic through a cohesive navy color palette.

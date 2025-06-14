@@ -30,20 +30,20 @@ export default function Challenges() {
   ];
 
   return (
-    <section className="bg-brand-cream minimal-section">
+    <section className="bg-navy-very-light minimal-section">
       <div className="container-minimal">
         <div className="text-center mb-32">
-          <div className="elegant-small mb-8">Global Challenges</div>
-          <h2 className="text-6xl font-light text-black mb-12 tracking-tight">
+          <div className="elegant-small mb-8 text-navy-medium">Global Challenges</div>
+          <h2 className="text-6xl font-light text-navy-dark mb-12 tracking-tight">
             Why We Exist
           </h2>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16">
           {challenges.map((challenge, index) => (
-            <div key={index} className="text-center space-y-4">
-              <h3 className="text-5xl font-light text-black tracking-tight">{challenge.stat}</h3>
-              <p className="text-gray-600 leading-relaxed font-light">{challenge.description}</p>
+            <div key={index} className="text-center space-y-4 bg-white p-8 rounded-lg border border-navy-light shadow-sm">
+              <h3 className="text-5xl font-light text-navy-medium tracking-tight">{challenge.stat}</h3>
+              <p className="text-navy-dark leading-relaxed font-light">{challenge.description}</p>
             </div>
           ))}
         </div>

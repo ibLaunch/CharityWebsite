@@ -82,13 +82,13 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={() => window.open("https://www.paypal.com/donate?token=3YTUiqnxfZkKOFOY5e4yNt1SOHznNl3P69LriUCXLtwG1IdOTgXJOv663YWrk1z3kmPTcafV0IFZL9EH", "_blank")}
-                  className="border-2 border-slate-900 bg-slate-900 text-white text-lg hover:bg-white hover:text-slate-900 transition-colors rounded-md w-52 h-14 flex items-center justify-center"
+                  className="navy-button-primary text-lg rounded-md w-52 h-14 flex items-center justify-center"
                 >
                   Donate
                 </button>
                 
                 <Link href="/impact-circle" className="w-52 h-14">
-                  <Button variant="outline" className="border-2 border-slate-900 text-slate-900 text-lg hover:bg-slate-900 hover:text-white transition-colors w-full h-full flex items-center justify-center">
+                  <Button variant="outline" className="border-2 border-navy-medium text-navy-medium text-lg hover:bg-navy-medium hover:text-white transition-colors w-full h-full flex items-center justify-center">
                     Join Impact Circle
                   </Button>
                 </Link>
@@ -131,23 +131,23 @@ export default function Home() {
       </section>
 
       {/* Learn About What We Do */}
-      <section className="relative py-20 bg-gray-50 overflow-hidden">
+      <section className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">Learn about what we do</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-navy-dark mb-6">Learn about what we do</h2>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-16 items-start">
-            <div>
-              <h3 className="text-3xl font-bold text-black mb-6">Supporting education in underserved communities</h3>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+            <div className="bg-navy-very-light p-8 rounded-lg border border-navy-light">
+              <h3 className="text-3xl font-bold text-navy-dark mb-6">Supporting education in underserved communities</h3>
+              <p className="text-lg text-navy-dark leading-relaxed mb-8">
                 Bridge the gap between generations through community programs that foster mutual learning and support. By creating mentorship opportunities, where the adults can share their wealth of knowledge and life experiences with young minds, we can cultivate a culture of respect and appreciation.
               </p>
             </div>
             
-            <div>
-              <h3 className="text-3xl font-bold text-black mb-6">Help seniors enhance their quality of life in their golden years</h3>
-              <p className="text-lg text-gray-600 leading-relaxed">
+            <div className="bg-navy-very-light p-8 rounded-lg border border-navy-light">
+              <h3 className="text-3xl font-bold text-navy-dark mb-6">Help seniors enhance their quality of life in their golden years</h3>
+              <p className="text-lg text-navy-dark leading-relaxed">
                 Additionally, integrating technology workshops can empower older adults to stay connected with the digital world, reducing isolation and opening new avenues for learning and engagement.
               </p>
             </div>
@@ -161,15 +161,15 @@ export default function Home() {
       </section>
 
       {/* Our Impact Since 2022 */}
-      <section className="relative py-20 bg-white overflow-hidden">
+      <section className="relative py-20 bg-navy-very-light overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">OUR IMPACT SINCE 2022</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-navy-dark mb-6">OUR IMPACT SINCE 2022</h2>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             {impactStories.map((story, index) => (
-              <Card key={index} className="bg-white border border-gray-200 shadow-lg">
+              <Card key={index} className="bg-white border border-navy-light shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-0">
                   <img 
                     src={story.image}
@@ -177,7 +177,7 @@ export default function Home() {
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-6">
-                    <h3 className="text-lg font-bold text-black mb-3">{story.year}- {story.title}</h3>
+                    <h3 className="text-lg font-bold text-navy-dark mb-3">{story.year}- {story.title}</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       {story.description}
                     </p>
