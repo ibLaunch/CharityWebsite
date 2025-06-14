@@ -163,7 +163,7 @@ export default function Home() {
       <section className="relative py-20 bg-navy-very-light overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-navy-dark mb-6">OUR IMPACT SINCE 2022</h2>
+            <h2 className="text-5xl font-bold text-navy-dark mb-6">OUR IMPACT SINCE 2022</h2>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
