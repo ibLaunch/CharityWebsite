@@ -66,16 +66,16 @@ export default function ImpactCirclePage() {
       <section className="relative bg-brand-cream minimal-section overflow-hidden">
         <div className="container-minimal">
           <div className="max-w-4xl mx-auto text-center space-y-12">
-            <h2 className="text-6xl font-light text-black tracking-tight">About the Circle</h2>
+            <h2 className="text-6xl font-light text-navy-dark tracking-tight">About the Circle</h2>
             
-            <div className="space-y-8 text-lg text-gray-600 leading-relaxed font-light">
+            <div className="space-y-8 text-lg text-navy-dark leading-relaxed font-light">
               <p>
                 Join our mission to amplify social impact by contributing a minimum of $5 on your birthday, your loved ones' birthdays, anniversaries, or any day that holds special meaning to you.
               </p>
               <p>
                 For every dollar you donate, Bundele Foundation pledges to match it, doubling the power of your generosity. 100% of your donation is directly channeled to support most pressing project in the world, guaranteeing that your generosity translates into palpable aid.
               </p>
-              <p className="text-xl font-light text-black italic">
+              <p className="text-xl font-light text-navy-dark italic">
                 Together, we're turning celebrations into acts of kindness.
               </p>
             </div>

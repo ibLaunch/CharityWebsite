@@ -173,15 +173,15 @@ export default function YogaPage() {
                     </Badge>
                   )}
                   
-                  <h3 className="text-xl font-bold text-black mb-4">{pkg.name}</h3>
-                  <div className="text-3xl font-bold text-black mb-2">{pkg.price}</div>
+                  <h3 className="text-xl font-bold text-navy-dark mb-4">{pkg.name}</h3>
+                  <div className="text-3xl font-bold text-navy-medium mb-2">{pkg.price}</div>
                   {pkg.originalPrice && (
                     <div className="text-sm text-gray-500 line-through mb-1">{pkg.originalPrice}</div>
                   )}
                   {pkg.savings && (
                     <div className="text-sm text-emerald-600 font-semibold mb-4">{pkg.savings}</div>
                   )}
-                  <p className="text-gray-600 mb-6">{pkg.description}</p>
+                  <p className="text-navy-dark mb-6">{pkg.description}</p>
                 </CardContent>
               </Card>
             ))}
