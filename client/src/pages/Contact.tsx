@@ -80,17 +80,17 @@ export default function ContactPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-brand-beige overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-navy-very-light overflow-hidden">
         <div className="container-luxury">
           <div className="text-center">
             <Link href="/">
-              <button className="luxury-button-outline mb-12">
+              <button className="navy-button-secondary mb-12 px-10 py-4 rounded-none font-normal text-sm tracking-wider uppercase">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Home
               </button>
             </Link>
-            <h1 className="text-serif text-5xl md:text-7xl font-normal text-black mb-8 tracking-tight">Contact Us</h1>
-            <p className="text-sans text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+            <h1 className="text-serif text-5xl md:text-7xl font-normal text-navy-dark mb-8 tracking-tight">Contact Us</h1>
+            <p className="text-sans text-lg text-navy-dark max-w-2xl mx-auto leading-relaxed">
               We'd love to hear from you. Get in touch with us for any questions about our programs, volunteering opportunities, or how you can make a difference.
             </p>
           </div>
@@ -108,8 +108,8 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-20">
             {/* Contact Information */}
             <div className="order-2 lg:order-1">
-              <h2 className="text-serif text-3xl font-medium text-black mb-8 tracking-tight">Get in Touch</h2>
-              <p className="text-sans text-gray-700 mb-16 leading-relaxed">
+              <h2 className="text-serif text-3xl font-medium text-navy-dark mb-8 tracking-tight">Get in Touch</h2>
+              <p className="text-sans text-navy-dark mb-16 leading-relaxed">
                 Whether you're interested in joining our Impact Circle, attending yoga classes, or learning more about our community programs, we're here to help. Reach out to us using any of the methods below.
               </p>
               
@@ -118,11 +118,11 @@ export default function ContactPage() {
                   const IconComponent = item.icon;
                   return (
                     <div key={index} className="flex items-start">
-                      <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                      <div className="w-12 h-12 bg-navy-medium rounded-full flex items-center justify-center mr-6 flex-shrink-0">
                         <IconComponent className="h-5 w-5 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-sans font-medium mb-2 tracking-wide uppercase text-sm text-gray-600">{item.title}</h3>
+                        <h3 className="text-sans font-medium mb-2 tracking-wide uppercase text-sm text-navy-medium">{item.title}</h3>
                         <a 
                           href={item.link}
                           target={item.link.startsWith("http") ? "_blank" : undefined}
@@ -138,26 +138,26 @@ export default function ContactPage() {
               </div>
 
               {/* Quick Actions */}
-              <div className="mt-16">
-                <h3 className="text-serif text-2xl font-medium text-black mb-8 tracking-tight">Quick Actions</h3>
+              <div className="mt-16 bg-navy-very-light p-8 rounded-lg border border-navy-light">
+                <h3 className="text-serif text-2xl font-medium text-navy-dark mb-8 tracking-tight">Quick Actions</h3>
                 <div className="space-y-4">
                   <button
                     onClick={() => window.open("https://chat.whatsapp.com/HTv3KIMTlJlCtBGruoYDTg", "_blank")}
-                    className="luxury-button-outline w-full"
+                    className="navy-button-secondary w-full px-10 py-4 rounded-none font-normal text-sm tracking-wider uppercase"
                   >
                     Join Our WhatsApp Group
                   </button>
                   
                   <button
                     onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf8taKXNdCtSBjq5iOiAJC6-FmG26razCM1qoG6BoCV75r7Mw/viewform?usp=header", "_blank")}
-                    className="luxury-button w-full"
+                    className="navy-button-primary w-full px-10 py-4 rounded-none font-normal text-sm tracking-wider uppercase"
                   >
                     Set Up Impact Circle Donations
                   </button>
                   
                   <button
                     onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdAyE2hC6OAAEKo2Abu477TbnFHcLJCTEAuSuNBChwhJAt14A/viewform?usp=header", "_blank")}
-                    className="luxury-button-outline w-full"
+                    className="navy-button-secondary w-full px-10 py-4 rounded-none font-normal text-sm tracking-wider uppercase"
                   >
                     Sign Up for Yoga Classes
                   </button>
@@ -173,18 +173,18 @@ export default function ContactPage() {
             </div>
             
             {/* Contact Form */}
-            <div className="luxury-card order-1 lg:order-2">
+            <div className="bg-white border border-navy-light rounded-lg shadow-lg order-1 lg:order-2">
               <div className="p-12">
-                <h3 className="text-serif text-2xl font-medium text-black mb-8 tracking-tight">Send us a Message</h3>
+                <h3 className="text-serif text-2xl font-medium text-navy-dark mb-8 tracking-tight">Send us a Message</h3>
                 
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   <div>
-                    <Label htmlFor="name" className="text-sans text-sm font-medium text-gray-700 mb-3 block tracking-wide uppercase">Name *</Label>
+                    <Label htmlFor="name" className="text-sans text-sm font-medium text-navy-medium mb-3 block tracking-wide uppercase">Name *</Label>
                     <Input
                       id="name"
                       {...form.register("name")}
                       placeholder="Your full name"
-                      className="w-full border-gray-300 rounded-none focus:border-black focus:ring-0"
+                      className="w-full border-navy-light rounded-none focus:border-navy-medium focus:ring-0"
                     />
                     {form.formState.errors.name && (
                       <p className="text-red-500 text-sm mt-2">{form.formState.errors.name.message}</p>
@@ -192,13 +192,13 @@ export default function ContactPage() {
                   </div>
                   
                   <div>
-                    <Label htmlFor="email" className="text-sans text-sm font-medium text-gray-700 mb-3 block tracking-wide uppercase">Email *</Label>
+                    <Label htmlFor="email" className="text-sans text-sm font-medium text-navy-medium mb-3 block tracking-wide uppercase">Email *</Label>
                     <Input
                       id="email"
                       type="email"
                       {...form.register("email")}
                       placeholder="your.email@example.com"
-                      className="w-full border-gray-300 rounded-none focus:border-black focus:ring-0"
+                      className="w-full border-navy-light rounded-none focus:border-navy-medium focus:ring-0"
                     />
                     {form.formState.errors.email && (
                       <p className="text-red-500 text-sm mt-2">{form.formState.errors.email.message}</p>
@@ -206,9 +206,9 @@ export default function ContactPage() {
                   </div>
                   
                   <div>
-                    <Label htmlFor="subject" className="text-sans text-sm font-medium text-gray-700 mb-3 block tracking-wide uppercase">Subject *</Label>
+                    <Label htmlFor="subject" className="text-sans text-sm font-medium text-navy-medium mb-3 block tracking-wide uppercase">Subject *</Label>
                     <Select onValueChange={(value) => form.setValue("subject", value)}>
-                      <SelectTrigger className="w-full border-gray-300 rounded-none focus:border-black focus:ring-0">
+                      <SelectTrigger className="w-full border-navy-light rounded-none focus:border-navy-medium focus:ring-0">
                         <SelectValue placeholder="Select a subject" />
                       </SelectTrigger>
                       <SelectContent>
@@ -227,13 +227,13 @@ export default function ContactPage() {
                   </div>
                   
                   <div>
-                    <Label htmlFor="message" className="text-sans text-sm font-medium text-gray-700 mb-3 block tracking-wide uppercase">Message *</Label>
+                    <Label htmlFor="message" className="text-sans text-sm font-medium text-navy-medium mb-3 block tracking-wide uppercase">Message *</Label>
                     <Textarea
                       id="message"
                       {...form.register("message")}
                       rows={6}
                       placeholder="Tell us how we can help you..."
-                      className="w-full border-gray-300 rounded-none focus:border-black focus:ring-0"
+                      className="w-full border-navy-light rounded-none focus:border-navy-medium focus:ring-0"
                     />
                     {form.formState.errors.message && (
                       <p className="text-red-500 text-sm mt-2">{form.formState.errors.message.message}</p>
@@ -243,7 +243,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={contactMutation.isPending}
-                    className="luxury-button w-full mt-8"
+                    className="navy-button-primary w-full mt-8 px-10 py-4 rounded-none font-normal text-sm tracking-wider uppercase"
                   >
                     <Send className="mr-2 h-4 w-4" />
                     {contactMutation.isPending ? "Sending..." : "Send Message"}
