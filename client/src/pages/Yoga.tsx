@@ -190,7 +190,7 @@ export default function YogaPage() {
           <div className="text-center mt-12">
             <button
               onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdAyE2hC6OAAEKo2Abu477TbnFHcLJCTEAuSuNBChwhJAt14A/viewform?usp=header", "_blank")}
-              className="navy-button-primary px-12 py-6 text-lg rounded-none font-normal tracking-wider uppercase"
+              className="navy-button-primary px-12 py-6 text-lg rounded-none font-normal tracking-wider uppercase flex items-center justify-center"
             >
               <CalendarPlus className="mr-3 h-5 w-5" />
               Sign Up for Classes
