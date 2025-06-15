@@ -287,7 +287,7 @@ export default function YogaPage() {
       {/* Benefits Section */}
       <section className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-navy-dark text-center mb-16">Why Choose Our Yoga Practice?</h2>
+          <h2 className="text-4xl font-bold text-navy-dark text-center mb-16">Why Choose Our Practice?</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="bg-white border border-navy-light shadow-lg text-center">
