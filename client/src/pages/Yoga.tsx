@@ -292,18 +292,18 @@ export default function YogaPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="bg-white border border-navy-light shadow-lg text-center">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-navy-dark mb-4">Traditional Practice</h3>
+                <h3 className="text-xl font-bold text-navy-dark mb-4">Complete Fitness</h3>
                 <p className="text-navy-dark">
-                  Authentic yoga following the classical Ashtanga path as outlined by Maharishi Patanjali.
+                  Yoga, strength training, cardio conditioning, and nutrition guidance in one comprehensive program.
                 </p>
               </CardContent>
             </Card>
             
             <Card className="bg-white border border-navy-light shadow-lg text-center">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-navy-dark mb-4">Holistic Wellness</h3>
+                <h3 className="text-xl font-bold text-navy-dark mb-4">Personalized Approach</h3>
                 <p className="text-navy-dark">
-                  Promote physical, mental, and spiritual well-being through comprehensive yoga practice.
+                  Routines adapted to your lifestyle, abilities, and goals for sustainable wellness transformation.
                 </p>
               </CardContent>
             </Card>
