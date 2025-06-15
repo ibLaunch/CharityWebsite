@@ -80,7 +80,7 @@ export default function Home() {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
-                  onClick={() => window.open("https://www.paypal.com/donate?token=VdXraZbKmmoRJwjUlCNHFiBGbROsrwcpGboE0vjNTXZkLjUiWOfWXogAbyRQKjubABUAsOR-jhANpUP0", "_blank")}
+                  onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
                   className="navy-button-primary text-lg rounded-md w-52 h-14 flex items-center justify-center"
                 >
                   Donate
