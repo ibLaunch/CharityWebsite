@@ -113,7 +113,7 @@ export default function YogaPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-navy-dark mb-8">Bhartiya Yog Sansthan (BYS)</h2>
+              <h2 className="text-4xl font-bold text-navy-dark mb-8">Bundele Fitness</h2>
               <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
                 <p>
                   BYS offers a holistic yoga practice rooted in traditional Indian philosophy, aiming to promote physical, mental, and spiritual well-being.
