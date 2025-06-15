@@ -77,7 +77,7 @@ export default function YogaPage() {
                   Wellness Within, Change Around
                 </p>
                 <p className="text-lg text-navy-dark leading-relaxed font-light max-w-lg">
-                  Traditional yoga practice rooted in ancient Indian philosophy, promoting physical, mental, and spiritual well-being.
+                  Comprehensive wellness program combining traditional yoga, strength training, cardio, and personalized nutrition guidance tailored to your unique lifestyle and fitness goals.
                 </p>
               </div>
             </div>
@@ -116,20 +116,20 @@ export default function YogaPage() {
               <h2 className="text-4xl font-bold text-navy-dark mb-8">Bundele Fitness</h2>
               <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
                 <p>
-                  We offer a holistic fitness practice rooted in traditional wellness philosophy, aiming to promote physical, mental, and spiritual well-being.
+                  We offer a comprehensive fitness approach that blends traditional yoga with modern strength training, cardiovascular conditioning, and personalized nutrition coaching. Our holistic practice is designed to promote complete physical, mental, and spiritual well-being.
                 </p>
                 <p>
-                  We follow the Ashtanga Yoga path as outlined by Maharishi Patanjali, encompassing eight limbs of yoga that create a comprehensive approach to wellness and self-discovery.
+                  Our programs integrate the foundational principles of Ashtanga Yoga with contemporary fitness methodologies, creating personalized routines that adapt to your individual needs, abilities, and lifestyle. Whether you're seeking flexibility through yoga, power through strength training, endurance through cardio, or balance through proper nutrition, we tailor each experience to help you achieve your unique wellness goals.
                 </p>
                 <p>
-                  Each class will be $65, with special class pack discounts available for committed practitioners.
+                  Each session is $65, with special package discounts available for committed practitioners ready to embrace a complete lifestyle transformation.
                 </p>
               </div>
             </div>
             
             <Card className="bg-gray-50 border-0 shadow-lg">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-navy-dark mb-8 text-center">Eight Limbs of Yoga</h3>
+                <h3 className="text-2xl font-bold text-navy-dark mb-8 text-center">Wellness Foundation Principles</h3>
                 <div className="grid grid-cols-2 gap-4">
                   {principles.map((principle, index) => (
                     <div key={index} className="bg-white p-4 rounded-lg text-center">
@@ -150,6 +150,86 @@ export default function YogaPage() {
         <div className="absolute top-16 left-8 w-28 h-28 bg-gray-200 rounded-full opacity-25"></div>
         <div className="absolute bottom-20 right-12 w-36 h-36 bg-gray-300 rounded-full opacity-30"></div>
         <div className="absolute top-1/2 left-4 w-20 h-20 bg-gray-100 rounded-full opacity-35"></div>
+      </section>
+
+      {/* Comprehensive Fitness Programs */}
+      <section className="relative py-20 bg-navy-very-light overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-navy-dark mb-6">Complete Wellness Programs</h2>
+            <p className="text-xl text-navy-medium max-w-3xl mx-auto">
+              Personalized fitness routines designed around your lifestyle, abilities, and goals
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-navy-very-light rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="text-2xl font-bold text-navy-dark">💪</div>
+                </div>
+                <h3 className="text-xl font-bold text-navy-dark mb-4">Strength Training</h3>
+                <p className="text-navy-medium leading-relaxed">
+                  Build functional strength with personalized resistance training programs adapted to your fitness level and objectives.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-navy-very-light rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="text-2xl font-bold text-navy-dark">❤️</div>
+                </div>
+                <h3 className="text-xl font-bold text-navy-dark mb-4">Cardio Conditioning</h3>
+                <p className="text-navy-medium leading-relaxed">
+                  Improve cardiovascular health and endurance through dynamic workouts tailored to your current fitness abilities.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-navy-very-light rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="text-2xl font-bold text-navy-dark">🥗</div>
+                </div>
+                <h3 className="text-xl font-bold text-navy-dark mb-4">Nutrition Guidance</h3>
+                <p className="text-navy-medium leading-relaxed">
+                  Receive personalized nutrition coaching that complements your fitness routine and supports your wellness journey.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-navy-dark mb-6 text-center">Your Personalized Approach</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-lg font-semibold text-navy-dark mb-3">Lifestyle Integration</h4>
+                <p className="text-navy-medium mb-4">
+                  We design programs that fit seamlessly into your daily routine, whether you're a busy professional, parent, or student.
+                </p>
+                <h4 className="text-lg font-semibold text-navy-dark mb-3">Adaptive Training</h4>
+                <p className="text-navy-medium">
+                  Every routine adjusts to your current abilities, ensuring safe progression while challenging you to reach new milestones.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-navy-dark mb-3">Goal-Oriented</h4>
+                <p className="text-navy-medium mb-4">
+                  From weight management to athletic performance, we create specific pathways to help you achieve your unique objectives.
+                </p>
+                <h4 className="text-lg font-semibold text-navy-dark mb-3">Holistic Wellness</h4>
+                <p className="text-navy-medium">
+                  Combining physical training with mindfulness practices and nutritional support for complete well-being transformation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Background circles */}
+        <div className="absolute top-20 right-8 w-32 h-32 bg-gray-200 rounded-full opacity-20"></div>
+        <div className="absolute bottom-24 left-12 w-24 h-24 bg-gray-300 rounded-full opacity-25"></div>
       </section>
 
       {/* Class Packages */}
