@@ -108,7 +108,7 @@ export default function YogaPage() {
         <div className="absolute bottom-1/3 left-4 w-20 h-20 bg-gray-100 rounded-full opacity-30"></div>
       </section>
 
-      {/* About BYS Section */}
+      {/* About Bundele Fitness Section */}
       <section className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -116,7 +116,7 @@ export default function YogaPage() {
               <h2 className="text-4xl font-bold text-navy-dark mb-8">Bundele Fitness</h2>
               <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
                 <p>
-                  BYS offers a holistic yoga practice rooted in traditional Indian philosophy, aiming to promote physical, mental, and spiritual well-being.
+                  We offer a holistic fitness practice rooted in traditional wellness philosophy, aiming to promote physical, mental, and spiritual well-being.
                 </p>
                 <p>
                   We follow the Ashtanga Yoga path as outlined by Maharishi Patanjali, encompassing eight limbs of yoga that create a comprehensive approach to wellness and self-discovery.
