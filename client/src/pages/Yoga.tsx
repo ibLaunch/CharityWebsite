@@ -71,7 +71,7 @@ export default function YogaPage() {
                 <div className="elegant-small text-navy-medium">Wellness & Spirituality</div>
                 <h1 className="hero-title text-navy-dark">
                   Bundele<br />
-                  <span className="italic">Yoga</span>
+                  <span className="italic">Fit</span>
                 </h1>
                 <p className="text-2xl font-light text-navy-medium italic">
                   Wellness Within, Change Around
