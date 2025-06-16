@@ -360,19 +360,19 @@ export default function YogaPage() {
                   <h4 className="text-xl font-bold text-navy-dark mb-6 text-center">Your Wellness Blueprint</h4>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
                       <span className="font-medium">Comprehensive Assessment</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
                       <span className="font-medium">Personalized Program Design</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
                       <span className="font-medium">Progressive Adaptation</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
                       <span className="font-medium">Ongoing Support & Growth</span>
                     </div>
                   </div>
