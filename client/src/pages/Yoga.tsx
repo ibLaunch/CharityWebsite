@@ -289,7 +289,7 @@ export default function YogaPage() {
                   <div className="bg-gradient-to-br from-blue-100 to-blue-200 p-12 flex items-center justify-center">
                     <div className="text-center">
                       <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                        <Heart className="w-16 h-16 text-red-500" />
+                        <Heart className="w-16 h-16 text-blue-500" />
                       </div>
                       <p className="text-lg font-semibold text-navy-dark">Endurance • Energy • Vitality</p>
                     </div>
@@ -304,22 +304,22 @@ export default function YogaPage() {
             <Card className="bg-white border-0 shadow-2xl overflow-hidden">
               <CardContent className="p-0">
                 <div className="grid lg:grid-cols-2 gap-0">
-                  <div className="bg-gradient-to-br from-green-100 to-emerald-100 p-12 flex items-center justify-center lg:order-1">
+                  <div className="bg-gradient-to-br from-blue-200 to-blue-300 p-12 flex items-center justify-center lg:order-1">
                     <div className="text-center">
                       <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                        <Apple className="w-16 h-16 text-green-500" />
+                        <Apple className="w-16 h-16 text-blue-500" />
                       </div>
                       <p className="text-lg font-semibold text-navy-dark">Nourishment • Balance • Sustainability</p>
                     </div>
                   </div>
                   <div className="p-12 lg:p-16 lg:order-2">
                     <div className="flex items-center mb-8">
-                      <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mr-6">
+                      <div className="w-20 h-20 bg-gradient-to-br from-blue-700 to-blue-800 rounded-full flex items-center justify-center mr-6">
                         <Apple className="w-10 h-10 text-white" />
                       </div>
                       <div>
                         <h3 className="text-3xl font-bold text-navy-dark">Personalized Nutrition Guidance</h3>
-                        <p className="text-xl text-green-600 italic font-light">Nourish Your Body, Fuel Your Journey</p>
+                        <p className="text-xl text-blue-600 italic font-light">Nourish Your Body, Fuel Your Journey</p>
                       </div>
                     </div>
                     <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
