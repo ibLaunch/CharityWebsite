@@ -37,7 +37,7 @@ export default function Navigation() {
   const navItems = [
     { id: "home", label: "Home", isSection: false, href: "/" },
     { id: "impact-circle", label: "Impact Circle", isSection: false, href: "/impact-circle" },
-    { id: "yoga", label: "Bundele Fit", isSection: false, href: "/yoga" },
+    { id: "yoga", label: "Wellness", isSection: false, href: "/yoga" },
     { id: "founders-message", label: "Founder's Message", isSection: false, href: "/founders-message" },
     { id: "contact", label: "Contact", isSection: false, href: "/contact" },
   ];

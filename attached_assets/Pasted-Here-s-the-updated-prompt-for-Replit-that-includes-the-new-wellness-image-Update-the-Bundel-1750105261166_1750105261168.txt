@@ -1,0 +1,199 @@
+Here's the updated prompt for Replit that includes the new wellness image:
+
+```
+Update the Bundele Foundation website to replace the existing yoga page with a comprehensive Bundele Wellness page.
+
+**STEP 1: URL and Site Analysis**
+- Visit https://bundelefoundation.org/yoga to analyze current page structure and design
+- Extract existing color palette, fonts, navigation, and layout elements
+- Note the current site's CSS framework and responsive design patterns
+- Plan URL migration from /yoga to /wellness (set up 301 redirect from old URL)
+
+**STEP 2: Image Asset Integration**
+- **Hero Image**: Use the provided "b-wellness.png" image as the main hero background
+- **Image optimization**: Ensure proper compression and responsive sizing for web
+- **Text overlay compatibility**: Position pricing and CTA text over the sky area of the image
+- **Mobile optimization**: Ensure image scales properly on all device sizes
+- **Alt text**: "Diverse group practicing holistic wellness including yoga, strength training, and cardio at golden hour on the beach"
+
+**STEP 3: New Page Structure**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundele Wellness - Holistic Well-being Programs | Bundele Foundation</title>
+    <meta name="description" content="Transform your life with Bundele Wellness - comprehensive mind, body, spirit programs including yoga, strength training, cardio, and nutrition guidance.">
+    <!-- Match existing site's CSS and fonts -->
+</head>
+<body>
+    <!-- Use existing site's header/navigation -->
+    <header>
+        <!-- Update navigation to show "Wellness" instead of "Yoga" -->
+    </header>
+    
+    <!-- Hero section with b-wellness.png background -->
+    <section class="wellness-hero" style="background-image: url('images/b-wellness.png');">
+        <div class="hero-overlay">
+            <div class="container">
+                <h1>Bundele Wellness</h1>
+                <p class="hero-subtitle">Cultivating Holistic Well-being, Transforming Lives</p>
+                <div class="pricing-highlight">
+                    <span class="starting-from">STARTING FROM</span>
+                    <span class="price">$65</span>
+                    <span class="per-session">per session</span>
+                </div>
+                <a href="#programs" class="btn-primary">Explore Our Programs</a>
+                <a href="#contact" class="btn-secondary">Start Your Journey</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main content sections -->
+    <main>
+        <section class="wellness-intro">
+            <!-- Opening philosophy content -->
+        </section>
+        
+        <section id="programs" class="four-pillars">
+            <!-- The Four Pillars section with individual cards -->
+            <div class="pillar-card yoga-pillar">
+                <h3>Mindful Yoga Practice</h3>
+                <p>Awaken Your Inner Harmony</p>
+            </div>
+            <div class="pillar-card strength-pillar">
+                <h3>Functional Strength Training</h3>
+                <p>Build Resilience, Unleash Potential</p>
+            </div>
+            <div class="pillar-card cardio-pillar">
+                <h3>Cardiovascular Conditioning</h3>
+                <p>Energize Your Core, Elevate Your Spirit</p>
+            </div>
+            <div class="pillar-card nutrition-pillar">
+                <h3>Personalized Nutrition Guidance</h3>
+                <p>Nourish Your Body, Fuel Your Journey</p>
+            </div>
+        </section>
+        
+        <section class="personalized-journey">
+            <!-- Your Journey, Uniquely Crafted content -->
+        </section>
+        
+        <section class="pricing-impact">
+            <!-- Investment and social impact section -->
+        </section>
+        
+        <section class="cta-section">
+            <!-- Call to action buttons -->
+        </section>
+    </main>
+    
+    <!-- Use existing site's footer -->
+    <footer><!-- Copy existing footer --></footer>
+</body>
+</html>
+```
+
+**STEP 4: Hero Section Styling**
+```css
+.wellness-hero {
+    background-image: url('images/b-wellness.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 80px 0;
+}
+
+.pricing-highlight {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2E5B8A;
+    display: block;
+}
+```
+
+**STEP 5: Complete Content Integration**
+Insert this exact content:
+
+# Bundele Wellness: Cultivating Holistic Well-being, Transforming Lives
+
+At Bundele Wellness, we believe that true well-being extends beyond physical fitness; it encompasses a harmonious balance of mind, body, and spirit. We are proud to present a comprehensive wellness solution, meticulously designed to guide you on a transformative journey towards optimal health and inner peace. Our unique approach seamlessly integrates four essential pillars, each carefully crafted to honor timeless wellness wisdom while embracing the latest advancements in modern fitness science.
+
+## The Four Pillars of Your Transformation:
+
+### 1. Mindful Yoga Practice: Awaken Your Inner Harmony
+
+Immerse yourself in the ancient art of yoga, where every pose, breath, and meditation is an invitation to connect with your deepest self. Our mindful yoga practices are designed to enhance flexibility, build core strength, and cultivate a profound sense of calm and mental clarity. Whether you are a seasoned yogi or taking your first steps on the mat, our experienced instructors will guide you through sequences that nurture your body, quiet your mind, and awaken your inner harmony. Experience the profound benefits of reduced stress, improved focus, and a renewed sense of vitality.
+
+### 2. Functional Strength Training: Build Resilience, Unleash Potential
+
+Beyond aesthetics, our functional strength training programs are engineered to build a resilient body capable of navigating the demands of everyday life with ease and confidence. We focus on movements that mimic natural human actions, strengthening your muscles, improving balance, and increasing overall physical capacity. From foundational exercises to advanced techniques, each session is tailored to your unique capabilities, helping you prevent injuries, boost metabolism, and unlock your full physical potential. Discover the strength you never knew you had, empowering you to live a more active and vibrant life.
+
+### 3. Cardiovascular Conditioning: Energize Your Core, Elevate Your Spirit
+
+Ignite your cardiovascular system with dynamic and engaging conditioning routines that boost your endurance, enhance heart health, and elevate your energy levels. Our programs incorporate a variety of effective techniques, from invigorating aerobic exercises to high-intensity interval training, all designed to optimize your circulatory health and improve stamina. Experience the exhilarating feeling of a strong, healthy heart, and discover how improved cardiovascular fitness can translate into greater vitality and enthusiasm for life.
+
+### 4. Personalized Nutrition Guidance: Nourish Your Body, Fuel Your Journey
+
+Understand that true wellness begins from within, and nutrition plays a pivotal role in your overall health. Our personalized nutrition guidance goes beyond restrictive diets, focusing instead on sustainable, wholesome eating habits that nourish your body and fuel your journey. Our experts will work closely with you to develop a customized nutrition plan that aligns with your dietary preferences, health goals, and lifestyle. Learn to make informed food choices, optimize your energy, and cultivate a healthy relationship with food that supports your long-term well-being.
+
+## Your Journey, Uniquely Crafted:
+
+We understand that every individual's wellness journey is distinct. That's why every program at Bundele Wellness is uniquely crafted for you. We begin with a comprehensive assessment of your current fitness level, lifestyle demands, and personal goals. This personalized approach ensures that whether you are new to wellness or looking to elevate your existing routine, our integrated methodology delivers sustainable, transformative results that seamlessly fit into your life. We are committed to empowering you with the tools and knowledge to achieve lasting change.
+
+## Invest in Your Transformation, Impact the World:
+
+Sessions are priced at $65 each, with attractive package discounts available for committed members ready to invest in their complete transformation. By choosing Bundele Wellness, you are not only investing in your own health and well-being but also contributing to a greater cause. Your participation directly helps fund community education and support programs worldwide through the Bundele Foundation. This means that every step you take towards your personal wellness journey with us also creates a ripple effect of positive change, empowering underserved communities and enriching lives globally.
+
+Join Bundele Wellness today and embark on a holistic wellness journey that benefits you, and the world.
+
+
+**STEP 6: Design Requirements**
+- **Hero image integration**: Use b-wellness.png as full-width hero background
+- **Text readability**: Ensure all hero text is readable over the image with proper contrast
+- **Color harmony**: Extract accent colors from the image (warm oranges, calming blues) for use throughout the page
+- **Responsive hero**: Ensure image scales properly on mobile devices
+- **Loading optimization**: Compress b-wellness.png for fast loading while maintaining quality
+
+**STEP 7: URL and Navigation Updates**
+- **New URL**: `/wellness` (instead of `/yoga`)
+- **301 Redirect**: Set up redirect from `/yoga` to `/wellness`
+- **Navigation menu**: Update main nav to show "Wellness" link
+- **Breadcrumbs**: Home > Wellness
+- **Internal links**: Update any site links pointing to the old yoga page
+
+**STEP 8: Enhanced Features**
+- **Image-inspired design**: Use the golden hour colors from b-wellness.png throughout the page
+- **Four pillars cards**: Design cards that reflect the activities shown in the hero image
+- **Social impact callout**: Highlight connection to Bundele Foundation mission
+- **Mobile-first responsive**: Ensure hero image works beautifully on all screen sizes
+- **Performance optimization**: Lazy load images below the fold
+
+**STEP 9: File Structure**
+```
+/images/
+  └── b-wellness.png (hero image)
+/css/
+  └── wellness.css (page-specific styles)
+wellness.html (main page file)
+```
+
+**FINAL OUTPUT**: A complete, professional Bundele Wellness page featuring the beautiful b-wellness.png hero image, seamlessly integrated with the existing Bundele Foundation website, showcasing the comprehensive four-pillar wellness approach while maintaining visual consistency and optimal performance.

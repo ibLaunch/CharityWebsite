@@ -5,6 +5,7 @@ import { CalendarPlus, Star, ArrowLeft, Dumbbell, Heart, Apple, Flower } from "l
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import bWellnessImage from "@assets/b-wellness_1750106432114.png";
 
 export default function YogaPage() {
   const packages = [
@@ -55,193 +56,327 @@ export default function YogaPage() {
     <div className="min-h-screen bg-white">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative bg-white minimal-section pt-32 overflow-hidden">
-        <div className="container-minimal">
-          <div className="grid lg:grid-cols-2 gap-24 items-center">
-            <div className="space-y-12">
+      {/* Hero Section with Wellness Image */}
+      <section 
+        className="relative min-h-[70vh] flex items-center overflow-hidden"
+        style={{
+          backgroundImage: `url(${bWellnessImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Hero Overlay */}
+        <div className="absolute inset-0 bg-black/30"></div>
+        
+        <div className="relative z-10 w-full py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
               <Link href="/">
-                <button className="luxury-button-outline mb-16">
+                <button className="mb-8 inline-flex items-center px-6 py-3 border-2 border-white/70 text-white hover:bg-white/10 transition-colors rounded-md">
                   <ArrowLeft className="mr-2 h-4 w-4" />
                   Back to Home
                 </button>
               </Link>
               
               <div className="space-y-8">
-                <div className="elegant-small text-navy-medium">Complete Wellness Solution</div>
-                <h1 className="hero-title text-navy-dark">
+                <div className="text-orange-200 text-lg font-medium tracking-wide uppercase">
+                  Holistic Well-being Programs
+                </div>
+                <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
                   Bundele<br />
-                  <span className="italic">Fit</span>
+                  <span className="italic text-orange-300">Wellness</span>
                 </h1>
-                <p className="text-2xl font-light text-navy-medium italic">
-                  Wellness Within, Change Around
+                <p className="text-2xl font-light text-orange-100 italic leading-relaxed">
+                  Cultivating Holistic Well-being, Transforming Lives
                 </p>
-                <p className="text-lg text-navy-dark leading-relaxed font-light max-w-lg">
-                  Transform your wellness journey with our integrated approach combining mindful yoga practice, functional strength training, cardiovascular conditioning, and personalized nutrition coaching—all designed around your life.
-                </p>
-              </div>
-            </div>
-            
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&h=400&fit=crop&auto=format"
-                alt="Peaceful yoga practice"
-                className="luxury-image w-full h-[500px] object-cover"
-              />
-              
-              <div className="absolute bottom-8 left-8 bg-navy-very-light/95 backdrop-blur-sm p-6 min-w-[200px] border border-navy-light">
-                <div className="space-y-2">
-                  <div className="elegant-small text-navy-medium">Starting From</div>
-                  <div className="text-3xl font-light text-navy-dark">$65</div>
-                  <div className="text-sm text-navy-dark font-light">per class</div>
+                
+                {/* Pricing Highlight */}
+                <div className="inline-block bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+                  <div className="text-center">
+                    <div className="text-sm font-medium text-navy-medium uppercase tracking-wide mb-2">
+                      Starting From
+                    </div>
+                    <div className="text-4xl font-bold text-navy-dark mb-1">$65</div>
+                    <div className="text-sm text-navy-medium">per session</div>
+                  </div>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                  <button 
+                    onClick={() => window.scrollTo({ top: document.getElementById('programs')?.offsetTop || 0, behavior: 'smooth' })}
+                    className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-md text-lg font-semibold transition-colors"
+                  >
+                    Explore Our Programs
+                  </button>
+                  <Link href="/contact">
+                    <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-md text-lg font-semibold transition-colors">
+                      Start Your Journey
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-        {/* Background circles for hero section */}
-        <div className="absolute top-20 left-8 w-28 h-28 bg-gray-200 rounded-full opacity-25"></div>
-        <div className="absolute bottom-16 right-12 w-36 h-36 bg-gray-300 rounded-full opacity-20"></div>
-        <div className="absolute top-1/2 right-6 w-24 h-24 bg-gray-100 rounded-full opacity-30"></div>
-        <div className="absolute top-1/3 left-12 w-32 h-32 bg-gray-200 rounded-full opacity-25"></div>
-        <div className="absolute bottom-1/3 left-4 w-20 h-20 bg-gray-100 rounded-full opacity-30"></div>
       </section>
 
-      {/* About Bundele Fitness Section */}
+      {/* Wellness Introduction Section */}
       <section className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-navy-dark mb-8">Bundele Fitness</h2>
-              <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-navy-dark mb-8">
+              Bundele Wellness: Cultivating Holistic Well-being, Transforming Lives
+            </h2>
+            <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
+          </div>
+          
+          <div className="prose prose-lg max-w-none text-navy-dark leading-relaxed space-y-8">
+            <p className="text-xl text-center max-w-4xl mx-auto">
+              At Bundele Wellness, we believe that true well-being extends beyond physical fitness; it encompasses a harmonious balance of mind, body, and spirit. We are proud to present a comprehensive wellness solution, meticulously designed to guide you on a transformative journey towards optimal health and inner peace.
+            </p>
+            
+            <div className="grid lg:grid-cols-2 gap-12 items-center mt-16">
+              <div className="space-y-6">
                 <p>
-                  Bundele Fitness is your complete wellness solution, seamlessly integrating four essential pillars: mindful yoga practice, functional strength training, cardiovascular conditioning, and personalized nutrition guidance. Our approach honors traditional wellness wisdom while embracing modern fitness science.
+                  Our unique approach seamlessly integrates four essential pillars, each carefully crafted to honor timeless wellness wisdom while embracing the latest advancements in modern fitness science. We understand that every individual's wellness journey is distinct, which is why our programs are not one-size-fits-all solutions, but rather personalized experiences tailored to your unique needs, goals, and lifestyle.
                 </p>
                 <p>
-                  Every program is uniquely crafted for you—adapting to your current fitness level, lifestyle demands, and personal goals. Whether you're new to wellness or looking to elevate your existing routine, our integrated approach ensures sustainable, transformative results that fit your life.
-                </p>
-                <p>
-                  Sessions are $65 each, with attractive package discounts for committed members ready to invest in their complete transformation.
+                  Whether you are just beginning your wellness journey or seeking to deepen an existing practice, Bundele Wellness offers a sanctuary where you can explore, grow, and transform in a supportive and nurturing environment. Our holistic methodology ensures that every aspect of your well-being is addressed, creating a foundation for lasting health and happiness.
                 </p>
               </div>
-            </div>
-            
-            <Card className="bg-gray-50 border-0 shadow-lg">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-navy-dark mb-8 text-center">The Bundele Fitness Foundation</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  {principles.map((principle, index) => (
-                    <div key={index} className="bg-white p-4 rounded-lg text-center">
-                      <div className="w-10 h-10 bg-navy-very-light rounded-full flex items-center justify-center mx-auto mb-2">
-                        <span className="text-sm font-bold text-navy-dark">{index + 1}</span>
-                      </div>
-                      <h4 className="font-semibold text-navy-dark text-sm">{principle.name}</h4>
-                      <p className="text-xs text-navy-dark mt-1">{principle.description}</p>
+              
+              <Card className="bg-gradient-to-br from-orange-50 to-orange-100 border-0 shadow-lg">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-navy-dark mb-6 text-center">Our Wellness Philosophy</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                      <span className="text-navy-dark font-medium">Mind-Body-Spirit Integration</span>
                     </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                      <span className="text-navy-dark font-medium">Personalized Transformation</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                      <span className="text-navy-dark font-medium">Sustainable Wellness Practices</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                      <span className="text-navy-dark font-medium">Community Impact & Support</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
         
-        {/* Background circles for this section */}
-        <div className="absolute top-16 left-8 w-28 h-28 bg-gray-200 rounded-full opacity-25"></div>
-        <div className="absolute bottom-20 right-12 w-36 h-36 bg-gray-300 rounded-full opacity-30"></div>
-        <div className="absolute top-1/2 left-4 w-20 h-20 bg-gray-100 rounded-full opacity-35"></div>
+        {/* Background decorative elements */}
+        <div className="absolute top-20 left-8 w-32 h-32 bg-orange-100 rounded-full opacity-30"></div>
+        <div className="absolute bottom-20 right-12 w-24 h-24 bg-orange-200 rounded-full opacity-25"></div>
       </section>
 
-      {/* Four Pillars of Bundele Fitness */}
-      <section className="relative py-20 bg-navy-very-light overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Four Pillars of Transformation */}
+      <section id="programs" className="relative py-20 bg-gradient-to-br from-orange-50 to-amber-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-navy-dark mb-6">Four Pillars of Bundele Fitness</h2>
+            <h2 className="text-4xl font-bold text-navy-dark mb-6">The Four Pillars of Your Transformation</h2>
             <p className="text-xl text-navy-medium max-w-3xl mx-auto">
-              A unified approach integrating ancient wisdom with modern science for complete transformation
+              A comprehensive approach that honors ancient wisdom while embracing modern science
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-navy-very-light rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Flower className="w-8 h-8 text-navy-dark" />
+          {/* Pillar 1: Mindful Yoga Practice */}
+          <div className="mb-20">
+            <Card className="bg-white border-0 shadow-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="p-12 lg:p-16">
+                    <div className="flex items-center mb-8">
+                      <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-6">
+                        <Flower className="w-10 h-10 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-3xl font-bold text-navy-dark">Mindful Yoga Practice</h3>
+                        <p className="text-xl text-purple-600 italic font-light">Awaken Your Inner Harmony</p>
+                      </div>
+                    </div>
+                    <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
+                      <p>
+                        Immerse yourself in the ancient art of yoga, where every pose, breath, and meditation is an invitation to connect with your deepest self. Our mindful yoga practices are designed to enhance flexibility, build core strength, and cultivate a profound sense of calm and mental clarity.
+                      </p>
+                      <p>
+                        Whether you are a seasoned yogi or taking your first steps on the mat, our experienced instructors will guide you through sequences that nurture your body, quiet your mind, and awaken your inner harmony.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-purple-100 to-pink-100 p-12 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <Flower className="w-16 h-16 text-purple-500" />
+                      </div>
+                      <p className="text-lg font-semibold text-navy-dark">Flexibility • Balance • Mindfulness</p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-navy-dark mb-4">Mindful Yoga</h3>
-                <p className="text-navy-medium leading-relaxed">
-                  Traditional Ashtanga practice for flexibility, balance, and spiritual well-being.
-                </p>
               </CardContent>
             </Card>
-            
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-navy-very-light rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Dumbbell className="w-8 h-8 text-navy-dark" />
+          </div>
+
+          {/* Pillar 2: Functional Strength Training */}
+          <div className="mb-20">
+            <Card className="bg-white border-0 shadow-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="bg-gradient-to-br from-blue-100 to-cyan-100 p-12 flex items-center justify-center lg:order-1">
+                    <div className="text-center">
+                      <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <Dumbbell className="w-16 h-16 text-blue-500" />
+                      </div>
+                      <p className="text-lg font-semibold text-navy-dark">Power • Resilience • Confidence</p>
+                    </div>
+                  </div>
+                  <div className="p-12 lg:p-16 lg:order-2">
+                    <div className="flex items-center mb-8">
+                      <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mr-6">
+                        <Dumbbell className="w-10 h-10 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-3xl font-bold text-navy-dark">Functional Strength Training</h3>
+                        <p className="text-xl text-blue-600 italic font-light">Build Resilience, Unleash Potential</p>
+                      </div>
+                    </div>
+                    <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
+                      <p>
+                        Beyond aesthetics, our functional strength training programs are engineered to build a resilient body capable of navigating the demands of everyday life with ease and confidence. We focus on movements that mimic natural human actions, strengthening your muscles, improving balance, and increasing overall physical capacity.
+                      </p>
+                      <p>
+                        From foundational exercises to advanced techniques, each session is tailored to your unique capabilities, helping you prevent injuries, boost metabolism, and unleash your true potential.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-navy-dark mb-4">Strength Training</h3>
-                <p className="text-navy-medium leading-relaxed">
-                  Functional resistance training to build power and muscle definition safely.
-                </p>
               </CardContent>
             </Card>
-            
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-navy-very-light rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Heart className="w-8 h-8 text-navy-dark" />
+          </div>
+
+          {/* Pillar 3: Cardiovascular Conditioning */}
+          <div className="mb-20">
+            <Card className="bg-white border-0 shadow-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="p-12 lg:p-16">
+                    <div className="flex items-center mb-8">
+                      <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-orange-500 rounded-full flex items-center justify-center mr-6">
+                        <Heart className="w-10 h-10 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-3xl font-bold text-navy-dark">Cardiovascular Conditioning</h3>
+                        <p className="text-xl text-red-600 italic font-light">Energize Your Core, Elevate Your Spirit</p>
+                      </div>
+                    </div>
+                    <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
+                      <p>
+                        Ignite your cardiovascular system with dynamic and engaging conditioning routines that boost your endurance, enhance heart health, and elevate your energy levels. Our programs incorporate a variety of effective techniques, from invigorating aerobic exercises to high-intensity interval training.
+                      </p>
+                      <p>
+                        Experience the exhilarating feeling of a strong, healthy heart, and discover how improved cardiovascular fitness can transform not just your physical capabilities, but your entire outlook on life.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-red-100 to-orange-100 p-12 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <Heart className="w-16 h-16 text-red-500" />
+                      </div>
+                      <p className="text-lg font-semibold text-navy-dark">Endurance • Energy • Vitality</p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-navy-dark mb-4">Cardio Conditioning</h3>
-                <p className="text-navy-medium leading-relaxed">
-                  Heart-healthy endurance training customized to your current fitness level.
-                </p>
               </CardContent>
             </Card>
-            
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-navy-very-light rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Apple className="w-8 h-8 text-navy-dark" />
+          </div>
+
+          {/* Pillar 4: Personalized Nutrition Guidance */}
+          <div className="mb-16">
+            <Card className="bg-white border-0 shadow-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="bg-gradient-to-br from-green-100 to-emerald-100 p-12 flex items-center justify-center lg:order-1">
+                    <div className="text-center">
+                      <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <Apple className="w-16 h-16 text-green-500" />
+                      </div>
+                      <p className="text-lg font-semibold text-navy-dark">Nourishment • Balance • Sustainability</p>
+                    </div>
+                  </div>
+                  <div className="p-12 lg:p-16 lg:order-2">
+                    <div className="flex items-center mb-8">
+                      <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mr-6">
+                        <Apple className="w-10 h-10 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-3xl font-bold text-navy-dark">Personalized Nutrition Guidance</h3>
+                        <p className="text-xl text-green-600 italic font-light">Nourish Your Body, Fuel Your Journey</p>
+                      </div>
+                    </div>
+                    <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
+                      <p>
+                        Understand that true wellness begins from within, and nutrition plays a pivotal role in your overall health. Our personalized nutrition guidance goes beyond restrictive diets, focusing instead on sustainable, wholesome eating habits that nourish your body and fuel your journey.
+                      </p>
+                      <p>
+                        Our experts will work closely with you to develop a customized nutrition plan that aligns with your dietary preferences, health goals, and lifestyle. Learn to make informed food choices and optimize your energy levels.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-navy-dark mb-4">Nutrition Coaching</h3>
-                <p className="text-navy-medium leading-relaxed">
-                  Personalized dietary guidance that fuels your fitness and supports your goals.
-                </p>
               </CardContent>
             </Card>
           </div>
           
-          <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-navy-dark mb-6 text-center">How It Works</h3>
-            <div className="grid md:grid-cols-2 gap-8 text-center">
-              <div className="space-y-4">
-                <div className="w-12 h-12 bg-navy-dark text-white rounded-full flex items-center justify-center mx-auto font-bold">1</div>
-                <h4 className="text-lg font-semibold text-navy-dark">Assessment & Goal Setting</h4>
-                <p className="text-navy-medium">
-                  We evaluate your current fitness level, lifestyle, and personal objectives to create your unique roadmap.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <div className="w-12 h-12 bg-navy-dark text-white rounded-full flex items-center justify-center mx-auto font-bold">2</div>
-                <h4 className="text-lg font-semibold text-navy-dark">Integrated Program Design</h4>
-                <p className="text-navy-medium">
-                  Your personalized plan seamlessly blends yoga, strength, cardio, and nutrition into a cohesive routine.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <div className="w-12 h-12 bg-navy-dark text-white rounded-full flex items-center justify-center mx-auto font-bold">3</div>
-                <h4 className="text-lg font-semibold text-navy-dark">Progressive Adaptation</h4>
-                <p className="text-navy-medium">
-                  Your program evolves with you, continuously adjusting to your progress and changing needs.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <div className="w-12 h-12 bg-navy-dark text-white rounded-full flex items-center justify-center mx-auto font-bold">4</div>
-                <h4 className="text-lg font-semibold text-navy-dark">Lifestyle Transformation</h4>
-                <p className="text-navy-medium">
-                  Experience complete wellness that enhances every aspect of your daily life and long-term health.
-                </p>
+          <div className="bg-white rounded-3xl shadow-2xl p-12 max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-navy-dark mb-6">Your Journey, Uniquely Crafted</h3>
+              <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
+            </div>
+            
+            <div className="space-y-8 text-lg text-navy-dark leading-relaxed">
+              <p className="text-center text-xl">
+                We understand that every individual's wellness journey is distinct. That's why every program at Bundele Wellness is uniquely crafted for you.
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-12">
+                <div className="space-y-6">
+                  <p>
+                    We begin with a comprehensive assessment of your current fitness level, lifestyle demands, and personal goals. This personalized approach ensures that whether you are new to wellness or looking to elevate your existing routine, our integrated methodology delivers sustainable, transformative results that seamlessly fit into your life.
+                  </p>
+                  <p>
+                    We are committed to meeting you where you are and guiding you to where you want to be, making your wellness journey both achievable and enjoyable.
+                  </p>
+                </div>
+                <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8">
+                  <h4 className="text-xl font-bold text-navy-dark mb-6 text-center">Your Wellness Blueprint</h4>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                      <span className="font-medium">Comprehensive Assessment</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                      <span className="font-medium">Personalized Program Design</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                      <span className="font-medium">Progressive Adaptation</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
+                      <span className="font-medium">Ongoing Support & Growth</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -252,49 +387,104 @@ export default function YogaPage() {
         <div className="absolute bottom-24 left-12 w-24 h-24 bg-gray-300 rounded-full opacity-25"></div>
       </section>
 
-      {/* Class Packages */}
-      <section className="relative py-20 bg-gray-50 overflow-hidden">
+      {/* Investment & Impact Section */}
+      <section className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-navy-dark mb-6">Class Packages</h2>
-            <p className="text-xl text-navy-dark">Choose the package that fits your practice</p>
+            <h2 className="text-4xl font-bold text-navy-dark mb-6">Invest in Your Transformation, Impact the World</h2>
+            <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
+            <p className="text-xl text-navy-medium max-w-3xl mx-auto">
+              Your wellness journey creates ripples of positive change that extend far beyond yourself
+            </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {packages.map((pkg, index) => (
-              <Card key={index} className={`relative text-center shadow-lg bg-white border-0 ${
-                pkg.isPopular ? "ring-2 ring-navy-dark" : ""
-              }`}>
-                <CardContent className="p-8">
-                  {pkg.isPopular && (
-                    <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-navy-dark text-white">
-                      <Star className="mr-1 h-3 w-3" />
-                      POPULAR
-                    </Badge>
-                  )}
-                  
-                  <h3 className="text-xl font-bold text-navy-dark mb-4">{pkg.name}</h3>
-                  <div className="text-3xl font-bold text-navy-medium mb-2">{pkg.price}</div>
-                  {pkg.originalPrice && (
-                    <div className="text-sm text-gray-500 line-through mb-1">{pkg.originalPrice}</div>
-                  )}
-                  {pkg.savings && (
-                    <div className="text-sm text-navy-dark font-semibold mb-4">{pkg.savings}</div>
-                  )}
-                  <p className="text-navy-dark mb-6">{pkg.description}</p>
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+            <div className="space-y-8">
+              <Card className="bg-gradient-to-br from-orange-500 to-amber-500 text-white border-0 shadow-2xl">
+                <CardContent className="p-10 text-center">
+                  <div className="mb-6">
+                    <div className="text-6xl font-bold">$65</div>
+                    <div className="text-xl opacity-90">per session</div>
+                  </div>
+                  <p className="text-lg leading-relaxed opacity-95">
+                    Sessions are priced at $65 each, with attractive package discounts available for committed members ready to invest in their complete transformation.
+                  </p>
                 </CardContent>
               </Card>
-            ))}
+              
+              <div className="grid grid-cols-2 gap-6">
+                <Card className="bg-navy-very-light border-0 shadow-lg">
+                  <CardContent className="p-6 text-center">
+                    <h4 className="text-xl font-bold text-navy-dark mb-2">3-Session Pack</h4>
+                    <div className="text-2xl font-bold text-orange-500">$175</div>
+                    <div className="text-sm text-gray-500 line-through">$195</div>
+                    <div className="text-sm font-semibold text-navy-dark">Save 10%</div>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-navy-very-light border-0 shadow-lg">
+                  <CardContent className="p-6 text-center">
+                    <h4 className="text-xl font-bold text-navy-dark mb-2">5-Session Pack</h4>
+                    <div className="text-2xl font-bold text-orange-500">$292</div>
+                    <div className="text-sm text-gray-500 line-through">$325</div>
+                    <div className="text-sm font-semibold text-navy-dark">Save 10%</div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+            
+            <div className="space-y-8">
+              <Card className="bg-gradient-to-br from-navy-dark to-navy-medium text-white border-0 shadow-2xl">
+                <CardContent className="p-10">
+                  <h3 className="text-2xl font-bold mb-6 text-center">Your Impact Beyond Wellness</h3>
+                  <div className="space-y-6 text-lg leading-relaxed">
+                    <p>
+                      By choosing Bundele Wellness, you are not only investing in your own health and well-being but also contributing to a greater cause. Your participation directly helps fund community education and support programs worldwide through the Bundele Foundation.
+                    </p>
+                    <p>
+                      This means that every step you take towards your personal wellness journey with us simultaneously supports educational initiatives and empowers communities in need.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <div className="bg-orange-50 rounded-2xl p-8">
+                <h4 className="text-xl font-bold text-navy-dark mb-4 text-center">Community Impact</h4>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-orange-500">Education</div>
+                    <div className="text-sm text-navy-medium">Supporting schools worldwide</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-orange-500">Seniors</div>
+                    <div className="text-sm text-navy-medium">Technology & wellness programs</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           
-          <div className="text-center mt-12">
-            <button
-              onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdAyE2hC6OAAEKo2Abu477TbnFHcLJCTEAuSuNBChwhJAt14A/viewform?usp=header", "_blank")}
-              className="navy-button-primary px-12 py-6 text-lg rounded-none font-normal tracking-wider uppercase flex items-center justify-center"
-            >
-              <CalendarPlus className="mr-3 h-5 w-5" />
-              Sign Up for Classes
-            </button>
+          <div className="text-center">
+            <p className="text-2xl font-light text-navy-dark mb-8 italic">
+              "Join Bundele Wellness today and embark on a holistic wellness journey that benefits you, and the world."
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <button
+                onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdAyE2hC6OAAEKo2Abu477TbnFHcLJCTEAuSuNBChwhJAt14A/viewform?usp=header", "_blank")}
+                className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 rounded-md text-lg font-semibold transition-colors inline-flex items-center justify-center"
+              >
+                <CalendarPlus className="mr-3 h-5 w-5" />
+                Begin Your Wellness Journey
+              </button>
+              
+              <button 
+                onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
+                className="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-12 py-4 rounded-md text-lg font-semibold transition-colors"
+              >
+                Support Our Mission
+              </button>
+            </div>
           </div>
         </div>
         
