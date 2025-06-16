@@ -494,47 +494,6 @@ export default function YogaPage() {
         <div className="absolute top-1/2 left-4 w-24 h-24 bg-gray-100 rounded-full opacity-35"></div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="relative py-20 bg-white overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-navy-dark text-center mb-16">Why Choose Our Practice?</h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-white border border-navy-light shadow-lg text-center">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-navy-dark mb-4">Complete Fitness</h3>
-                <p className="text-navy-dark">
-                  Yoga, strength training, cardio conditioning, and nutrition guidance in one comprehensive program.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white border border-navy-light shadow-lg text-center">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-navy-dark mb-4">Personalized Approach</h3>
-                <p className="text-navy-dark">
-                  Routines adapted to your lifestyle, abilities, and goals for sustainable wellness transformation.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white border border-navy-light shadow-lg text-center">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-navy-dark mb-4">Supporting Charity</h3>
-                <p className="text-navy-dark">
-                  Your participation helps fund community education and support programs worldwide.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-        
-        {/* Subtle background circles */}
-        <div className="absolute top-8 right-6 w-32 h-32 bg-gray-200 rounded-full opacity-30"></div>
-        <div className="absolute bottom-12 left-6 w-40 h-40 bg-gray-300 rounded-full opacity-25"></div>
-        <div className="absolute top-1/3 right-2 w-24 h-24 bg-gray-100 rounded-full opacity-35"></div>
-      </section>
-
       <Footer />
     </div>
   );
