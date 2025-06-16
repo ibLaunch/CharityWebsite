@@ -128,7 +128,7 @@ export default function YogaPage() {
             <h2 className="text-4xl font-bold text-navy-dark mb-8">
               Bundele Wellness: Cultivating Holistic Well-being, Transforming Lives
             </h2>
-            <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           </div>
           
           <div className="prose prose-lg max-w-none text-navy-dark leading-relaxed space-y-8">
@@ -392,7 +392,7 @@ export default function YogaPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-navy-dark mb-6">Invest in Your Transformation, Impact the World</h2>
-            <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-xl text-navy-medium max-w-3xl mx-auto">
               Your wellness journey creates ripples of positive change that extend far beyond yourself
             </p>
@@ -400,7 +400,7 @@ export default function YogaPage() {
           
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
             <div className="space-y-8">
-              <Card className="bg-gradient-to-br from-orange-500 to-amber-500 text-white border-0 shadow-2xl">
+              <Card className="bg-gradient-to-br from-blue-600 to-blue-500 text-white border-0 shadow-2xl">
                 <CardContent className="p-10 text-center">
                   <div className="mb-6">
                     <div className="text-6xl font-bold">$65</div>

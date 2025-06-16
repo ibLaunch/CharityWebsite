@@ -1,0 +1,107 @@
+Update the color scheme of the Bundele Wellness page to match the main Bundele Foundation website's blue branding while keeping all other design elements intact.
+
+**STEP 1: Color Scheme Analysis**
+Based on the foundation website, extract and use these colors:
+- Primary Blue: #4A6B8A (main foundation blue)
+- Secondary Blue: #6B8CAE (lighter blue for accents) 
+- Dark Text: #2C3E50 (navy text color)
+- Light Gray: #F8F9FA (subtle backgrounds)
+- White: #FFFFFF (clean backgrounds)
+
+**STEP 2: Specific Color Updates for Wellness Page**
+Update ONLY the wellness page (wellness.html or the wellness section) with these changes:
+
+```css
+/* Wellness Page Color Overrides */
+.wellness-page {
+  --primary-color: #4A6B8A;
+  --secondary-color: #6B8CAE;
+  --accent-color: #4A6B8A;
+  --text-color: #2C3E50;
+  --light-bg: #F8F9FA;
+}
+
+/* Update the orange pricing box to blue */
+.pricing-highlight,
+.price-box,
+.pricing-card {
+  background: linear-gradient(135deg, #4A6B8A 0%, #6B8CAE 100%);
+  color: white;
+}
+
+/* Update buttons to match foundation style */
+.btn-primary {
+  background-color: #4A6B8A;
+  border-color: #4A6B8A;
+}
+
+.btn-primary:hover {
+  background-color: #3A5A7A;
+  border-color: #3A5A7A;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #4A6B8A;
+  color: #4A6B8A;
+}
+
+.btn-secondary:hover {
+  background-color: #4A6B8A;
+  color: white;
+}
+
+/* Update section headers and accents */
+.wellness-hero h1,
+.section-title {
+  color: #2C3E50;
+}
+
+/* Update pillar cards accent colors */
+.pillar-card {
+  border-left: 4px solid #4A6B8A;
+}
+
+.pillar-card:hover {
+  box-shadow: 0 4px 15px rgba(74, 107, 138, 0.2);
+}
+
+/* Update community impact section */
+.community-impact {
+  background-color: #F8F9FA;
+}
+
+.impact-stat {
+  color: #4A6B8A;
+}
+```
+
+**STEP 3: Preserve Foundation Navigation**
+- Keep the existing navigation colors (blue)
+- Ensure the "BUNDELE FIT" nav item matches other nav items
+- Maintain footer consistency with foundation colors
+
+**STEP 4: Update Specific Elements**
+1. **Pricing Box**: Change orange ($65 box) to blue gradient
+2. **Call-to-Action Buttons**: Use foundation's blue button style
+3. **Section Dividers**: Use subtle blue accents instead of orange
+4. **Icon Colors**: Change any orange icons to blue
+5. **Hover Effects**: Use blue-based hover states
+
+**STEP 5: Maintain Visual Hierarchy**
+- Keep the same layout and spacing
+- Preserve typography sizes and weights
+- Maintain the hero image (b-wellness.png) - it works with blue
+- Keep all content and structure exactly the same
+
+**STEP 6: Test Consistency**
+Ensure these elements match the foundation's main pages:
+- Navigation hover effects
+- Button styles and hover states
+- Text color hierarchy
+- Background treatments
+- Overall professional tone
+
+**FINAL RESULT**: The wellness page should look like a natural extension of the Bundele Foundation website, using the same professional blue color palette while maintaining the wellness-specific content and layout. The page should feel cohesive with the main foundation brand identity.
+
+**DO NOT CHANGE**: Content, layout, images, typography, or any other design elements - ONLY update colors to match the foundation's blue branding.
