@@ -80,14 +80,14 @@ export default function YogaPage() {
               </Link>
               
               <div className="space-y-8">
-                <div className="text-orange-200 text-lg font-medium tracking-wide uppercase">
+                <div className="text-blue-200 text-lg font-medium tracking-wide uppercase">
                   Holistic Well-being Programs
                 </div>
                 <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
                   Bundele<br />
-                  <span className="italic text-orange-300">Wellness</span>
+                  <span className="italic text-blue-300">Wellness</span>
                 </h1>
-                <p className="text-2xl font-light text-orange-100 italic leading-relaxed">
+                <p className="text-2xl font-light text-blue-100 italic leading-relaxed">
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
                 
@@ -105,7 +105,7 @@ export default function YogaPage() {
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <button 
                     onClick={() => window.scrollTo({ top: document.getElementById('programs')?.offsetTop || 0, behavior: 'smooth' })}
-                    className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-md text-lg font-semibold transition-colors"
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md text-lg font-semibold transition-colors"
                   >
                     Explore Our Programs
                   </button>
@@ -195,12 +195,12 @@ export default function YogaPage() {
                 <div className="grid lg:grid-cols-2 gap-0">
                   <div className="p-12 lg:p-16">
                     <div className="flex items-center mb-8">
-                      <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-6">
+                      <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-6">
                         <Flower className="w-10 h-10 text-white" />
                       </div>
                       <div>
                         <h3 className="text-3xl font-bold text-navy-dark">Mindful Yoga Practice</h3>
-                        <p className="text-xl text-purple-600 italic font-light">Awaken Your Inner Harmony</p>
+                        <p className="text-xl text-blue-600 italic font-light">Awaken Your Inner Harmony</p>
                       </div>
                     </div>
                     <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
@@ -212,10 +212,10 @@ export default function YogaPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-br from-purple-100 to-pink-100 p-12 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-12 flex items-center justify-center">
                     <div className="text-center">
                       <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                        <Flower className="w-16 h-16 text-purple-500" />
+                        <Flower className="w-16 h-16 text-blue-500" />
                       </div>
                       <p className="text-lg font-semibold text-navy-dark">Flexibility • Balance • Mindfulness</p>
                     </div>
@@ -269,12 +269,12 @@ export default function YogaPage() {
                 <div className="grid lg:grid-cols-2 gap-0">
                   <div className="p-12 lg:p-16">
                     <div className="flex items-center mb-8">
-                      <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-orange-500 rounded-full flex items-center justify-center mr-6">
+                      <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mr-6">
                         <Heart className="w-10 h-10 text-white" />
                       </div>
                       <div>
                         <h3 className="text-3xl font-bold text-navy-dark">Cardiovascular Conditioning</h3>
-                        <p className="text-xl text-red-600 italic font-light">Energize Your Core, Elevate Your Spirit</p>
+                        <p className="text-xl text-blue-600 italic font-light">Energize Your Core, Elevate Your Spirit</p>
                       </div>
                     </div>
                     <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
@@ -286,7 +286,7 @@ export default function YogaPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-br from-red-100 to-orange-100 p-12 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-blue-100 to-blue-200 p-12 flex items-center justify-center">
                     <div className="text-center">
                       <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                         <Heart className="w-16 h-16 text-red-500" />
