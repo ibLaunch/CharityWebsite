@@ -5,7 +5,8 @@ export default function Footer() {
   const quickLinks = [
     { href: "/", label: "Home" },
     { href: "/impact-circle", label: "Impact Circle" },
-    { href: "/yoga", label: "Yoga Sessions" },
+    { href: "/yoga", label: "Wellness" },
+    { href: "/founders-message", label: "Founder's Message" },
     { href: "/contact", label: "Contact" }
   ];
 
