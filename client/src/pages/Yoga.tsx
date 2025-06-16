@@ -339,7 +339,7 @@ export default function YogaPage() {
           <div className="bg-white rounded-3xl shadow-2xl p-12 max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h3 className="text-3xl font-bold text-navy-dark mb-6">Your Journey, Uniquely Crafted</h3>
-              <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
+              <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
             </div>
             
             <div className="space-y-8 text-lg text-navy-dark leading-relaxed">
@@ -356,7 +356,7 @@ export default function YogaPage() {
                     We are committed to meeting you where you are and guiding you to where you want to be, making your wellness journey both achievable and enjoyable.
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8">
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
                   <h4 className="text-xl font-bold text-navy-dark mb-6 text-center">Your Wellness Blueprint</h4>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
@@ -416,7 +416,7 @@ export default function YogaPage() {
                 <Card className="bg-navy-very-light border-0 shadow-lg">
                   <CardContent className="p-6 text-center">
                     <h4 className="text-xl font-bold text-navy-dark mb-2">3-Session Pack</h4>
-                    <div className="text-2xl font-bold text-orange-500">$175</div>
+                    <div className="text-2xl font-bold text-blue-600">$175</div>
                     <div className="text-sm text-gray-500 line-through">$195</div>
                     <div className="text-sm font-semibold text-navy-dark">Save 10%</div>
                   </CardContent>
@@ -425,7 +425,7 @@ export default function YogaPage() {
                 <Card className="bg-navy-very-light border-0 shadow-lg">
                   <CardContent className="p-6 text-center">
                     <h4 className="text-xl font-bold text-navy-dark mb-2">5-Session Pack</h4>
-                    <div className="text-2xl font-bold text-orange-500">$292</div>
+                    <div className="text-2xl font-bold text-blue-600">$292</div>
                     <div className="text-sm text-gray-500 line-through">$325</div>
                     <div className="text-sm font-semibold text-navy-dark">Save 10%</div>
                   </CardContent>
@@ -448,15 +448,15 @@ export default function YogaPage() {
                 </CardContent>
               </Card>
               
-              <div className="bg-orange-50 rounded-2xl p-8">
+              <div className="bg-blue-50 rounded-2xl p-8">
                 <h4 className="text-xl font-bold text-navy-dark mb-4 text-center">Community Impact</h4>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-orange-500">Education</div>
+                    <div className="text-2xl font-bold text-blue-600">Education</div>
                     <div className="text-sm text-navy-medium">Supporting schools worldwide</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-orange-500">Seniors</div>
+                    <div className="text-2xl font-bold text-blue-600">Seniors</div>
                     <div className="text-sm text-navy-medium">Technology & wellness programs</div>
                   </div>
                 </div>
@@ -472,7 +472,7 @@ export default function YogaPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
                 onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdAyE2hC6OAAEKo2Abu477TbnFHcLJCTEAuSuNBChwhJAt14A/viewform?usp=header", "_blank")}
-                className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 rounded-md text-lg font-semibold transition-colors inline-flex items-center justify-center"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 rounded-md text-lg font-semibold transition-colors inline-flex items-center justify-center"
               >
                 <CalendarPlus className="mr-3 h-5 w-5" />
                 Begin Your Wellness Journey
@@ -480,7 +480,7 @@ export default function YogaPage() {
               
               <button 
                 onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
-                className="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-12 py-4 rounded-md text-lg font-semibold transition-colors"
+                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-12 py-4 rounded-md text-lg font-semibold transition-colors"
               >
                 Support Our Mission
               </button>
