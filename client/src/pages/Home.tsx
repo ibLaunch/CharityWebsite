@@ -169,9 +169,9 @@ export default function Home() {
           
           <div className="grid lg:grid-cols-2 gap-16 items-stretch">
             <div className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-navy-medium rounded-full flex items-center justify-center mr-4">
-                  <BookOpen className="w-8 h-8 text-white" />
+              <div className="flex items-start mb-6">
+                <div className="w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
+                  <BookOpen className="w-8 h-8 text-navy-medium stroke-2" />
                 </div>
                 <h3 className="text-3xl font-bold text-navy-dark">Supporting education in underserved communities</h3>
               </div>
@@ -181,9 +181,9 @@ export default function Home() {
             </div>
             
             <div className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-navy-medium rounded-full flex items-center justify-center mr-4">
-                  <Heart className="w-8 h-8 text-white" />
+              <div className="flex items-start mb-6">
+                <div className="w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
+                  <Heart className="w-8 h-8 text-navy-medium stroke-2" />
                 </div>
                 <h3 className="text-3xl font-bold text-navy-dark">Help seniors enhance their quality of life in their golden years</h3>
               </div>
