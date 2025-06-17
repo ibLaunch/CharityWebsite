@@ -237,10 +237,10 @@ export default function Home() {
                       <div className="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center">
                         <IconComponent className="w-6 h-6 text-navy-medium stroke-2" />
                       </div>
-                      <div className="absolute bottom-4 left-4 bg-navy-dark/80 backdrop-blur-md px-4 py-2 rounded-lg shadow-lg border border-navy-light/30">
-                        <div className="flex items-center space-x-2">
-                          <Calendar className="w-4 h-4 text-navy-light" />
-                          <span className="text-4xl font-bold text-white">{story.year}</span>
+                      <div className="absolute bottom-3 left-3 bg-navy-dark/60 backdrop-blur-lg px-3 py-1 rounded-md">
+                        <div className="flex items-center space-x-1">
+                          <Calendar className="w-3 h-3 text-navy-light" />
+                          <span className="text-2xl font-bold text-white">{story.year}</span>
                         </div>
                       </div>
                     </div>
