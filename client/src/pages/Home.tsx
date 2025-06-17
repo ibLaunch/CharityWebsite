@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import { useState, useEffect } from "react";
-import { BookOpen, Heart, Users, GraduationCap, Laptop, DollarSign } from "lucide-react";
+import { BookOpen, Heart } from "lucide-react";
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
 import rotaryImage from "@assets/Screen Shot 2025-05-19 at 8.18.34 PM_1750195463736.png";
 import schoolHallImage2 from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM_1750195477402.png";
@@ -43,39 +43,27 @@ export default function Home() {
   const challenges = [
     {
       stat: "1 in 5",
-      percentage: 20,
-      description: "children globally lack access to basic education",
-      icon: GraduationCap
+      description: "children globally lack access to basic education"
     },
     {
       stat: "42%",
-      percentage: 42,
-      description: "children are engaged in child labor, instead of learning",
-      icon: Users
+      description: "children are engaged in child labor, instead of learning"
     },
     {
       stat: "36%",
-      percentage: 36,
-      description: "of children are out of school, and 67% of girls (ages 15+) struggle to read and write",
-      icon: BookOpen
+      description: "of children are out of school, and 67% of girls (ages 15+) struggle to read and write"
     },
     {
       stat: "60%",
-      percentage: 60,
-      description: "of seniors report feeling isolated or lonely",
-      icon: Heart
+      description: "of seniors report feeling isolated or lonely"
     },
     {
       stat: "17%",
-      percentage: 17,
-      description: "of seniors aged 65+ are digitally literate",
-      icon: Laptop
+      description: "of seniors aged 65+ are digitally literate"
     },
     {
       stat: "25%",
-      percentage: 25,
-      description: "of seniors live below the poverty line in developing regions",
-      icon: DollarSign
+      description: "of seniors live below the poverty line in developing regions"
     }
   ];
 
@@ -260,36 +248,14 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {challenges.map((challenge, index) => {
-              const IconComponent = challenge.icon;
-              return (
-                <Card key={index} className="bg-white border border-navy-light shadow-lg">
-                  <CardContent className="p-8">
-                    <div className="flex items-center justify-center mb-6">
-                      <div className="w-16 h-16 bg-navy-very-light rounded-full flex items-center justify-center">
-                        <IconComponent className="w-8 h-8 text-navy-medium stroke-2" />
-                      </div>
-                    </div>
-                    
-                    <div className="text-center mb-6">
-                      <h3 className="text-4xl font-bold text-navy-medium mb-2">{challenge.stat}</h3>
-                    </div>
-                    
-                    <div className="mb-6">
-                      <div className="w-full bg-gray-200 rounded-full h-3 mb-2">
-                        <div 
-                          className="bg-gradient-to-r from-navy-medium to-navy-dark h-3 rounded-full transition-all duration-1000 ease-out"
-                          style={{ width: `${challenge.percentage}%` }}
-                        ></div>
-                      </div>
-                      <div className="text-right text-sm text-navy-medium font-medium">{challenge.percentage}%</div>
-                    </div>
-                    
-                    <p className="text-navy-dark leading-relaxed text-center">{challenge.description}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
+            {challenges.map((challenge, index) => (
+              <Card key={index} className="bg-white border border-navy-light shadow-lg text-center">
+                <CardContent className="p-8">
+                  <h3 className="text-4xl font-bold text-navy-medium mb-4">{challenge.stat}</h3>
+                  <p className="text-navy-dark leading-relaxed">{challenge.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
         
