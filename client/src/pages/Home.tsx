@@ -238,10 +238,7 @@ export default function Home() {
                         <IconComponent className="w-6 h-6 text-navy-medium stroke-2" />
                       </div>
                       <div className="absolute bottom-3 left-3 bg-navy-dark/60 backdrop-blur-lg px-3 py-1 rounded-md">
-                        <div className="flex items-center space-x-1">
-                          <Calendar className="w-3 h-3 text-navy-light" />
-                          <span className="text-2xl font-bold text-white">{story.year}</span>
-                        </div>
+                        <span className="text-2xl font-bold text-white">{story.year}</span>
                       </div>
                     </div>
                     <div className="p-6">
