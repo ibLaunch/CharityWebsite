@@ -104,7 +104,7 @@ export default function Home() {
                   Foundation
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                  Your donations are not only tax-deductible but also matched by Bundele Foundation for up to $2,000, doubling your impact.
+                  Building stronger communities—one generation at a time—through youth empowerment, senior care, and intergenerational programs.
                 </p>
               </div>
               
