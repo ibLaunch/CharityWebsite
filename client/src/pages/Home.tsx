@@ -258,14 +258,14 @@ export default function Home() {
               const IconComponent = challenge.icon;
               return (
                 <Card key={index} className="bg-white border border-navy-light shadow-lg hover:shadow-xl transition-shadow group">
-                  <CardContent className="p-8 text-center">
-                    <div className="mb-6 flex justify-center">
-                      <div className="w-16 h-16 bg-navy-very-light rounded-full flex items-center justify-center group-hover:bg-navy-light transition-colors">
-                        <IconComponent className="w-8 h-8 text-navy-medium stroke-2" />
+                  <CardContent className="p-10 text-center">
+                    <div className="mb-8 flex justify-center">
+                      <div className="w-20 h-20 bg-navy-very-light rounded-full flex items-center justify-center group-hover:bg-navy-light transition-colors">
+                        <IconComponent className="w-10 h-10 text-navy-medium stroke-2" />
                       </div>
                     </div>
-                    <h3 className="text-4xl font-bold text-navy-medium mb-4">{challenge.stat}</h3>
-                    <p className="text-navy-dark leading-relaxed text-sm">{challenge.description}</p>
+                    <h3 className="text-5xl font-bold text-navy-medium mb-6">{challenge.stat}</h3>
+                    <p className="text-navy-dark leading-relaxed text-base">{challenge.description}</p>
                   </CardContent>
                 </Card>
               );
