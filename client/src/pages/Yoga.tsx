@@ -146,24 +146,24 @@ export default function YogaPage() {
                 </p>
               </div>
               
-              <Card className="bg-gradient-to-br from-orange-50 to-orange-100 border-0 shadow-lg">
+              <Card className="bg-gradient-to-br from-navy-very-light to-navy-light border-0 shadow-lg">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-navy-dark mb-6 text-center">Our Wellness Philosophy</h3>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-navy-medium rounded-full"></div>
                       <span className="text-navy-dark font-medium">Mind-Body-Spirit Integration</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-navy-medium rounded-full"></div>
                       <span className="text-navy-dark font-medium">Personalized Transformation</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-navy-medium rounded-full"></div>
                       <span className="text-navy-dark font-medium">Sustainable Wellness Practices</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-navy-medium rounded-full"></div>
                       <span className="text-navy-dark font-medium">Community Impact & Support</span>
                     </div>
                   </div>
@@ -174,12 +174,12 @@ export default function YogaPage() {
         </div>
         
         {/* Background decorative elements */}
-        <div className="absolute top-20 left-8 w-32 h-32 bg-orange-100 rounded-full opacity-30"></div>
-        <div className="absolute bottom-20 right-12 w-24 h-24 bg-orange-200 rounded-full opacity-25"></div>
+        <div className="absolute top-20 left-8 w-32 h-32 bg-navy-very-light rounded-full opacity-30"></div>
+        <div className="absolute bottom-20 right-12 w-24 h-24 bg-navy-light rounded-full opacity-25"></div>
       </section>
 
       {/* Four Pillars of Transformation */}
-      <section id="programs" className="relative py-20 bg-gradient-to-br from-orange-50 to-amber-50 overflow-hidden">
+      <section id="programs" className="relative py-20 bg-gradient-to-br from-navy-very-light to-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-navy-dark mb-6">The Four Pillars of Your Transformation</h2>
