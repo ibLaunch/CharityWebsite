@@ -80,14 +80,14 @@ export default function YogaPage() {
               </Link>
               
               <div className="space-y-8">
-                <div className="text-blue-200 text-lg font-medium tracking-wide uppercase">
+                <div className="text-navy-light text-lg font-medium tracking-wide uppercase">
                   Holistic Well-being Programs
                 </div>
                 <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
                   Bundele<br />
-                  <span className="italic text-blue-300">Wellness</span>
+                  <span className="italic text-navy-light">Wellness</span>
                 </h1>
-                <p className="text-2xl font-light text-blue-100 italic leading-relaxed">
+                <p className="text-2xl font-light text-navy-very-light italic leading-relaxed">
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
                 
@@ -105,7 +105,7 @@ export default function YogaPage() {
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <button 
                     onClick={() => window.scrollTo({ top: document.getElementById('programs')?.offsetTop || 0, behavior: 'smooth' })}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md text-lg font-semibold transition-colors"
+                    className="bg-navy-dark hover:bg-navy-hover text-white px-8 py-4 rounded-md text-lg font-semibold transition-colors"
                   >
                     Explore Our Programs
                   </button>
@@ -128,7 +128,7 @@ export default function YogaPage() {
             <h2 className="text-4xl font-bold text-navy-dark mb-8">
               Bundele Wellness: Cultivating Holistic Well-being, Transforming Lives
             </h2>
-            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-navy-medium mx-auto mb-8"></div>
           </div>
           
           <div className="prose prose-lg max-w-none text-navy-dark leading-relaxed space-y-8">
@@ -339,7 +339,7 @@ export default function YogaPage() {
           <div className="bg-white rounded-3xl shadow-2xl p-12 max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h3 className="text-3xl font-bold text-navy-dark mb-6">Your Journey, Uniquely Crafted</h3>
-              <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
+              <div className="w-24 h-1 bg-navy-medium mx-auto"></div>
             </div>
             
             <div className="space-y-8 text-lg text-navy-dark leading-relaxed">
@@ -392,7 +392,7 @@ export default function YogaPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-navy-dark mb-6">Invest in Your Transformation, Impact the World</h2>
-            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-navy-medium mx-auto mb-8"></div>
             <p className="text-xl text-navy-medium max-w-3xl mx-auto">
               Your wellness journey creates ripples of positive change that extend far beyond yourself
             </p>
@@ -400,7 +400,7 @@ export default function YogaPage() {
           
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
             <div className="space-y-8">
-              <Card className="bg-gradient-to-br from-blue-600 to-blue-500 text-white border-0 shadow-2xl">
+              <Card className="bg-gradient-to-br from-navy-dark to-navy-medium text-white border-0 shadow-2xl">
                 <CardContent className="p-10 text-center">
                   <div className="mb-6">
                     <div className="text-6xl font-bold">$65</div>
@@ -416,7 +416,7 @@ export default function YogaPage() {
                 <Card className="bg-navy-very-light border-0 shadow-lg">
                   <CardContent className="p-6 text-center">
                     <h4 className="text-xl font-bold text-navy-dark mb-2">3-Session Pack</h4>
-                    <div className="text-2xl font-bold text-blue-600">$175</div>
+                    <div className="text-2xl font-bold text-navy-medium">$175</div>
                     <div className="text-sm text-gray-500 line-through">$195</div>
                     <div className="text-sm font-semibold text-navy-dark">Save 10%</div>
                   </CardContent>
@@ -425,7 +425,7 @@ export default function YogaPage() {
                 <Card className="bg-navy-very-light border-0 shadow-lg">
                   <CardContent className="p-6 text-center">
                     <h4 className="text-xl font-bold text-navy-dark mb-2">5-Session Pack</h4>
-                    <div className="text-2xl font-bold text-blue-600">$292</div>
+                    <div className="text-2xl font-bold text-navy-medium">$292</div>
                     <div className="text-sm text-gray-500 line-through">$325</div>
                     <div className="text-sm font-semibold text-navy-dark">Save 10%</div>
                   </CardContent>
