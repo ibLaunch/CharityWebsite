@@ -110,7 +110,7 @@ export default function ContactPage() {
             <div className="order-2 lg:order-1">
               <h2 className="text-serif text-3xl font-medium text-navy-dark mb-8 tracking-tight">Get in Touch</h2>
               <p className="text-sans text-navy-dark mb-16 leading-relaxed">
-                Whether you're interested in joining our Impact Circle, attending yoga classes, or learning more about our community programs, we're here to help. Reach out to us using any of the methods below.
+                Whether you're interested in joining our Impact Circle, attending fitness classes, or learning more about our community programs, we're here to help. Reach out to us using any of the methods below.
               </p>
               
               <div className="space-y-10">
@@ -159,7 +159,7 @@ export default function ContactPage() {
                     onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdAyE2hC6OAAEKo2Abu477TbnFHcLJCTEAuSuNBChwhJAt14A/viewform?usp=header", "_blank")}
                     className="navy-button-secondary w-full px-10 py-4 rounded-none font-normal text-sm tracking-wider uppercase"
                   >
-                    Sign Up for Yoga Classes
+                    Sign Up for Fitness Classes
                   </button>
                   
                   <button
@@ -213,7 +213,7 @@ export default function ContactPage() {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="General Inquiry">General Inquiry</SelectItem>
-                        <SelectItem value="Yoga Classes">Yoga Classes</SelectItem>
+                        <SelectItem value="Fitness Classes">Fitness Classes</SelectItem>
                         <SelectItem value="Impact Circle">Impact Circle</SelectItem>
                         <SelectItem value="Donations">Donations</SelectItem>
                         <SelectItem value="Volunteer Opportunities">Volunteer Opportunities</SelectItem>
