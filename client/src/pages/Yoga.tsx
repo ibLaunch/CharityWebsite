@@ -230,17 +230,17 @@ export default function YogaPage() {
             <Card className="bg-white border-0 shadow-2xl overflow-hidden">
               <CardContent className="p-0">
                 <div className="grid lg:grid-cols-2 gap-0">
-                  <div className="bg-gradient-to-br from-blue-100 to-cyan-100 p-12 flex items-center justify-center lg:order-1">
+                  <div className="bg-gradient-to-br from-navy-very-light to-navy-light p-12 flex items-center justify-center lg:order-1">
                     <div className="text-center">
                       <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                        <Dumbbell className="w-16 h-16 text-blue-500" />
+                        <Dumbbell className="w-16 h-16 text-navy-medium" />
                       </div>
                       <p className="text-lg font-semibold text-navy-dark">Power • Resilience • Confidence</p>
                     </div>
                   </div>
                   <div className="p-12 lg:p-16 lg:order-2">
                     <div className="flex items-center mb-8">
-                      <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mr-6">
+                      <div className="w-20 h-20 bg-gradient-to-br from-navy-dark to-navy-medium rounded-full flex items-center justify-center mr-6">
                         <Dumbbell className="w-10 h-10 text-white" />
                       </div>
                       <div>
