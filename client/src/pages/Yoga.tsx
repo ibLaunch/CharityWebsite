@@ -200,7 +200,7 @@ export default function YogaPage() {
                       </div>
                       <div>
                         <h3 className="text-3xl font-bold text-navy-dark">Mindful Yoga Practice</h3>
-                        <p className="text-xl text-blue-600 italic font-light">Awaken Your Inner Harmony</p>
+                        <p className="text-xl text-navy-medium italic font-light">Awaken Your Inner Harmony</p>
                       </div>
                     </div>
                     <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
@@ -212,10 +212,10 @@ export default function YogaPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-12 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-navy-very-light to-navy-light p-12 flex items-center justify-center">
                     <div className="text-center">
                       <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                        <Flower className="w-16 h-16 text-blue-500" />
+                        <Flower className="w-16 h-16 text-navy-medium" />
                       </div>
                       <p className="text-lg font-semibold text-navy-dark">Flexibility • Balance • Mindfulness</p>
                     </div>
@@ -245,7 +245,7 @@ export default function YogaPage() {
                       </div>
                       <div>
                         <h3 className="text-3xl font-bold text-navy-dark">Functional Strength Training</h3>
-                        <p className="text-xl text-blue-600 italic font-light">Build Resilience, Unleash Potential</p>
+                        <p className="text-xl text-navy-medium italic font-light">Build Resilience, Unleash Potential</p>
                       </div>
                     </div>
                     <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
@@ -269,12 +269,12 @@ export default function YogaPage() {
                 <div className="grid lg:grid-cols-2 gap-0">
                   <div className="p-12 lg:p-16">
                     <div className="flex items-center mb-8">
-                      <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mr-6">
+                      <div className="w-20 h-20 bg-gradient-to-br from-navy-medium to-navy-hover rounded-full flex items-center justify-center mr-6">
                         <Heart className="w-10 h-10 text-white" />
                       </div>
                       <div>
                         <h3 className="text-3xl font-bold text-navy-dark">Cardiovascular Conditioning</h3>
-                        <p className="text-xl text-blue-600 italic font-light">Energize Your Core, Elevate Your Spirit</p>
+                        <p className="text-xl text-navy-medium italic font-light">Energize Your Core, Elevate Your Spirit</p>
                       </div>
                     </div>
                     <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
@@ -286,10 +286,10 @@ export default function YogaPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-br from-blue-100 to-blue-200 p-12 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-navy-very-light to-navy-light p-12 flex items-center justify-center">
                     <div className="text-center">
                       <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                        <Heart className="w-16 h-16 text-blue-500" />
+                        <Heart className="w-16 h-16 text-navy-medium" />
                       </div>
                       <p className="text-lg font-semibold text-navy-dark">Endurance • Energy • Vitality</p>
                     </div>
@@ -304,10 +304,10 @@ export default function YogaPage() {
             <Card className="bg-white border-0 shadow-2xl overflow-hidden">
               <CardContent className="p-0">
                 <div className="grid lg:grid-cols-2 gap-0">
-                  <div className="bg-gradient-to-br from-blue-200 to-blue-300 p-12 flex items-center justify-center lg:order-1">
+                  <div className="bg-gradient-to-br from-navy-very-light to-navy-light p-12 flex items-center justify-center lg:order-1">
                     <div className="text-center">
                       <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                        <Apple className="w-16 h-16 text-blue-500" />
+                        <Apple className="w-16 h-16 text-navy-medium" />
                       </div>
                       <p className="text-lg font-semibold text-navy-dark">Nourishment • Balance • Sustainability</p>
                     </div>
