@@ -314,12 +314,12 @@ export default function YogaPage() {
                   </div>
                   <div className="p-12 lg:p-16 lg:order-2">
                     <div className="flex items-center mb-8">
-                      <div className="w-20 h-20 bg-gradient-to-br from-blue-700 to-blue-800 rounded-full flex items-center justify-center mr-6">
+                      <div className="w-20 h-20 bg-gradient-to-br from-navy-hover to-navy-dark rounded-full flex items-center justify-center mr-6">
                         <Apple className="w-10 h-10 text-white" />
                       </div>
                       <div>
                         <h3 className="text-3xl font-bold text-navy-dark">Personalized Nutrition Guidance</h3>
-                        <p className="text-xl text-blue-600 italic font-light">Nourish Your Body, Fuel Your Journey</p>
+                        <p className="text-xl text-navy-medium italic font-light">Nourish Your Body, Fuel Your Journey</p>
                       </div>
                     </div>
                     <div className="space-y-6 text-lg text-navy-dark leading-relaxed">
