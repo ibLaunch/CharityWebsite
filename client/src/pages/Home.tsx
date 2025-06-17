@@ -3,12 +3,42 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import { useState, useEffect } from "react";
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
+import rotaryImage from "@assets/Screen Shot 2025-05-19 at 8.18.34 PM_1750195463736.png";
+import schoolHallImage2 from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM_1750195477402.png";
 import furnitureImage from "@assets/image_1749228397347.png";
 import cabinetImage from "@assets/image_1749228404698.png";
 import schoolHallImage from "@assets/image_1749228409980.png";
 
 export default function Home() {
+  const heroImages = [
+    {
+      src: schoolImage,
+      alt: "Students learning in classroom"
+    },
+    {
+      src: rotaryImage,
+      alt: "Community support and engagement"
+    },
+    {
+      src: schoolHallImage2,
+      alt: "Children in school hallway"
+    }
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
+
   const challenges = [
     {
       stat: "1 in 5",
@@ -97,9 +127,9 @@ export default function Home() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src={schoolImage}
-                  alt="Students learning in classroom"
-                  className="w-full h-[500px] object-cover"
+                  src={heroImages[currentImageIndex].src}
+                  alt={heroImages[currentImageIndex].alt}
+                  className="w-full h-[500px] object-cover transition-opacity duration-1000"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
