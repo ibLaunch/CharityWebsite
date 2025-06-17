@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import { useState, useEffect } from "react";
-import { BookOpen, Heart } from "lucide-react";
+import { BookOpen, Heart, Users, GraduationCap, Smartphone, DollarSign } from "lucide-react";
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
 import rotaryImage from "@assets/Screen Shot 2025-05-19 at 8.18.34 PM_1750195463736.png";
 import schoolHallImage2 from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM_1750195477402.png";
@@ -43,27 +43,33 @@ export default function Home() {
   const challenges = [
     {
       stat: "1 in 5",
-      description: "children globally lack access to basic education"
+      description: "children globally lack access to basic education",
+      icon: GraduationCap
     },
     {
       stat: "42%",
-      description: "children are engaged in child labor, instead of learning"
+      description: "children are engaged in child labor, instead of learning",
+      icon: Users
     },
     {
       stat: "36%",
-      description: "of children are out of school, and 67% of girls (ages 15+) struggle to read and write"
+      description: "of children are out of school, and 67% of girls (ages 15+) struggle to read and write",
+      icon: BookOpen
     },
     {
       stat: "60%",
-      description: "of seniors report feeling isolated or lonely"
+      description: "of seniors report feeling isolated or lonely",
+      icon: Heart
     },
     {
       stat: "17%",
-      description: "of seniors aged 65+ are digitally literate"
+      description: "of seniors aged 65+ are digitally literate",
+      icon: Smartphone
     },
     {
       stat: "25%",
-      description: "of seniors live below the poverty line in developing regions"
+      description: "of seniors live below the poverty line in developing regions",
+      icon: DollarSign
     }
   ];
 
@@ -248,14 +254,22 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {challenges.map((challenge, index) => (
-              <Card key={index} className="bg-white border border-navy-light shadow-lg text-center">
-                <CardContent className="p-8">
-                  <h3 className="text-4xl font-bold text-navy-medium mb-4">{challenge.stat}</h3>
-                  <p className="text-navy-dark leading-relaxed">{challenge.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+            {challenges.map((challenge, index) => {
+              const IconComponent = challenge.icon;
+              return (
+                <Card key={index} className="bg-white border border-navy-light shadow-lg hover:shadow-xl transition-shadow group">
+                  <CardContent className="p-8 text-center">
+                    <div className="mb-6 flex justify-center">
+                      <div className="w-16 h-16 bg-navy-very-light rounded-full flex items-center justify-center group-hover:bg-navy-light transition-colors">
+                        <IconComponent className="w-8 h-8 text-navy-medium stroke-2" />
+                      </div>
+                    </div>
+                    <h3 className="text-4xl font-bold text-navy-medium mb-4">{challenge.stat}</h3>
+                    <p className="text-navy-dark leading-relaxed text-sm">{challenge.description}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
         
