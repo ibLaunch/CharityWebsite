@@ -195,7 +195,7 @@ export default function YogaPage() {
                 <div className="grid lg:grid-cols-2 gap-0">
                   <div className="p-12 lg:p-16">
                     <div className="flex items-center mb-8">
-                      <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-6">
+                      <div className="w-20 h-20 bg-gradient-to-br from-navy-dark to-navy-medium rounded-full flex items-center justify-center mr-6">
                         <Flower className="w-10 h-10 text-white" />
                       </div>
                       <div>
@@ -356,23 +356,23 @@ export default function YogaPage() {
                     We are committed to meeting you where you are and guiding you to where you want to be, making your wellness journey both achievable and enjoyable.
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
+                <div className="bg-gradient-to-br from-navy-very-light to-navy-light rounded-2xl p-8">
                   <h4 className="text-xl font-bold text-navy-dark mb-6 text-center">Your Wellness Blueprint</h4>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                      <div className="w-8 h-8 bg-navy-medium text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
                       <span className="font-medium">Comprehensive Assessment</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                      <div className="w-8 h-8 bg-navy-medium text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
                       <span className="font-medium">Personalized Program Design</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                      <div className="w-8 h-8 bg-navy-medium text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
                       <span className="font-medium">Progressive Adaptation</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
+                      <div className="w-8 h-8 bg-navy-medium text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
                       <span className="font-medium">Ongoing Support & Growth</span>
                     </div>
                   </div>
@@ -448,15 +448,15 @@ export default function YogaPage() {
                 </CardContent>
               </Card>
               
-              <div className="bg-blue-50 rounded-2xl p-8">
+              <div className="bg-navy-very-light rounded-2xl p-8">
                 <h4 className="text-xl font-bold text-navy-dark mb-4 text-center">Community Impact</h4>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-blue-600">Education</div>
+                    <div className="text-2xl font-bold text-navy-medium">Education</div>
                     <div className="text-sm text-navy-medium">Supporting schools worldwide</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-blue-600">Seniors</div>
+                    <div className="text-2xl font-bold text-navy-medium">Seniors</div>
                     <div className="text-sm text-navy-medium">Technology & wellness programs</div>
                   </div>
                 </div>
@@ -472,7 +472,7 @@ export default function YogaPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
                 onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdAyE2hC6OAAEKo2Abu477TbnFHcLJCTEAuSuNBChwhJAt14A/viewform?usp=header", "_blank")}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 rounded-md text-lg font-semibold transition-colors inline-flex items-center justify-center"
+                className="bg-navy-dark hover:bg-navy-hover text-white px-12 py-4 rounded-md text-lg font-semibold transition-colors inline-flex items-center justify-center"
               >
                 <CalendarPlus className="mr-3 h-5 w-5" />
                 Begin Your Wellness Journey
@@ -480,7 +480,7 @@ export default function YogaPage() {
               
               <button 
                 onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
-                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-12 py-4 rounded-md text-lg font-semibold transition-colors"
+                className="border-2 border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white px-12 py-4 rounded-md text-lg font-semibold transition-colors"
               >
                 Support Our Mission
               </button>
