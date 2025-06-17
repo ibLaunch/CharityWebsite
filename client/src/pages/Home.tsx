@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import { useState, useEffect } from "react";
+import { BookOpen, Heart } from "lucide-react";
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
 import rotaryImage from "@assets/Screen Shot 2025-05-19 at 8.18.34 PM_1750195463736.png";
 import schoolHallImage2 from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM_1750195477402.png";
@@ -168,14 +169,24 @@ export default function Home() {
           
           <div className="grid lg:grid-cols-2 gap-16 items-stretch">
             <div className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
-              <h3 className="text-3xl font-bold text-navy-dark mb-6">Supporting education in underserved communities</h3>
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-navy-medium rounded-full flex items-center justify-center mr-4">
+                  <BookOpen className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-3xl font-bold text-navy-dark">Supporting education in underserved communities</h3>
+              </div>
               <p className="text-lg text-navy-dark leading-relaxed mb-8 flex-grow">
                 Bridge the gap between generations through community programs that foster mutual learning and support. By creating mentorship opportunities, where the adults can share their wealth of knowledge and life experiences with young minds, we can cultivate a culture of respect and appreciation.
               </p>
             </div>
             
             <div className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
-              <h3 className="text-3xl font-bold text-navy-dark mb-6">Help seniors enhance their quality of life in their golden years</h3>
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-navy-medium rounded-full flex items-center justify-center mr-4">
+                  <Heart className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-3xl font-bold text-navy-dark">Help seniors enhance their quality of life in their golden years</h3>
+              </div>
               <p className="text-lg text-navy-dark leading-relaxed flex-grow">
                 Additionally, integrating technology workshops can empower older adults to stay connected with the digital world, reducing isolation and opening new avenues for learning and engagement.
               </p>
