@@ -104,7 +104,7 @@ export default function YogaPage() {
                 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <button 
-                    onClick={() => window.scrollTo({ top: document.getElementById('programs')?.offsetTop || 0, behavior: 'smooth' })}
+                    onClick={() => window.scrollTo({ top: document.getElementById('pricing')?.offsetTop || 0, behavior: 'smooth' })}
                     className="bg-navy-dark hover:bg-navy-hover text-white px-8 py-4 rounded-md text-lg font-semibold transition-colors"
                   >
                     Explore Our Programs
@@ -388,7 +388,7 @@ export default function YogaPage() {
       </section>
 
       {/* Investment & Impact Section */}
-      <section className="relative py-20 bg-white overflow-hidden">
+      <section id="pricing" className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-navy-dark mb-6">Invest in Your Transformation, Impact the World</h2>
