@@ -253,23 +253,64 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold text-navy-dark mb-6">The challenges</h2>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {challenges.map((challenge, index) => {
-              const IconComponent = challenge.icon;
-              return (
-                <Card key={index} className="bg-white border border-navy-light shadow-lg hover:shadow-xl transition-shadow group">
-                  <CardContent className="p-10 text-center">
-                    <div className="mb-8 flex justify-center">
-                      <div className="w-20 h-20 bg-navy-very-light rounded-full flex items-center justify-center group-hover:bg-navy-light transition-colors">
-                        <IconComponent className="w-10 h-10 text-navy-medium stroke-2" />
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Education Challenges */}
+            <Card className="bg-white border border-navy-light shadow-xl">
+              <CardContent className="p-8">
+                <div className="text-center mb-8">
+                  <div className="w-20 h-20 bg-navy-medium rounded-full flex items-center justify-center mx-auto mb-4">
+                    <GraduationCap className="w-10 h-10 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-navy-dark">Education & Youth</h3>
+                </div>
+                
+                <div className="space-y-6">
+                  {challenges.slice(0, 3).map((challenge, index) => {
+                    const IconComponent = challenge.icon;
+                    return (
+                      <div key={index} className="flex items-start space-x-4 p-4 bg-navy-very-light rounded-lg">
+                        <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                          <IconComponent className="w-6 h-6 text-navy-medium stroke-2" />
+                        </div>
+                        <div>
+                          <div className="text-3xl font-bold text-navy-medium mb-2">{challenge.stat}</div>
+                          <p className="text-navy-dark text-sm leading-relaxed">{challenge.description}</p>
+                        </div>
                       </div>
-                    </div>
-                    <h3 className="text-5xl font-bold text-navy-medium mb-6">{challenge.stat}</h3>
-                    <p className="text-navy-dark leading-relaxed text-base">{challenge.description}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
+                    );
+                  })}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Senior Care Challenges */}
+            <Card className="bg-white border border-navy-light shadow-xl">
+              <CardContent className="p-8">
+                <div className="text-center mb-8">
+                  <div className="w-20 h-20 bg-navy-medium rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Heart className="w-10 h-10 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-navy-dark">Senior Care & Support</h3>
+                </div>
+                
+                <div className="space-y-6">
+                  {challenges.slice(3, 6).map((challenge, index) => {
+                    const IconComponent = challenge.icon;
+                    return (
+                      <div key={index} className="flex items-start space-x-4 p-4 bg-navy-very-light rounded-lg">
+                        <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                          <IconComponent className="w-6 h-6 text-navy-medium stroke-2" />
+                        </div>
+                        <div>
+                          <div className="text-3xl font-bold text-navy-medium mb-2">{challenge.stat}</div>
+                          <p className="text-navy-dark text-sm leading-relaxed">{challenge.description}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
         
