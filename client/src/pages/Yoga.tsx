@@ -400,13 +400,13 @@ export default function YogaPage() {
           
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
             <div className="space-y-8">
-              <Card className="bg-gradient-to-br from-navy-dark to-navy-medium text-white border-0 shadow-2xl">
+              <Card className="bg-gradient-to-br from-navy-very-light to-white border-0 shadow-2xl">
                 <CardContent className="p-10 text-center">
                   <div className="mb-6">
-                    <div className="text-6xl font-bold">$65</div>
-                    <div className="text-xl opacity-90">per session</div>
+                    <div className="text-6xl font-bold text-navy-dark">$65</div>
+                    <div className="text-xl text-navy-medium">per session</div>
                   </div>
-                  <p className="text-lg leading-relaxed opacity-95">
+                  <p className="text-lg leading-relaxed text-navy-dark">
                     Sessions are priced at $65 each, with attractive package discounts available for committed members ready to invest in their complete transformation.
                   </p>
                 </CardContent>
