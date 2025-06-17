@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import RotatingBanner from "@/components/RotatingBanner";
 import { Link } from "wouter";
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
 import furnitureImage from "@assets/image_1749228397347.png";
@@ -62,11 +61,76 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Navigation />
       
-      {/* Rotating Banner Hero Section */}
-      <RotatingBanner />
+      {/* Hero Section */}
+      <section className="relative bg-white pt-24 pb-32 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h1 className="hero-title text-navy-dark">
+                  Bundele<br />
+                  Foundation
+                </h1>
+                <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
+                  Your donations are not only tax-deductible but also matched by Bundele Foundation for up to $2,000, doubling your impact.
+                </p>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button 
+                  onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
+                  className="navy-button-primary text-lg rounded-md w-52 h-14 flex items-center justify-center"
+                >
+                  Donate
+                </button>
+                
+                <Link href="/impact-circle" className="w-52 h-14">
+                  <Button variant="outline" className="border-2 border-navy-medium text-navy-medium text-lg hover:bg-navy-medium hover:text-white transition-colors w-full h-full flex items-center justify-center">
+                    Join Impact Circle
+                  </Button>
+                </Link>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={schoolImage}
+                  alt="Students learning in classroom"
+                  className="w-full h-[500px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+              
+              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border">
+                <div className="flex items-center space-x-4">
+                  <div className="w-16 h-16 bg-slate-900 rounded-xl flex items-center justify-center">
+                    <span className="text-white text-2xl font-bold">3</span>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Schools Supported</p>
+                    <p className="text-xl font-bold text-slate-900">Since 2022</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg">
+                <p className="text-sm font-semibold text-slate-900">100% Direct Impact</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="absolute top-8 right-4 w-32 h-32 bg-gray-200 rounded-full opacity-30"></div>
+        <div className="absolute bottom-8 left-4 w-40 h-40 bg-gray-300 rounded-full opacity-25"></div>
+        <div className="absolute top-2/3 right-2 w-24 h-24 bg-gray-200 rounded-full opacity-35"></div>
+        <div className="absolute bottom-1/3 left-2 w-28 h-28 bg-gray-100 rounded-full opacity-30"></div>
+      </section>
 
       {/* Learn About What We Do */}
-      <section id="learn-more" className="relative py-20 bg-white overflow-hidden">
+      <section className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-navy-dark mb-6">Learn about what we do</h2>
