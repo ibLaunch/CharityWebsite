@@ -54,67 +54,67 @@ export default function YogaPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
+      
       {/* Hero Section with Wellness Image */}
-      <section className="relative min-h-screen bg-white overflow-hidden">
-        {/* Translucent background circles matching foundation theme */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-32 -right-32 w-80 h-80 bg-navy-very-light rounded-full opacity-30"></div>
-          <div className="absolute top-1/4 -left-24 w-64 h-64 bg-navy-light rounded-full opacity-20"></div>
-          <div className="absolute bottom-32 right-16 w-56 h-56 bg-navy-very-light rounded-full opacity-25"></div>
-          <div className="absolute bottom-64 left-1/3 w-40 h-40 bg-navy-light rounded-full opacity-15"></div>
-          <div className="absolute top-1/2 right-1/3 w-32 h-32 bg-navy-very-light rounded-full opacity-20"></div>
-        </div>
+      <section 
+        className="relative min-h-[70vh] flex items-center overflow-hidden"
+        style={{
+          backgroundImage: `url(${bWellnessImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Hero Overlay */}
+        <div className="absolute inset-0 bg-black/30"></div>
         
-        {/* Hero Background Image with elegant overlay */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
-          style={{
-            backgroundImage: `url(${bWellnessImage})`,
-          }}
-        />
-        <div className="absolute inset-0 bg-white/80"></div>
-        
-        <div className="relative z-10 flex flex-col min-h-screen">
-          <Navigation />
-          
-          <div className="flex-1 flex items-center justify-center minimal-section">
-            <div className="container-minimal text-center">
-              <div className="elegant-small text-navy-medium mb-12">
-                Holistic Well-being Programs
-              </div>
-              
-              <h1 className="hero-title text-navy-dark mb-12">
-                Bundele<br />
-                <span className="italic text-navy-medium">Wellness</span>
-              </h1>
-              
-              <p className="text-2xl font-light text-navy-medium italic leading-relaxed mb-16 max-w-4xl mx-auto">
-                Cultivating Holistic Well-being, Transforming Lives
-              </p>
-              
-              {/* Elegant pricing highlight */}
-              <div className="inline-block bg-white/95 backdrop-blur-sm p-12 mb-16 shadow-sm border border-navy-very-light">
-                <div className="text-center">
-                  <div className="elegant-small text-navy-medium mb-4">
-                    Sessions Starting From
-                  </div>
-                  <div className="text-6xl font-light text-navy-dark mb-3">$65</div>
-                  <div className="elegant-small text-navy-medium">per session</div>
-                </div>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row gap-8 justify-center">
-                <button 
-                  onClick={() => window.scrollTo({ top: document.getElementById('programs')?.offsetTop || 0, behavior: 'smooth' })}
-                  className="luxury-button"
-                >
-                  Explore Programs
+        <div className="relative z-10 w-full py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <Link href="/">
+                <button className="mb-8 inline-flex items-center px-6 py-3 border-2 border-white/70 text-white hover:bg-white/10 transition-colors rounded-md">
+                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  Back to Home
                 </button>
-                <Link href="/contact">
-                  <button className="luxury-button-outline">
-                    Begin Journey
+              </Link>
+              
+              <div className="space-y-8">
+                <div className="text-blue-200 text-lg font-medium tracking-wide uppercase">
+                  Holistic Well-being Programs
+                </div>
+                <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
+                  Bundele<br />
+                  <span className="italic text-blue-300">Wellness</span>
+                </h1>
+                <p className="text-2xl font-light text-blue-100 italic leading-relaxed">
+                  Cultivating Holistic Well-being, Transforming Lives
+                </p>
+                
+                {/* Pricing Highlight */}
+                <div className="inline-block bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+                  <div className="text-center">
+                    <div className="text-sm font-medium text-navy-medium uppercase tracking-wide mb-2">
+                      Starting From
+                    </div>
+                    <div className="text-4xl font-bold text-navy-dark mb-1">$65</div>
+                    <div className="text-sm text-navy-medium">per session</div>
+                  </div>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                  <button 
+                    onClick={() => window.scrollTo({ top: document.getElementById('programs')?.offsetTop || 0, behavior: 'smooth' })}
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md text-lg font-semibold transition-colors"
+                  >
+                    Explore Our Programs
                   </button>
-                </Link>
+                  <Link href="/contact">
+                    <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-md text-lg font-semibold transition-colors">
+                      Start Your Journey
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
