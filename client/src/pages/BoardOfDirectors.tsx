@@ -78,11 +78,13 @@ export default function BoardOfDirectorsPage() {
                 </div>
                 <div className="order-1 lg:order-2">
                   <div className="relative w-full max-w-md mx-auto">
-                    <img 
-                      src={boardMembers[0].image}
-                      alt={`${boardMembers[0].name}, ${boardMembers[0].title}`}
-                      className="w-full h-auto rounded-2xl shadow-2xl"
-                    />
+                    <div className="w-full rounded-2xl shadow-2xl overflow-hidden" style={{ aspectRatio: '3/4' }}>
+                      <img 
+                        src={boardMembers[0].image}
+                        alt={`${boardMembers[0].name}, ${boardMembers[0].title}`}
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -106,12 +108,13 @@ export default function BoardOfDirectorsPage() {
                 </div>
                 <div className="order-1 lg:order-1">
                   <div className="relative w-full max-w-md mx-auto">
-                    <img 
-                      src={boardMembers[1].image}
-                      alt={`${boardMembers[1].name}, ${boardMembers[1].title}`}
-                      className="w-full h-auto rounded-2xl shadow-2xl object-cover"
-                      style={{ aspectRatio: '3/4' }}
-                    />
+                    <div className="w-full rounded-2xl shadow-2xl overflow-hidden" style={{ aspectRatio: '3/4' }}>
+                      <img 
+                        src={boardMembers[1].image}
+                        alt={`${boardMembers[1].name}, ${boardMembers[1].title}`}
+                        className="w-full h-full object-cover object-top"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
