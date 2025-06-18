@@ -6,7 +6,8 @@ export default function Footer() {
     { href: "/", label: "Home" },
     { href: "/impact-circle", label: "Impact Circle" },
     { href: "/yoga", label: "Wellness" },
-    { href: "/founders-message", label: "Founder's Message" },
+    { href: "/founders-message", label: "About Us" },
+    { href: "/faq", label: "FAQ" },
     { href: "/contact", label: "Contact" }
   ];
 
