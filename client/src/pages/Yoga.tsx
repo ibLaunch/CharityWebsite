@@ -1,7 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CalendarPlus, Star, ArrowLeft, Dumbbell, Heart, Apple, Flower, Activity, Zap, Brain } from "lucide-react";
+import { CalendarPlus, Star, ArrowLeft, Dumbbell, Heart, Apple, Flower, Activity, Zap, Brain, Play, PersonStanding } from "lucide-react";
+import { FaRunning } from "react-icons/fa";
+import { GiMeditation, GiWeightLiftingUp } from "react-icons/gi";
+import { MdFitnessCenter } from "react-icons/md";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
@@ -57,63 +60,133 @@ export default function YogaPage() {
       <Navigation />
       
       {/* Hero Section with Wellness Image */}
-      <section 
-        className="relative min-h-[70vh] flex items-center overflow-hidden"
-        style={{
-          backgroundImage: `url(${bWellnessImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        {/* Hero Overlay */}
-        <div className="absolute inset-0 bg-black/30"></div>
-        
-        <div className="relative z-10 w-full py-20">
+      <section className="relative min-h-[70vh] bg-gradient-to-br from-navy-dark via-navy-medium to-navy-hover overflow-hidden">
+        {/* Floating Icons Background */}
+        <div className="absolute inset-0">
+          {/* Running Icon */}
+          <div className="absolute top-20 right-16 w-20 h-20 bg-navy-light/20 rounded-full flex items-center justify-center animate-bounce" style={{ animationDelay: '0s', animationDuration: '3s' }}>
+            <FaRunning className="w-10 h-10 text-navy-light/60" />
+          </div>
+          
+          {/* Yoga Icon */}
+          <div className="absolute top-40 left-20 w-16 h-16 bg-navy-light/20 rounded-full flex items-center justify-center animate-bounce" style={{ animationDelay: '0.5s', animationDuration: '3.5s' }}>
+            <GiMeditation className="w-8 h-8 text-navy-light/60" />
+          </div>
+          
+          {/* Cardio Icon */}
+          <div className="absolute bottom-32 right-24 w-18 h-18 bg-navy-light/20 rounded-full flex items-center justify-center animate-bounce" style={{ animationDelay: '1s', animationDuration: '4s' }}>
+            <Activity className="w-9 h-9 text-navy-light/60" />
+          </div>
+          
+          {/* Strength Training Icon */}
+          <div className="absolute bottom-20 left-16 w-22 h-22 bg-navy-light/20 rounded-full flex items-center justify-center animate-bounce" style={{ animationDelay: '1.5s', animationDuration: '3.2s' }}>
+            <GiWeightLiftingUp className="w-11 h-11 text-navy-light/60" />
+          </div>
+          
+          {/* Nutrition Icon */}
+          <div className="absolute top-60 right-1/3 w-16 h-16 bg-navy-light/20 rounded-full flex items-center justify-center animate-bounce" style={{ animationDelay: '2s', animationDuration: '3.8s' }}>
+            <Apple className="w-8 h-8 text-navy-light/60" />
+          </div>
+          
+          {/* Fitness Center Icon */}
+          <div className="absolute top-1/3 left-1/3 w-14 h-14 bg-navy-light/20 rounded-full flex items-center justify-center animate-bounce" style={{ animationDelay: '2.5s', animationDuration: '4.2s' }}>
+            <MdFitnessCenter className="w-7 h-7 text-navy-light/60" />
+          </div>
+        </div>
+
+        <div className="relative z-10 w-full py-20 flex items-center min-h-[70vh]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl">
-              <Link href="/">
-                <button className="mb-8 inline-flex items-center px-6 py-3 border-2 border-white/70 text-white hover:bg-white/10 transition-colors rounded-md">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back to Home
-                </button>
-              </Link>
-              
-              <div className="space-y-8">
-                <div className="text-navy-light text-lg font-medium tracking-wide uppercase">
-                  Holistic Well-being Programs
-                </div>
-                <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
-                  Bundele<br />
-                  <span className="italic text-navy-light">Wellness</span>
-                </h1>
-                <p className="text-2xl font-light text-navy-very-light italic leading-relaxed">
-                  Cultivating Holistic Well-being, Transforming Lives
-                </p>
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              {/* Left Content */}
+              <div className="max-w-3xl">
+                <Link href="/">
+                  <button className="mb-8 inline-flex items-center px-6 py-3 border-2 border-white/70 text-white hover:bg-white/10 transition-colors rounded-md">
+                    <ArrowLeft className="mr-2 h-4 w-4" />
+                    Back to Home
+                  </button>
+                </Link>
                 
-                {/* Pricing Highlight */}
-                <div className="inline-block bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                  <div className="text-center">
-                    <div className="text-sm font-medium text-navy-medium uppercase tracking-wide mb-2">
-                      Starting From
+                <div className="space-y-8">
+                  <div className="text-navy-light text-lg font-medium tracking-wide uppercase">
+                    Holistic Well-being Programs
+                  </div>
+                  <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
+                    Bundele<br />
+                    <span className="italic text-navy-light">Wellness</span>
+                  </h1>
+                  <p className="text-2xl font-light text-navy-very-light italic leading-relaxed">
+                    Cultivating Holistic Well-being, Transforming Lives
+                  </p>
+                  
+                  {/* Pricing Highlight */}
+                  <div className="inline-block bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+                    <div className="text-center">
+                      <div className="text-sm font-medium text-navy-medium uppercase tracking-wide mb-2">
+                        Starting From
+                      </div>
+                      <div className="text-4xl font-bold text-navy-dark mb-1">$65</div>
+                      <div className="text-sm text-navy-medium">per session</div>
                     </div>
-                    <div className="text-4xl font-bold text-navy-dark mb-1">$65</div>
-                    <div className="text-sm text-navy-medium">per session</div>
+                  </div>
+                  
+                  <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                    <button 
+                      onClick={() => window.scrollTo({ top: document.getElementById('pricing')?.offsetTop || 0, behavior: 'smooth' })}
+                      className="bg-navy-dark hover:bg-navy-hover text-white px-8 py-4 rounded-md text-lg font-semibold transition-colors"
+                    >
+                      Explore Our Programs
+                    </button>
+                    <Link href="/contact">
+                      <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-md text-lg font-semibold transition-colors">
+                        Start Your Journey
+                      </button>
+                    </Link>
                   </div>
                 </div>
-                
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <button 
-                    onClick={() => window.scrollTo({ top: document.getElementById('pricing')?.offsetTop || 0, behavior: 'smooth' })}
-                    className="bg-navy-dark hover:bg-navy-hover text-white px-8 py-4 rounded-md text-lg font-semibold transition-colors"
-                  >
-                    Explore Our Programs
-                  </button>
-                  <Link href="/contact">
-                    <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-md text-lg font-semibold transition-colors">
-                      Start Your Journey
-                    </button>
-                  </Link>
+              </div>
+
+              {/* Right Content - Featured Wellness Components */}
+              <div className="hidden lg:block">
+                <div className="grid grid-cols-2 gap-8">
+                  <Card className="bg-white/95 backdrop-blur-sm border-0 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-2">
+                    <CardContent className="p-8 text-center">
+                      <div className="w-16 h-16 bg-gradient-to-br from-navy-medium to-navy-hover rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <FaRunning className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold text-navy-dark mb-2">Running</h3>
+                      <p className="text-navy-medium">Build endurance and strengthen your cardiovascular system</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-white/95 backdrop-blur-sm border-0 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-2" style={{ marginTop: '2rem' }}>
+                    <CardContent className="p-8 text-center">
+                      <div className="w-16 h-16 bg-gradient-to-br from-navy-medium to-navy-hover rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <GiMeditation className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold text-navy-dark mb-2">Yoga</h3>
+                      <p className="text-navy-medium">Find balance through mindful movement and flexibility</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-white/95 backdrop-blur-sm border-0 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-2" style={{ marginTop: '1rem' }}>
+                    <CardContent className="p-8 text-center">
+                      <div className="w-16 h-16 bg-gradient-to-br from-navy-medium to-navy-hover rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <GiWeightLiftingUp className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold text-navy-dark mb-2">Strength</h3>
+                      <p className="text-navy-medium">Build muscle and enhance physical power</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-white/95 backdrop-blur-sm border-0 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-2" style={{ marginTop: '3rem' }}>
+                    <CardContent className="p-8 text-center">
+                      <div className="w-16 h-16 bg-gradient-to-br from-navy-medium to-navy-hover rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <Apple className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold text-navy-dark mb-2">Nutrition</h3>
+                      <p className="text-navy-medium">Fuel your body with personalized dietary guidance</p>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
             </div>
