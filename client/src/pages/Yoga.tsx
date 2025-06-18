@@ -188,107 +188,99 @@ export default function YogaPage() {
             </p>
           </div>
           
-          {/* Compact Four Pillars Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          {/* Four Pillars - Improved Layout */}
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
             {/* Pillar 1: Mindful Yoga Practice */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="p-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-navy-dark to-navy-medium rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Flower className="w-8 h-8 text-white" />
+            <Card className="bg-white border-0 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-navy-dark to-navy-medium rounded-full flex items-center justify-center mr-4">
+                    <Flower className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-navy-dark">Mindful Yoga Practice</h3>
+                    <p className="text-lg text-navy-medium italic font-light">Awaken Your Inner Harmony</p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-navy-dark text-center mb-2">Mindful Yoga Practice</h3>
-                <p className="text-sm text-navy-medium text-center italic mb-4">Awaken Your Inner Harmony</p>
+                <p className="text-navy-dark leading-relaxed mb-4">
+                  Immerse yourself in the ancient art of yoga, where every pose, breath, and meditation is an invitation to connect with your deepest self. Our mindful yoga practices are designed to enhance flexibility, build core strength, and cultivate a profound sense of calm and mental clarity.
+                </p>
                 <div className="text-center">
-                  <span className="text-xs font-medium text-navy-dark bg-navy-very-light px-3 py-1 rounded-full">
+                  <span className="text-sm font-medium text-navy-dark bg-navy-very-light px-4 py-2 rounded-full">
                     Flexibility • Balance • Mindfulness
                   </span>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
 
             {/* Pillar 2: Functional Strength Training */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="p-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-navy-dark to-navy-medium rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Dumbbell className="w-8 h-8 text-white" />
+            <Card className="bg-white border-0 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-navy-dark to-navy-medium rounded-full flex items-center justify-center mr-4">
+                    <Dumbbell className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-navy-dark">Functional Strength Training</h3>
+                    <p className="text-lg text-navy-medium italic font-light">Build Resilience, Unleash Potential</p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-navy-dark text-center mb-2">Functional Strength Training</h3>
-                <p className="text-sm text-navy-medium text-center italic mb-4">Build Resilience, Unleash Potential</p>
+                <p className="text-navy-dark leading-relaxed mb-4">
+                  Beyond aesthetics, our functional strength training programs are engineered to build a resilient body capable of navigating the demands of everyday life with ease and confidence. We focus on movements that mimic natural human actions, strengthening your muscles and improving balance.
+                </p>
                 <div className="text-center">
-                  <span className="text-xs font-medium text-navy-dark bg-navy-very-light px-3 py-1 rounded-full">
+                  <span className="text-sm font-medium text-navy-dark bg-navy-very-light px-4 py-2 rounded-full">
                     Power • Resilience • Confidence
                   </span>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
 
             {/* Pillar 3: Cardiovascular Conditioning */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="p-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-navy-medium to-navy-hover rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="w-8 h-8 text-white" />
+            <Card className="bg-white border-0 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-navy-medium to-navy-hover rounded-full flex items-center justify-center mr-4">
+                    <Heart className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-navy-dark">Cardiovascular Conditioning</h3>
+                    <p className="text-lg text-navy-medium italic font-light">Energize Your Core, Elevate Your Spirit</p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-navy-dark text-center mb-2">Cardiovascular Conditioning</h3>
-                <p className="text-sm text-navy-medium text-center italic mb-4">Energize Your Core, Elevate Your Spirit</p>
+                <p className="text-navy-dark leading-relaxed mb-4">
+                  Ignite your cardiovascular system with dynamic and engaging conditioning routines that boost your endurance, enhance heart health, and elevate your energy levels. Our programs incorporate a variety of effective techniques, from invigorating aerobic exercises to high-intensity interval training.
+                </p>
                 <div className="text-center">
-                  <span className="text-xs font-medium text-navy-dark bg-navy-very-light px-3 py-1 rounded-full">
+                  <span className="text-sm font-medium text-navy-dark bg-navy-very-light px-4 py-2 rounded-full">
                     Endurance • Energy • Vitality
                   </span>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
 
             {/* Pillar 4: Personalized Nutrition Guidance */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="p-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-navy-hover to-navy-dark rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Apple className="w-8 h-8 text-white" />
+            <Card className="bg-white border-0 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-navy-hover to-navy-dark rounded-full flex items-center justify-center mr-4">
+                    <Apple className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-navy-dark">Personalized Nutrition Guidance</h3>
+                    <p className="text-lg text-navy-medium italic font-light">Nourish Your Body, Fuel Your Journey</p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-navy-dark text-center mb-2">Personalized Nutrition Guidance</h3>
-                <p className="text-sm text-navy-medium text-center italic mb-4">Nourish Your Body, Fuel Your Journey</p>
+                <p className="text-navy-dark leading-relaxed mb-4">
+                  Understand that true wellness begins from within, and nutrition plays a pivotal role in your overall health. Our personalized nutrition guidance goes beyond restrictive diets, focusing instead on sustainable, wholesome eating habits that nourish your body and fuel your journey.
+                </p>
                 <div className="text-center">
-                  <span className="text-xs font-medium text-navy-dark bg-navy-very-light px-3 py-1 rounded-full">
+                  <span className="text-sm font-medium text-navy-dark bg-navy-very-light px-4 py-2 rounded-full">
                     Nourishment • Balance • Sustainability
                   </span>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Detailed Description */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 lg:p-12">
-            <div className="grid lg:grid-cols-2 gap-12">
-              <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-navy-dark">Integrated Wellness Approach</h3>
-                <p className="text-lg text-navy-dark leading-relaxed">
-                  Our four pillars work synergistically to create a comprehensive wellness experience. Whether you're seeking flexibility through mindful yoga, building strength through functional training, boosting cardiovascular health, or optimizing nutrition, each element supports and enhances the others.
-                </p>
-                <p className="text-lg text-navy-dark leading-relaxed">
-                  Every program is tailored to your unique needs, ensuring sustainable results that fit seamlessly into your lifestyle while honoring both ancient wisdom and modern science.
-                </p>
-              </div>
-              <div className="bg-gradient-to-br from-navy-very-light to-navy-light rounded-2xl p-8">
-                <h4 className="text-xl font-bold text-navy-dark mb-6 text-center">What You'll Experience</h4>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-navy-medium text-white rounded-full flex items-center justify-center text-sm font-bold">✓</div>
-                    <span className="font-medium">Enhanced flexibility and mental clarity</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-navy-medium text-white rounded-full flex items-center justify-center text-sm font-bold">✓</div>
-                    <span className="font-medium">Increased strength and resilience</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-navy-medium text-white rounded-full flex items-center justify-center text-sm font-bold">✓</div>
-                    <span className="font-medium">Improved cardiovascular health</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-navy-medium text-white rounded-full flex items-center justify-center text-sm font-bold">✓</div>
-                    <span className="font-medium">Optimized nutrition and energy</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           </div>
           
           <div className="bg-white rounded-3xl shadow-2xl p-12 max-w-5xl mx-auto">
