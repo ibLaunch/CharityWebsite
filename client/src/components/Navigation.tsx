@@ -39,6 +39,9 @@ export default function Navigation() {
     { id: "home", label: "Home", isSection: false, href: "/" },
     { id: "impact-circle", label: "Impact Circle", isSection: false, href: "/impact-circle" },
     { id: "yoga", label: "Wellness", isSection: false, href: "/yoga" },
+  ];
+
+  const navItemsAfterAbout = [
     { id: "faq", label: "FAQ", isSection: false, href: "/faq" },
     { id: "contact", label: "Contact", isSection: false, href: "/contact" },
   ];
@@ -101,6 +104,14 @@ export default function Navigation() {
                   </div>
                 )}
               </div>
+
+              {navItemsAfterAbout.map((item) => (
+                <Link key={item.id} href={item.href || "#"}>
+                  <button className="elegant-small text-navy-medium hover:text-navy-dark transition-colors">
+                    {item.label}
+                  </button>
+                </Link>
+              ))}
             </div>
           </div>
           
@@ -135,6 +146,14 @@ export default function Navigation() {
                       ))}
                     </div>
                   </div>
+
+                  {navItemsAfterAbout.map((item) => (
+                    <Link key={item.id} href={item.href || "#"}>
+                      <button className="text-left elegant-small text-navy-medium hover:text-navy-dark transition-colors">
+                        {item.label}
+                      </button>
+                    </Link>
+                  ))}
                 </div>
               </SheetContent>
             </Sheet>
