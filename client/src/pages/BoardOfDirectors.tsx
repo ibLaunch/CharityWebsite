@@ -112,8 +112,8 @@ export default function BoardOfDirectorsPage() {
                       <img 
                         src={boardMembers[1].image}
                         alt={`${boardMembers[1].name}, ${boardMembers[1].title}`}
-                        className="w-full h-full object-cover scale-150"
-                        style={{ objectPosition: '50% 25%' }}
+                        className="w-full h-full object-cover scale-125"
+                        style={{ objectPosition: '50% 30%' }}
                       />
                     </div>
                   </div>
