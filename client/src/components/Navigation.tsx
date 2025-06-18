@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { Menu, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "wouter";
 
 export default function Navigation() {
@@ -38,9 +39,13 @@ export default function Navigation() {
     { id: "home", label: "Home", isSection: false, href: "/" },
     { id: "impact-circle", label: "Impact Circle", isSection: false, href: "/impact-circle" },
     { id: "yoga", label: "Wellness", isSection: false, href: "/yoga" },
-    { id: "founders-message", label: "About Us", isSection: false, href: "/founders-message" },
     { id: "faq", label: "FAQ", isSection: false, href: "/faq" },
     { id: "contact", label: "Contact", isSection: false, href: "/contact" },
+  ];
+
+  const aboutUsItems = [
+    { label: "Founder", href: "/founders-message" },
+    { label: "Board of Directors", href: "/board-of-directors" },
   ];
 
   return (
@@ -67,6 +72,27 @@ export default function Navigation() {
                   </button>
                 </Link>
               ))}
+              
+              {/* About Us Dropdown */}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <button className="elegant-small text-navy-medium hover:text-navy-dark transition-colors flex items-center gap-1">
+                    About Us
+                    <ChevronDown className="h-3 w-3" />
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg">
+                  {aboutUsItems.map((item) => (
+                    <DropdownMenuItem key={item.label} className="p-0">
+                      <Link href={item.href} className="w-full">
+                        <button className="w-full text-left px-4 py-2 elegant-small text-navy-medium hover:text-navy-dark hover:bg-gray-50 transition-colors">
+                          {item.label}
+                        </button>
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
           </div>
           
@@ -87,6 +113,18 @@ export default function Navigation() {
                       </button>
                     </Link>
                   ))}
+                  
+                  {/* About Us Section in Mobile */}
+                  <div className="flex flex-col space-y-6">
+                    <div className="elegant-small text-navy-dark font-medium">About Us</div>
+                    {aboutUsItems.map((item) => (
+                      <Link key={item.label} href={item.href}>
+                        <button className="text-left elegant-small text-navy-medium hover:text-navy-dark transition-colors pl-4">
+                          {item.label}
+                        </button>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>

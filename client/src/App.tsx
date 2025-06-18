@@ -9,6 +9,7 @@ import ImpactCirclePage from "@/pages/ImpactCircle";
 import YogaPage from "@/pages/Yoga";
 import FoundersMessagePage from "@/pages/FoundersMessage";
 import FAQPage from "@/pages/FAQ";
+import BoardOfDirectorsPage from "@/pages/BoardOfDirectors";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/impact-circle" component={ImpactCirclePage} />
       <Route path="/yoga" component={YogaPage} />
       <Route path="/founders-message" component={FoundersMessagePage} />
+      <Route path="/board-of-directors" component={BoardOfDirectorsPage} />
       <Route path="/faq" component={FAQPage} />
       <Route component={NotFound} />
     </Switch>
