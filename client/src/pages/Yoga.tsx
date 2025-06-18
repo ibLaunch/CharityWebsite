@@ -5,7 +5,7 @@ import { CalendarPlus, Star, ArrowLeft, Dumbbell, Heart, Apple, Flower, Activity
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
-import bWellnessImage from "@assets/b-wellness_1750106432114.png";
+import wellnessIllustration from "@/assets/wellness-illustration.svg";
 
 export default function YogaPage() {
   const packages = [
@@ -58,7 +58,13 @@ export default function YogaPage() {
       
       {/* Hero Section with Wellness Image */}
       <section 
-        className="relative min-h-[70vh] flex items-center overflow-hidden bg-gradient-to-br from-navy-dark via-navy-medium to-navy-hover"
+        className="relative min-h-[70vh] flex items-center overflow-hidden"
+        style={{
+          backgroundImage: `url(${wellnessIllustration})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
         {/* Hero Overlay */}
         <div className="absolute inset-0 bg-black/30"></div>
