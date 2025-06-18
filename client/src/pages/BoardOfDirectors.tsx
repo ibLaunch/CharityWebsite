@@ -1,44 +1,58 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
+import hemantBundelePhoto from "@assets/Hemant_Bundele_1750101113518.jpg";
 
 export default function BoardOfDirectorsPage() {
   const boardMembers = [
     {
+      name: "Hemant Bundele",
+      title: "Founder and Visionary",
+      bio: "Hemant Bundele is a passionate advocate for social impact, driven by a profound commitment to leveraging innovation, education, and community engagement for the greater good. As the visionary Founder of the Bundele Foundation, he has channeled his dedication to youth learning initiatives, compassionate senior care, and robust intergenerational community programs into a powerful force for meaningful change. His leadership is instrumental in strengthening community bonds and fostering a brighter, more connected future. With a distinguished career spanning senior management and technical leadership roles at industry giants such as Fannie Mae, Freddie Mac, Raytheon, and AT&T, Hemant brings a unique blend of strategic acumen, entrepreneurial spirit, and deep technological expertise to the philanthropic sector. This rich professional background, coupled with his unwavering commitment to social responsibility, serves as the bedrock upon which the Foundation's impactful initiatives are built and propelled forward.",
+      image: hemantBundelePhoto,
+      hasImage: true
+    },
+    {
       name: "Dr. Sarah Johnson",
       title: "Board Chair",
       bio: "With over 20 years of experience in nonprofit management and community development, Dr. Johnson brings invaluable leadership to our mission of intergenerational wellness.",
-      image: "/api/placeholder/200/200"
+      image: "/api/placeholder/200/200",
+      hasImage: false
     },
     {
       name: "Michael Chen",
       title: "Vice Chair",
       bio: "A seasoned business executive with expertise in strategic planning and organizational growth, Michael has dedicated his career to supporting community-focused initiatives.",
-      image: "/api/placeholder/200/200"
+      image: "/api/placeholder/200/200",
+      hasImage: false
     },
     {
       name: "Maria Rodriguez",
       title: "Secretary",
       bio: "An advocate for youth empowerment and senior care, Maria brings grassroots organizing experience and deep community connections to the board.",
-      image: "/api/placeholder/200/200"
+      image: "/api/placeholder/200/200",
+      hasImage: false
     },
     {
       name: "James Thompson",
       title: "Treasurer",
       bio: "With extensive experience in financial management and nonprofit accounting, James ensures our resources are effectively allocated to maximize community impact.",
-      image: "/api/placeholder/200/200"
+      image: "/api/placeholder/200/200",
+      hasImage: false
     },
     {
       name: "Dr. Angela Kim",
       title: "Board Member",
       bio: "A healthcare professional specializing in geriatric care, Dr. Kim provides critical insights into wellness programming for our senior community members.",
-      image: "/api/placeholder/200/200"
+      image: "/api/placeholder/200/200",
+      hasImage: false
     },
     {
       name: "Robert Williams",
       title: "Board Member",
       bio: "An education administrator with a passion for intergenerational learning, Robert helps design programs that bridge generational gaps through shared experiences.",
-      image: "/api/placeholder/200/200"
+      image: "/api/placeholder/200/200",
+      hasImage: false
     }
   ];
 
@@ -74,25 +88,67 @@ export default function BoardOfDirectorsPage() {
       {/* Board Members Section */}
       <section className="py-20 bg-white">
         <div className="container-luxury">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {boardMembers.map((member, index) => (
-              <div key={index} className="text-center">
-                <div className="mb-6">
-                  <div className="w-48 h-48 mx-auto bg-gray-200 rounded-full flex items-center justify-center">
-                    <span className="text-gray-500 text-sm">Photo Coming Soon</span>
+          {/* Hemant Bundele - Featured First */}
+          <div className="mb-20">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="order-2 lg:order-1">
+                  <h3 className="text-serif text-4xl font-normal text-navy-dark mb-4">
+                    {boardMembers[0].name}
+                  </h3>
+                  <p className="text-brand-mint font-medium mb-6 uppercase tracking-wider text-lg">
+                    {boardMembers[0].title}
+                  </p>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    {boardMembers[0].bio}
+                  </p>
+                </div>
+                <div className="order-1 lg:order-2">
+                  <div className="relative w-full max-w-md mx-auto">
+                    <img 
+                      src={boardMembers[0].image}
+                      alt={`${boardMembers[0].name}, ${boardMembers[0].title}`}
+                      className="w-full h-auto rounded-2xl shadow-2xl"
+                    />
                   </div>
                 </div>
-                <h3 className="text-serif text-2xl font-normal text-navy-dark mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-brand-mint font-medium mb-4 uppercase tracking-wider text-sm">
-                  {member.title}
-                </p>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                  {member.bio}
-                </p>
               </div>
-            ))}
+            </div>
+          </div>
+
+          {/* Other Board Members */}
+          <div className="border-t border-gray-200 pt-20">
+            <h2 className="text-serif text-3xl font-normal text-navy-dark mb-12 text-center">
+              Board Members
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+              {boardMembers.slice(1).map((member, index) => (
+                <div key={index + 1} className="text-center">
+                  <div className="mb-6">
+                    {member.hasImage ? (
+                      <img 
+                        src={member.image}
+                        alt={`${member.name}, ${member.title}`}
+                        className="w-48 h-48 mx-auto rounded-full object-cover shadow-lg"
+                      />
+                    ) : (
+                      <div className="w-48 h-48 mx-auto bg-gray-200 rounded-full flex items-center justify-center">
+                        <span className="text-gray-500 text-sm">Photo Coming Soon</span>
+                      </div>
+                    )}
+                  </div>
+                  <h3 className="text-serif text-2xl font-normal text-navy-dark mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="text-brand-mint font-medium mb-4 uppercase tracking-wider text-sm">
+                    {member.title}
+                  </p>
+                  <p className="text-gray-600 leading-relaxed text-sm">
+                    {member.bio}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
