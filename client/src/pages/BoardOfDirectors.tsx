@@ -62,7 +62,7 @@ export default function BoardOfDirectorsPage() {
       <section className="py-20 bg-white">
         <div className="container-luxury">
           {/* Hemant Bundele - Featured First */}
-          <div className="mb-20">
+          <div className="mb-32">
             <div className="max-w-6xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div className="order-2 lg:order-1">
@@ -89,38 +89,66 @@ export default function BoardOfDirectorsPage() {
             </div>
           </div>
 
-          {/* Other Board Members */}
-          <div className="border-t border-gray-200 pt-20">
-            <h2 className="text-serif text-3xl font-normal text-navy-dark mb-12 text-center">
-              Board Members
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-              {boardMembers.slice(1).map((member, index) => (
-                <div key={index + 1} className="text-center">
-                  <div className="mb-6">
-                    {member.hasImage ? (
+          {/* Sunita Shirguppi - Featured Second */}
+          <div className="mb-32">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="order-2 lg:order-2">
+                  <h3 className="text-serif text-4xl font-normal text-navy-dark mb-4">
+                    {boardMembers[1].name}
+                  </h3>
+                  <p className="text-brand-mint font-medium mb-6 uppercase tracking-wider text-lg">
+                    {boardMembers[1].title}
+                  </p>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    {boardMembers[1].bio}
+                  </p>
+                </div>
+                <div className="order-1 lg:order-1">
+                  <div className="relative w-full max-w-md mx-auto">
+                    <img 
+                      src={boardMembers[1].image}
+                      alt={`${boardMembers[1].name}, ${boardMembers[1].title}`}
+                      className="w-full h-auto rounded-2xl shadow-2xl object-cover"
+                      style={{ aspectRatio: '3/4' }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Mahesh Patel - Featured Third */}
+          <div className="mb-20">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="order-2 lg:order-1">
+                  <h3 className="text-serif text-4xl font-normal text-navy-dark mb-4">
+                    {boardMembers[2].name}
+                  </h3>
+                  <p className="text-brand-mint font-medium mb-6 uppercase tracking-wider text-lg">
+                    {boardMembers[2].title}
+                  </p>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    {boardMembers[2].bio}
+                  </p>
+                </div>
+                <div className="order-1 lg:order-2">
+                  <div className="relative w-full max-w-md mx-auto">
+                    {boardMembers[2].hasImage ? (
                       <img 
-                        src={member.image}
-                        alt={`${member.name}, ${member.title}`}
-                        className="w-48 h-48 mx-auto rounded-full object-cover shadow-lg"
+                        src={boardMembers[2].image}
+                        alt={`${boardMembers[2].name}, ${boardMembers[2].title}`}
+                        className="w-full h-auto rounded-2xl shadow-2xl"
                       />
                     ) : (
-                      <div className="w-48 h-48 mx-auto bg-gray-200 rounded-full flex items-center justify-center">
-                        <span className="text-gray-500 text-sm">Photo Coming Soon</span>
+                      <div className="w-full bg-gray-200 rounded-2xl shadow-2xl flex items-center justify-center" style={{ aspectRatio: '3/4' }}>
+                        <span className="text-gray-500 text-lg">Photo Coming Soon</span>
                       </div>
                     )}
                   </div>
-                  <h3 className="text-serif text-2xl font-normal text-navy-dark mb-2">
-                    {member.name}
-                  </h3>
-                  <p className="text-brand-mint font-medium mb-4 uppercase tracking-wider text-sm">
-                    {member.title}
-                  </p>
-                  <p className="text-gray-600 leading-relaxed text-sm">
-                    {member.bio}
-                  </p>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>
