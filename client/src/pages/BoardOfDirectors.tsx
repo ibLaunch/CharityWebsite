@@ -2,6 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import hemantBundelePhoto from "@assets/Hemant_Bundele_1750101113518.jpg";
+import sunitaShirguppiPhoto from "@assets/PHOTO-2025-06-18-09-23-25_1750276916756.jpg";
 
 export default function BoardOfDirectorsPage() {
   const boardMembers = [
@@ -13,44 +14,16 @@ export default function BoardOfDirectorsPage() {
       hasImage: true
     },
     {
-      name: "Dr. Sarah Johnson",
-      title: "Board Chair",
-      bio: "With over 20 years of experience in nonprofit management and community development, Dr. Johnson brings invaluable leadership to our mission of intergenerational wellness.",
-      image: "/api/placeholder/200/200",
-      hasImage: false
-    },
-    {
-      name: "Michael Chen",
-      title: "Vice Chair",
-      bio: "A seasoned business executive with expertise in strategic planning and organizational growth, Michael has dedicated his career to supporting community-focused initiatives.",
-      image: "/api/placeholder/200/200",
-      hasImage: false
-    },
-    {
-      name: "Maria Rodriguez",
-      title: "Secretary",
-      bio: "An advocate for youth empowerment and senior care, Maria brings grassroots organizing experience and deep community connections to the board.",
-      image: "/api/placeholder/200/200",
-      hasImage: false
-    },
-    {
-      name: "James Thompson",
-      title: "Treasurer",
-      bio: "With extensive experience in financial management and nonprofit accounting, James ensures our resources are effectively allocated to maximize community impact.",
-      image: "/api/placeholder/200/200",
-      hasImage: false
-    },
-    {
-      name: "Dr. Angela Kim",
+      name: "Sunita Shirguppi",
       title: "Board Member",
-      bio: "A healthcare professional specializing in geriatric care, Dr. Kim provides critical insights into wellness programming for our senior community members.",
-      image: "/api/placeholder/200/200",
-      hasImage: false
+      bio: "Sunita Shirguppi is a passionate yoga instructor and dedicated Rotarian who firmly believes in selfless service to society. As the former principal of Dr. Kalmadi Shamrao High School in Pune, Maharashtra, she has spent her career nurturing young minds and advocating for quality education. Deeply aligned with the Bundele Foundation's mission, Sunita is highly motivated to make a lasting impact in the areas of children's education and senior care. She believes that empowering the next generation and honoring the wisdom of the elderly are both essential to building compassionate, resilient communities. She views the human body as a divine gift and a sacred responsibility. A strong advocate for Yogabhyas (the practice of yoga), she promotes holistic well-being—physically, mentally, and spiritually. In 2015, Sunita pledged to donate her entire body. Her vital organs, including corneas and skin, will be donated to those in need, and the rest will support medical education and research. Her life and choices reflect the values of service, compassion, and lifelong learning that the Bundele Foundation proudly upholds.",
+      image: sunitaShirguppiPhoto,
+      hasImage: true
     },
     {
-      name: "Robert Williams",
+      name: "Mahesh Patel",
       title: "Board Member",
-      bio: "An education administrator with a passion for intergenerational learning, Robert helps design programs that bridge generational gaps through shared experiences.",
+      bio: "Information coming soon.",
       image: "/api/placeholder/200/200",
       hasImage: false
     }
