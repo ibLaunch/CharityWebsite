@@ -5,7 +5,7 @@ import { CalendarPlus, Star, ArrowLeft, Dumbbell, Heart, Apple, Flower, Activity
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
-import wellnessIllustration from "@/assets/wellness-illustration.svg";
+import bWellnessImage from "@assets/b-wellness_1750106432114.png";
 
 export default function YogaPage() {
   const packages = [
@@ -60,7 +60,7 @@ export default function YogaPage() {
       <section 
         className="relative min-h-[70vh] flex items-center overflow-hidden"
         style={{
-          backgroundImage: `url(${wellnessIllustration})`,
+          backgroundImage: `url(${bWellnessImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
