@@ -39,6 +39,7 @@ export default function Navigation() {
     { id: "impact-circle", label: "Impact Circle", isSection: false, href: "/impact-circle" },
     { id: "yoga", label: "Wellness", isSection: false, href: "/yoga" },
     { id: "founders-message", label: "About Us", isSection: false, href: "/founders-message" },
+    { id: "faq", label: "FAQ", isSection: false, href: "/faq" },
     { id: "contact", label: "Contact", isSection: false, href: "/contact" },
   ];
 
