@@ -58,13 +58,7 @@ export default function YogaPage() {
       
       {/* Hero Section with Wellness Image */}
       <section 
-        className="relative min-h-[70vh] flex items-center overflow-hidden"
-        style={{
-          backgroundImage: `url(${bWellnessImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
+        className="relative min-h-[70vh] flex items-center overflow-hidden bg-gradient-to-br from-navy-dark via-navy-medium to-navy-hover"
       >
         {/* Hero Overlay */}
         <div className="absolute inset-0 bg-black/30"></div>
