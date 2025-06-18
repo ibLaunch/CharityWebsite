@@ -359,11 +359,11 @@ export default function YogaPage() {
                 </CardContent>
               </Card>
               
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-3 gap-4">
                 <Card className="bg-navy-very-light border-0 shadow-lg">
                   <CardContent className="p-6 text-center">
-                    <h4 className="text-xl font-bold text-navy-dark mb-2">3-Session Pack</h4>
-                    <div className="text-2xl font-bold text-navy-medium">$175</div>
+                    <h4 className="text-lg font-bold text-navy-dark mb-2">3-Session Pack</h4>
+                    <div className="text-xl font-bold text-navy-medium">$175</div>
                     <div className="text-sm text-gray-500 line-through">$195</div>
                     <div className="text-sm font-semibold text-navy-dark">Save 10%</div>
                   </CardContent>
@@ -371,9 +371,18 @@ export default function YogaPage() {
                 
                 <Card className="bg-navy-very-light border-0 shadow-lg">
                   <CardContent className="p-6 text-center">
-                    <h4 className="text-xl font-bold text-navy-dark mb-2">5-Session Pack</h4>
-                    <div className="text-2xl font-bold text-navy-medium">$292</div>
+                    <h4 className="text-lg font-bold text-navy-dark mb-2">5-Session Pack</h4>
+                    <div className="text-xl font-bold text-navy-medium">$292</div>
                     <div className="text-sm text-gray-500 line-through">$325</div>
+                    <div className="text-sm font-semibold text-navy-dark">Save 10%</div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-navy-very-light border-0 shadow-lg">
+                  <CardContent className="p-6 text-center">
+                    <h4 className="text-lg font-bold text-navy-dark mb-2">10-Session Pack</h4>
+                    <div className="text-xl font-bold text-navy-medium">$585</div>
+                    <div className="text-sm text-gray-500 line-through">$650</div>
                     <div className="text-sm font-semibold text-navy-dark">Save 10%</div>
                   </CardContent>
                 </Card>
