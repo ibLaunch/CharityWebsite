@@ -194,8 +194,8 @@ export default function YogaPage() {
             <Card className="bg-white border-0 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-navy-dark to-navy-medium rounded-full flex items-center justify-center mr-4 shadow-lg">
-                    <Flower className="w-10 h-10 text-white drop-shadow-sm" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-navy-dark to-navy-medium rounded-full flex items-center justify-center mr-4 shadow-lg border-2 border-navy-light">
+                    <Flower className="w-10 h-10 text-white drop-shadow-sm stroke-2" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-navy-dark">Mindful Yoga Practice</h3>
@@ -217,8 +217,8 @@ export default function YogaPage() {
             <Card className="bg-white border-0 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-navy-dark to-navy-medium rounded-full flex items-center justify-center mr-4 shadow-lg">
-                    <Dumbbell className="w-10 h-10 text-white drop-shadow-sm" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-navy-dark to-navy-medium rounded-full flex items-center justify-center mr-4 shadow-lg border-2 border-navy-light">
+                    <Dumbbell className="w-10 h-10 text-white drop-shadow-sm stroke-2" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-navy-dark">Functional Strength Training</h3>
@@ -240,8 +240,8 @@ export default function YogaPage() {
             <Card className="bg-white border-0 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-navy-medium to-navy-hover rounded-full flex items-center justify-center mr-4 shadow-lg">
-                    <Activity className="w-10 h-10 text-white drop-shadow-sm" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-navy-medium to-navy-hover rounded-full flex items-center justify-center mr-4 shadow-lg border-2 border-navy-light">
+                    <Activity className="w-10 h-10 text-white drop-shadow-sm stroke-2" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-navy-dark">Cardiovascular Conditioning</h3>
@@ -263,8 +263,8 @@ export default function YogaPage() {
             <Card className="bg-white border-0 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-navy-hover to-navy-dark rounded-full flex items-center justify-center mr-4 shadow-lg">
-                    <Apple className="w-10 h-10 text-white drop-shadow-sm" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-navy-hover to-navy-dark rounded-full flex items-center justify-center mr-4 shadow-lg border-2 border-navy-light">
+                    <Apple className="w-10 h-10 text-white drop-shadow-sm stroke-2" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-navy-dark">Personalized Nutrition Guidance</h3>
