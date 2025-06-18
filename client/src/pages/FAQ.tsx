@@ -44,7 +44,7 @@ export default function FAQPage() {
     {
       icon: CheckCircle,
       question: "Is Bundele Foundation a registered nonprofit?",
-      answer: "Yes. We are officially registered and operate transparently with all funds going directly to community programs. Our 100% direct impact promise ensures your donations are used for real, visible change."
+      answer: "Yes. We are a 501(c)(3) Nonprofit Organization, officially registered and operating transparently with all funds going directly to community programs. Our 100% direct impact promise ensures your donations are used for real, visible change."
     },
     {
       icon: Receipt,
