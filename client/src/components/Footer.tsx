@@ -36,7 +36,7 @@ export default function Footer() {
           <div>
             <h3 className="text-serif text-3xl font-light mb-8 tracking-tight text-navy-light">Bundele Foundation</h3>
             <p className="text-navy-light leading-relaxed font-light">
-              Creating positive change through education support, senior care, and community building. Together, we're making a difference.
+              A 501(c)(3) Nonprofit Organization creating positive change through education support, senior care, and community building. Together, we're making a difference.
             </p>
           </div>
           
