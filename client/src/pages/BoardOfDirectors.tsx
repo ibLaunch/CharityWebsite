@@ -2,7 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import hemantBundelePhoto from "@assets/Hemant_Bundele_1750101113518.jpg";
-import sunitaShirguppiPhoto from "@assets/PHOTO-2025-06-18-09-23-25_1750276916756.jpg";
+import sunitaShirguppiPhoto from "@assets/Screen Shot 2025-06-18 at 4.19.57 PM_1750278002298.png";
 
 export default function BoardOfDirectorsPage() {
   const boardMembers = [
