@@ -78,13 +78,11 @@ export default function BoardOfDirectorsPage() {
                 </div>
                 <div className="order-1 lg:order-2">
                   <div className="relative w-full max-w-md mx-auto">
-                    <div className="w-full rounded-2xl shadow-2xl overflow-hidden" style={{ aspectRatio: '3/4' }}>
-                      <img 
-                        src={boardMembers[0].image}
-                        alt={`${boardMembers[0].name}, ${boardMembers[0].title}`}
-                        className="w-full h-full object-cover object-center"
-                      />
-                    </div>
+                    <img 
+                      src={boardMembers[0].image}
+                      alt={`${boardMembers[0].name}, ${boardMembers[0].title}`}
+                      className="w-full h-auto rounded-2xl shadow-2xl"
+                    />
                   </div>
                 </div>
               </div>
