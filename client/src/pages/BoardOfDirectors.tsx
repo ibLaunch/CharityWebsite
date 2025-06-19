@@ -2,7 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import hemantBundelePhoto from "@assets/Hemant_Bundele_1750101113518.jpg";
-import sunitaShirguppiPhoto from "@assets/Screen Shot 2025-06-18 at 4.19.57 PM_1750278002298.png";
+import sunitaShirguppiPhoto from "@assets/Screen Shot 2025-06-19 at 2.00.06 PM_1750356009346.png";
 
 export default function BoardOfDirectorsPage() {
   const boardMembers = [
@@ -106,14 +106,11 @@ export default function BoardOfDirectorsPage() {
                 </div>
                 <div className="order-1 lg:order-1">
                   <div className="relative w-full max-w-md mx-auto">
-                    <div className="w-full rounded-2xl shadow-2xl overflow-hidden" style={{ aspectRatio: '3/4' }}>
-                      <img 
-                        src={boardMembers[1].image}
-                        alt={`${boardMembers[1].name}, ${boardMembers[1].title}`}
-                        className="w-full h-full object-cover scale-110"
-                        style={{ objectPosition: '50% 40%' }}
-                      />
-                    </div>
+                    <img 
+                      src={boardMembers[1].image}
+                      alt={`${boardMembers[1].name}, ${boardMembers[1].title}`}
+                      className="w-full h-auto rounded-2xl shadow-2xl"
+                    />
                   </div>
                 </div>
               </div>
