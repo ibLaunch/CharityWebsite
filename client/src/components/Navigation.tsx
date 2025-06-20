@@ -57,14 +57,14 @@ export default function Navigation() {
       isScrolled ? "border-b border-gray-200" : ""
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20 sm:h-24">
+        <div className="flex justify-between items-center h-20 sm:h-28">
           <div className="flex items-center">
             <Link href="/">
               <div className="flex items-center cursor-pointer group">
                 <img 
                   src={bundeleFoundationLogo}
                   alt="Bundele Foundation"
-                  className="h-12 sm:h-16 lg:h-20 w-auto transition-opacity group-hover:opacity-80"
+                  className="h-14 sm:h-20 lg:h-24 w-auto transition-opacity group-hover:opacity-80"
                 />
               </div>
             </Link>
@@ -134,7 +134,7 @@ export default function Navigation() {
                     <img 
                       src={bundeleFoundationLogo}
                       alt="Bundele Foundation"
-                      className="h-12 w-auto"
+                      className="h-14 w-auto"
                     />
                   </div>
                   <div className="flex flex-col space-y-2">

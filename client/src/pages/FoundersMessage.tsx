@@ -10,7 +10,7 @@ export default function FoundersMessagePage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative bg-white pt-28 pb-16 overflow-hidden">
+      <section className="relative bg-white pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
