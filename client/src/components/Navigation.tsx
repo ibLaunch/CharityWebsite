@@ -55,22 +55,22 @@ export default function Navigation() {
     <nav className={`fixed top-0 w-full bg-white z-50 transition-all duration-500 ${
       isScrolled ? "border-b border-gray-200" : ""
     }`}>
-      <div className="container-minimal">
-        <div className="flex justify-between items-center h-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16 sm:h-20">
           <div className="flex items-center">
             <Link href="/">
-              <h1 className="elegant-small text-navy-dark cursor-pointer hover:text-navy-medium transition-colors text-lg">
+              <h1 className="text-base sm:text-lg lg:text-xl font-bold text-navy-dark cursor-pointer hover:text-navy-medium transition-colors">
                 Bundele Foundation
               </h1>
             </Link>
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="flex items-center space-x-16">
+          <div className="hidden lg:block">
+            <div className="flex items-center space-x-6 xl:space-x-8">
               {navItems.map((item) => (
                 <Link key={item.id} href={item.href || "#"}>
-                  <button className="elegant-small text-navy-medium hover:text-navy-dark transition-colors">
+                  <button className="text-sm xl:text-base text-navy-medium hover:text-navy-dark transition-colors font-medium">
                     {item.label}
                   </button>
                 </Link>
@@ -82,7 +82,7 @@ export default function Navigation() {
                 onMouseEnter={() => setIsAboutDropdownOpen(true)}
                 onMouseLeave={() => setIsAboutDropdownOpen(false)}
               >
-                <button className="elegant-small text-navy-medium hover:text-navy-dark transition-colors flex items-center">
+                <button className="text-sm xl:text-base text-navy-medium hover:text-navy-dark transition-colors flex items-center font-medium">
                   About Us
                   <ChevronDown className={`ml-1 h-3 w-3 transition-transform duration-200 ${
                     isAboutDropdownOpen ? 'rotate-180' : ''

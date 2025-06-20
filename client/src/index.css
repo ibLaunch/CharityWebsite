@@ -91,18 +91,55 @@
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 300;
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
+  }
+
+  /* Responsive typography */
+  @media (min-width: 640px) {
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.75rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+    h2 {
+      font-size: 2.75rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
   }
 
   /* Refined paragraph styling */
@@ -115,10 +152,10 @@
 
   /* Minimal elegant buttons */
   .luxury-button {
-    @apply px-10 py-4 bg-black text-white border border-black;
+    @apply px-6 py-3 bg-black text-white border border-black;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     transition: all 0.4s ease;
@@ -130,10 +167,10 @@
   }
 
   .luxury-button-outline {
-    @apply px-10 py-4 bg-transparent text-black border border-black;
+    @apply px-6 py-3 bg-transparent text-black border border-black;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     transition: all 0.4s ease;
@@ -144,18 +181,82 @@
     @apply bg-black text-white;
   }
 
+  @media (min-width: 640px) {
+    .luxury-button, .luxury-button-outline {
+      @apply px-8 py-3;
+      font-size: 0.75rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .luxury-button, .luxury-button-outline {
+      @apply px-10 py-4;
+      font-size: 0.8rem;
+    }
+  }
+
   /* Minimal section styling */
   .minimal-section {
-    @apply py-32;
+    @apply py-16;
+  }
+
+  @media (min-width: 768px) {
+    .minimal-section {
+      @apply py-24;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .minimal-section {
+      @apply py-32;
+    }
+  }
+
+  /* Responsive container utilities */
+  .container-luxury {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+
+  @media (min-width: 640px) {
+    .container-luxury {
+      @apply px-6;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-luxury {
+      @apply px-8;
+    }
   }
 
   /* Large hero text */
   .hero-title {
     font-family: 'Playfair Display', serif;
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: 300;
-    line-height: 0.95;
+    line-height: 1.1;
     letter-spacing: -0.02em;
+  }
+
+  @media (min-width: 640px) {
+    .hero-title {
+      font-size: 3.5rem;
+      line-height: 1.05;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero-title {
+      font-size: 4rem;
+      line-height: 1.0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-title {
+      font-size: 5rem;
+      line-height: 0.95;
+    }
   }
 
   /* Small elegant text */
