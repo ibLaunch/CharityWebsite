@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "wouter";
-import bundeleFoundationLogo from "@assets/bfoundation-logo-3_1750426526472.png";
+import bundeleFoundationLogo from "@assets/bfoundation-logo-5_1750429672590.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);

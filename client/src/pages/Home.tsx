@@ -11,7 +11,6 @@ import schoolHallImage2 from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM_17501
 import furnitureImage from "@assets/image_1749228397347.png";
 import cabinetImage from "@assets/image_1749228404698.png";
 import schoolHallImage from "@assets/image_1749228409980.png";
-import bundeleFoundationLogo from "@assets/bfoundation-logo-3_1750426526472.png";
 
 export default function Home() {
   const heroImages = [
@@ -113,13 +112,10 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <div className="flex items-center">
-                  <img 
-                    src={bundeleFoundationLogo}
-                    alt="Bundele Foundation"
-                    className="h-16 sm:h-20 lg:h-24 w-auto"
-                  />
-                </div>
+                <h1 className="hero-title text-navy-dark">
+                  Bundele<br />
+                  Foundation
+                </h1>
                 <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
                   Building stronger communities—one generation at a time—through youth empowerment, senior care, and intergenerational programs.
                 </p>

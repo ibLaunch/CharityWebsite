@@ -1,6 +1,6 @@
 import { MessageCircle, Mail, Phone } from "lucide-react";
 import { Link } from "wouter";
-import bundeleFoundationLogo from "@assets/bfoundation-logo-3_1750426526472.png";
+import bundeleFoundationLogo from "@assets/bfoundation-logo-5_1750429672590.png";
 
 export default function Footer() {
   const quickLinks = [
