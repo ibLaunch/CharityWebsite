@@ -85,7 +85,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-navy-medium mt-12 sm:mt-16 lg:mt-24 pt-8 sm:pt-12 text-center">
-          <p className="text-xs sm:text-sm font-medium uppercase tracking-wider text-navy-light">&copy; 2024 Bundele Foundation. All rights reserved.</p>
+          <p className="text-xs sm:text-sm font-medium uppercase tracking-wider text-navy-light">&copy; 2022 Bundele Foundation. All rights reserved.</p>
         </div>
       </div>
     </footer>
