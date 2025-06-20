@@ -39,7 +39,7 @@ export default function Footer() {
               <img 
                 src={bundeleFoundationLogo}
                 alt="Bundele Foundation"
-                className="h-12 sm:h-16 lg:h-20 w-auto"
+                className="h-12 sm:h-16 lg:h-20 w-auto bg-white rounded-lg p-2"
               />
             </div>
             <p className="text-navy-light leading-relaxed font-light text-sm sm:text-base">
