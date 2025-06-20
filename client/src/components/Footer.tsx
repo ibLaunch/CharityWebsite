@@ -1,6 +1,6 @@
 import { MessageCircle, Mail, Phone } from "lucide-react";
 import { Link } from "wouter";
-import bundeleFoundationLogo from "@assets/bfoundation-logo-5_1750429672590.png";
+import bundeleFoundationLogo from "@assets/bfoundation-logo-5.1_1750431171016.png";
 
 export default function Footer() {
   const quickLinks = [
@@ -39,7 +39,7 @@ export default function Footer() {
               <img 
                 src={bundeleFoundationLogo}
                 alt="Bundele Foundation"
-                className="h-12 sm:h-16 lg:h-20 w-auto bg-white rounded-lg p-2"
+                className="h-12 sm:h-16 lg:h-20 w-auto"
               />
             </div>
             <p className="text-navy-light leading-relaxed font-light text-sm sm:text-base">
