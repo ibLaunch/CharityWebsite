@@ -69,48 +69,48 @@ export default function YogaPage() {
         {/* Hero Overlay */}
         <div className="absolute inset-0 bg-black/30"></div>
         
-        <div className="relative z-10 w-full py-20">
+        <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <Link href="/">
-                <button className="mb-8 inline-flex items-center px-6 py-3 border-2 border-white/70 text-white hover:bg-white/10 transition-colors rounded-md">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
+                <button className="mb-6 sm:mb-8 inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-white/70 text-white hover:bg-white/10 transition-colors rounded-md text-sm sm:text-base">
+                  <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                   Back to Home
                 </button>
               </Link>
               
-              <div className="space-y-8">
-                <div className="text-navy-light text-lg font-medium tracking-wide uppercase">
+              <div className="space-y-6 sm:space-y-8">
+                <div className="text-navy-light text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase">
                   Holistic Well-being Programs
                 </div>
-                <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
                   Bundele<br />
                   <span className="italic text-navy-light">Wellness</span>
                 </h1>
-                <p className="text-2xl font-light text-navy-very-light italic leading-relaxed">
+                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-very-light italic leading-relaxed">
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
                 
                 {/* Pricing Highlight */}
-                <div className="inline-block bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+                <div className="inline-block bg-white/90 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-lg">
                   <div className="text-center">
-                    <div className="text-sm font-medium text-navy-medium uppercase tracking-wide mb-2">
+                    <div className="text-xs sm:text-sm font-medium text-navy-medium uppercase tracking-wide mb-1 sm:mb-2">
                       Starting From
                     </div>
-                    <div className="text-4xl font-bold text-navy-dark mb-1">$65</div>
-                    <div className="text-sm text-navy-medium">per session</div>
+                    <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy-dark mb-1">$65</div>
+                    <div className="text-xs sm:text-sm text-navy-medium">per session</div>
                   </div>
                 </div>
                 
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
                   <button 
                     onClick={() => window.scrollTo({ top: document.getElementById('pricing')?.offsetTop || 0, behavior: 'smooth' })}
-                    className="bg-navy-dark hover:bg-navy-hover text-white px-8 py-4 rounded-md text-lg font-semibold transition-colors"
+                    className="bg-navy-dark hover:bg-navy-hover text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold transition-colors"
                   >
                     Explore Our Programs
                   </button>
                   <Link href="/contact">
-                    <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-md text-lg font-semibold transition-colors">
+                    <button className="border-2 border-white text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold transition-colors">
                       Start Your Journey
                     </button>
                   </Link>
@@ -179,34 +179,34 @@ export default function YogaPage() {
       </section>
 
       {/* Four Pillars of Transformation */}
-      <section id="programs" className="relative py-20 bg-gradient-to-br from-navy-very-light to-white overflow-hidden">
+      <section id="programs" className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-navy-very-light to-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-navy-dark mb-6">The Four Pillars of Your Transformation</h2>
-            <p className="text-xl text-navy-medium max-w-3xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy-dark mb-4 sm:mb-6">The Four Pillars of Your Transformation</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-navy-medium max-w-3xl mx-auto">
               A comprehensive approach that honors ancient wisdom while embracing modern science
             </p>
           </div>
           
           {/* Four Pillars - Improved Layout */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
             {/* Pillar 1: Mindful Yoga Practice */}
             <Card className="bg-white border-0 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-navy-dark to-navy-medium rounded-full flex items-center justify-center mr-4 shadow-lg">
-                    <Flower className="w-10 h-10 text-navy-light drop-shadow-sm stroke-2" style={{ stroke: 'currentColor', fill: 'none' }} />
+              <CardContent className="p-4 sm:p-6 lg:p-8">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center mb-4 sm:mb-6">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-navy-dark to-navy-medium rounded-full flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 shadow-lg">
+                    <Flower className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-navy-light drop-shadow-sm stroke-2" style={{ stroke: 'currentColor', fill: 'none' }} />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-navy-dark">Mindful Yoga Practice</h3>
-                    <p className="text-lg text-navy-medium italic font-light">Awaken Your Inner Harmony</p>
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-navy-dark">Mindful Yoga Practice</h3>
+                    <p className="text-sm sm:text-base lg:text-lg text-navy-medium italic font-light">Awaken Your Inner Harmony</p>
                   </div>
                 </div>
-                <p className="text-navy-dark leading-relaxed mb-4">
+                <p className="text-sm sm:text-base text-navy-dark leading-relaxed mb-4">
                   Immerse yourself in the ancient art of yoga, where every pose, breath, and meditation is an invitation to connect with your deepest self. Our mindful yoga practices are designed to enhance flexibility, build core strength, and cultivate a profound sense of calm and mental clarity.
                 </p>
                 <div className="text-center">
-                  <span className="text-sm font-medium text-navy-dark bg-navy-very-light px-4 py-2 rounded-full">
+                  <span className="text-xs sm:text-sm font-medium text-navy-dark bg-navy-very-light px-3 sm:px-4 py-1 sm:py-2 rounded-full">
                     Flexibility • Balance • Mindfulness
                   </span>
                 </div>

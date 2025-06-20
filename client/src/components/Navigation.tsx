@@ -107,7 +107,7 @@ export default function Navigation() {
 
               {navItemsAfterAbout.map((item) => (
                 <Link key={item.id} href={item.href || "#"}>
-                  <button className="elegant-small text-navy-medium hover:text-navy-dark transition-colors">
+                  <button className="text-sm xl:text-base text-navy-medium hover:text-navy-dark transition-colors font-medium">
                     {item.label}
                   </button>
                 </Link>
@@ -116,44 +116,47 @@ export default function Navigation() {
           </div>
           
           {/* Mobile Navigation */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="border-none">
-                  <Menu className="h-4 w-4" />
+                <Button variant="ghost" size="icon" className="border-none p-2">
+                  <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent className="bg-white">
-                <div className="flex flex-col space-y-12 mt-24">
-                  {navItems.map((item) => (
-                    <Link key={item.id} href={item.href || "#"}>
-                      <button className="text-left elegant-small text-navy-medium hover:text-navy-dark transition-colors">
-                        {item.label}
-                      </button>
-                    </Link>
-                  ))}
-                  
-                  {/* About Us Section for Mobile */}
-                  <div className="flex flex-col space-y-4">
-                    <span className="elegant-small text-navy-dark font-medium">About Us</span>
-                    <div className="flex flex-col space-y-6 ml-4">
-                      {aboutUsItems.map((item) => (
-                        <Link key={item.id} href={item.href}>
-                          <button className="text-left elegant-small text-navy-medium hover:text-navy-dark transition-colors">
-                            {item.label}
-                          </button>
-                        </Link>
-                      ))}
+              <SheetContent className="bg-white w-[280px] sm:w-[320px] p-0">
+                <div className="p-6">
+                  <div className="text-lg font-bold text-navy-dark mb-8">Menu</div>
+                  <div className="flex flex-col space-y-2">
+                    {navItems.map((item) => (
+                      <Link key={item.id} href={item.href || "#"}>
+                        <button className="w-full text-left p-3 text-base text-navy-medium hover:text-navy-dark hover:bg-navy-very-light rounded-md transition-colors">
+                          {item.label}
+                        </button>
+                      </Link>
+                    ))}
+                    
+                    {/* About Us Section for Mobile */}
+                    <div className="border-t border-gray-200 pt-4 mt-4">
+                      <div className="text-sm font-medium text-navy-medium mb-3 px-3">About Us</div>
+                      <div className="flex flex-col space-y-1">
+                        {aboutUsItems.map((item) => (
+                          <Link key={item.id} href={item.href}>
+                            <button className="w-full text-left pl-6 pr-3 py-3 text-base text-navy-medium hover:text-navy-dark hover:bg-navy-very-light rounded-md transition-colors">
+                              {item.label}
+                            </button>
+                          </Link>
+                        ))}
+                      </div>
                     </div>
-                  </div>
 
-                  {navItemsAfterAbout.map((item) => (
-                    <Link key={item.id} href={item.href || "#"}>
-                      <button className="text-left elegant-small text-navy-medium hover:text-navy-dark transition-colors">
-                        {item.label}
-                      </button>
-                    </Link>
-                  ))}
+                    {navItemsAfterAbout.map((item) => (
+                      <Link key={item.id} href={item.href || "#"}>
+                        <button className="w-full text-left p-3 text-base text-navy-medium hover:text-navy-dark hover:bg-navy-very-light rounded-md transition-colors">
+                          {item.label}
+                        </button>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
