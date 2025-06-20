@@ -335,55 +335,55 @@ export default function YogaPage() {
       </section>
 
       {/* Investment & Impact Section */}
-      <section id="pricing" className="relative py-20 bg-white overflow-hidden">
+      <section id="pricing" className="relative py-12 sm:py-16 lg:py-20 bg-white overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-navy-dark mb-6">Invest in Your Transformation, Impact the World</h2>
-            <div className="w-24 h-1 bg-navy-medium mx-auto mb-8"></div>
-            <p className="text-xl text-navy-medium max-w-3xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy-dark mb-4 sm:mb-6">Invest in Your Transformation, Impact the World</h2>
+            <div className="w-16 sm:w-20 lg:w-24 h-1 bg-navy-medium mx-auto mb-6 sm:mb-8"></div>
+            <p className="text-base sm:text-lg lg:text-xl text-navy-medium max-w-3xl mx-auto">
               Your wellness journey creates ripples of positive change that extend far beyond yourself
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
-            <div className="space-y-8">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-12 sm:mb-16">
+            <div className="space-y-6 sm:space-y-8">
               <Card className="bg-gradient-to-br from-navy-very-light to-white border-0 shadow-2xl">
-                <CardContent className="p-10 text-center">
-                  <div className="mb-6">
-                    <div className="text-6xl font-bold text-navy-dark">$65</div>
-                    <div className="text-xl text-navy-medium">per session</div>
+                <CardContent className="p-6 sm:p-8 lg:p-10 text-center">
+                  <div className="mb-4 sm:mb-6">
+                    <div className="text-3xl sm:text-4xl lg:text-6xl font-bold text-navy-dark">$65</div>
+                    <div className="text-base sm:text-lg lg:text-xl text-navy-medium">per session</div>
                   </div>
-                  <p className="text-lg leading-relaxed text-navy-dark">
+                  <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-navy-dark">
                     Sessions are priced at $65 each, with attractive package discounts available for committed members ready to invest in their complete transformation.
                   </p>
                 </CardContent>
               </Card>
               
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <Card className="bg-navy-very-light border-0 shadow-lg">
-                  <CardContent className="p-6 text-center">
-                    <h4 className="text-lg font-bold text-navy-dark mb-2">3-Session Pack</h4>
-                    <div className="text-xl font-bold text-navy-medium">$175</div>
-                    <div className="text-sm text-gray-500 line-through">$195</div>
-                    <div className="text-sm font-semibold text-navy-dark">Save 10%</div>
+                  <CardContent className="p-4 sm:p-6 text-center">
+                    <h4 className="text-sm sm:text-base lg:text-lg font-bold text-navy-dark mb-1 sm:mb-2">3-Session Pack</h4>
+                    <div className="text-lg sm:text-xl font-bold text-navy-medium">$175</div>
+                    <div className="text-xs sm:text-sm text-gray-500 line-through">$195</div>
+                    <div className="text-xs sm:text-sm font-semibold text-navy-dark">Save 10%</div>
                   </CardContent>
                 </Card>
                 
                 <Card className="bg-navy-very-light border-0 shadow-lg">
-                  <CardContent className="p-6 text-center">
-                    <h4 className="text-lg font-bold text-navy-dark mb-2">5-Session Pack</h4>
-                    <div className="text-xl font-bold text-navy-medium">$292</div>
-                    <div className="text-sm text-gray-500 line-through">$325</div>
-                    <div className="text-sm font-semibold text-navy-dark">Save 10%</div>
+                  <CardContent className="p-4 sm:p-6 text-center">
+                    <h4 className="text-sm sm:text-base lg:text-lg font-bold text-navy-dark mb-1 sm:mb-2">5-Session Pack</h4>
+                    <div className="text-lg sm:text-xl font-bold text-navy-medium">$292</div>
+                    <div className="text-xs sm:text-sm text-gray-500 line-through">$325</div>
+                    <div className="text-xs sm:text-sm font-semibold text-navy-dark">Save 10%</div>
                   </CardContent>
                 </Card>
 
                 <Card className="bg-navy-very-light border-0 shadow-lg">
-                  <CardContent className="p-6 text-center">
-                    <h4 className="text-lg font-bold text-navy-dark mb-2">10-Session Pack</h4>
-                    <div className="text-xl font-bold text-navy-medium">$585</div>
-                    <div className="text-sm text-gray-500 line-through">$650</div>
-                    <div className="text-sm font-semibold text-navy-dark">Save 10%</div>
+                  <CardContent className="p-4 sm:p-6 text-center">
+                    <h4 className="text-sm sm:text-base lg:text-lg font-bold text-navy-dark mb-1 sm:mb-2">10-Session Pack</h4>
+                    <div className="text-lg sm:text-xl font-bold text-navy-medium">$585</div>
+                    <div className="text-xs sm:text-sm text-gray-500 line-through">$650</div>
+                    <div className="text-xs sm:text-sm font-semibold text-navy-dark">Save 10%</div>
                   </CardContent>
                 </Card>
               </div>

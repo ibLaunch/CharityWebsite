@@ -34,19 +34,19 @@ export default function BoardOfDirectorsPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-navy-very-light overflow-hidden">
-        <div className="container-luxury">
+      <section className="relative pt-20 sm:pt-24 lg:pt-32 pb-12 sm:pb-16 lg:pb-20 bg-navy-very-light overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Link href="/">
-              <button className="luxury-button-outline mb-12">
-                <ArrowLeft className="mr-2 h-4 w-4" />
+              <button className="luxury-button-outline mb-8 sm:mb-12">
+                <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                 Back to Home
               </button>
             </Link>
-            <h1 className="text-serif text-5xl md:text-7xl font-normal text-navy-dark mb-8 tracking-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-normal text-navy-dark mb-6 sm:mb-8 tracking-tight">
               Board of Directors
             </h1>
-            <p className="text-sans text-lg text-navy-dark max-w-3xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base lg:text-lg text-navy-dark max-w-3xl mx-auto leading-relaxed">
               Meet the dedicated leaders who guide our mission of building stronger communities through youth empowerment, senior care, and intergenerational programs.
             </p>
           </div>
@@ -59,25 +59,25 @@ export default function BoardOfDirectorsPage() {
       </section>
 
       {/* Board Members Section */}
-      <section className="py-20 bg-white">
-        <div className="container-luxury">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Hemant Bundele - Featured First */}
-          <div className="mb-32">
+          <div className="mb-16 sm:mb-24 lg:mb-32">
             <div className="max-w-6xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                 <div className="order-2 lg:order-1">
-                  <h3 className="text-serif text-4xl font-normal text-navy-dark mb-4">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-navy-dark mb-3 sm:mb-4">
                     {boardMembers[0].name}
                   </h3>
-                  <p className="text-brand-mint font-medium mb-6 uppercase tracking-wider text-lg">
+                  <p className="text-navy-medium font-medium mb-4 sm:mb-6 uppercase tracking-wider text-sm sm:text-base lg:text-lg">
                     {boardMembers[0].title}
                   </p>
-                  <p className="text-gray-600 leading-relaxed text-lg">
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base lg:text-lg">
                     {boardMembers[0].bio}
                   </p>
                 </div>
                 <div className="order-1 lg:order-2">
-                  <div className="relative w-full max-w-md mx-auto">
+                  <div className="relative w-full max-w-sm sm:max-w-md mx-auto">
                     <img 
                       src={boardMembers[0].image}
                       alt={`${boardMembers[0].name}, ${boardMembers[0].title}`}
@@ -90,22 +90,22 @@ export default function BoardOfDirectorsPage() {
           </div>
 
           {/* Sunita Shirguppi - Featured Second */}
-          <div className="mb-32">
+          <div className="mb-16 sm:mb-24 lg:mb-32">
             <div className="max-w-6xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                 <div className="order-2 lg:order-2">
-                  <h3 className="text-serif text-4xl font-normal text-navy-dark mb-4">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-navy-dark mb-3 sm:mb-4">
                     {boardMembers[1].name}
                   </h3>
-                  <p className="text-brand-mint font-medium mb-6 uppercase tracking-wider text-lg">
+                  <p className="text-navy-medium font-medium mb-4 sm:mb-6 uppercase tracking-wider text-sm sm:text-base lg:text-lg">
                     {boardMembers[1].title}
                   </p>
-                  <p className="text-gray-600 leading-relaxed text-lg">
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base lg:text-lg">
                     {boardMembers[1].bio}
                   </p>
                 </div>
                 <div className="order-1 lg:order-1">
-                  <div className="relative w-full max-w-md mx-auto">
+                  <div className="relative w-full max-w-sm sm:max-w-md mx-auto">
                     <img 
                       src={boardMembers[1].image}
                       alt={`${boardMembers[1].name}, ${boardMembers[1].title}`}

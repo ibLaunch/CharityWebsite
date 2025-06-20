@@ -30,23 +30,23 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-navy-dark text-white minimal-section">
-      <div className="container-minimal">
-        <div className="grid md:grid-cols-3 gap-24">
+    <footer className="bg-navy-dark text-white py-12 sm:py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 lg:gap-24">
           <div>
-            <h3 className="text-serif text-3xl font-light mb-8 tracking-tight text-navy-light">Bundele Foundation</h3>
-            <p className="text-navy-light leading-relaxed font-light">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-light mb-4 sm:mb-6 lg:mb-8 tracking-tight text-navy-light">Bundele Foundation</h3>
+            <p className="text-navy-light leading-relaxed font-light text-sm sm:text-base">
               A 501(c)(3) Nonprofit Organization creating positive change through education support, senior care, and community building. Together, we're making a difference.
             </p>
           </div>
           
           <div>
-            <div className="elegant-small text-navy-light mb-8">Navigation</div>
-            <ul className="space-y-4 text-navy-light">
+            <div className="text-xs sm:text-sm font-medium uppercase tracking-wider text-navy-light mb-4 sm:mb-6 lg:mb-8">Navigation</div>
+            <ul className="space-y-2 sm:space-y-3 lg:space-y-4 text-navy-light">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link href={link.href}>
-                    <button className="hover:text-white transition-colors text-left font-light">
+                    <button className="hover:text-white transition-colors text-left font-light text-sm sm:text-base">
                       {link.label}
                     </button>
                   </Link>
@@ -56,8 +56,8 @@ export default function Footer() {
           </div>
           
           <div>
-            <div className="elegant-small text-navy-light mb-8">Connect</div>
-            <div className="flex space-x-6">
+            <div className="text-xs sm:text-sm font-medium uppercase tracking-wider text-navy-light mb-4 sm:mb-6 lg:mb-8">Connect</div>
+            <div className="flex space-x-4 sm:space-x-6">
               {socialLinks.map((social, index) => {
                 const IconComponent = social.icon;
                 return (
@@ -66,10 +66,10 @@ export default function Footer() {
                     href={social.href}
                     target={social.href.startsWith("http") ? "_blank" : undefined}
                     rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="w-10 h-10 border border-navy-light flex items-center justify-center transition-all hover:border-white hover:bg-white hover:text-navy-dark"
+                    className="w-8 h-8 sm:w-10 sm:h-10 border border-navy-light flex items-center justify-center transition-all hover:border-white hover:bg-white hover:text-navy-dark"
                     aria-label={social.label}
                   >
-                    <IconComponent className="h-4 w-4" />
+                    <IconComponent className="h-3 w-3 sm:h-4 sm:w-4" />
                   </a>
                 );
               })}
@@ -77,8 +77,8 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-navy-medium mt-24 pt-12 text-center">
-          <p className="elegant-small text-navy-light">&copy; 2024 Bundele Foundation. All rights reserved.</p>
+        <div className="border-t border-navy-medium mt-12 sm:mt-16 lg:mt-24 pt-8 sm:pt-12 text-center">
+          <p className="text-xs sm:text-sm font-medium uppercase tracking-wider text-navy-light">&copy; 2024 Bundele Foundation. All rights reserved.</p>
         </div>
       </div>
     </footer>
