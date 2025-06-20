@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "wouter";
+import bundeleFoundationLogo from "@assets/bfoundation-logo-3_1750426526472.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,9 +60,13 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16 sm:h-20">
           <div className="flex items-center">
             <Link href="/">
-              <h1 className="text-base sm:text-lg lg:text-xl font-bold text-navy-dark cursor-pointer hover:text-navy-medium transition-colors">
-                Bundele Foundation
-              </h1>
+              <div className="flex items-center cursor-pointer group">
+                <img 
+                  src={bundeleFoundationLogo}
+                  alt="Bundele Foundation"
+                  className="h-8 sm:h-10 lg:h-12 w-auto transition-opacity group-hover:opacity-80"
+                />
+              </div>
             </Link>
           </div>
           
@@ -125,7 +130,13 @@ export default function Navigation() {
               </SheetTrigger>
               <SheetContent className="bg-white w-[280px] sm:w-[320px] p-0">
                 <div className="p-6">
-                  <div className="text-lg font-bold text-navy-dark mb-8">Menu</div>
+                  <div className="flex items-center mb-8">
+                    <img 
+                      src={bundeleFoundationLogo}
+                      alt="Bundele Foundation"
+                      className="h-8 w-auto"
+                    />
+                  </div>
                   <div className="flex flex-col space-y-2">
                     {navItems.map((item) => (
                       <Link key={item.id} href={item.href || "#"}>

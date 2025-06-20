@@ -229,6 +229,22 @@
     }
   }
 
+  /* Logo styling */
+  .logo-light {
+    filter: none;
+  }
+
+  .logo-dark {
+    filter: brightness(0) invert(1);
+    mix-blend-mode: screen;
+  }
+
+  @media (max-width: 768px) {
+    .logo-mobile {
+      max-height: 2rem;
+    }
+  }
+
   /* Large hero text */
   .hero-title {
     font-family: 'Playfair Display', serif;
