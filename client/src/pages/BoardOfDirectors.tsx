@@ -16,7 +16,7 @@ export default function BoardOfDirectorsPage() {
     },
     {
       name: "Sunita Shirguppi",
-      title: "Board Member",
+      title: "Director",
       bio: "Sunita Shirguppi is a passionate yoga instructor and dedicated Rotarian who firmly believes in selfless service to society. As the former principal of Dr. Kalmadi Shamrao High School in Pune, Maharashtra, she has spent her career nurturing young minds and advocating for quality education. Deeply aligned with the Bundele Foundation's mission, Sunita is highly motivated to make a lasting impact in the areas of children's education and senior care. She believes that empowering the next generation and honoring the wisdom of the elderly are both essential to building compassionate, resilient communities. She views the human body as a divine gift and a sacred responsibility. A strong advocate for Yogabhyas (the practice of yoga), she promotes holistic well-being—physically, mentally, and spiritually. In 2015, Sunita pledged to donate her entire body. Her vital organs, including corneas and skin, will be donated to those in need, and the rest will support medical education and research. Her life and choices reflect the values of service, compassion, and lifelong learning that the Bundele Foundation proudly upholds.",
       image: sunitaShirguppiPhoto,
       hasImage: true
