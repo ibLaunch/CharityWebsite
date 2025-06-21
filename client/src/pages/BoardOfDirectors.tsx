@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import hemantBundelePhoto from "@assets/Hemant_Bundele_1750101113518.jpg";
 import sunitaShirguppiPhoto from "@assets/Screen Shot 2025-06-19 at 2.00.06 PM_1750356009346.png";
+import maheshPatelPhoto from "@assets/WhatsApp Image 2025-06-20 at 17.08.27_b133772b_1750477805786.jpg";
 
 export default function BoardOfDirectorsPage() {
   const boardMembers = [
@@ -22,10 +23,10 @@ export default function BoardOfDirectorsPage() {
     },
     {
       name: "Mahesh Patel",
-      title: "Board Member",
-      bio: "Information coming soon.",
-      image: "/api/placeholder/200/200",
-      hasImage: false
+      title: "Director",
+      bio: "Mahesh Patel is a Director of the Bundele Foundation whose values of family, faith, and service are deeply reflected in his life. He holds a Master's degree in Computer Science and is a successful entrepreneur, bringing both technical expertise and business acumen to every endeavor. Based in Richmond, Virginia, Mahesh is known for his incredibly kind heart, humility, and unwavering generosity. He is a devoted supporter of his local Hindu temple, where he not only donates resources but also dedicates his time and energy to help sustain and grow the spiritual and cultural fabric of the community. Mahesh brings the same spirit of compassion and service into his leadership role at the Bundele Foundation. His thoughtful guidance and quiet dedication make him a pillar of strength and a true inspiration to all who work with him.",
+      image: maheshPatelPhoto,
+      hasImage: true
     }
   ];
 
