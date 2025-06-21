@@ -83,11 +83,13 @@ export default function Navigation() {
               
               {/* About Us Dropdown */}
               <div 
-                className="relative"
+                className="relative group"
                 onMouseEnter={() => setIsAboutDropdownOpen(true)}
-                onMouseLeave={() => setIsAboutDropdownOpen(false)}
+                onMouseLeave={() => {
+                  setTimeout(() => setIsAboutDropdownOpen(false), 150);
+                }}
               >
-                <button className="text-sm xl:text-base text-navy-medium hover:text-navy-dark transition-colors flex items-center font-medium">
+                <button className="text-sm xl:text-base text-navy-medium hover:text-navy-dark transition-colors flex items-center font-medium py-2">
                   About Us
                   <ChevronDown className={`ml-1 h-3 w-3 transition-transform duration-200 ${
                     isAboutDropdownOpen ? 'rotate-180' : ''
@@ -96,11 +98,15 @@ export default function Navigation() {
                 
                 {/* Dropdown Menu */}
                 {isAboutDropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50">
+                  <div 
+                    className="absolute top-full left-0 mt-0 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50"
+                    onMouseEnter={() => setIsAboutDropdownOpen(true)}
+                    onMouseLeave={() => setIsAboutDropdownOpen(false)}
+                  >
                     <div className="py-2">
                       {aboutUsItems.map((item) => (
                         <Link key={item.id} href={item.href}>
-                          <button className="block w-full text-left px-4 py-2 elegant-small text-navy-medium hover:text-navy-dark hover:bg-gray-50 transition-colors">
+                          <button className="block w-full text-left px-4 py-3 text-sm text-navy-medium hover:text-navy-dark hover:bg-gray-50 transition-colors">
                             {item.label}
                           </button>
                         </Link>
@@ -149,10 +155,10 @@ export default function Navigation() {
                     {/* About Us Section for Mobile */}
                     <div className="border-t border-gray-200 pt-4 mt-4">
                       <div className="text-sm font-medium text-navy-medium mb-3 px-3">About Us</div>
-                      <div className="flex flex-col space-y-1">
+                      <div className="flex flex-col space-y-2">
                         {aboutUsItems.map((item) => (
                           <Link key={item.id} href={item.href}>
-                            <button className="w-full text-left pl-6 pr-3 py-3 text-base text-navy-medium hover:text-navy-dark hover:bg-navy-very-light rounded-md transition-colors">
+                            <button className="w-full text-left pl-6 pr-3 py-4 text-base text-navy-medium hover:text-navy-dark hover:bg-navy-very-light rounded-md transition-colors min-h-[48px] flex items-center">
                               {item.label}
                             </button>
                           </Link>
