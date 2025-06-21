@@ -119,33 +119,27 @@ export default function BoardOfDirectorsPage() {
           </div>
 
           {/* Mahesh Patel - Featured Third */}
-          <div className="mb-20">
+          <div className="mb-16 sm:mb-24 lg:mb-32">
             <div className="max-w-6xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                 <div className="order-2 lg:order-1">
-                  <h3 className="text-serif text-4xl font-normal text-navy-dark mb-4">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-navy-dark mb-3 sm:mb-4">
                     {boardMembers[2].name}
                   </h3>
-                  <p className="text-brand-mint font-medium mb-6 uppercase tracking-wider text-lg">
+                  <p className="text-navy-medium font-medium mb-4 sm:mb-6 uppercase tracking-wider text-sm sm:text-base lg:text-lg">
                     {boardMembers[2].title}
                   </p>
-                  <p className="text-gray-600 leading-relaxed text-lg">
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base lg:text-lg">
                     {boardMembers[2].bio}
                   </p>
                 </div>
                 <div className="order-1 lg:order-2">
-                  <div className="relative w-full max-w-md mx-auto">
-                    {boardMembers[2].hasImage ? (
-                      <img 
-                        src={boardMembers[2].image}
-                        alt={`${boardMembers[2].name}, ${boardMembers[2].title}`}
-                        className="w-full h-auto rounded-2xl shadow-2xl"
-                      />
-                    ) : (
-                      <div className="w-full bg-gray-200 rounded-2xl shadow-2xl flex items-center justify-center" style={{ aspectRatio: '3/4' }}>
-                        <span className="text-gray-500 text-lg">Photo Coming Soon</span>
-                      </div>
-                    )}
+                  <div className="relative w-full max-w-sm sm:max-w-md mx-auto">
+                    <img 
+                      src={boardMembers[2].image}
+                      alt={`${boardMembers[2].name}, ${boardMembers[2].title}`}
+                      className="w-full h-auto rounded-2xl shadow-2xl"
+                    />
                   </div>
                 </div>
               </div>
