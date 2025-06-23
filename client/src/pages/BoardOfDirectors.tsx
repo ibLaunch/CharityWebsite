@@ -24,7 +24,7 @@ export default function BoardOfDirectorsPage() {
     {
       name: "Mahesh Patel",
       title: "Director",
-      bio: "Mahesh Patel is a Director of the Bundele Foundation whose values of family, faith, and service are deeply reflected in his life. He holds a Master's degree in Computer Science and is a successful entrepreneur, bringing both technical expertise and business acumen to every endeavor. Based in Richmond, Virginia, Mahesh is known for his incredibly kind heart, humility, and unwavering generosity. He is a devoted supporter of Baps Hindu Temple, where he not only donates resources but also dedicates his time and energy to help sustain and grow the spiritual and cultural fabric of the community. Mahesh brings the same spirit of compassion and service into his leadership role at the Bundele Foundation. His thoughtful guidance and quiet dedication make him a pillar of strength and a true inspiration to all who work with him.",
+      bio: "Mahesh Patel is a Director of the Bundele Foundation, where his values of family, faith, and service guide his leadership. He holds a Master's degree in Computer Science and is a successful entrepreneur, combining technical expertise with business insight. Based in Richmond, Virginia, Mahesh is known for his humility, generosity, and commitment to community. A dedicated supporter of the BAPS Hindu Temple, he contributes both time and resources to help sustain its spiritual and cultural mission. At the Bundele Foundation, he leads with integrity and plays a steady, practical role in guiding its efforts and supporting its mission.",
       image: maheshPatelPhoto,
       hasImage: true
     }
