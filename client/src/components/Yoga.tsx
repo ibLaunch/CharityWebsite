@@ -7,30 +7,32 @@ export default function Yoga() {
   const packages = [
     {
       name: "Single Class",
-      price: "$65",
+      price: "$176",
+      originalPrice: "$195",
+      savings: "Save 10%",
       description: "Perfect for trying out our classes",
       isPopular: false
     },
     {
       name: "3-Class Pack", 
-      price: "$175",
-      originalPrice: "$195",
+      price: "$473",
+      originalPrice: "$527",
       savings: "Save 10%",
       description: "Great for regular practice",
       isPopular: false
     },
     {
       name: "5-Class Pack",
-      price: "$292", 
-      originalPrice: "$325",
+      price: "$788", 
+      originalPrice: "$878",
       savings: "Save 10%",
       description: "Best for consistency",
       isPopular: true
     },
     {
       name: "10-Class Pack",
-      price: "$585",
-      originalPrice: "$650", 
+      price: "$1,580",
+      originalPrice: "$1,755", 
       savings: "Save 10%",
       description: "Maximum value",
       isPopular: false

@@ -383,8 +383,8 @@ export default function YogaPage() {
                 <Card className="bg-navy-very-light border-0 shadow-lg">
                   <CardContent className="p-4 sm:p-6 text-center">
                     <h4 className="text-sm sm:text-base lg:text-lg font-bold text-navy-dark mb-1 sm:mb-2">10-Session Pack</h4>
-                    <div className="text-lg sm:text-xl font-bold text-navy-medium">$585</div>
-                    <div className="text-xs sm:text-sm text-gray-500 line-through">$650</div>
+                    <div className="text-lg sm:text-xl font-bold text-navy-medium">$1,580</div>
+                    <div className="text-xs sm:text-sm text-gray-500 line-through">$1,755</div>
                     <div className="text-xs sm:text-sm font-semibold text-navy-dark">Save 10%</div>
                   </CardContent>
                 </Card>

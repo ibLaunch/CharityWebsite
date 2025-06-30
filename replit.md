@@ -112,7 +112,9 @@ This is a full-stack web application for the Bundele Foundation, a 501(c)(3) non
 
 ```
 Changelog:
-- June 30, 2025. Initial setup
+- June 30, 2025: Updated wellness pricing - tripled all session rates and applied 10% discount across all packages
+- June 30, 2025: Replaced Master Chef event photo with official flyer image
+- June 30, 2025: Initial setup
 ```
 
 ## User Preferences
