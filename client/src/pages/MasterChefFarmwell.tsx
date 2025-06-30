@@ -42,7 +42,7 @@ export default function MasterChefFarmwellPage() {
             <img 
               src={masterChefFlyer}
               alt="Master Chef of Farmwell Event Flyer"
-              className="w-full max-w-2xl mx-auto object-contain rounded-lg shadow-lg"
+              className="w-full max-w-lg mx-auto object-contain rounded-lg shadow-lg"
             />
           </div>
 
