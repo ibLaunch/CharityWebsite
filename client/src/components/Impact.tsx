@@ -16,7 +16,7 @@ export default function Impact() {
   const impactStories = [
     {
       year: "2024",
-      title: "Community Cooking Competition - Virginia",
+      title: "Master Chef of Farmwell",
       image: cookingCompetitionImage,
       description: "Bundele Foundation hosted a vibrant community cooking competition that brought neighbors together to celebrate food, connection, and giving back. Attendees donated on-site, signed up for Impact Circle, and joined wellness classes.",
       icon: Calendar,
