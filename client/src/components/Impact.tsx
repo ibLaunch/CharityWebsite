@@ -9,9 +9,23 @@ import {
 import furnitureImage from "@assets/Screen Shot 2025-05-19 at 6.42.57 PM.png";
 import cabinetImage from "@assets/Screen Shot 2025-05-19 at 6.43.18 PM.png";
 import schoolHallImage from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM.png";
+import cookingCompetitionImage from "@assets/Screen Shot 2025-06-30 at 2.46.19 PM_1751311288309.png";
 
 export default function Impact() {
   const impactStories = [
+    {
+      year: "2024",
+      title: "Community Cooking Competition - Virginia",
+      image: cookingCompetitionImage,
+      description: "Bundele Foundation hosted a vibrant community cooking competition that brought neighbors together to celebrate food, connection, and giving back. Attendees donated on-site, signed up for Impact Circle, and joined wellness classes.",
+      hasReadMore: true
+    },
+    {
+      year: "2023",
+      title: "Painting Project at Nutan Balvikas Mandir", 
+      image: schoolHallImage,
+      description: "The classrooms hadn't been painted in over 30 years. Bundele Foundation donated ₹2 lakhs, working with Rotary Clubs and a CSR partner to transform the learning environment with fresh paint."
+    },
     {
       year: "2022",
       title: "Furniture for Madhyamik Vidyalaya",
@@ -23,12 +37,6 @@ export default function Impact() {
       title: "Dining Chairs for Mahalunge Vidyalaya",
       image: cabinetImage,
       description: "Donated 10 dining table chairs to Mahalunge Vidyalaya, helping improve the school's mealtime setting by providing students with a more comfortable and hygienic space to eat."
-    },
-    {
-      year: "2023",
-      title: "Painting Project at Nutan Balvikas Mandir", 
-      image: schoolHallImage,
-      description: "The classrooms hadn't been painted in over 30 years. Bundele Foundation donated ₹2 lakhs, working with Rotary Clubs and a CSR partner to transform the learning environment with fresh paint."
     }
   ];
 
@@ -65,6 +73,11 @@ export default function Impact() {
                       <p className="text-navy-dark leading-relaxed font-light text-sm">
                         {story.description}
                       </p>
+                      {story.hasReadMore && (
+                        <button className="mt-4 px-4 py-2 bg-navy-medium text-white rounded-md hover:bg-navy-dark transition-colors text-sm font-light">
+                          Read More
+                        </button>
+                      )}
                     </div>
                   </div>
                 </CarouselItem>
