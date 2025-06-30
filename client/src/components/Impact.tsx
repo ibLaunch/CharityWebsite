@@ -1,4 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import furnitureImage from "@assets/Screen Shot 2025-05-19 at 6.42.57 PM.png";
 import cabinetImage from "@assets/Screen Shot 2025-05-19 at 6.43.18 PM.png";
 import schoolHallImage from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM.png";
@@ -35,23 +42,37 @@ export default function Impact() {
           </h2>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-16">
-          {impactStories.map((story, index) => (
-            <div key={index} className="bg-white border border-navy-light rounded-lg shadow-sm hover:shadow-lg transition-shadow p-8">
-              <img 
-                src={story.image}
-                alt={story.title}
-                className="w-full h-72 object-cover mb-8 rounded-lg"
-              />
-              <div className="space-y-4">
-                <div className="elegant-small text-navy-medium">{story.year}</div>
-                <h3 className="text-xl font-light text-navy-dark leading-tight">{story.title}</h3>
-                <p className="text-navy-dark leading-relaxed font-light text-sm">
-                  {story.description}
-                </p>
-              </div>
-            </div>
-          ))}
+        <div className="relative">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: false,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {impactStories.map((story, index) => (
+                <CarouselItem key={index} className="pl-4 md:basis-1/3">
+                  <div className="bg-white border border-navy-light rounded-lg shadow-sm hover:shadow-lg transition-shadow p-8 h-full">
+                    <img 
+                      src={story.image}
+                      alt={story.title}
+                      className="w-full h-72 object-cover mb-8 rounded-lg"
+                    />
+                    <div className="space-y-4">
+                      <div className="elegant-small text-navy-medium">{story.year}</div>
+                      <h3 className="text-xl font-light text-navy-dark leading-tight">{story.title}</h3>
+                      <p className="text-navy-dark leading-relaxed font-light text-sm">
+                        {story.description}
+                      </p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-white border-navy-light text-navy-dark hover:bg-navy-light hover:text-white transition-colors" />
+            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white border-navy-light text-navy-dark hover:bg-navy-light hover:text-white transition-colors" />
+          </Carousel>
         </div>
       </div>
     </section>
