@@ -2,15 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Impact from "@/components/Impact";
 import { Link } from "wouter";
 import { useState, useEffect } from "react";
-import { BookOpen, Heart, Users, GraduationCap, Smartphone, DollarSign, Calendar, MapPin, Palette } from "lucide-react";
+import { BookOpen, Heart, Users, GraduationCap, Smartphone, DollarSign } from "lucide-react";
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
 import rotaryImage from "@assets/Screen Shot 2025-05-19 at 8.18.34 PM_1750195463736.png";
 import schoolHallImage2 from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM_1750195477402.png";
-import furnitureImage from "@assets/image_1749228397347.png";
-import cabinetImage from "@assets/image_1749228404698.png";
-import schoolHallImage from "@assets/image_1749228409980.png";
 
 export default function Home() {
   const heroImages = [
@@ -73,32 +71,7 @@ export default function Home() {
     }
   ];
 
-  const impactStories = [
-    {
-      year: "2022",
-      title: "Donated 12 pieces of furniture to Madhyamik Vidyalaya",
-      image: furnitureImage,
-      description: "Madhyamik Vidyalaya in Pune is a government-aided rural school. Until recently, students sat on the floor due to a lack of furniture, leading to discomfort and health issues. The donation has helped create a safer, cleaner, and more focused learning environment.",
-      icon: BookOpen,
-      location: "Pune"
-    },
-    {
-      year: "2022", 
-      title: "Donated 10 dining table chairs to Mahalunge Vidyalaya",
-      image: cabinetImage,
-      description: "Helped improve the school's mealtime setting by providing students with a more comfortable and hygienic space to eat.",
-      icon: Users,
-      location: "Mahalunge"
-    },
-    {
-      year: "2023",
-      title: "The Painting Project at Nutan Balvikas Mandir, Pune", 
-      image: schoolHallImage,
-      description: "The classrooms hadn't been painted in over 30 years. The Bundele Foundation donated ₹2 lakhs to help, along with Rotary Clubs and a CSR partner for Paints. The project focused on painting the classrooms first, then the outside walls.",
-      icon: Palette,
-      location: "Pune"
-    }
-  ];
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -212,62 +185,7 @@ export default function Home() {
         <div className="absolute top-1/2 left-4 w-24 h-24 bg-gray-100 rounded-full opacity-30"></div>
       </section>
 
-      {/* Our Impact Since 2022 */}
-      <section className="relative py-20 bg-navy-very-light overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-navy-dark mb-6 tracking-tight leading-tight">
-              <span className="text-5xl">OUR IMPACT SINCE </span>
-              <span className="text-[4.2rem]">2022</span>
-            </h2>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {impactStories.map((story, index) => {
-              const IconComponent = story.icon;
-              return (
-                <Card key={index} className="bg-white border border-navy-light shadow-lg hover:shadow-xl transition-all duration-300 group">
-                  <CardContent className="p-0">
-                    <div className="relative">
-                      <img 
-                        src={story.image}
-                        alt={story.title}
-                        className="w-full h-48 object-cover"
-                      />
-                      <div className="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center">
-                        <IconComponent className="w-6 h-6 text-navy-medium stroke-2" />
-                      </div>
-                      <div className="absolute bottom-3 left-3 bg-navy-dark/60 backdrop-blur-lg px-3 py-1 rounded-md">
-                        <span className="text-2xl font-bold text-white">{story.year}</span>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <div className="flex items-start justify-between mb-3">
-                        <h3 className="text-lg font-bold text-navy-dark leading-tight flex-1">{story.title}</h3>
-                      </div>
-                      <div className="flex items-center mb-3">
-                        <MapPin className="w-4 h-4 text-navy-medium mr-2" />
-                        <span className="text-sm font-medium text-navy-medium">{story.location}</span>
-                      </div>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        {story.description}
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-        
-        {/* Background circles for this section */}
-        <div className="absolute top-20 right-8 w-28 h-28 bg-gray-100 rounded-full opacity-25"></div>
-        <div className="absolute bottom-16 left-12 w-32 h-32 bg-gray-200 rounded-full opacity-20"></div>
-        <div className="absolute top-1/3 left-6 w-20 h-20 bg-gray-300 rounded-full opacity-30"></div>
-        <div className="absolute top-12 left-20 w-24 h-24 bg-gray-200 rounded-full opacity-25"></div>
-        <div className="absolute bottom-20 right-16 w-36 h-36 bg-gray-100 rounded-full opacity-20"></div>
-        <div className="absolute top-2/3 right-4 w-20 h-20 bg-gray-300 rounded-full opacity-25"></div>
-      </section>
+      <Impact />
 
       {/* Challenges */}
       <section className="relative py-20 bg-gray-50 overflow-hidden">
