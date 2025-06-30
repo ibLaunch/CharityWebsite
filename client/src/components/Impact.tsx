@@ -50,41 +50,43 @@ export default function Impact() {
           </h2>
         </div>
         
-        <div className="relative">
+        <div className="relative px-12">
           <Carousel
             opts={{
               align: "start",
               loop: false,
             }}
-            className="w-full"
+            className="w-full max-w-full"
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-1 md:-ml-4">
               {impactStories.map((story, index) => (
-                <CarouselItem key={index} className="pl-4 md:basis-1/3">
-                  <div className="bg-white border border-navy-light rounded-lg shadow-sm hover:shadow-lg transition-shadow p-8 h-full">
-                    <img 
-                      src={story.image}
-                      alt={story.title}
-                      className="w-full h-72 object-cover mb-8 rounded-lg"
-                    />
-                    <div className="space-y-4">
-                      <div className="elegant-small text-navy-medium">{story.year}</div>
-                      <h3 className="text-xl font-light text-navy-dark leading-tight">{story.title}</h3>
-                      <p className="text-navy-dark leading-relaxed font-light text-sm">
-                        {story.description}
-                      </p>
-                      {story.hasReadMore && (
-                        <button className="mt-4 px-4 py-2 bg-navy-medium text-white rounded-md hover:bg-navy-dark transition-colors text-sm font-light">
-                          Read More
-                        </button>
-                      )}
+                <CarouselItem key={index} className="pl-1 md:pl-4 md:basis-1/3 lg:basis-1/3">
+                  <div className="p-1">
+                    <div className="bg-white border border-navy-light rounded-lg shadow-sm hover:shadow-lg transition-shadow p-8 h-full">
+                      <img 
+                        src={story.image}
+                        alt={story.title}
+                        className="w-full h-72 object-cover mb-8 rounded-lg"
+                      />
+                      <div className="space-y-4">
+                        <div className="elegant-small text-navy-medium">{story.year}</div>
+                        <h3 className="text-xl font-light text-navy-dark leading-tight">{story.title}</h3>
+                        <p className="text-navy-dark leading-relaxed font-light text-sm">
+                          {story.description}
+                        </p>
+                        {story.hasReadMore && (
+                          <button className="mt-4 px-4 py-2 bg-navy-medium text-white rounded-md hover:bg-navy-dark transition-colors text-sm font-light">
+                            Read More
+                          </button>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-white border-navy-light text-navy-dark hover:bg-navy-light hover:text-white transition-colors" />
-            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white border-navy-light text-navy-dark hover:bg-navy-light hover:text-white transition-colors" />
+            <CarouselPrevious className="-left-6 h-12 w-12 border-2 border-navy-medium bg-white text-navy-dark hover:bg-navy-medium hover:text-white" />
+            <CarouselNext className="-right-6 h-12 w-12 border-2 border-navy-medium bg-white text-navy-dark hover:bg-navy-medium hover:text-white" />
           </Carousel>
         </div>
       </div>
