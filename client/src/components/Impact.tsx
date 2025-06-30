@@ -7,6 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { BookOpen, Users, Palette, Calendar, MapPin } from "lucide-react";
+import { Link } from "wouter";
 import furnitureImage from "@assets/Screen Shot 2025-05-19 at 6.42.57 PM.png";
 import cabinetImage from "@assets/Screen Shot 2025-05-19 at 6.43.18 PM.png";
 import schoolHallImage from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM.png";
@@ -98,9 +99,11 @@ export default function Impact() {
                             {story.description}
                           </p>
                           {story.hasReadMore && (
-                            <button className="mt-4 px-4 py-2 bg-navy-medium text-white rounded-md hover:bg-navy-dark transition-colors text-sm font-light">
-                              Read More
-                            </button>
+                            <Link href="/master-chef-farmwell">
+                              <button className="mt-4 px-4 py-2 bg-navy-medium text-white rounded-md hover:bg-navy-dark transition-colors text-sm font-light">
+                                Read More
+                              </button>
+                            </Link>
                           )}
                         </div>
                       </CardContent>

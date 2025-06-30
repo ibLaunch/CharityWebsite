@@ -10,6 +10,7 @@ import YogaPage from "@/pages/Yoga";
 import FoundersMessagePage from "@/pages/FoundersMessage";
 import BoardOfDirectorsPage from "@/pages/BoardOfDirectors";
 import FAQPage from "@/pages/FAQ";
+import MasterChefFarmwellPage from "@/pages/MasterChefFarmwell";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/founders-message" component={FoundersMessagePage} />
       <Route path="/board-of-directors" component={BoardOfDirectorsPage} />
       <Route path="/faq" component={FAQPage} />
+      <Route path="/master-chef-farmwell" component={MasterChefFarmwellPage} />
       <Route component={NotFound} />
     </Switch>
   );
