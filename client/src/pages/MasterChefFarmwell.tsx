@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
-import masterChefImage from "@assets/Screen Shot 2025-06-30 at 2.46.19 PM_1751311288309.png";
+import masterChefFlyer from "@assets/bit.lyMasterChef-of-Farmwell (2)_1751312684176.png";
 
 export default function MasterChefFarmwellPage() {
   return (
@@ -37,12 +37,12 @@ export default function MasterChefFarmwellPage() {
       <section className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* Featured Image */}
+          {/* Featured Flyer */}
           <div className="mb-16">
             <img 
-              src={masterChefImage}
-              alt="Master Chef of Farmwell Community Cooking Competition"
-              className="w-full h-96 object-cover rounded-lg shadow-lg"
+              src={masterChefFlyer}
+              alt="Master Chef of Farmwell Event Flyer"
+              className="w-full max-w-2xl mx-auto object-contain rounded-lg shadow-lg"
             />
           </div>
 
