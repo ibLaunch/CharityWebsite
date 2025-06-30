@@ -7,9 +7,7 @@ export default function Yoga() {
   const packages = [
     {
       name: "Single Class",
-      price: "$176",
-      originalPrice: "$195",
-      savings: "Save 10%",
+      price: "$195",
       description: "Perfect for trying out our classes",
       isPopular: false
     },

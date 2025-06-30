@@ -11,9 +11,7 @@ export default function YogaPage() {
   const packages = [
     {
       name: "Single Class",
-      price: "$176",
-      originalPrice: "$195",
-      savings: "Save 10%",
+      price: "$195",
       description: "Perfect for trying out our classes",
       isPopular: false
     },
@@ -99,7 +97,7 @@ export default function YogaPage() {
                     <div className="text-xs sm:text-sm font-medium text-navy-medium uppercase tracking-wide mb-1 sm:mb-2">
                       Starting From
                     </div>
-                    <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy-dark mb-1">$176</div>
+                    <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy-dark mb-1">$195</div>
                     <div className="text-xs sm:text-sm text-navy-medium">per session</div>
                   </div>
                 </div>
@@ -352,11 +350,11 @@ export default function YogaPage() {
               <Card className="bg-gradient-to-br from-navy-very-light to-white border-0 shadow-2xl">
                 <CardContent className="p-6 sm:p-8 lg:p-10 text-center">
                   <div className="mb-4 sm:mb-6">
-                    <div className="text-3xl sm:text-4xl lg:text-6xl font-bold text-navy-dark">$176</div>
+                    <div className="text-3xl sm:text-4xl lg:text-6xl font-bold text-navy-dark">$195</div>
                     <div className="text-base sm:text-lg lg:text-xl text-navy-medium">per session</div>
                   </div>
                   <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-navy-dark">
-                    Sessions are priced at $176 each, with attractive package discounts available for committed members ready to invest in their complete transformation.
+                    Sessions are priced at $195 each, with attractive package discounts available for committed members ready to invest in their complete transformation.
                   </p>
                 </CardContent>
               </Card>
