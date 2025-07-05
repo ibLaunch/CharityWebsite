@@ -80,14 +80,14 @@ export default function YogaPage() {
               </Link>
               
               <div className="space-y-6 sm:space-y-8">
-                <div className="text-navy-dark bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg inline-block text-sm sm:text-base lg:text-lg font-semibold tracking-wide uppercase">
+                <div className="text-navy-dark text-sm sm:text-base lg:text-lg font-bold tracking-wide uppercase drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3), 0 0 8px rgba(255,255,255,0.8)' }}>
                   Holistic Well-being Programs
                 </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark bg-white/95 backdrop-blur-sm px-6 py-4 rounded-lg inline-block leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark leading-tight drop-shadow-xl" style={{ textShadow: '3px 3px 6px rgba(0,0,0,0.4), 0 0 12px rgba(255,255,255,0.9)' }}>
                   Bundele<br />
                   <span className="italic text-navy-medium">Wellness</span>
                 </h1>
-                <p className="text-lg sm:text-xl lg:text-2xl font-medium text-navy-dark bg-white/90 backdrop-blur-sm px-6 py-3 rounded-lg inline-block italic leading-relaxed">
+                <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-navy-dark italic leading-relaxed drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3), 0 0 8px rgba(255,255,255,0.8)' }}>
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
                 
