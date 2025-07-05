@@ -80,14 +80,14 @@ export default function YogaPage() {
               </Link>
               
               <div className="space-y-6 sm:space-y-8">
-                <div className="text-navy-light text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase">
+                <div className="text-navy-dark bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg inline-block text-sm sm:text-base lg:text-lg font-semibold tracking-wide uppercase">
                   Holistic Well-being Programs
                 </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark bg-white/95 backdrop-blur-sm px-6 py-4 rounded-lg inline-block leading-tight">
                   Bundele<br />
-                  <span className="italic text-navy-light">Wellness</span>
+                  <span className="italic text-navy-medium">Wellness</span>
                 </h1>
-                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-very-light italic leading-relaxed">
+                <p className="text-lg sm:text-xl lg:text-2xl font-medium text-navy-dark bg-white/90 backdrop-blur-sm px-6 py-3 rounded-lg inline-block italic leading-relaxed">
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
                 
