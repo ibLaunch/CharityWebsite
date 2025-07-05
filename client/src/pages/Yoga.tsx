@@ -57,17 +57,21 @@ export default function YogaPage() {
       <Navigation />
       
       {/* Hero Section with Wellness Image */}
-      <section 
-        className="relative min-h-[70vh] flex items-center overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200"
-        style={{
-          backgroundImage: `url(${bWellnessImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        {/* Hero Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/40"></div>
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-gray-50">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="relative w-full h-full">
+            <img 
+              src={bWellnessImage} 
+              alt="Wellness Activities Illustration"
+              className="w-full h-full object-contain"
+              style={{
+                filter: 'drop-shadow(0 0 20px rgba(255,255,255,0.8))',
+                maskImage: 'radial-gradient(ellipse 80% 70% at center, black 60%, transparent 100%)',
+                WebkitMaskImage: 'radial-gradient(ellipse 80% 70% at center, black 60%, transparent 100%)'
+              }}
+            />
+          </div>
+        </div>
         
         <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,14 +84,14 @@ export default function YogaPage() {
               </Link>
               
               <div className="space-y-6 sm:space-y-8">
-                <div className="text-navy-dark text-sm sm:text-base lg:text-lg font-bold tracking-wide uppercase drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3), 0 0 8px rgba(255,255,255,0.8)' }}>
+                <div className="text-navy-light text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase">
                   Holistic Well-being Programs
                 </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark leading-tight drop-shadow-xl" style={{ textShadow: '3px 3px 6px rgba(0,0,0,0.4), 0 0 12px rgba(255,255,255,0.9)' }}>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
                   Bundele<br />
-                  <span className="italic text-navy-medium">Wellness</span>
+                  <span className="italic text-navy-light">Wellness</span>
                 </h1>
-                <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-navy-dark italic leading-relaxed drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3), 0 0 8px rgba(255,255,255,0.8)' }}>
+                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-very-light italic leading-relaxed">
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
                 
