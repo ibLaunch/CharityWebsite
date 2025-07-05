@@ -57,13 +57,20 @@ export default function YogaPage() {
       <Navigation />
       
       {/* Hero Section with Wellness Image */}
-      <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-white">
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-gray-50">
         <div className="absolute inset-0 flex items-center justify-center">
-          <img 
-            src={bWellnessImage} 
-            alt="Wellness Activities Illustration"
-            className="w-full h-full object-contain opacity-90"
-          />
+          <div className="relative w-full h-full">
+            <img 
+              src={bWellnessImage} 
+              alt="Wellness Activities Illustration"
+              className="w-full h-full object-contain"
+              style={{
+                filter: 'drop-shadow(0 0 20px rgba(255,255,255,0.8))',
+                maskImage: 'radial-gradient(ellipse 80% 70% at center, black 60%, transparent 100%)',
+                WebkitMaskImage: 'radial-gradient(ellipse 80% 70% at center, black 60%, transparent 100%)'
+              }}
+            />
+          </div>
         </div>
         
         <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
