@@ -84,16 +84,20 @@ export default function YogaPage() {
               </Link>
               
               <div className="space-y-6 sm:space-y-8">
-                <div className="text-navy-medium text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase bg-white/90 backdrop-blur-sm px-4 py-2 rounded-md inline-block">
+                <div className="text-navy-dark text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase bg-gradient-to-r from-white to-gray-50 px-6 py-3 rounded-full shadow-lg border border-navy-light/20 inline-block">
                   Holistic Well-being Programs
                 </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-                  <span className="text-navy-dark drop-shadow-sm">Bundele</span><br />
-                  <span className="italic text-navy-medium drop-shadow-sm">Wellness</span>
-                </h1>
-                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed bg-white/80 backdrop-blur-sm p-4 rounded-lg inline-block">
-                  Cultivating Holistic Well-being, Transforming Lives
-                </p>
+                <div className="bg-gradient-to-br from-white/95 to-white/85 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-2xl border border-navy-light/30 inline-block">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+                    <span className="text-navy-dark bg-gradient-to-r from-navy-dark to-navy-medium bg-clip-text text-transparent">Bundele</span><br />
+                    <span className="italic text-navy-medium bg-gradient-to-r from-navy-medium to-navy-light bg-clip-text text-transparent">Wellness</span>
+                  </h1>
+                </div>
+                <div className="bg-gradient-to-r from-navy-dark/90 to-navy-medium/90 backdrop-blur-sm p-4 sm:p-6 rounded-xl shadow-lg border border-white/20 inline-block max-w-2xl">
+                  <p className="text-lg sm:text-xl lg:text-2xl font-light text-white italic leading-relaxed">
+                    Cultivating Holistic Well-being, Transforming Lives
+                  </p>
+                </div>
                 
                 {/* Pricing Highlight */}
                 <div className="inline-block bg-white/90 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-lg">
