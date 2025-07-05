@@ -77,21 +77,21 @@ export default function YogaPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <Link href="/">
-                <button className="mb-6 sm:mb-8 inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-white/70 text-white hover:bg-white/10 transition-colors rounded-md text-sm sm:text-base">
+                <button className="mb-6 sm:mb-8 inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-colors rounded-md text-sm sm:text-base">
                   <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                   Back to Home
                 </button>
               </Link>
               
               <div className="space-y-6 sm:space-y-8">
-                <div className="text-navy-light text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase">
+                <div className="text-navy-medium text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase bg-white/90 backdrop-blur-sm px-4 py-2 rounded-md inline-block">
                   Holistic Well-being Programs
                 </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
-                  Bundele<br />
-                  <span className="italic text-navy-light">Wellness</span>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+                  <span className="text-navy-dark drop-shadow-sm">Bundele</span><br />
+                  <span className="italic text-navy-medium drop-shadow-sm">Wellness</span>
                 </h1>
-                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-very-light italic leading-relaxed">
+                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed bg-white/80 backdrop-blur-sm p-4 rounded-lg inline-block">
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
                 
