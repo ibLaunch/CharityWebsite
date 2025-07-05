@@ -61,7 +61,7 @@ export default function YogaPage() {
         className="relative min-h-[70vh] flex items-center overflow-hidden"
         style={{
           backgroundImage: `url(${bWellnessImage})`,
-          backgroundSize: 'cover',
+          backgroundSize: '90%',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
