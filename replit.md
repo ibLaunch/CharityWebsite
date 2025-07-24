@@ -112,6 +112,9 @@ This is a full-stack web application for the Bundele Foundation, a 501(c)(3) non
 
 ```
 Changelog:
+- January 5, 2025: Updated Impact section heading from "Our impact since 2022" to "News and Featured Stories"
+- January 5, 2025: Changed Master Chef of Farmwell year from 2024 to 2025
+- January 5, 2025: Updated wellness hero page with sunset yoga photo and improved button visibility
 - June 30, 2025: Updated wellness pricing - tripled all session rates and applied 10% discount across all packages
 - June 30, 2025: Replaced Master Chef event photo with official flyer image
 - June 30, 2025: Initial setup
