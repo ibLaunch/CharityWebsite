@@ -70,19 +70,15 @@ export default function YogaPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/30"></div>
         </div>
         
-        {/* Back to Home Button - Positioned at top */}
-        <div className="absolute top-24 left-4 sm:left-6 lg:left-8 z-50">
-          <Link href="/">
-            <button className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-white text-white bg-navy-dark/90 backdrop-blur-sm hover:bg-white hover:text-navy-dark transition-all duration-300 rounded-md text-sm sm:text-base shadow-lg">
-              <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-              Back to Home
-            </button>
-          </Link>
-        </div>
-        
         <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
+              <Link href="/">
+                <button className="luxury-button-outline mb-6 sm:mb-8 inline-flex items-center bg-white/90 backdrop-blur-sm text-navy-dark border-navy-dark hover:bg-navy-dark hover:text-white">
+                  <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
+                  Back to Home
+                </button>
+              </Link>
               
               <div className="space-y-6 sm:space-y-8">
                 <div className="text-white text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase bg-navy-dark/80 backdrop-blur-sm px-4 py-2 rounded-md inline-block">
