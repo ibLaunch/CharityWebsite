@@ -55,8 +55,7 @@ export default function Impact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-navy-dark mb-6 tracking-tight leading-tight">
-            <span className="text-5xl">OUR IMPACT SINCE </span>
-            <span className="text-[4.2rem]">2022</span>
+            News and Featured Stories
           </h2>
         </div>
         
