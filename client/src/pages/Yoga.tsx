@@ -71,14 +71,15 @@ export default function YogaPage() {
         </div>
         
         <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl">
-              <Link href="/">
-                <button className="luxury-button-outline mb-6 sm:mb-8 inline-flex items-center bg-white/90 backdrop-blur-sm text-navy-dark border-navy-dark hover:bg-navy-dark hover:text-white">
-                  <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                  Back to Home
-                </button>
-              </Link>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <Link href="/">
+              <button className="mb-8 inline-flex items-center px-6 py-3 border-2 border-white text-white bg-white/10 backdrop-blur-sm hover:bg-white hover:text-navy-dark transition-colors rounded-md">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Home
+              </button>
+            </Link>
+            
+            <div className="max-w-3xl mx-auto text-left">
               
               <div className="space-y-6 sm:space-y-8">
                 <div className="text-white text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase bg-navy-dark/80 backdrop-blur-sm px-4 py-2 rounded-md inline-block">
