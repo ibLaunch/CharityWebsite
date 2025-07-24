@@ -70,12 +70,12 @@ export default function YogaPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/30"></div>
         </div>
         
-        <div className="relative z-50 w-full py-12 sm:py-16 lg:py-20">
+        <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <Link href="/">
-              <button className="relative z-50 mb-8 inline-flex items-center px-8 py-4 border-4 border-white text-white bg-black hover:bg-white hover:text-black transition-all duration-300 rounded-lg shadow-2xl text-lg font-bold">
-                <ArrowLeft className="mr-3 h-5 w-5" />
-                BACK TO HOME
+              <button className="mb-8 inline-flex items-center px-6 py-3 border-2 border-white text-white bg-black/80 backdrop-blur-sm hover:bg-white hover:text-black transition-colors rounded-md shadow-lg">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Home
               </button>
             </Link>
             
