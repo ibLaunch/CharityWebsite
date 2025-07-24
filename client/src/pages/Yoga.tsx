@@ -73,7 +73,7 @@ export default function YogaPage() {
         <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <Link href="/">
-              <button className="mb-8 inline-flex items-center px-6 py-3 border-2 border-white text-white bg-black/80 backdrop-blur-sm hover:bg-white hover:text-black transition-colors rounded-md shadow-lg">
+              <button className="luxury-button-outline mb-16 bg-white/95 backdrop-blur-sm border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Home
               </button>
