@@ -16,7 +16,7 @@ import cookingCompetitionImage from "@assets/Screen Shot 2025-06-30 at 2.46.19 P
 export default function Impact() {
   const impactStories = [
     {
-      year: "2024",
+      year: "2025",
       title: "Master Chef of Farmwell",
       image: cookingCompetitionImage,
       description: "Bundele Foundation hosted a vibrant community cooking competition that brought neighbors together to celebrate food, connection, and giving back. Attendees donated on-site, signed up for Impact Circle, and joined wellness classes.",
