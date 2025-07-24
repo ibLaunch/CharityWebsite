@@ -5,7 +5,7 @@ import { CalendarPlus, Star, ArrowLeft, Dumbbell, Heart, Apple, Flower, Activity
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
-import bWellnessImage from "@assets/b-wellness_1753383020655.png";
+import bWellnessImage from "@assets/IMG_8842_1751734853649.png";
 
 export default function YogaPage() {
   const packages = [
@@ -57,39 +57,41 @@ export default function YogaPage() {
       <Navigation />
       
       {/* Hero Section with Wellness Image */}
-      <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-gray-50">
-        <div className="absolute inset-0">
-          <img 
-            src={bWellnessImage} 
-            alt="Wellness Activities at Sunset"
-            className="w-full h-full object-cover"
-            style={{
-              filter: 'brightness(0.85)',
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/30"></div>
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+        <div className="absolute inset-0 flex items-center justify-center p-8">
+          <div className="relative w-full h-full max-w-4xl">
+            <img 
+              src={bWellnessImage} 
+              alt="Wellness Activities Illustration"
+              className="w-full h-full object-contain"
+              style={{
+                filter: 'blur(0.5px) brightness(1.05)',
+                maskImage: 'radial-gradient(ellipse 90% 80% at center, black 70%, rgba(0,0,0,0.3) 85%, transparent 100%)',
+                WebkitMaskImage: 'radial-gradient(ellipse 90% 80% at center, black 70%, rgba(0,0,0,0.3) 85%, transparent 100%)'
+              }}
+            />
+          </div>
         </div>
         
         <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <Link href="/">
-              <button className="luxury-button-outline mb-16 bg-white/95 backdrop-blur-sm border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
-              </button>
-            </Link>
-            
-            <div className="max-w-3xl mx-auto text-left">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <Link href="/">
+                <button className="mb-6 sm:mb-8 inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-colors rounded-md text-sm sm:text-base">
+                  <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
+                  Back to Home
+                </button>
+              </Link>
               
               <div className="space-y-6 sm:space-y-8">
-                <div className="text-white text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase bg-navy-dark/80 backdrop-blur-sm px-4 py-2 rounded-md inline-block">
+                <div className="text-navy-medium text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase bg-white/90 backdrop-blur-sm px-4 py-2 rounded-md inline-block">
                   Holistic Well-being Programs
                 </div>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-                  <span className="text-white drop-shadow-lg">Bundele</span><br />
-                  <span className="italic text-white/90 drop-shadow-lg">Wellness</span>
+                  <span className="text-navy-dark drop-shadow-sm">Bundele</span><br />
+                  <span className="italic text-navy-medium drop-shadow-sm">Wellness</span>
                 </h1>
-                <p className="text-lg sm:text-xl lg:text-2xl font-light text-white italic leading-relaxed bg-navy-dark/70 backdrop-blur-sm p-4 rounded-lg inline-block">
+                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed bg-white/80 backdrop-blur-sm p-4 rounded-lg inline-block">
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
                 

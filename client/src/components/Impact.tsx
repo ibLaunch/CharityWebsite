@@ -16,7 +16,7 @@ import cookingCompetitionImage from "@assets/Screen Shot 2025-06-30 at 2.46.19 P
 export default function Impact() {
   const impactStories = [
     {
-      year: "2025",
+      year: "2024",
       title: "Master Chef of Farmwell",
       image: cookingCompetitionImage,
       description: "Bundele Foundation hosted a vibrant community cooking competition that brought neighbors together to celebrate food, connection, and giving back. Attendees donated on-site, signed up for Impact Circle, and joined wellness classes.",
@@ -55,7 +55,8 @@ export default function Impact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-navy-dark mb-6 tracking-tight leading-tight">
-            News and Featured Stories
+            <span className="text-5xl">OUR IMPACT SINCE </span>
+            <span className="text-[4.2rem]">2022</span>
           </h2>
         </div>
         
