@@ -20,7 +20,7 @@ export default function Impact() {
       year: "2025",
       title: "One Ganesh for All",
       image: ganeshImage,
-      description: "Bundele Foundation invites you on September 6, 10 AM – 6 PM at 21431 Hemingway Dr, Ashburn. Celebrate Ganesh Chaturthi with culture, unity, and community spirit. A $2 registration supports event logistics and our mission of youth empowerment, senior care, and intergenerational programs.",
+      description: "Bundele Foundation invites you on September 6, 10 AM – 6 PM at 21431 Hemingway Dr, Ashburn. Celebrate Ganesh Chaturthi with culture, unity, and community spirit. A $2 registration supports event logistics and our mission.",
       icon: Calendar,
       location: "Virginia",
       hasReadMore: true,
