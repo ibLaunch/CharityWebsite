@@ -12,9 +12,20 @@ import furnitureImage from "@assets/Screen Shot 2025-05-19 at 6.42.57 PM.png";
 import cabinetImage from "@assets/Screen Shot 2025-05-19 at 6.43.18 PM.png";
 import schoolHallImage from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM.png";
 import cookingCompetitionImage from "@assets/Screen Shot 2025-06-30 at 2.46.19 PM_1751311288309.png";
+import ganeshImage from "@assets/IMG_0931_2_1753388286042.jpg";
 
 export default function Impact() {
   const impactStories = [
+    {
+      year: "2025",
+      title: "One Ganesh for All",
+      image: ganeshImage,
+      description: "Bundele Foundation invites you on September 6, 10 AM – 6 PM at 21431 Hemingway Dr, Ashburn. Celebrate Ganesh Chaturthi with culture, unity, and community spirit. A $2 registration supports event logistics and our mission of youth empowerment, senior care, and intergenerational programs.",
+      icon: Calendar,
+      location: "Virginia",
+      hasReadMore: true,
+      buttonText: "Register Now"
+    },
     {
       year: "2025",
       title: "Master Chef of Farmwell",
@@ -98,9 +109,9 @@ export default function Impact() {
                             {story.description}
                           </p>
                           {story.hasReadMore && (
-                            <Link href="/master-chef-farmwell">
+                            <Link href={story.title === "One Ganesh for All" ? "#" : "/master-chef-farmwell"}>
                               <button className="mt-4 px-4 py-2 bg-navy-medium text-white rounded-md hover:bg-navy-dark transition-colors text-sm font-light">
-                                Read More
+                                {story.buttonText || "Read More"}
                               </button>
                             </Link>
                           )}
