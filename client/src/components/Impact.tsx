@@ -109,7 +109,7 @@ export default function Impact() {
                             {story.description}
                           </p>
                           {story.hasReadMore && (
-                            <Link href={story.title === "One Ganesh for All" ? "#" : "/master-chef-farmwell"}>
+                            <Link href={story.title === "One Ganesh for All" ? "/one-ganesh-for-all" : "/master-chef-farmwell"}>
                               <button className="mt-4 px-4 py-2 bg-navy-medium text-white rounded-md hover:bg-navy-dark transition-colors text-sm font-light">
                                 {story.buttonText || "Read More"}
                               </button>

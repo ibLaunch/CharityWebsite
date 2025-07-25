@@ -11,6 +11,7 @@ import FoundersMessagePage from "@/pages/FoundersMessage";
 import BoardOfDirectorsPage from "@/pages/BoardOfDirectors";
 import FAQPage from "@/pages/FAQ";
 import MasterChefFarmwellPage from "@/pages/MasterChefFarmwell";
+import OneGaneshForAllPage from "@/pages/OneGaneshForAll";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/board-of-directors" component={BoardOfDirectorsPage} />
       <Route path="/faq" component={FAQPage} />
       <Route path="/master-chef-farmwell" component={MasterChefFarmwellPage} />
+      <Route path="/one-ganesh-for-all" component={OneGaneshForAllPage} />
       <Route component={NotFound} />
     </Switch>
   );
