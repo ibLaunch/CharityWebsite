@@ -83,10 +83,9 @@ export default function Home() {
         className="relative min-h-screen overflow-hidden"
         style={{
           backgroundImage: `url(${girlHeroImage})`,
-          backgroundSize: 'contain',
+          backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          backgroundColor: '#1a365d'
+          backgroundRepeat: 'no-repeat'
         }}
       >
         {/* Dark overlay for text readability */}
