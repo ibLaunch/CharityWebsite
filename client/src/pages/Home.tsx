@@ -9,6 +9,7 @@ import { BookOpen, Heart, Users, GraduationCap, Smartphone, DollarSign } from "l
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
 import rotaryImage from "@assets/Screen Shot 2025-05-19 at 8.18.34 PM_1750195463736.png";
 import schoolHallImage2 from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM_1750195477402.png";
+import girlHeroImage from "@assets/12fcae97-7051-4124-afcc-6e143f485dc7.jpg_1753987750364.png";
 
 export default function Home() {
   const heroImages = [
@@ -78,35 +79,71 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative bg-white pt-32 pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
-        
+      <section className="relative min-h-screen bg-gradient-to-br from-navy-dark via-slate-800 to-slate-900 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center min-h-screen">
+            {/* Image on the left */}
+            <div className="relative order-2 lg:order-1">
+              <div className="relative">
+                <img 
+                  src={girlHeroImage}
+                  alt="Young girl representing education and empowerment"
+                  className="w-full h-[600px] object-cover rounded-2xl"
+                />
+              </div>
+            </div>
+            
+            {/* Text content on the right */}
+            <div className="space-y-8 order-1 lg:order-2 text-center lg:text-left">
               <div className="space-y-6">
-                <h1 className="hero-title text-navy-dark">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
                   Bundele<br />
                   Foundation
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                  Building stronger communities—one generation at a time—through youth empowerment, senior care, and intergenerational programs.
+                <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 leading-relaxed">
+                  Together, We're Making a Difference
                 </p>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <button 
                   onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
-                  className="navy-button-primary text-lg rounded-md w-52 h-14 flex items-center justify-center"
+                  className="bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-8 py-4 rounded-lg transition-colors"
                 >
-                  Donate
+                  Donate Here
                 </button>
-                
-                <Link href="/impact-circle" className="w-52 h-14">
-                  <Button variant="outline" className="border-2 border-navy-medium text-navy-medium text-lg hover:bg-navy-medium hover:text-white transition-colors w-full h-full flex items-center justify-center">
-                    Join Impact Circle
-                  </Button>
-                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-navy-dark">
+              Our Mission
+            </h2>
+            <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+              Building stronger communities—one generation at a time—through youth empowerment, senior care, and intergenerational programs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Previous carousel section for other content */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h2 className="text-3xl sm:text-4xl font-bold text-navy-dark">
+                  Creating Impact Through Community
+                </h2>
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  See how we're making a difference in education and community support across different regions.
+                </p>
               </div>
             </div>
             
@@ -115,7 +152,7 @@ export default function Home() {
                 <img 
                   src={heroImages[currentImageIndex].src}
                   alt={heroImages[currentImageIndex].alt}
-                  className="w-full h-[500px] object-cover transition-opacity duration-1000"
+                  className="w-full h-[400px] object-cover transition-opacity duration-1000"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
