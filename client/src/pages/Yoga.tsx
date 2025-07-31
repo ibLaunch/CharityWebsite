@@ -58,7 +58,7 @@ export default function YogaPage() {
       
       {/* Hero Section with Background Image */}
       <section 
-        className="relative min-h-[75vh] flex items-center overflow-hidden"
+        className="relative min-h-screen flex items-center overflow-hidden"
         style={{
           backgroundImage: `url(${wellnessHeroImage})`,
           backgroundSize: 'cover',
