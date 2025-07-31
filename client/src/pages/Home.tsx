@@ -92,9 +92,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex items-center justify-end min-h-screen">
-            {/* Text content positioned on the right */}
-            <div className="space-y-8 text-right max-w-lg">
+          <div className="flex items-center justify-center min-h-screen">
+            {/* Text content centered */}
+            <div className="space-y-8 text-center">
               <div className="space-y-6">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
                   Bundele<br />
@@ -105,7 +105,7 @@ export default function Home() {
                 </p>
               </div>
               
-              <div className="flex justify-end">
+              <div className="flex justify-center">
                 <button 
                   onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
                   className="bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-8 py-4 rounded-lg transition-colors"
