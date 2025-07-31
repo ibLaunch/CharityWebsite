@@ -5,7 +5,7 @@ import { CalendarPlus, Star, ArrowLeft, Dumbbell, Heart, Apple, Flower, Activity
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
-import wellnessHeroImage from "@assets/cbe25d53-af39-40d4-adae-269052849b65.png_1753989799417.png";
+import wellnessHeroImage from "@assets/cbe25d53-af39-40d4-adae-269052849b65.png (1)_1753990177163.png";
 
 export default function YogaPage() {
   const packages = [
