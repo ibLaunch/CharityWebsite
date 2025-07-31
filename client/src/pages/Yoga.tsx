@@ -80,9 +80,6 @@ export default function YogaPage() {
               </Link>
               
               <div className="space-y-6 sm:space-y-8">
-                <div className="text-navy-medium text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase" style={{ textShadow: '1px 1px 3px rgba(255,255,255,0.9)' }}>
-                  Holistic Well-being Programs
-                </div>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark leading-tight" style={{ textShadow: '2px 2px 4px rgba(255,255,255,0.8)' }}>
                   Bundele<br />
                   <span className="italic text-navy-medium">Wellness</span>
