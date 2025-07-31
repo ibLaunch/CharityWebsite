@@ -71,7 +71,7 @@ export default function YogaPage() {
         
         <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl">
+            <div className="flex flex-col items-center text-center">
               <Link href="/">
                 <button className="mb-6 sm:mb-8 inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-white/95 backdrop-blur-sm hover:bg-white transition-colors rounded-md text-sm sm:text-base shadow-lg">
                   <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
@@ -99,7 +99,7 @@ export default function YogaPage() {
                   </div>
                 </div>
                 
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4 justify-center">
                   <button 
                     onClick={() => window.scrollTo({ top: document.getElementById('pricing')?.offsetTop || 0, behavior: 'smooth' })}
                     className="bg-navy-dark hover:bg-navy-hover text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold transition-colors"
