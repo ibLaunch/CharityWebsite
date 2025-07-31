@@ -79,7 +79,7 @@ export default function YogaPage() {
                     <span className="italic text-navy-medium">Wellness</span>
                   </h1>
                   <Link href="/">
-                    <button className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-white/95 backdrop-blur-sm hover:bg-white transition-colors rounded-md text-sm sm:text-base shadow-lg ml-4 mt-8">
+                    <button className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-transparent hover:bg-black hover:text-white hover:border-black transition-colors rounded-md text-sm sm:text-base shadow-lg ml-4 mt-8">
                       <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                       Back to Home
                     </button>
