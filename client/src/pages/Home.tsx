@@ -108,7 +108,7 @@ export default function Home() {
               <div className="flex justify-center">
                 <button 
                   onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
-                  className="bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-8 py-4 rounded-lg transition-colors"
+                  className="bg-navy-dark hover:bg-navy-hover text-white text-lg font-semibold px-8 py-4 rounded-lg transition-colors"
                 >
                   Donate Here
                 </button>
