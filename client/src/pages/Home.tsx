@@ -118,31 +118,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6">
-            <h2 className="text-3xl sm:text-4xl font-bold text-navy-dark">
-              Our Mission
-            </h2>
-            <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              Building stronger communities—one generation at a time—through youth empowerment, senior care, and intergenerational programs.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Previous carousel section for other content */}
+      {/* Our Mission Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
                 <h2 className="text-3xl sm:text-4xl font-bold text-navy-dark">
-                  Creating Impact Through Community
+                  Our Mission
                 </h2>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  See how we're making a difference in education and community support across different regions.
+                  Building stronger communities—one generation at a time—through youth empowerment, senior care, and intergenerational programs.
                 </p>
               </div>
             </div>
