@@ -58,16 +58,18 @@ export default function YogaPage() {
       
       {/* Hero Section with Wellness Image */}
       <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-white">
-        <div className="absolute inset-0 flex items-center justify-center p-8">
-          <div className="relative w-full h-full max-w-4xl">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="relative w-full h-full">
             <img 
               src={bWellnessImage} 
               alt="Wellness Activities Illustration"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
               style={{
-                filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.05))',
-                maskImage: 'radial-gradient(ellipse 100% 95% at center, black 30%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.7) 65%, rgba(0,0,0,0.4) 75%, rgba(0,0,0,0.2) 85%, rgba(0,0,0,0.1) 90%, transparent 95%)',
-                WebkitMaskImage: 'radial-gradient(ellipse 100% 95% at center, black 30%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.7) 65%, rgba(0,0,0,0.4) 75%, rgba(0,0,0,0.2) 85%, rgba(0,0,0,0.1) 90%, transparent 95%)'
+                filter: 'brightness(1.1)',
+                maskImage: 'linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+                maskComposite: 'intersect',
+                WebkitMaskComposite: 'intersect'
               }}
             />
           </div>
