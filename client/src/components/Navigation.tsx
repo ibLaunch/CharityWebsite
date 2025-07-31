@@ -53,9 +53,7 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className={`fixed top-0 w-full bg-white z-50 transition-all duration-500 ${
-      isScrolled ? "border-b border-gray-200" : ""
-    }`}>
+    <nav className="fixed top-0 w-full bg-slate-800 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 sm:h-28">
           <div className="flex items-center">
@@ -75,7 +73,7 @@ export default function Navigation() {
             <div className="flex items-center space-x-6 xl:space-x-8">
               {navItems.map((item) => (
                 <Link key={item.id} href={item.href || "#"}>
-                  <button className="text-sm xl:text-base text-navy-medium hover:text-navy-dark transition-colors font-medium">
+                  <button className="text-sm xl:text-base text-white hover:text-gray-300 transition-colors font-medium">
                     {item.label}
                   </button>
                 </Link>
@@ -89,7 +87,7 @@ export default function Navigation() {
                   setTimeout(() => setIsAboutDropdownOpen(false), 150);
                 }}
               >
-                <button className="text-sm xl:text-base text-navy-medium hover:text-navy-dark transition-colors flex items-center font-medium py-2">
+                <button className="text-sm xl:text-base text-white hover:text-gray-300 transition-colors flex items-center font-medium py-2">
                   About Us
                   <ChevronDown className={`ml-1 h-3 w-3 transition-transform duration-200 ${
                     isAboutDropdownOpen ? 'rotate-180' : ''
