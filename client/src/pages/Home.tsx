@@ -9,7 +9,7 @@ import { BookOpen, Heart, Users, GraduationCap, Smartphone, DollarSign } from "l
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
 import rotaryImage from "@assets/Screen Shot 2025-05-19 at 8.18.34 PM_1750195463736.png";
 import schoolHallImage2 from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM_1750195477402.png";
-import girlHeroImage from "@assets/12fcae97-7051-4124-afcc-6e143f485dc7.jpg (1)_1753988432803.png";
+import girlHeroImage from "@assets/girl-hero-updated.png";
 
 export default function Home() {
   const heroImages = [
