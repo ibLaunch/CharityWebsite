@@ -73,10 +73,18 @@ export default function YogaPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <div className="space-y-6 sm:space-y-8">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark leading-tight" style={{ textShadow: '2px 2px 4px rgba(255,255,255,0.8)' }}>
-                  Bundele<br />
-                  <span className="italic text-navy-medium">Wellness</span>
-                </h1>
+                <div className="flex items-start justify-between">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark leading-tight" style={{ textShadow: '2px 2px 4px rgba(255,255,255,0.8)' }}>
+                    Bundele<br />
+                    <span className="italic text-navy-medium">Wellness</span>
+                  </h1>
+                  <Link href="/">
+                    <button className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-white/95 backdrop-blur-sm hover:bg-white transition-colors rounded-md text-sm sm:text-base shadow-lg ml-4 mt-2">
+                      <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
+                      Back to Home
+                    </button>
+                  </Link>
+                </div>
                 <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(255,255,255,0.9)' }}>
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
