@@ -5,7 +5,7 @@ import { CalendarPlus, Star, ArrowLeft, Dumbbell, Heart, Apple, Flower, Activity
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
-import bWellnessImage from "@assets/IMG_8842_1751734853649.png";
+import bWellnessImage from "@assets/IMG_8842_1751728410964.png";
 
 export default function YogaPage() {
   const packages = [
@@ -57,20 +57,20 @@ export default function YogaPage() {
       <Navigation />
       
       {/* Hero Section with Wellness Image */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-white">
-        <div className="absolute inset-0">
-          <img 
-            src={bWellnessImage} 
-            alt="Wellness Activities Illustration"
-            className="w-full h-full object-cover"
-            style={{
-              filter: 'brightness(1.1) contrast(1.05)',
-              maskImage: 'linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%)',
-              WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%)',
-              maskComposite: 'intersect',
-              WebkitMaskComposite: 'intersect'
-            }}
-          />
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-gray-50">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="relative w-full h-full">
+            <img 
+              src={bWellnessImage} 
+              alt="Wellness Activities Illustration"
+              className="w-full h-full object-contain"
+              style={{
+                filter: 'drop-shadow(0 0 20px rgba(255,255,255,0.8))',
+                maskImage: 'radial-gradient(ellipse 80% 70% at center, black 60%, transparent 100%)',
+                WebkitMaskImage: 'radial-gradient(ellipse 80% 70% at center, black 60%, transparent 100%)'
+              }}
+            />
+          </div>
         </div>
         
         <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
@@ -84,14 +84,14 @@ export default function YogaPage() {
               </Link>
               
               <div className="space-y-6 sm:space-y-8">
-                <div className="text-navy-dark text-sm sm:text-base lg:text-lg font-semibold tracking-wide uppercase bg-white/95 backdrop-blur-md px-6 py-3 rounded-lg shadow-sm inline-block border border-navy-light/20">
+                <div className="text-navy-medium text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase bg-white/90 backdrop-blur-sm px-4 py-2 rounded-md inline-block">
                   Holistic Well-being Programs
                 </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight bg-white/95 backdrop-blur-md p-6 rounded-2xl shadow-lg inline-block">
-                  <span className="text-navy-dark">Bundele</span><br />
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark leading-tight">
+                  Bundele<br />
                   <span className="italic text-navy-medium">Wellness</span>
                 </h1>
-                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed bg-white/95 backdrop-blur-md p-6 rounded-xl shadow-md inline-block border border-navy-light/20">
+                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed bg-white/80 backdrop-blur-sm p-4 rounded-lg inline-block">
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
                 
@@ -109,12 +109,12 @@ export default function YogaPage() {
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
                   <button 
                     onClick={() => window.scrollTo({ top: document.getElementById('pricing')?.offsetTop || 0, behavior: 'smooth' })}
-                    className="bg-navy-dark hover:bg-navy-hover text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-colors shadow-lg"
+                    className="bg-navy-dark hover:bg-navy-hover text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold transition-colors"
                   >
                     Explore Our Programs
                   </button>
                   <Link href="/contact">
-                    <button className="border-2 border-navy-dark text-navy-dark bg-white/95 hover:bg-white backdrop-blur-md px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-colors shadow-lg">
+                    <button className="border-2 border-white text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold transition-colors">
                       Start Your Journey
                     </button>
                   </Link>
