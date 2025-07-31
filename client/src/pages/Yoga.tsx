@@ -56,49 +56,43 @@ export default function YogaPage() {
     <div className="min-h-screen bg-white">
       <Navigation />
       
-      {/* Hero Section with Wellness Image */}
-      <section className="relative min-h-[75vh] flex items-center overflow-hidden bg-white">
-        <div className="absolute inset-0 flex items-center justify-end pr-8">
-          <div className="relative w-1/2 h-full max-w-3xl">
-            <img 
-              src={wellnessHeroImage} 
-              alt="Couple Meditating by the Ocean"
-              className="w-full h-full object-contain"
-              style={{
-                filter: 'brightness(0.9) contrast(1.1) saturate(0.9)',
-                transform: 'scale(0.9)',
-                transformOrigin: 'center right',
-                borderRadius: '12px',
-                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)'
-              }}
-            />
-          </div>
-        </div>
+      {/* Hero Section with Background Image */}
+      <section 
+        className="relative min-h-[75vh] flex items-center overflow-hidden"
+        style={{
+          backgroundImage: `url(${wellnessHeroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-white/70 backdrop-blur-[1px]"></div>
         
         <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-2xl">
+            <div className="max-w-3xl">
               <Link href="/">
-                <button className="mb-6 sm:mb-8 inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-colors rounded-md text-sm sm:text-base">
+                <button className="mb-6 sm:mb-8 inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-white/95 backdrop-blur-sm hover:bg-white transition-colors rounded-md text-sm sm:text-base shadow-lg">
                   <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                   Back to Home
                 </button>
               </Link>
               
               <div className="space-y-6 sm:space-y-8">
-                <div className="text-navy-medium text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase bg-white/90 backdrop-blur-sm px-4 py-2 rounded-md inline-block">
+                <div className="text-navy-medium text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase bg-white/95 backdrop-blur-sm px-4 py-2 rounded-md inline-block shadow-md">
                   Holistic Well-being Programs
                 </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark leading-tight drop-shadow-lg">
                   Bundele<br />
                   <span className="italic text-navy-medium">Wellness</span>
                 </h1>
-                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed bg-white/80 backdrop-blur-sm p-4 rounded-lg inline-block">
+                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed bg-white/95 backdrop-blur-sm p-4 rounded-lg inline-block shadow-md">
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
                 
                 {/* Pricing Highlight */}
-                <div className="inline-block bg-white/90 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-lg">
+                <div className="inline-block bg-white/95 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-xl">
                   <div className="text-center">
                     <div className="text-xs sm:text-sm font-medium text-navy-medium uppercase tracking-wide mb-1 sm:mb-2">
                       Starting From
