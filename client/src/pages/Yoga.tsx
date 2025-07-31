@@ -71,24 +71,19 @@ export default function YogaPage() {
         
         <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-center min-h-[60vh]">
-              <div className="max-w-3xl flex items-center gap-8 lg:gap-12">
-                {/* Back to Home Button - Centered with Bundele text */}
-                <div className="flex-shrink-0">
-                  <Link href="/">
-                    <button className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-white/95 backdrop-blur-sm hover:bg-white transition-colors rounded-md text-sm sm:text-base shadow-lg">
-                      <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                      Back to Home
-                    </button>
-                  </Link>
-                </div>
-                
-                {/* Main Content */}
-                <div className="space-y-6 sm:space-y-8">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark leading-tight" style={{ textShadow: '2px 2px 4px rgba(255,255,255,0.8)' }}>
-                    Bundele<br />
-                    <span className="italic text-navy-medium">Wellness</span>
-                  </h1>
+            <div className="max-w-3xl">
+              <Link href="/">
+                <button className="mb-6 sm:mb-8 inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-white/95 backdrop-blur-sm hover:bg-white transition-colors rounded-md text-sm sm:text-base shadow-lg">
+                  <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
+                  Back to Home
+                </button>
+              </Link>
+              
+              <div className="space-y-6 sm:space-y-8">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark leading-tight" style={{ textShadow: '2px 2px 4px rgba(255,255,255,0.8)' }}>
+                  Bundele<br />
+                  <span className="italic text-navy-medium">Wellness</span>
+                </h1>
                 <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(255,255,255,0.9)' }}>
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
@@ -116,7 +111,6 @@ export default function YogaPage() {
                       Start Your Journey
                     </button>
                   </Link>
-                </div>
                 </div>
               </div>
             </div>
