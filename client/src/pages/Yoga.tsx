@@ -65,7 +65,7 @@ export default function YogaPage() {
               alt="Wellness Activities Illustration"
               className="w-full h-full object-contain"
               style={{
-                filter: 'brightness(1.4) contrast(1.6) hue-rotate(15deg) saturate(0.8)',
+                filter: 'brightness(1.3) contrast(1.4) hue-rotate(-30deg) saturate(1.2) sepia(0.3)',
                 mixBlendMode: 'darken',
                 transform: 'scale(0.85)',
                 transformOrigin: 'center right',
