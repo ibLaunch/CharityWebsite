@@ -58,20 +58,19 @@ export default function YogaPage() {
       
       {/* Hero Section with Wellness Image */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-white">
-        <div className="absolute inset-0 flex items-center justify-center p-4">
-          <div className="relative w-full h-full max-w-7xl">
-            <img 
-              src={bWellnessImage} 
-              alt="Wellness Activities Illustration"
-              className="w-full h-full object-contain"
-              style={{
-                filter: 'brightness(1.05)',
-                transform: 'scale(0.95)',
-                maskImage: 'radial-gradient(ellipse 95% 90% at center, black 50%, rgba(0,0,0,0.9) 70%, rgba(0,0,0,0.6) 80%, rgba(0,0,0,0.3) 90%, transparent 98%)',
-                WebkitMaskImage: 'radial-gradient(ellipse 95% 90% at center, black 50%, rgba(0,0,0,0.9) 70%, rgba(0,0,0,0.6) 80%, rgba(0,0,0,0.3) 90%, transparent 98%)'
-              }}
-            />
-          </div>
+        <div className="absolute inset-0">
+          <img 
+            src={bWellnessImage} 
+            alt="Wellness Activities Illustration"
+            className="w-full h-full object-cover"
+            style={{
+              filter: 'brightness(1.1) contrast(1.05)',
+              maskImage: 'linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%)',
+              WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%)',
+              maskComposite: 'intersect',
+              WebkitMaskComposite: 'intersect'
+            }}
+          />
         </div>
         
         <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
