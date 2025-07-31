@@ -79,22 +79,22 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-to-br from-navy-dark via-slate-800 to-slate-900 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid lg:grid-cols-2 gap-16 items-center min-h-screen">
-            {/* Image on the left */}
-            <div className="relative order-2 lg:order-1">
-              <div className="relative">
-                <img 
-                  src={girlHeroImage}
-                  alt="Young girl representing education and empowerment"
-                  className="w-full h-[600px] object-cover rounded-2xl"
-                />
-              </div>
-            </div>
-            
-            {/* Text content on the right */}
-            <div className="space-y-8 order-1 lg:order-2 text-center lg:text-left">
+      <section 
+        className="relative min-h-screen overflow-hidden"
+        style={{
+          backgroundImage: `url(${girlHeroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/40"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex items-center justify-end min-h-screen">
+            {/* Text content positioned on the right */}
+            <div className="space-y-8 text-right max-w-lg">
               <div className="space-y-6">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
                   Bundele<br />
@@ -105,7 +105,7 @@ export default function Home() {
                 </p>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex justify-end">
                 <button 
                   onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
                   className="bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-8 py-4 rounded-lg transition-colors"
