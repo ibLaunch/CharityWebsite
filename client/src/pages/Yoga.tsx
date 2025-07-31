@@ -58,8 +58,8 @@ export default function YogaPage() {
       
       {/* Hero Section with Wellness Image */}
       <section className="relative min-h-[75vh] flex items-center overflow-hidden bg-white">
-        <div className="absolute inset-0 flex items-center justify-center p-6">
-          <div className="relative w-full h-full max-w-6xl">
+        <div className="absolute inset-0 flex items-center justify-end pr-8">
+          <div className="relative w-1/2 h-full max-w-3xl">
             <img 
               src={bWellnessImage} 
               alt="Wellness Activities Illustration"
@@ -67,7 +67,8 @@ export default function YogaPage() {
               style={{
                 filter: 'brightness(1.1) contrast(1.2) saturate(1.1)',
                 mixBlendMode: 'multiply',
-                transform: 'scale(0.9)'
+                transform: 'scale(0.85)',
+                transformOrigin: 'center right'
               }}
             />
           </div>
@@ -75,7 +76,7 @@ export default function YogaPage() {
         
         <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl">
+            <div className="max-w-2xl">
               <Link href="/">
                 <button className="mb-6 sm:mb-8 inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-colors rounded-md text-sm sm:text-base">
                   <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
