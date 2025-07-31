@@ -5,7 +5,7 @@ import { CalendarPlus, Star, ArrowLeft, Dumbbell, Heart, Apple, Flower, Activity
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
-import bWellnessImage from "@assets/IMG_8842_1751728410964.png";
+import wellnessHeroImage from "@assets/image_1753985322853.png";
 
 export default function YogaPage() {
   const packages = [
@@ -61,15 +61,15 @@ export default function YogaPage() {
         <div className="absolute inset-0 flex items-center justify-end pr-8">
           <div className="relative w-1/2 h-full max-w-3xl">
             <img 
-              src={bWellnessImage} 
-              alt="Wellness Activities Illustration"
+              src={wellnessHeroImage} 
+              alt="Couple Meditating by the Ocean"
               className="w-full h-full object-contain"
               style={{
-                filter: 'brightness(1.2) contrast(1.3) hue-rotate(180deg) saturate(1.1)',
-                mixBlendMode: 'darken',
-                transform: 'scale(0.85)',
+                filter: 'brightness(0.9) contrast(1.1) saturate(0.9)',
+                transform: 'scale(0.9)',
                 transformOrigin: 'center right',
-                background: 'white'
+                borderRadius: '12px',
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)'
               }}
             />
           </div>
