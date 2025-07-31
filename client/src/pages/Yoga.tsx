@@ -84,14 +84,14 @@ export default function YogaPage() {
               </Link>
               
               <div className="space-y-6 sm:space-y-8">
-                <div className="text-navy-medium text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase bg-white/90 backdrop-blur-sm px-4 py-2 rounded-md inline-block">
+                <div className="text-navy-dark text-sm sm:text-base lg:text-lg font-semibold tracking-wide uppercase bg-white/95 backdrop-blur-md px-6 py-3 rounded-lg shadow-sm inline-block border border-navy-light/20">
                   Holistic Well-being Programs
                 </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-                  <span className="text-navy-dark drop-shadow-sm">Bundele</span><br />
-                  <span className="italic text-navy-medium drop-shadow-sm">Wellness</span>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight bg-white/95 backdrop-blur-md p-6 rounded-2xl shadow-lg inline-block">
+                  <span className="text-navy-dark">Bundele</span><br />
+                  <span className="italic text-navy-medium">Wellness</span>
                 </h1>
-                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed bg-white/80 backdrop-blur-sm p-4 rounded-lg inline-block">
+                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed bg-white/95 backdrop-blur-md p-6 rounded-xl shadow-md inline-block border border-navy-light/20">
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
                 
@@ -109,12 +109,12 @@ export default function YogaPage() {
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
                   <button 
                     onClick={() => window.scrollTo({ top: document.getElementById('pricing')?.offsetTop || 0, behavior: 'smooth' })}
-                    className="bg-navy-dark hover:bg-navy-hover text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold transition-colors"
+                    className="bg-navy-dark hover:bg-navy-hover text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-colors shadow-lg"
                   >
                     Explore Our Programs
                   </button>
                   <Link href="/contact">
-                    <button className="border-2 border-white text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold transition-colors">
+                    <button className="border-2 border-navy-dark text-navy-dark bg-white/95 hover:bg-white backdrop-blur-md px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-colors shadow-lg">
                       Start Your Journey
                     </button>
                   </Link>
