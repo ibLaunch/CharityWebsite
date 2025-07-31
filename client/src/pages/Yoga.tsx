@@ -58,16 +58,17 @@ export default function YogaPage() {
       
       {/* Hero Section with Wellness Image */}
       <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-white">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="relative w-full h-full">
+        <div className="absolute inset-0 flex items-center justify-center p-12">
+          <div className="relative w-full h-full max-w-6xl">
             <img 
               src={bWellnessImage} 
               alt="Wellness Activities Illustration"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               style={{
                 filter: 'brightness(1.1)',
-                maskImage: 'linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
-                WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+                transform: 'scale(0.85)',
+                maskImage: 'linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%), linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%), linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
                 maskComposite: 'intersect',
                 WebkitMaskComposite: 'intersect'
               }}
