@@ -73,26 +73,26 @@ export default function YogaPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <Link href="/">
-                <button className="mb-6 sm:mb-8 inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-white backdrop-blur-md hover:bg-white/95 transition-colors rounded-md text-sm sm:text-base shadow-xl">
+                <button className="mb-6 sm:mb-8 inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-navy-medium text-navy-dark bg-white/95 backdrop-blur-sm hover:bg-white transition-colors rounded-md text-sm sm:text-base shadow-lg">
                   <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                   Back to Home
                 </button>
               </Link>
               
               <div className="space-y-6 sm:space-y-8">
-                <div className="text-navy-medium text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase bg-white backdrop-blur-md px-4 py-2 rounded-md inline-block shadow-xl">
+                <div className="text-navy-medium text-sm sm:text-base lg:text-lg font-medium tracking-wide uppercase" style={{ textShadow: '1px 1px 3px rgba(255,255,255,0.9)' }}>
                   Holistic Well-being Programs
                 </div>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-navy-dark leading-tight" style={{ textShadow: '2px 2px 4px rgba(255,255,255,0.8)' }}>
                   Bundele<br />
                   <span className="italic text-navy-medium">Wellness</span>
                 </h1>
-                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed bg-white backdrop-blur-md p-4 rounded-lg inline-block shadow-xl">
+                <p className="text-lg sm:text-xl lg:text-2xl font-light text-navy-dark italic leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(255,255,255,0.9)' }}>
                   Cultivating Holistic Well-being, Transforming Lives
                 </p>
                 
-                {/* Pricing Highlight */}
-                <div className="inline-block bg-white backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-2xl">
+                {/* Pricing Highlight - Keep background for readability */}
+                <div className="inline-block bg-white/95 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-xl">
                   <div className="text-center">
                     <div className="text-xs sm:text-sm font-medium text-navy-medium uppercase tracking-wide mb-1 sm:mb-2">
                       Starting From
