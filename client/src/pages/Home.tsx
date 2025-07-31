@@ -84,7 +84,7 @@ export default function Home() {
         style={{
           backgroundImage: `url(${girlHeroImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'center top',
           backgroundRepeat: 'no-repeat'
         }}
       >
