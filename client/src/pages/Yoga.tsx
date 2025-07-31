@@ -65,9 +65,9 @@ export default function YogaPage() {
               alt="Wellness Activities Illustration"
               className="w-full h-full object-contain"
               style={{
-                filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.1))',
-                maskImage: 'radial-gradient(ellipse 85% 80% at center, black 45%, rgba(0,0,0,0.8) 65%, rgba(0,0,0,0.3) 75%, transparent 85%)',
-                WebkitMaskImage: 'radial-gradient(ellipse 85% 80% at center, black 45%, rgba(0,0,0,0.8) 65%, rgba(0,0,0,0.3) 75%, transparent 85%)'
+                filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.05))',
+                maskImage: 'radial-gradient(ellipse 100% 95% at center, black 30%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.7) 65%, rgba(0,0,0,0.4) 75%, rgba(0,0,0,0.2) 85%, rgba(0,0,0,0.1) 90%, transparent 95%)',
+                WebkitMaskImage: 'radial-gradient(ellipse 100% 95% at center, black 30%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.7) 65%, rgba(0,0,0,0.4) 75%, rgba(0,0,0,0.2) 85%, rgba(0,0,0,0.1) 90%, transparent 95%)'
               }}
             />
           </div>
