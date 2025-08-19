@@ -19,10 +19,10 @@ export default function OneGaneshForAllPage() {
           
           <div className="text-center">
             <h1 className="text-5xl font-bold text-navy-dark mb-6 tracking-tight leading-tight">
-              🪔 One Ganesh Festival 2025 🪔
+              One Ganesh for All
             </h1>
             <p className="text-xl text-navy-medium mb-8">
-              Friday, Sept 5th – Saturday, Sept 6th
+              Celebrating Ganesh Chaturthi with Unity and Community Spirit
             </p>
           </div>
         </div>
@@ -56,31 +56,12 @@ export default function OneGaneshForAllPage() {
                 of youth empowerment, senior care, and intergenerational programs.
               </p>
               
-              <div className="space-y-6">
-                <div className="bg-gradient-to-r from-orange-50 to-yellow-50 p-4 rounded-lg border-l-4 border-orange-400">
-                  <h3 className="font-semibold text-navy-dark mb-2 flex items-center">
-                    <Calendar className="w-5 h-5 text-orange-500 mr-2" />
-                    Friday, Sept 5th - Cultural Evening
-                  </h3>
-                  <div className="text-navy-medium space-y-1">
-                    <p>🎭 Vibrant Cultural Evening (Kids & Adults Performances)</p>
-                    <p>⏰ 6:00 PM – 8:00 PM</p>
-                    <p className="text-sm">👉 To register for cultural performances, contact Renuka – (734) 664-8472</p>
-                  </div>
-                </div>
-                
-                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg border-l-4 border-blue-400">
-                  <h3 className="font-semibold text-navy-dark mb-2 flex items-center">
-                    <Calendar className="w-5 h-5 text-blue-500 mr-2" />
-                    Saturday, Sept 6th - Main Festival
-                  </h3>
-                  <div className="text-navy-medium space-y-2">
-                    <p>🙏 Morning Pooja & Sthapana – 10:00 AM – 12:00 PM</p>
-                    <p>🛍 Community Fair – 11:00 AM – 5:00 PM</p>
-                    <p>🍽 Lunch – 12:30 PM – 2:00 PM</p>
-                    <p>📿 Prayers & Mantrochar – 1:00 PM – 3:00 PM</p>
-                    <p>🎲 Bingo + Samosa + Chai Fundraiser – 3:00 PM – 4:00 PM</p>
-                    <p>🌅 Sandhya Aarti & Visarjan – 4:00 PM – 6:00 PM</p>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <Calendar className="w-6 h-6 text-navy-medium mr-3 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-navy-dark">Date & Time</h3>
+                    <p className="text-navy-medium">September 6, 2025 • 10 AM – 6 PM</p>
                   </div>
                 </div>
                 
@@ -92,14 +73,20 @@ export default function OneGaneshForAllPage() {
                   </div>
                 </div>
                 
-                <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-                  <h3 className="font-semibold text-navy-dark mb-2">📢 Vendors & Sponsors Welcome!</h3>
-                  <p className="text-navy-medium mb-2">Showcase your products and services at our Community Fair:</p>
-                  <ul className="text-sm text-navy-medium space-y-1 ml-4">
-                    <li>✨ Affordable vendor spots</li>
-                    <li>✨ Direct access to community families</li>
-                    <li>✨ Limited availability – reserve soon!</li>
-                  </ul>
+                <div className="flex items-start">
+                  <DollarSign className="w-6 h-6 text-navy-medium mr-3 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-navy-dark">Registration</h3>
+                    <p className="text-navy-medium">$2 registration supports event logistics and our mission</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <Users className="w-6 h-6 text-navy-medium mr-3 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-navy-dark">Community Impact</h3>
+                    <p className="text-navy-medium">All proceeds support youth empowerment, senior care, and intergenerational programs</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -125,32 +112,12 @@ export default function OneGaneshForAllPage() {
             </div>
           </div>
 
-          {/* Registration Section */}
+          {/* Registration Widget */}
           <div className="bg-navy-very-light p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-navy-dark mb-6 text-center">✅ Registration Required</h2>
+            <h2 className="text-3xl font-bold text-navy-dark mb-6 text-center">Register Now</h2>
             <p className="text-lg text-navy-medium text-center mb-8">
-              Everyone attending must register. Come with family & friends and be part of this beautiful celebration of devotion, culture, and community!
+              Secure your spot for this meaningful celebration. Your $2 registration helps us create a memorable event while supporting our community mission.
             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-              <a 
-                href="https://bit.ly/ganesh2025"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-navy-dark hover:bg-navy-hover text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors inline-block text-center"
-              >
-                Register Here: bit.ly/ganesh2025
-              </a>
-              
-              <a 
-                href="https://bit.ly/ganesh2025fb"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors inline-block text-center"
-              >
-                Facebook Event
-              </a>
-            </div>
             
             <div className="bg-white rounded-lg p-4 shadow-lg">
               <iframe 
