@@ -61,7 +61,10 @@ export default function OneGaneshForAllPage() {
                   <Calendar className="w-6 h-6 text-navy-medium mr-3 mt-1" />
                   <div>
                     <h3 className="font-semibold text-navy-dark">Date & Time</h3>
-                    <p className="text-navy-medium">Friday, Sept 5th 6pm-8pm – Saturday, Sept 6th: 10am-6pm</p>
+                    <div className="text-navy-medium">
+                      <p>Friday, Sept 5th from 6pm-8pm</p>
+                      <p>Saturday, Sept 6th from 10am-6pm</p>
+                    </div>
                   </div>
                 </div>
                 
