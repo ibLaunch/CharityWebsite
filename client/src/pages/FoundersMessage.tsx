@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import { ArrowLeft, Heart, GraduationCap, Users } from "lucide-react";
-import hemantBundelePhoto from "@assets/Hemant_Bundele_1750101113518.jpg";
+import hemantBundelePhoto from "@assets/Hemant_Bundele_1750101113518.webp";
 
 export default function FoundersMessagePage() {
   return (

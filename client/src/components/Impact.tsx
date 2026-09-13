@@ -8,11 +8,11 @@ import {
 } from "@/components/ui/carousel";
 import { BookOpen, Users, Palette, Calendar, MapPin } from "lucide-react";
 import { Link } from "wouter";
-import furnitureImage from "@assets/Screen Shot 2025-05-19 at 6.42.57 PM.png";
-import cabinetImage from "@assets/Screen Shot 2025-05-19 at 6.43.18 PM.png";
-import schoolHallImage from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM.png";
-import cookingCompetitionImage from "@assets/cooking-competition.jpg";
-import ganeshImage from "@assets/IMG_0931_2_1753388286042.jpg";
+import furnitureImage from "@assets/Screen Shot 2025-05-19 at 6.42.57 PM.webp";
+import cabinetImage from "@assets/Screen Shot 2025-05-19 at 6.43.18 PM.webp";
+import schoolHallImage from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM.webp";
+import cookingCompetitionImage from "@assets/cooking-competition.webp";
+import ganeshImage from "@assets/IMG_0931_2_1753388286042.webp";
 
 export default function Impact() {
   const impactStories = [

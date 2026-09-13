@@ -7,10 +7,28 @@
     <meta name="description" content="A 501(c)(3) nonprofit organization dedicated to education support, senior care, and community building. Join us in making a difference." />
     <link rel="icon" type="image/png" href="/favicon.png" />
 
+    <!-- Fonts are loaded here rather than via @import in CSS. An @import
+         forces the browser to download and parse our stylesheet before it
+         even discovers the font request, which delayed first paint. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      />
+    </noscript>
+
     <!-- The hero background is the Largest Contentful Paint element on the
          landing page. Preloading it lets the browser start the download
          before the CSS that references it has parsed. -->
-    <link rel="preload" as="image" href="/hero.jpg" fetchpriority="high" />
+    <link rel="preload" as="image" type="image/webp" href="/hero.webp" fetchpriority="high" />
 
     <meta property="og:title" content="Bundele Foundation - Bridging Generations, Building Futures" />
     <meta property="og:description" content="A 501(c)(3) nonprofit supporting schools and seniors in India and Virginia." />

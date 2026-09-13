@@ -1,9 +1,9 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
-import hemantBundelePhoto from "@assets/Hemant_Bundele_1750101113518.jpg";
-import sunitaShirguppiPhoto from "@assets/Screen Shot 2025-06-19 at 2.00.06 PM_1750356009346.png";
-import maheshPatelPhoto from "@assets/WhatsApp Image 2025-06-20 at 17.08.27_b133772b_1750477805786.jpg";
+import hemantBundelePhoto from "@assets/Hemant_Bundele_1750101113518.webp";
+import sunitaShirguppiPhoto from "@assets/Screen Shot 2025-06-19 at 2.00.06 PM_1750356009346.webp";
+import maheshPatelPhoto from "@assets/WhatsApp Image 2025-06-20 at 17.08.27_b133772b_1750477805786.webp";
 
 export default function BoardOfDirectorsPage() {
   const boardMembers = [

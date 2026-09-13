@@ -1,102 +1,58 @@
-import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 
 /**
- * Level 1 "Brand" scroll reveal: fade plus a 16px rise, played once.
+ * Level 1 "Brand" scroll reveal: fade plus a 16px rise as the element enters.
  *
- * Guardrails this deliberately obeys:
- *  - `prefers-reduced-motion: reduce` disables the animation entirely and the
- *    content renders in its final position, so the page reads identically.
- *  - Never wrap the hero headline, the trust line, or a donate CTA. Motion
- *    must never delay or obscure the primary action.
- *  - Fires once and stays put; no re-animating on scroll-back.
+ * These are presentational wrappers only — all behaviour lives in CSS using
+ * scroll-driven animations (`animation-timeline: view()`), see index.css.
+ *
+ * Why no JavaScript: an earlier IntersectionObserver version could leave a
+ * section permanently invisible if a fast scroll carried it past the viewport
+ * between two observer samples. On a donation site, silently hiding content is
+ * a far worse outcome than not animating. With the CSS approach the content is
+ * visible by default and the animation is pure progressive enhancement:
+ * browsers without support (currently Safari and Firefox) simply render the
+ * page static, which is exactly what the motion guardrails ask for.
+ *
+ * Never wrap the hero headline, the trust line, or a donate CTA — motion must
+ * never delay or obscure the primary action.
  */
 export function Reveal({
   children,
-  delay = 0,
-  className,
+  className = "",
 }: {
   children: ReactNode;
-  delay?: number;
   className?: string;
 }) {
-  const reduceMotion = useReducedMotion();
-
-  if (reduceMotion) {
-    return <div className={className}>{children}</div>;
-  }
-
-  return (
-    <motion.div
-      className={className}
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2, margin: "0px 0px -80px 0px" }}
-      transition={{ duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] }}
-    >
-      {children}
-    </motion.div>
-  );
+  return <div className={`reveal ${className}`}>{children}</div>;
 }
 
-/**
- * Staggered container for card grids and stat tiles. Pair with `RevealItem`
- * for each child so they enter in sequence rather than all at once.
- */
+/** Container whose `RevealItem` children enter in sequence. */
 export function RevealGroup({
   children,
-  className,
-  stagger = 0.08,
+  className = "",
 }: {
   children: ReactNode;
   className?: string;
-  stagger?: number;
 }) {
-  const reduceMotion = useReducedMotion();
-
-  if (reduceMotion) {
-    return <div className={className}>{children}</div>;
-  }
-
-  return (
-    <motion.div
-      className={className}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.15 }}
-      variants={{
-        hidden: {},
-        visible: { transition: { staggerChildren: stagger } },
-      }}
-    >
-      {children}
-    </motion.div>
-  );
+  return <div className={className}>{children}</div>;
 }
 
 export function RevealItem({
   children,
-  className,
+  className = "",
+  index = 0,
 }: {
   children: ReactNode;
   className?: string;
+  index?: number;
 }) {
-  const reduceMotion = useReducedMotion();
-
-  if (reduceMotion) {
-    return <div className={className}>{children}</div>;
-  }
-
   return (
-    <motion.div
-      className={className}
-      variants={{
-        hidden: { opacity: 0, y: 16 },
-        visible: { opacity: 1, y: 0 },
-      }}
-      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+    <div
+      className={`reveal reveal-item ${className}`}
+      style={{ ["--reveal-index" as string]: index }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

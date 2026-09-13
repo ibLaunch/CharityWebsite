@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowLeft, Calendar, MapPin, DollarSign, Users } from "lucide-react";
 import { Link } from "wouter";
-import ganeshImage from "@assets/IMG_0931_2_1753388286042.jpg";
+import ganeshImage from "@assets/IMG_0931_2_1753388286042.webp";
 
 export default function OneGaneshForAllPage() {
   return (

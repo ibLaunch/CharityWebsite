@@ -8,12 +8,12 @@ import Impact from "@/components/Impact";
 import { Link } from "wouter";
 import { useState, useEffect } from "react";
 import { BookOpen, Heart, Users, GraduationCap, Smartphone, DollarSign } from "lucide-react";
-import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
-import rotaryImage from "@assets/Screen Shot 2025-05-19 at 8.18.34 PM_1750195463736.png";
-import schoolHallImage2 from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM_1750195477402.png";
+import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.webp";
+import rotaryImage from "@assets/Screen Shot 2025-05-19 at 8.18.34 PM_1750195463736.webp";
+import schoolHallImage2 from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM_1750195477402.webp";
 // Served from client/public rather than bundled, so the <link rel="preload">
 // in index.html points at this exact URL and the browser fetches it once.
-const girlHeroImage = "/hero.jpg";
+const girlHeroImage = "/hero.webp";
 
 export default function Home() {
   const heroImages = [
@@ -194,7 +194,7 @@ export default function Home() {
           </Reveal>
 
           <RevealGroup className="grid lg:grid-cols-2 gap-16 items-stretch">
-            <RevealItem className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
+            <RevealItem index={0} className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
                   <BookOpen className="w-8 h-8 text-navy-medium stroke-2" />
@@ -206,7 +206,7 @@ export default function Home() {
               </p>
             </RevealItem>
 
-            <RevealItem className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
+            <RevealItem index={1} className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
                   <Heart className="w-8 h-8 text-navy-medium stroke-2" />
@@ -237,7 +237,7 @@ export default function Home() {
 
           <RevealGroup className="grid lg:grid-cols-2 gap-12">
             {/* Education Challenges */}
-            <RevealItem>
+            <RevealItem index={0}>
             <Card className="bg-white border border-navy-light shadow-xl h-full">
               <CardContent className="p-8">
                 <div className="text-center mb-8">
@@ -270,7 +270,7 @@ export default function Home() {
             </RevealItem>
 
             {/* Senior Care Challenges */}
-            <RevealItem>
+            <RevealItem index={1}>
             <Card className="bg-white border border-navy-light shadow-xl h-full">
               <CardContent className="p-8">
                 <div className="text-center mb-8">

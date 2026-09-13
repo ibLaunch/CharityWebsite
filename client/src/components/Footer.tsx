@@ -1,7 +1,7 @@
 import { openDonate } from "@/lib/donate";
 import { MessageCircle, Mail, Phone } from "lucide-react";
 import { Link } from "wouter";
-import bundeleFoundationLogo from "@assets/bfoundation-logo-5.1_1750431171016.png";
+import bundeleFoundationLogo from "@assets/bfoundation-logo-5.1_1750431171016.webp";
 
 export default function Footer() {
   const quickLinks = [

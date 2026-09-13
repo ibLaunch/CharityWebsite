@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
-import masterChefFlyer from "@assets/masterchef-farmwell-flyer.jpg";
+import masterChefFlyer from "@assets/masterchef-farmwell-flyer.webp";
 
 export default function MasterChefFarmwellPage() {
   return (
