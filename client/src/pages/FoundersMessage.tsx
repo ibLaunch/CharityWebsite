@@ -1,3 +1,4 @@
+import { openDonate } from "@/lib/donate";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
@@ -176,7 +177,7 @@ export default function FoundersMessagePage() {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button 
-              onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
+              onClick={() => openDonate()}
               className="navy-button-primary text-lg px-10 py-4 rounded-md"
             >
               Donate Now

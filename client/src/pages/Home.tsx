@@ -1,3 +1,4 @@
+import { openDonate } from "@/lib/donate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
@@ -9,7 +10,7 @@ import { BookOpen, Heart, Users, GraduationCap, Smartphone, DollarSign } from "l
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
 import rotaryImage from "@assets/Screen Shot 2025-05-19 at 8.18.34 PM_1750195463736.png";
 import schoolHallImage2 from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM_1750195477402.png";
-import girlHeroImage from "@assets/girl-hero-updated.png";
+import girlHeroImage from "@assets/girl-hero-updated.jpg";
 
 export default function Home() {
   const heroImages = [
@@ -39,36 +40,45 @@ export default function Home() {
     return () => clearInterval(interval);
   }, [heroImages.length]);
 
+  // Every figure below is sourced. Please keep the `source` line accurate if
+  // these are ever updated — unsourced or inflated statistics undermine trust
+  // in a 501(c)(3).
   const challenges = [
     {
-      stat: "1 in 5",
-      description: "children globally lack access to basic education",
+      stat: "272M",
+      description: "children and youth are out of school worldwide",
+      source: "UNESCO, 2025",
       icon: GraduationCap
     },
     {
-      stat: "42%",
-      description: "children are engaged in child labor, instead of learning",
+      stat: "138M",
+      description: "children are in child labour, 54 million of them in hazardous work",
+      source: "ILO & UNICEF, 2025",
       icon: Users
     },
     {
-      stat: "36%",
-      description: "of children are out of school, and 67% of girls (ages 15+) struggle to read and write",
+      stat: "31%",
+      description: "of upper-secondary-age youth are out of school",
+      source: "UNESCO, 2025",
       icon: BookOpen
     },
     {
-      stat: "60%",
-      description: "of seniors report feeling isolated or lonely",
+      stat: "1 in 6",
+      description: "people worldwide experience loneliness",
+      source: "WHO, 2025",
       icon: Heart
     },
     {
-      stat: "17%",
-      description: "of seniors aged 65+ are digitally literate",
-      icon: Smartphone
+      stat: "871K",
+      description: "deaths each year are linked to loneliness and social isolation",
+      source: "WHO, 2025",
+      icon: DollarSign
     },
     {
       stat: "25%",
-      description: "of seniors live below the poverty line in developing regions",
-      icon: DollarSign
+      description: "of adults aged 65+ do not use the internet",
+      source: "Pew Research Center",
+      icon: Smartphone
     }
   ];
 
@@ -97,21 +107,26 @@ export default function Home() {
             <div className="space-y-8 text-center max-w-lg mr-8">
               <div className="space-y-6">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
-                  Bundele<br />
-                  Foundation
+                  Bridging Generations,<br />
+                  Building Futures
                 </h1>
                 <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 leading-relaxed">
-                  Together, We're Making a Difference
+                  The Bundele Foundation supports schools and seniors in
+                  India and Virginia — connecting the generations that need
+                  each other most.
                 </p>
               </div>
-              
-              <div className="flex justify-center">
-                <button 
-                  onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
+
+              <div className="flex flex-col items-center gap-3">
+                <button
+                  onClick={() => openDonate()}
                   className="bg-navy-dark hover:bg-navy-hover text-white text-lg font-semibold px-8 py-4 rounded-lg transition-colors"
                 >
-                  Donate Here
+                  Donate
                 </button>
+                <p className="text-sm text-gray-300">
+                  Tax-deductible · 501(c)(3) · No platform fees
+                </p>
               </div>
             </div>
           </div>
@@ -239,6 +254,7 @@ export default function Home() {
                         <div>
                           <div className="text-3xl font-bold text-navy-medium mb-2">{challenge.stat}</div>
                           <p className="text-navy-dark text-sm leading-relaxed">{challenge.description}</p>
+                          <p className="text-navy-medium/70 text-xs mt-2">Source: {challenge.source}</p>
                         </div>
                       </div>
                     );
@@ -268,6 +284,7 @@ export default function Home() {
                         <div>
                           <div className="text-3xl font-bold text-navy-medium mb-2">{challenge.stat}</div>
                           <p className="text-navy-dark text-sm leading-relaxed">{challenge.description}</p>
+                          <p className="text-navy-medium/70 text-xs mt-2">Source: {challenge.source}</p>
                         </div>
                       </div>
                     );
@@ -283,6 +300,34 @@ export default function Home() {
         <div className="absolute bottom-20 right-8 w-40 h-40 bg-gray-300 rounded-full opacity-20"></div>
         <div className="absolute top-2/3 right-4 w-28 h-28 bg-gray-100 rounded-full opacity-30"></div>
         <div className="absolute bottom-1/4 left-4 w-20 h-20 bg-gray-200 rounded-full opacity-25"></div>
+      </section>
+
+      {/* Closing conversion section — the page previously ended on the
+          problem statistics with no way to act on them. */}
+      <section className="py-20 bg-navy-dark">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            You can change this
+          </h2>
+          <p className="text-lg sm:text-xl text-gray-200 leading-relaxed">
+            Every gift goes directly to the classrooms, schools, and seniors we
+            serve. Donations are tax-deductible, and our platform takes no
+            processing fee.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
+            <button
+              onClick={() => openDonate()}
+              className="bg-white hover:bg-gray-100 text-navy-dark text-lg font-semibold px-10 py-4 rounded-lg transition-colors w-full sm:w-auto"
+            >
+              Donate Now
+            </button>
+            <Link href="/impact-circle">
+              <button className="border border-white/60 hover:bg-white/10 text-white text-lg font-semibold px-10 py-4 rounded-lg transition-colors w-full sm:w-auto">
+                Join the Impact Circle
+              </button>
+            </Link>
+          </div>
+        </div>
       </section>
 
       <Footer />

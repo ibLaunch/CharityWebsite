@@ -1,3 +1,4 @@
+import { openDonate } from "@/lib/donate";
 import { MessageCircle, Mail, Phone } from "lucide-react";
 import { Link } from "wouter";
 import bundeleFoundationLogo from "@assets/bfoundation-logo-5.1_1750431171016.png";
@@ -45,6 +46,12 @@ export default function Footer() {
             <p className="text-navy-light leading-relaxed font-light text-sm sm:text-base">
               A 501(c)(3) Nonprofit Organization creating positive change through education support, senior care, and community building. Together, we're making a difference.
             </p>
+            <button
+              onClick={() => openDonate()}
+              className="mt-6 bg-white hover:bg-gray-100 text-navy-dark font-semibold px-6 py-3 rounded-lg transition-colors text-sm sm:text-base"
+            >
+              Donate
+            </button>
           </div>
           
           <div>

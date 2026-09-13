@@ -9,7 +9,7 @@ export default function FAQPage() {
     {
       icon: CreditCard,
       question: "How do I set up recurring donations?",
-      answer: "After joining the Impact Circle, you'll receive a link to a form where you can select your meaningful dates. We'll send reminders through WhatsApp, and you can donate via PayPal each time. We make it easy to stay consistent—even without automatic payments."
+      answer: "After joining the Impact Circle, you'll receive a link to a form where you can select your meaningful dates. We'll send reminders through WhatsApp, and you can give through our secure donation form each time. We make it easy to stay consistent—even without automatic payments."
     },
     {
       icon: Calendar,
@@ -18,8 +18,8 @@ export default function FAQPage() {
     },
     {
       icon: CheckCircle,
-      question: "How will I know my donation has been matched?",
-      answer: "You'll receive a confirmation directly through WhatsApp or email once your donation has been received and matched. We'll also periodically update the group with project highlights funded through your contributions."
+      question: "How will I know my donation was received?",
+      answer: "You'll receive a confirmation by email as soon as your donation is processed, and this doubles as your receipt for tax purposes. We also periodically update the group with project highlights funded through your contributions."
     },
     {
       icon: MessageCircle,

@@ -1,8 +1,9 @@
+import { openDonate } from "@/lib/donate";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
-import masterChefFlyer from "@assets/bit.lyMasterChef-of-Farmwell (2)_1751312684176.png";
+import masterChefFlyer from "@assets/masterchef-farmwell-flyer.jpg";
 
 export default function MasterChefFarmwellPage() {
   return (
@@ -94,7 +95,7 @@ export default function MasterChefFarmwellPage() {
                   </button>
                 </Link>
                 <button 
-                  onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
+                  onClick={() => openDonate()}
                   className="bg-white border-2 border-navy-medium text-navy-medium px-6 py-3 rounded-md hover:bg-navy-medium hover:text-white transition-colors"
                 >
                   Donate Now

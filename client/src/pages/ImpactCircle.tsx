@@ -40,15 +40,15 @@ export default function ImpactCirclePage() {
               </div>
               
               <div className="text-center space-y-4 bg-navy-very-light p-8 rounded-lg border border-navy-light">
-                <div className="text-4xl font-light text-navy-medium">2x</div>
-                <div className="elegant-small text-navy-medium">Donation Matching</div>
-                <p className="text-navy-dark font-light">We double every contribution you make</p>
-              </div>
-              
-              <div className="text-center space-y-4 bg-navy-very-light p-8 rounded-lg border border-navy-light">
                 <div className="text-4xl font-light text-navy-medium">100%</div>
                 <div className="elegant-small text-navy-medium">Direct Impact</div>
                 <p className="text-navy-dark font-light">All funds go directly to projects</p>
+              </div>
+
+              <div className="text-center space-y-4 bg-navy-very-light p-8 rounded-lg border border-navy-light">
+                <div className="text-4xl font-light text-navy-medium">501(c)(3)</div>
+                <div className="elegant-small text-navy-medium">Tax-Deductible</div>
+                <p className="text-navy-dark font-light">Every gift is deductible in the U.S.</p>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function ImpactCirclePage() {
                 Join our mission to amplify social impact by contributing a minimum of $5 on your birthday, your loved ones' birthdays, anniversaries, or any day that holds special meaning to you.
               </p>
               <p>
-                For every dollar you donate, Bundele Foundation pledges to match it, doubling the power of your generosity. 100% of your donation is directly channeled to support most pressing project in the world, guaranteeing that your generosity translates into palpable aid.
+                100% of your donation is channeled directly to the projects that need it most, so your generosity translates into tangible aid — new furniture in a classroom, a repainted school, a senior who stays connected.
               </p>
               <p className="text-xl font-light text-navy-dark italic">
                 Together, we're turning celebrations into acts of kindness.

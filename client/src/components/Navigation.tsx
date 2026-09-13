@@ -1,3 +1,4 @@
+import { openDonate } from "@/lib/donate";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -123,11 +124,25 @@ export default function Navigation() {
                   </button>
                 </Link>
               ))}
+
+              {/* Persistent primary CTA — donating is the site's main goal */}
+              <button
+                onClick={() => openDonate()}
+                className="bg-navy-dark hover:bg-navy-hover text-white text-sm xl:text-base font-semibold px-6 py-2.5 rounded-lg transition-colors"
+              >
+                Donate
+              </button>
             </div>
           </div>
-          
+
           {/* Mobile Navigation */}
-          <div className="lg:hidden">
+          <div className="lg:hidden flex items-center gap-2">
+            <button
+              onClick={() => openDonate()}
+              className="bg-navy-dark hover:bg-navy-hover text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
+            >
+              Donate
+            </button>
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="border-none p-2">

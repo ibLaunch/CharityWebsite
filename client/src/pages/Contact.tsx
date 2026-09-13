@@ -1,3 +1,4 @@
+import { openDonate } from "@/lib/donate";
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -163,7 +164,7 @@ export default function ContactPage() {
                   </button>
                   
                   <button
-                    onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
+                    onClick={() => openDonate()}
                     className="navy-button-primary w-full px-10 py-4 rounded-none font-normal text-sm tracking-wider uppercase"
                   >
                     Donate

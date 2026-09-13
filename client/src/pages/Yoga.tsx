@@ -1,3 +1,4 @@
+import { openDonate } from "@/lib/donate";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -5,7 +6,7 @@ import { CalendarPlus, Star, ArrowLeft, Dumbbell, Heart, Apple, Flower, Activity
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
-import wellnessHeroImage from "@assets/wellness-hero-new.png";
+import wellnessHeroImage from "@assets/wellness-hero-new.jpg";
 
 export default function YogaPage() {
   const packages = [
@@ -433,7 +434,7 @@ export default function YogaPage() {
               </button>
               
               <button 
-                onClick={() => window.open("https://www.paypal.com/donate/?hosted_button_id=3MXBUHN8VQGGJ", "_blank")}
+                onClick={() => openDonate()}
                 className="border-2 border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white px-12 py-4 rounded-md text-lg font-semibold transition-colors"
               >
                 Support Our Mission

@@ -3,7 +3,6 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactMessageSchema } from "@shared/schema";
 import { z } from "zod";
-import { createPaypalOrder, capturePaypalOrder, loadPaypalDefault } from "./paypal";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission
@@ -31,10 +30,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // PayPal routes
-  app.get("/setup", loadPaypalDefault);
-  app.post("/order", createPaypalOrder);
-  app.post("/order/:orderID/capture", capturePaypalOrder);
+  // Donations are handled off-site by Zeffy (see client/src/lib/donate.ts),
+  // so no payment routes are needed here.
 
   const httpServer = createServer(app);
   return httpServer;
