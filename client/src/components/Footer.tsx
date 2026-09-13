@@ -37,7 +37,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 lg:gap-24">
           <div>
             <div className="mb-4 sm:mb-6 lg:mb-8">
-              <img 
+              <img loading="lazy" decoding="async" 
                 src={bundeleFoundationLogo}
                 alt="Bundele Foundation"
                 className="h-12 sm:h-16 lg:h-20 w-auto"

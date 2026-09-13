@@ -40,7 +40,7 @@ export default function MasterChefFarmwellPage() {
           
           {/* Featured Flyer */}
           <div className="mb-16">
-            <img 
+            <img loading="lazy" decoding="async" 
               src={masterChefFlyer}
               alt="Master Chef of Farmwell Event Flyer"
               className="w-full max-w-lg mx-auto object-contain rounded-lg shadow-lg"

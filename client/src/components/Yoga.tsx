@@ -55,7 +55,7 @@ export default function Yoga() {
         
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <img 
+            <img loading="lazy" decoding="async" 
               src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
               alt="Yoga meditation silhouette at sunset"
               className="rounded-xl shadow-lg w-full h-auto"

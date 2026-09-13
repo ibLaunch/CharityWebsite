@@ -39,7 +39,7 @@ export default function OneGaneshForAllPage() {
           
           {/* Event Image */}
           <div className="mb-16 text-center">
-            <img 
+            <img loading="lazy" decoding="async" 
               src={ganeshImage}
               alt="One Ganesh for All Celebration"
               className="w-full max-w-2xl mx-auto object-contain rounded-lg shadow-lg"

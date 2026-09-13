@@ -41,7 +41,7 @@ export default function FoundersMessagePage() {
             
             <div className="relative">
               <div className="relative w-full max-w-md mx-auto">
-                <img 
+                <img loading="lazy" decoding="async" 
                   src={hemantBundelePhoto}
                   alt="Hemant Bundele, Founder of Bundele Foundation"
                   className="w-full h-auto rounded-2xl shadow-2xl"

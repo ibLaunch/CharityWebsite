@@ -62,7 +62,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/">
               <div className="flex items-center cursor-pointer group">
-                <img 
+                <img loading="eager" decoding="async" fetchPriority="high" 
                   src={bundeleFoundationLogo}
                   alt="Bundele Foundation"
                   className="h-14 sm:h-20 lg:h-24 w-auto transition-opacity group-hover:opacity-80"
@@ -152,7 +152,7 @@ export default function Navigation() {
               <SheetContent className="bg-white w-[280px] sm:w-[320px] p-0">
                 <div className="p-6">
                   <div className="flex items-center mb-8">
-                    <img 
+                    <img loading="eager" decoding="async" fetchPriority="high" 
                       src={bundeleFoundationLogo}
                       alt="Bundele Foundation"
                       className="h-14 w-auto"

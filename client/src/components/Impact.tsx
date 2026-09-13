@@ -85,7 +85,7 @@ export default function Impact() {
                     <Card className="bg-white border border-navy-light shadow-lg hover:shadow-xl transition-all duration-300 group">
                       <CardContent className="p-0">
                         <div className="relative">
-                          <img 
+                          <img loading="lazy" decoding="async" 
                             src={story.image}
                             alt={story.title}
                             className="w-full h-48 object-cover"

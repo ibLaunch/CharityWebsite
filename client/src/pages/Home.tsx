@@ -1,4 +1,5 @@
 import { openDonate } from "@/lib/donate";
+import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
@@ -10,7 +11,9 @@ import { BookOpen, Heart, Users, GraduationCap, Smartphone, DollarSign } from "l
 import schoolImage from "@assets/Screen Shot 2025-05-19 at 8.18.44 PM.png";
 import rotaryImage from "@assets/Screen Shot 2025-05-19 at 8.18.34 PM_1750195463736.png";
 import schoolHallImage2 from "@assets/Screen Shot 2025-05-19 at 8.18.59 PM_1750195477402.png";
-import girlHeroImage from "@assets/girl-hero-updated.jpg";
+// Served from client/public rather than bundled, so the <link rel="preload">
+// in index.html points at this exact URL and the browser fetches it once.
+const girlHeroImage = "/hero.jpg";
 
 export default function Home() {
   const heroImages = [
@@ -150,7 +153,7 @@ export default function Home() {
             
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img 
+                <img loading="lazy" decoding="async" 
                   src={heroImages[currentImageIndex].src}
                   alt={heroImages[currentImageIndex].alt}
                   className="w-full h-[400px] object-cover transition-opacity duration-1000"
@@ -186,12 +189,12 @@ export default function Home() {
       {/* Learn About What We Do */}
       <section className="relative py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <Reveal className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-navy-dark mb-6">Learn about what we do</h2>
-          </div>
-          
-          <div className="grid lg:grid-cols-2 gap-16 items-stretch">
-            <div className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
+          </Reveal>
+
+          <RevealGroup className="grid lg:grid-cols-2 gap-16 items-stretch">
+            <RevealItem className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
                   <BookOpen className="w-8 h-8 text-navy-medium stroke-2" />
@@ -201,9 +204,9 @@ export default function Home() {
               <p className="text-lg text-navy-dark leading-relaxed mb-8 flex-grow">
                 Bridge the gap between generations through community programs that foster mutual learning and support. By creating mentorship opportunities, where the adults can share their wealth of knowledge and life experiences with young minds, we can cultivate a culture of respect and appreciation.
               </p>
-            </div>
-            
-            <div className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
+            </RevealItem>
+
+            <RevealItem className="bg-navy-very-light p-8 rounded-lg border border-navy-light h-full flex flex-col">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
                   <Heart className="w-8 h-8 text-navy-medium stroke-2" />
@@ -213,8 +216,8 @@ export default function Home() {
               <p className="text-lg text-navy-dark leading-relaxed flex-grow">
                 Additionally, integrating technology workshops can empower older adults to stay connected with the digital world, reducing isolation and opening new avenues for learning and engagement.
               </p>
-            </div>
-          </div>
+            </RevealItem>
+          </RevealGroup>
         </div>
         
         {/* Background circles for this section */}
@@ -228,13 +231,14 @@ export default function Home() {
       {/* Challenges */}
       <section className="relative py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <Reveal className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-navy-dark mb-6">The challenges</h2>
-          </div>
-          
-          <div className="grid lg:grid-cols-2 gap-12">
+          </Reveal>
+
+          <RevealGroup className="grid lg:grid-cols-2 gap-12">
             {/* Education Challenges */}
-            <Card className="bg-white border border-navy-light shadow-xl">
+            <RevealItem>
+            <Card className="bg-white border border-navy-light shadow-xl h-full">
               <CardContent className="p-8">
                 <div className="text-center mb-8">
                   <div className="w-20 h-20 bg-navy-medium rounded-full flex items-center justify-center mx-auto mb-4">
@@ -263,8 +267,11 @@ export default function Home() {
               </CardContent>
             </Card>
 
+            </RevealItem>
+
             {/* Senior Care Challenges */}
-            <Card className="bg-white border border-navy-light shadow-xl">
+            <RevealItem>
+            <Card className="bg-white border border-navy-light shadow-xl h-full">
               <CardContent className="p-8">
                 <div className="text-center mb-8">
                   <div className="w-20 h-20 bg-navy-medium rounded-full flex items-center justify-center mx-auto mb-4">
@@ -292,7 +299,8 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-          </div>
+            </RevealItem>
+          </RevealGroup>
         </div>
         
         {/* Background circles for this section */}
@@ -304,7 +312,7 @@ export default function Home() {
 
       {/* Closing conversion section — the page previously ended on the
           problem statistics with no way to act on them. */}
-      <section className="py-20 bg-navy-dark">
+      <section className="py-20 bg-navy-dark border-b border-white/15">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-white">
             You can change this

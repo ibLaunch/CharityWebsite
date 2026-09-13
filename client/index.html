@@ -2,15 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bundele Foundation - Creating Positive Change Together</title>
     <meta name="description" content="A 501(c)(3) nonprofit organization dedicated to education support, senior care, and community building. Join us in making a difference." />
-    <link rel="icon" type="image/png" href="/src/assets/bfoundation-logo-5.1_1750431171016.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- The hero background is the Largest Contentful Paint element on the
+         landing page. Preloading it lets the browser start the download
+         before the CSS that references it has parsed. -->
+    <link rel="preload" as="image" href="/hero.jpg" fetchpriority="high" />
+
+    <meta property="og:title" content="Bundele Foundation - Bridging Generations, Building Futures" />
+    <meta property="og:description" content="A 501(c)(3) nonprofit supporting schools and seniors in India and Virginia." />
+    <meta property="og:type" content="website" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
   </body>
 </html>
